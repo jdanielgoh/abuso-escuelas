@@ -109,7 +109,7 @@ onMounted(() => {
 
       mesh.scale.x = 1;
       mesh.scale.y = archivos[i].alto/archivos[i].ancho;
-    
+      
 
     scene.value.add(mesh);
   }
