@@ -1,0 +1,18 @@
+@import 'variables';
+
+body, html{
+    margin: 0;
+    background-color: $color-fondo;
+    
+}
+.vista{
+    min-height: 100vh;
+    margin: 100px 0 ;
+}
+.contenedor-flex{
+    display:flex;
+    .ancho-texto{
+        margin: auto;
+        max-width: 800px;
+    }
+}

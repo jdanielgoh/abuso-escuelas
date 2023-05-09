@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "^3.4.3",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2"
+  },
+  "dependencies": {
+    "d3": "^7.8.4",
+    "three": "^0.152.2"
+  }
+}
