@@ -1,5 +1,5 @@
 <template>
-    <EncabezadoPagina></EncabezadoPagina>
+    <NavegacionEncabezado></NavegacionEncabezado>
     <div class="vista"><slot/></div>
-    <PiePagina></PiePagina>
+    <NavegacionPie></NavegacionPie>
 </template>
