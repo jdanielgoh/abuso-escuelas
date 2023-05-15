@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       shim: false
     },
     css: [
-      "~/assets/style/main.scss"
+      "@/assets/style/main.scss"
     ],
     vite: {
       css: {
@@ -17,7 +17,6 @@ export default defineNuxtConfig({
         }
       },
       plugins: [glsl()],
-
     },
     build: {
       transpile: [

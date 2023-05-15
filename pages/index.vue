@@ -18,6 +18,7 @@
   .titulo {
     margin: auto;
     text-align: center;
+    color: red;
     h1 {
       font-size: 60px;
     }
