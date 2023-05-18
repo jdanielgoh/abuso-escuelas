@@ -3,7 +3,8 @@
 body, html{
     margin: 0;
     background: $color-fondo;
-    
+    font-family : 'Open Sans';
+    color: $color-texto-base;
 }
 .vista{
     min-height: 100vh;

@@ -16,7 +16,7 @@ const esta_abierto = ref(false);
           <li><NuxtLink @click.native="esta_abierto =false" to="/"> Inicio</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="historias"> Historia</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="perfiles"> Perfiles</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="procolos"> Protocolos</NuxtLink>  </li>
+          <li><NuxtLink @click.native="esta_abierto =false" to="protocolos"> Protocolos</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="metodologia"> Metodología</NuxtLink>  </li>
 
         </ul>
@@ -36,7 +36,7 @@ header {
 
   button.icono-hamburguesa {
     position: absolute;
-    margin: 5px 0 5px 20px;
+    margin: 18px 0 15px 20px;
     background: transparent;
     border: 0px;
     width: 50px;
@@ -49,13 +49,14 @@ header {
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
+    z-index: 2;
     cursor: pointer;
     span {
       display: block;
       position: absolute;
       height: 5px;
       width: 100%;
-      background: $color-rojo;
+      background: $color-texto-base;
       opacity: 1;
       left: 0;
       -webkit-transform: rotate(0deg);
@@ -78,28 +79,18 @@ header {
     }
   }
   // Borde de abajo
-  &::before {
-    content: "";
-    height: 1px;
-    background: $color-rojo;
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: 0;
-
-    box-shadow: 0px 0px 2px 0.5px $color-rojo;
-    transition: 0.25s ease-in-out;
-  }
+  
   //Navegacion
   nav {
     visibility: hidden;
-    position: absolute;
-    top: 50px;
-    height: calc(100vh - 50px);
-    background-color: rgba(255,255,255, .1);
-    backdrop-filter: blur(2px);
+    top: 0;
+    height: calc(100vh );
+    position: relative;
+    display:inline-flex;
+    background: #d3d3d3;
     ul {
       padding: 0;
+      margin: auto 0;
       li {
         font-size: 32px;
         left: -100%;
@@ -109,9 +100,9 @@ header {
         transition: 0.25s ease-in-out 0.1s;
         padding: 20px;
         a{
-          color: $color-azul;
+          color: $color-texto-enlaces;
           &.router-link-exact-active{
-            color: $color-rojo;
+            color: $color-texto-base;
           }
         }
      
@@ -121,6 +112,8 @@ header {
   &.abierto {
     button.icono-hamburguesa {
       span {
+        background: black;
+
         &:nth-child(1) {
           top: 18px;
           -webkit-transform: rotate(135deg);
@@ -142,9 +135,7 @@ header {
         }
       }
     }
-    &::before {
-      width: 0;
-    }
+
     nav {
       visibility: visible;
 
