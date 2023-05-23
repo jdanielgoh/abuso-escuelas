@@ -87,7 +87,9 @@ header {
     height: calc(100vh );
     position: relative;
     display:inline-flex;
-    background: #d3d3d3;
+    background: #E5AB24;
+    width: 300px;
+
     ul {
       padding: 0;
       margin: auto 0;
@@ -95,10 +97,9 @@ header {
         font-size: 32px;
         left: -100%;
         position: relative;
-        padding: 0;
         list-style: none;
         transition: 0.25s ease-in-out 0.1s;
-        padding: 20px;
+        padding: 8px 20px;
         a{
           color: $color-texto-enlaces;
           &.router-link-exact-active{

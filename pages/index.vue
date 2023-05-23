@@ -90,7 +90,7 @@
       text-align: center;
       color: $color-texto-base;
       max-width: 680px;
-      background-color: rgba(30, 37, 31, 0.9);
+      background-color: rgba(25, 23, 22, 0.9);
       backdrop-filter: blur(2px);
       padding: 16px;
       border-radius: 16px;
@@ -125,7 +125,7 @@
       max-width: 500px;
       color: $color-texto-base;
       margin: auto;
-      background-color: rgba(30, 37, 31, 0.9);
+      background-color: rgba(25, 23, 22, 0.9);
       padding: 16px;
       font-size: 18px;
       border-radius: 16px;

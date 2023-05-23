@@ -14,7 +14,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 import archivos from "@/assets/datos/lista_documentos_portada.json";
 const parametros_gui = {
-  color_fondo: "#1e251f",
+  color_fondo: "#191716",
 };
 const fog = ref(new THREE.Fog(parametros_gui.color_fondo, 0.1, 4));
 
@@ -36,7 +36,7 @@ const cursor = ref({ x: 0, y: 0 });
 const gui = ref();
 
 //Luz
-const luzPuntual = ref(new THREE.PointLight("#ffffff", 0.88, 20));
+const luzPuntual = ref(new THREE.PointLight("#E5AB24", 0.88, 20));
 onMounted(() => {
   sizes.value = {
     width: window.innerWidth,
