@@ -1,3 +1,15 @@
-<template>
-    <p>metodologia</p>
+<template >
+    <div id="protocolos">
+        <h1>Protocolos </h1>
+        <VisualizacionesProtocolos></VisualizacionesProtocolos>
+    </div>
+
 </template>
+
+<style lang="scss" >
+#protocolos{
+    h1{    color: black;
+}
+    color: black;
+}
+</style>

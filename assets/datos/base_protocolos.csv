@@ -1,0 +1,33 @@
+Estados,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34
+Aguascalientes,parcialmente,si,no,parcialmente,no,parcialmente,no,no,si,si,no,si,no,si,si,no,no,parcialmente,si,si,si,parcialmente,no,no,no,no,no,si,no,no,no,parcialmente,si,si,si
+Baja California,parcialmente,si,no,si,no,no,si,no,no,si,no,si,no,si,no,no,no,si,si,si,si,parcialmente,parcialmente,no,no,no,no,parcialmente,no,no,no,parcialmente,no,parcialmente,no
+Baja California Sur,parcialmente,si,si,si,si,no,si,parcialmente,si,si,no,parcialmente,parcialmente,si,si,parcialmente,parcialmente,si,si,si,si,si,parcialmente,no,si,si,no,si,no,si,no,parcialmente,parcialmente,si,si
+Campeche,parcialmente,si,no,si,parcialmente,si,si,si,si,no,si,si,no,si,si,si,no,no,parcialmente,si,si,si,no,si,si,si,no,no,si,si,no,no,si,no,no
+Chiapas,parcialmente,no,no,si,si,no,si,si,si,no,no,si,no,si,si,si,no,si,si,si,si,si,parcialmente,si,si,no,no,no,no,no,no,no,no,si,si
+Chihuahua,si,si,si,parcialmente,parcialmente,si,si,si,si,si,no,si,no,si,si,si,no,si,parcialmente,si,si,si,parcialmente,si,no,si,no,no,si,si,no,no,no,si,si
+Ciudad de México,no,si,si,si,no,si,si,si,si,no,no,si,no,si,parcialmente,si,no,si,parcialmente,parcialmente,si,parcialmente,no,parcialmente,no,parcialmente,no,no,si,si,no,no,si,si,no
+Coahuila,parcialmente,si,no,si,no,si,si,no,si,no,no,si,no,si,si,no,no,no,no,no,si,si,no,si,no,no,no,no,no,no,no,no,si,si,si
+Colima,si,si,si,si,no,no,si,no,si,no,no,si,si,si,si,no,si,no,si,si,si,si,no,si,no,si,si,si,no,si,no,no,si,si,no
+Durango,no,no,no,si,parcialmente,no,no,no,si,si,no,si,no,si,si,no,si,no,si,si,no,parcialmente,no,si,no,no,no,no,no,no,no,si,no,no,si
+Estado de México,si,si,si,si,parcialmente,parcialmente,si,si,si,si,si,si,si,si,no,si,no,si,si,si,si,si,parcialmente,no,parcialmente,si,no,no,no,si,no,no,si,si,si
+Guanajuato,si,si,parcialmente,si,parcialmente,si,si,si,si,si,no,si,no,si,si,no,parcialmente,si,si,si,si,si,si,si,no,si,no,parcialmente,no,si,no,vacio,no,parcialmente,no
+Guerrero,si,si,parcialmente,si,no,no,si,si,si,si,no,si,no,si,si,no,no,si,si,si,si,si,no,no,si,no,no,si,no,no,no,vacio,no,si,no
+Hidalgo,no,si,vacio,si,no,si,vacio,parcialmente,si,no,no,si,vacio,si,si,si,no,parcialmente,si,no,si,si,no,si,no,vacio,no,vacio,no,no,no,no,si,si,si
+Jalisco,parcialmente,si,no,no,no,parcialmente,parcialmente,si,si,si,no,parcialmente,no,si,si,si,no,no,no,parcialmente,si,si,no,parcialmente,no,no,no,no,no,no,no,no,si,parcialmente,parcialmente
+Michoacán ,si,si,si,no,si,no,si,no,si,no,no,si,no,si,si,no,no,no,si,no,no,no,parcialmente,parcialmente,no,no,no,no,no,no,no,no,si,no,no
+Morelos,si,si,no,si,si,no,no,si,no,parcialmente,no,no,si,si,no,no,parcialmente,si,no,no,parcialmente,si,si,no,no,no,no,no,no,no,no,parcialmente,si,no,no
+Nayarit,parcialmente,no,no,parcialmente,si,no,si,no,parcialmente,si,no,no,no,si,si,no,no,si,si,no,si,si,no,parcialmente,si,no,no,parcialmente,no,no,no,no,si,no,no
+Nuevo León,si,si,no,parcialmente,parcialmente,si,si,si,parcialmente,si,no,si,parcialmente,si,si,no,no,no,si,si,si,si,parcialmente,parcialmente,parcialmente,no,no,parcialmente,si,parcialmente,no,no,si,si,parcialmente
+Oaxaca,si,si,no,si,parcialmente,no,si,si,si,si,no,si,si,si,parcialmente,no,no,si,si,si,si,si,no,parcialmente,parcialmente,no,no,no,si,no,no,no,no,no,no
+Puebla,si,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio,vacio
+Querétaro,si,no,si,no,no,no,si,si,parcialmente,si,no,si,no,si,si,no,no,si,si,parcialmente,si,si,no,si,parcialmente,no,si,parcialmente,no,no,no,vacio,no,no,si
+Quintana Roo,si,si,parcialmente,si,no,no,no,si,si,si,no,parcialmente,no,si,parcialmente,si,parcialmente,si,si,si,parcialmente,parcialmente,no,no,no,no,no,parcialmente,no,parcialmente,no,no,si,parcialmente,no
+San Luis Potosí,no,parcialmente,si,no,no,parcialmente,parcialmente,parcialmente,si,no,no,parcialmente,no,si,si,no,no,parcialmente,si,si,no,no,no,no,si,no,no,no,no,no,no,no,si,no,no
+Sinaloa,parcialmente,parcialmente,si,parcialmente,no,parcialmente,si,parcialmente,si,si,no,parcialmente,parcialmente,si,parcialmente,no,no,no,si,si,no,no,no,no,parcialmente,no,no,no,no,no,no,no,si,parcialmente,parcialmente
+Sonora,si,no,parcialmente,no,no,no,parcialmente,si,si,no,no,parcialmente,no,si,parcialmente,no,no,no,si,si,si,si,no,no,parcialmente,no,no,no,no,vacio,no,no,si,no,no
+Tabasco,no,si,si,si,no,si,no,no,si,parcialmente,no,parcialmente,si,si,no,no,si,si,no,si,si,parcialmente,si,no,no,no,no,no,no,no,no,no,si,no,no
+Tamaulipas,si,si,no,parcialmente,no,si,no,si,si,parcialmente,no,si,no,si,si,no,parcialmente,no,si,si,si,parcialmente,no,no,no,no,no,no,no,no,no,no,si,parcialmente,no
+Tlaxcala,no,si,si,si,si,si,no,si,si,no,no,no,no,si,si,no,no,no,si,si,si,no,no,no,no,no,no,no,no,no,no,no,si,parcialmente,parcialmente
+Veracruz,si,si,no,si,parcialmente,si,si,si,si,si,no,si,no,si,si,si,no,si,no,no,no,no,no,no,no,no,si,no,no,no,no,no,si,si,no
+Yucatán,si,si,si,si,si,no,si,si,si,si,no,si,si,si,si,si,parcialmente,si,parcialmente,si,no,si,si,parcialmente,no,si,no,si,si,si,no,no,si,si,si
+Zacatecas,parcialmente,si,si,si,si,parcialmente,si,parcialmente,si,parcialmente,no,parcialmente,parcialmente,si,parcialmente,no,si,no,si,no,si,parcialmente,no,no,si,no,no,parcialmente,no,si,no,no,si,parcialmente,no
