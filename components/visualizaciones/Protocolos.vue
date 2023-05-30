@@ -54,7 +54,7 @@ onMounted(() => {
   d3.csv("/datos/base_protocolos.csv").then((data) => {
     datos.value = data;
 
-    let datos_ac=lista_categorias.map((cat) => {
+    let datos_ac = lista_categorias.map((cat) => {
       let dict_ef = { categoria: cat };
       let dict_mapeo = {};
       let mapeo = d3.rollup(
@@ -68,62 +68,94 @@ onMounted(() => {
       });
       dict_ef["valores"] = dict_mapeo;
       return toRaw(dict_ef);
-    })
-    datos_ac.forEach(d=>{
-        for(var i = 0 ; i< lista_subcategorias.length; i++){
-            d.valores["cuenta_"+lista_subcategorias[i]] = 0
-        }
-        console.log(d)
     });
-    datos_acumulados.value = datos_ac
+    datos_ac.forEach((d) => {
+      for (var i = 0; i < lista_subcategorias.length; i++) {
+        d.valores["cuenta_" + lista_subcategorias[i]] = 0;
+      }
+    });
+    datos_acumulados.value = datos_ac;
     configurarDimensiones();
-    creandoEscalas()
+    creandoEscalas();
     crearpolylines();
     creaCategos();
     visualizandoCategos();
-    visualizapolylines()
+    visualizapolylines();
   });
 });
-function visualizapolylines(){
-    polylines.value
-        .attr("points", (d,i)=> creaPoints(d,i))
-        .style("stroke", "black")
+function visualizapolylines() {
+  polylines.value
+    .attr("points", (d, i) => creaPoints(d, i))
+    .style("stroke", d=>`rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`)
+    .style("stroke-width", "9px")
+    .style("stroke-opacity", ".8")
 
+    .style("fill", "none");
 }
-function creaPoints(d,i){
-    let txt = `-10,${i * escalaSubcategorias.value.range()[1]/32} `
-    txt += `0,${i * escalaSubcategorias.value.range()[1]/32} `
-    txt +=`${i * (escalaCategorias.value.range()[1] * escalaCategorias.value.paddingInner()/ lista_categorias.length)/33}, ${i * escalaSubcategorias.value.range()[1]/32} `
-    for(var ii =0; ii<lista_categorias.length; ii++){
-        //console.log(datos_acumulados.value[ii].valores)
-        txt +=`${i * (escalaCategorias.value.range()[1] * escalaCategorias.value.paddingInner()/ lista_categorias.length)/33}, ${i * escalaSubcategorias.value.range()[1]/32} `
+function creaPoints(d, i) {
+  let txt = "" //`-10,${(i * escalaSubcategorias.value.range()[1]) / 32} `;
+  let ancho_padding = ((escalaCategorias.value.range()[1] *
+        escalaCategorias.value.paddingInner()) /
+        (lista_categorias.length +1)) /
+    32;
+  /*txt += `${
+    i *
+      ancho_padding
+  }, ${(i * escalaSubcategorias.value.range()[1]) / 32} `;*/
+  for (var ii = 0; ii < lista_categorias.length; ii++) {
+    let apilado =d3.stack().keys(lista_subcategorias)([datos_acumulados.value[ii].valores])
+    
+    txt += `${ - .6 *escalaCategorias.value.bandwidth()+escalaCategorias.value(lista_categorias[ii])+
+      (i-32) *ancho_padding}, ${escalaSubcategorias.value(apilado.filter(ddd=>ddd.key ==d[lista_categorias[ii]])[0][0][0]+
+      datos_acumulados.value[ii].valores["cuenta_" + d[lista_categorias[ii]]] + 2 * lista_subcategorias.indexOf(d[lista_categorias[ii]])
+    )} `;
 
-    }
-    //console.log(d, datos_acumulados.value)
-    return txt
+    
+
+    txt += `${ .5 *escalaCategorias.value.bandwidth()+escalaCategorias.value(lista_categorias[ii])+
+      (i) *ancho_padding}, ${escalaSubcategorias.value(apilado.filter(ddd=>ddd.key ==d[lista_categorias[ii]])[0][0][0]+
+      datos_acumulados.value[ii].valores["cuenta_" + d[lista_categorias[ii]]] +2* lista_subcategorias.indexOf(d[lista_categorias[ii]])
+    )} `;
+
+    
+
+    
+
+    // Seleccionamos por indice, no por clave
+    datos_acumulados.value[ii].valores[
+      "cuenta_" + d[lista_categorias[ii]]
+    ] += 1;
+  }
+  //console.log(d, datos_acumulados.value)
+  return txt;
 }
 function creandoEscalas() {
   escalaCategorias.value = d3
     .scaleBand()
     .domain(lista_categorias)
     .range([0, ancho.value])
-    .padding(.5);
-escalaSubcategorias.value = d3
+    .paddingInner(0.90)
+    .paddingOuter(0.90);
+  escalaSubcategorias.value = d3
     .scaleLinear()
-    .domain([0,36])
-    .range([0, alto.value])
+    .domain([0, 36])
+    .range([0, alto.value]);
 }
 function visualizandoCategos() {
   rectangulos.value
     .attr("width", escalaCategorias.value.bandwidth)
-    .attr("height",d=> escalaSubcategorias.value(d[0][1] - d[0][0]))
-    .attr("x",function(){return  escalaCategorias.value(this.parentNode.__data__.categoria)})
-    .attr("y", d =>  escalaSubcategorias.value(d[0][0] + lista_subcategorias.indexOf(d["key"])))
-    .style("opacity", .5);
+    .attr("height", (d) => escalaSubcategorias.value(d[0][1] - d[0][0]))
+    .attr("x", function () {
+      return escalaCategorias.value(this.parentNode.__data__.categoria);
+    })
+    .attr("y", (d) =>
+      escalaSubcategorias.value(d[0][0] + 2 * lista_subcategorias.indexOf(d["key"]))
+    )
+    .style("opacity", 0.5);
 }
 
 function creaCategos() {
-    console.log(datos_acumulados)
+  console.log(datos_acumulados);
   categorias.value = grupo_categos.value
     .selectAll("g.categoria")
     .data(toRaw(datos_acumulados.value))
@@ -153,7 +185,7 @@ function crearpolylines() {
 }
 function configurarDimensiones() {
   ancho.value =
-    document.querySelector(`#${props.id_diagrama}`).clientWidth -
+    document.querySelector(`#${props.id_diagrama}`).clientWidth * 2 -
     margenes.value.derecha -
     margenes.value.izquierda;
   alto.value = 500;
