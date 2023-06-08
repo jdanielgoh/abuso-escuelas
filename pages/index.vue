@@ -104,8 +104,10 @@
     }
   }
   #texto-intro {
-    background: #fff;
-    color: black;
+    background: $color-txt-destacado;
+    color: $color-fondo;
+    padding: 200px 0 ;
+    
   }
   
 }
