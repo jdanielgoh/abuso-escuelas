@@ -248,22 +248,19 @@ function escroleando() {
     }
     else if(seccion_actual.value == 5){
       esta_corriendo.value = true;
-      for (var i = 0; i < archivos.length; i++) {
-
-        gsap.to(archivos[i].mesh.position, {
+      gsap.to(archivos[0].mesh.position, {
           duration: 1.5,
-          z: (Math.random() - 0.2) * 1.2,
-          x: (Math.random() - 0.5) * 2,
-          y: (Math.random() - 0.5) * 5,
+          z: 0,
+          x: 0,
+          y: 0,
           overwrite: true
         });
-        gsap.to(archivos[i].mesh.scale, {
+        gsap.to(archivos[0].mesh.scale, {
           duration: 1.5,
           x: 1,
           y: archivos[i].alto / archivos[i].ancho,
           overwrite: true
         });
-      }
 
     }
     console.log(seccion_actual.value, scrollY)
