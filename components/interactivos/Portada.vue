@@ -6,11 +6,11 @@
     
   <script setup>
 // Transformaciones
-import { onMounted, ref, toRaw, onUnmounted } from "vue";
+import { onMounted, ref, toRaw, onUnmounted, watch} from "vue";
 import * as THREE from "three";
 import * as dat from "lil-gui";
 import gsap from "gsap";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+//import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 import archivos from "@/assets/datos/lista_documentos_portada.json";
 const parametros_gui = {
@@ -18,7 +18,7 @@ const parametros_gui = {
 };
 const fog = ref(new THREE.Fog(parametros_gui.color_fondo, 0.1, 4));
 
-const controls = ref();
+//const controls = ref();
 
 const angulo = ref(-0.1 * Math.PI);
 
@@ -35,9 +35,14 @@ const previousTime = ref(0);
 const cursor = ref({ x: 0, y: 0 });
 const gui = ref();
 
+const esta_corriendo = ref(true);
+
+const secciones = ref()
 //Luz
 const luzPuntual = ref(new THREE.PointLight("#ffd6ad", 0.88, 20));
 onMounted(() => {
+  secciones.value = document.querySelectorAll("#pagina-inicio section")
+
   sizes.value = {
     width: window.innerWidth,
     height: window.innerHeight,
@@ -55,8 +60,8 @@ onMounted(() => {
   agregamosLuces();
   creamosRender(canvas);
 
-  controls.value = new OrbitControls(camera.value, canvas);
-  controls.value.enableDamping = true;
+  //controls.value = new OrbitControls(camera.value, canvas);
+  //controls.value.enableDamping = true;
 
   window.addEventListener("scroll", escroleando);
   window.addEventListener("mousemove", moviendoCursorLuces);
@@ -161,54 +166,114 @@ function creamosObjetos() {
 
 function escroleando() {
   let scrollY = window.scrollY;
-  const newSection = Math.round(scrollY / sizes.value.height);
-  console.log(newSection);
+  let newSection;
+  secciones.value.forEach((el,i)=> {
+    let d = el.getBoundingClientRect()
+    if(d.y <= window.innerHeight * .5 && window.innerHeight * .5 <= d.y+d.height){
+      newSection = i
+      console.log(d.y, scrollY, d.y + d.height , d, seccion_actual.value)
+    }
+  })
+  //const newSection = Math.round(scrollY / sizes.value.height);
+  //console.log(newSection);
   if (newSection !== seccion_actual.value) {
     seccion_actual.value = newSection;
-    if (newSection == 0) {
+    if (seccion_actual.value == 0) {
       for (var i = 0; i < archivos.length; i++) {
+        esta_corriendo.value = true;
+
         gsap.to(archivos[i].mesh.position, {
           duration: 1.5,
           z: (Math.random() - 0.2) * 1.2,
           x: (Math.random() - 0.5) * 2,
           y: (Math.random() - 0.5) * 5,
+          overwrite: true
         });
         gsap.to(archivos[i].mesh.scale, {
           duration: 1.5,
           x: 1,
           y: archivos[i].alto / archivos[i].ancho,
+          overwrite: true
         });
       }
-    }
-    else if (newSection == 1) {
+    } else if (seccion_actual.value == 1) {
       let escala = 0.4;
       let columnas = 4;
       for (var i = 0; i < archivos.length; i++) {
+        esta_corriendo.value = true;
+
         gsap.to(archivos[i].mesh.position, {
           duration: 1.5,
           x: (i % columnas) * escala - columnas * escala * 0.5,
           y: -parseInt(i / columnas) * escala * 1.5,
           z: 0,
+          overwrite: true
         });
         gsap.to(archivos[i].mesh.scale, {
           duration: 1.5,
           x: escala * 0.9,
           y: (escala * 0.9 * archivos[i].alto) / archivos[i].ancho,
+          overwrite: true
         });
       }
+    } else if (seccion_actual.value == 2) {
+      for (var i = 0; i < archivos.length; i++) {
+        esta_corriendo.value = true;
+
+        gsap.to(archivos[i].mesh.position, {
+          duration: 1 + Math.random(),
+          z: -4,
+          delay: Math.random() * 1.5,
+          overwrite: true,
+          onComplete: ()=>{if(archivos.length == i+1 ){esta_corriendo.value = false }}
+
+        });
+      }
+    } else if (seccion_actual.value == 3) {
+      //esta_corriendo.value = false;
     }
-    else if( newSection >1){
+    else if(seccion_actual.value == 4){
       for (var i = 0; i < archivos.length; i++) {
 
       gsap.to(archivos[i].mesh.position, {
           duration: 1 + Math.random(),
           z: -4,
-          delay: Math.random() * 1.5
+          delay: Math.random() * 1.5,
+          overwrite: true,
+          onComplete: ()=>{if(archivos.length == i+1 ){esta_corriendo.value = false }}
         });
       }
+        
+
     }
+    else if(seccion_actual.value == 5){
+      esta_corriendo.value = true;
+      for (var i = 0; i < archivos.length; i++) {
+
+        gsap.to(archivos[i].mesh.position, {
+          duration: 1.5,
+          z: (Math.random() - 0.2) * 1.2,
+          x: (Math.random() - 0.5) * 2,
+          y: (Math.random() - 0.5) * 5,
+          overwrite: true
+        });
+        gsap.to(archivos[i].mesh.scale, {
+          duration: 1.5,
+          x: 1,
+          y: archivos[i].alto / archivos[i].ancho,
+          overwrite: true
+        });
+      }
+
+    }
+    console.log(seccion_actual.value, scrollY)
   }
 }
+watch(esta_corriendo, (nv)=>{
+  if(nv === true ){
+    tick()
+  }
+})
 
 function moviendoCursor(event) {
   cursor.value.x = event.clientX / sizes.value.width - 0.5;
@@ -246,8 +311,9 @@ function tick() {
       archivos[i].mesh.position.z += 0.0003 * Math.sin(angulo.value);
       archivos[i].mesh.position.y += 0.0003 * Math.cos(angulo.value);
       if (archivos[i].mesh.position.y > 1) {
-        archivos[i].mesh.position.y = -(parseInt(archivos.length / 3)) * .04 * 1.5 - .6;
-        archivos[i].mesh.position.z = 0
+        archivos[i].mesh.position.y =
+          -parseInt(archivos.length / 3) * 0.04 * 1.5 - 0.6;
+        archivos[i].mesh.position.z = 0;
       }
     }
   }
@@ -260,11 +326,11 @@ function tick() {
   cameraGroup.value.position.y +=
     (parallaxY - cameraGroup.value.position.y) * 5 * deltaTime;
   */
-  controls.value.update();
+  //controls.value.update();
 
   renderer.value.render(toRaw(scene.value), toRaw(camera.value));
 
-  window.requestAnimationFrame(tick);
+  if (esta_corriendo.value) window.requestAnimationFrame(tick);
 }
 
 onUnmounted(() => {

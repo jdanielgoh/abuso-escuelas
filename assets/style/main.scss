@@ -8,7 +8,10 @@ body, html{
 }
 .vista{
     min-height: 100vh;
-    margin: 100px 0 ;
+    div:nth-child(0){
+        padding: 100px 0 ;
+
+    }
 }
 .contenedor-flex{
     display:flex;

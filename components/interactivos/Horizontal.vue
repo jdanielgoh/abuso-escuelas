@@ -1,20 +1,7 @@
 <template>
   <section id="texto-intro-scroll-horizontal">
     <div class="ancho-texto horizontal-scroll_contenedor">
-      <svg
-        class="svg-vis"
-        :width="ancho + margenes.arriba + margenes.abajo"
-        :height="alto + margenes.arriba + margenes.abajo"
-      >
-        <g
-          class="grupo-contenedor"
-          :transform="`translate(${margenes.izquierda},${margenes.arriba})`"
-        ></g>
-      </svg>
-      <canvas
-        class="canvas-vis"
-
-      ></canvas>
+      <canvas class="canvas-vis"></canvas>
 
       <div
         class="horizontal-scroll_interior contenedor-flex"
@@ -119,6 +106,35 @@
               autoridades, la falta de atención a la problemática y el nulo
               seguimiento a los casos reportados.
             </p>
+            <p>
+              Otras dependencias, como comisiones dederechos humanos y oficinas
+              de protección a la infancia confirmaron, sin embargo, que en esos
+              estados donde ni la SEP ni las Fiscalías reconocen el abuso
+              sexual, estos delitos también están presentes: no hay un solo
+              estado que pueda presumir de no tener registros por acoso, abuso
+              sexual o violación.
+            </p>
+          </div>
+        </div>
+
+        <div class="horizontal-scroll_item contenedor-flex">
+          <div class="ancho-texto">
+            <p>
+              Mariana Gil, abogada y directora de la Oficina de Defensoría de
+              los Derechos de la Infancia, A.C. (ODI), reconoce que la cifra
+              negra en estos casos es incalculable. En uno de los casos que la
+              organización acompañó legalmente, lograron consolidar <strong class="rosa">30 denuncias</strong> 
+              de víctimas, pero en realidad habían <strong>90 afectados</strong> .
+            </p>
+          </div>
+        </div>
+
+        <div class="horizontal-scroll_item contenedor-flex">
+          <div class="ancho-texto">
+            <p>
+              En otro, de <strong>51 niños agredidos</strong> , <strong class="rosa">sólo 17 continuaron en el proceso</strong> .
+              Sólo un tercio llegó ante el ministerio público.
+            </p>
           </div>
         </div>
       </div>
@@ -126,7 +142,7 @@
   </section>
 </template>
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from "vue";
+import { ref, onMounted, onUnmounted, watch, toRaw } from "vue";
 import * as d3 from "d3";
 import info_js from "@/assets/datos/info_fiscalias_sep.json";
 
@@ -134,36 +150,57 @@ const posicion = ref(0);
 const ancho = ref(0),
   alto = ref(0),
   margenes = ref({ arriba: 20, abajo: 20, izquierda: 20, derecha: 20 });
-const svg = ref(),
-  canvas = ref(),
-  context = ref(),
-  grupo_contenedor = ref(),
-  pictos = ref();
+const canvas = ref(),
+  context = ref();
 const escalaRad = ref();
 const paso_activo = ref();
 const info_fiscalias_sep = ref(info_js);
 const detachedContainer = ref(),
   dataContainer = ref(),
   dataBinding = ref();
+
+const ladata_pintable = ref();
 onMounted(() => {
-  svg.value = d3.select("#texto-intro-scroll-horizontal svg.svg-vis");
   canvas.value = d3.select("#texto-intro-scroll-horizontal canvas.canvas-vis");
   context.value = canvas.value.node().getContext("2d");
-  grupo_contenedor.value = svg.value.select("g.grupo-contenedor");
 
-  calculandoDimensionesSvg();
+  calculandoDimensionesCanvas();
   ligandoDatos();
   calculandoEscalas();
-  creandoPictos();
-  configurandoPictos();
-  context.value.globalAlpha = .8
+  ladata_pintable.value = d3.range(0, 3815).map((d) => ({
+    i: d,
+    ang: Math.random() * 2 * Math.PI,
+    rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
+    r1: d3.max(escalaRad.value.range()) * 0.01,
+    r2: d3.max(escalaRad.value.range()) * 0.01,
+    fillStyle: "#CAFF66",
+  }));
+  configurandoPictos(toRaw(ladata_pintable.value));
+
+  var t = d3.timer((transcurrido) => {
+    dibujandoPictos();
+    if (transcurrido > 500) {
+      t.stop();
+    }
+  });
+  //dibujandoPictos();
+  context.value.globalAlpha = 0.8;
 
   window.addEventListener("scroll", posicionScroleando);
+  window.addEventListener("resize", reescalando)
 });
 onUnmounted(() => {
   window.removeEventListener("scroll", posicionScroleando);
+  window.removeEventListener("resize", reescalando)
+
 });
-function calculandoDimensionesSvg() {
+function reescalando(){
+  calculandoDimensionesCanvas();
+  calculandoEscalas();
+  cambioDePasos(paso_activo.value)
+
+}
+function calculandoDimensionesCanvas() {
   var dpr = Math.min(2, getPixelRatio(context.value));
 
   ancho.value =
@@ -176,16 +213,31 @@ function calculandoDimensionesSvg() {
     ).clientHeight -
     margenes.value.abajo -
     margenes.value.arriba;
-    console.log(dpr)
 
-  canvas.value.attr("width",ancho.value + margenes.value.izquierda + margenes.value.derecha)
-  canvas.value.attr("height",alto.value + margenes.value.arriba + margenes.value.abajo)  
-  
+  canvas.value.attr(
+    "width",
+    (ancho.value + margenes.value.izquierda + margenes.value.derecha) * dpr
+  );
+  canvas.value
+    .attr(
+      "height",
+      (alto.value + margenes.value.arriba + margenes.value.abajo) * dpr
+    )
+    .style(
+      "width",
+      ancho.value + margenes.value.izquierda + margenes.value.derecha + "px"
+    );
+  canvas.value.style(
+    "height",
+    alto.value + margenes.value.arriba + margenes.value.abajo + "px"
+  );
+
   context.value.scale(dpr, dpr);
   context.value.translate(margenes.value.izquierda, margenes.value.arriba);
 }
 function ligandoDatos() {
   detachedContainer.value = document.createElement("custom");
+  // remplazo de svg
   dataContainer.value = d3.select(detachedContainer.value);
 }
 function calculandoEscalas() {
@@ -195,53 +247,42 @@ function calculandoEscalas() {
     .domain([0, 1])
     .range([0, dimension_minima]);
 }
-function creandoPictos() {
-  let ladata = d3.range(0, 3815).map((d) => ({
-    i: d,
-    ang: Math.random() * 2 * Math.PI,
-    rad: Math.pow(Math.random(), 0.5),
-  }));
-  pictos.value = grupo_contenedor.value
-    .selectAll("pictos")
-    .data(ladata)
-    .enter()
-    .append("circle");
-
-  dataContainer.value.selectAll("custom.ellipse").remove();
+function configurandoPictos(ladata) {
+  //dataContainer.value.selectAll("custom.ellipse").remove();
 
   dataBinding.value = dataContainer.value
     .selectAll("custom.ellipse")
-    .data(ladata,d=>d)
-    .enter()
-    .append("custom")
-    .classed("ellipse", true)
-    .attr(
-      "x",
-      (d) => ancho.value * 0.5 + escalaRad.value(d.rad) * Math.cos(d.ang)
+    .data(ladata)
+    .join(
+      (enter) =>
+        enter
+          .append("custom")
+          .classed("ellipse", true)
+          .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
+        d3.max([ancho.value, alto.value]) * Math.cos(d.ang))
+          .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
+        d3.max([ancho.value, alto.value]) * Math.sin(d.ang))
+          .attr("r1", 0)
+          .attr("r2", 0)
+          .attr("fillStyle", "#CAFF66"),
+      (update) => update,
+      (exit) => exit.transition()
+        .duration(500)
+        .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
+        d3.max([ancho.value, alto.value]) * Math.cos(d.ang))
+        .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
+        d3.max([ancho.value, alto.value]) * Math.sin(d.ang))
+        .remove()
     )
-    .attr(
-      "y",
-      (d) => alto.value * 0.5 + escalaRad.value(d.rad) * Math.sin(d.ang)
-    )
-    .attr("r1", d3.max(escalaRad.value.range()) * 0.01)
-    .attr("r2", d3.max(escalaRad.value.range()) * 0.01)
-    .attr("fillStyle", "#CAFF66");
+    .transition()
+    .duration(500)
+    .attr("x", (d) => ancho.value * 0.5 + d.rad * Math.cos(d.ang))
+    .attr("y", (d) => alto.value * 0.5 + d.rad * Math.sin(d.ang))
+    .attr("r1", (d) => d.r1)
+    .attr("r2", (d) => d.r2)
+    .attr("fillStyle", (d) => d.fillStyle);
 }
-function configurandoPictos() {
-  pictos.value
-    .attr("r", d3.max(escalaRad.value.range()) * 0.01)
-    .style("fill", "#caff66")
-    .attr(
-      "cx",
-      (d) => ancho.value * 0.5 + escalaRad.value(d.rad) * Math.cos(d.ang)
-    )
-    .attr(
-      "cy",
-      (d) => alto.value * 0.5 + escalaRad.value(d.rad) * Math.sin(d.ang)
-    )
-
-    .attr("opacity", 0);
-
+function dibujandoPictos() {
   context.value.save();
   context.value.clearRect(
     -margenes.value.izquierda,
@@ -249,7 +290,7 @@ function configurandoPictos() {
     margenes.value.derecha + margenes.value.izquierda + ancho.value,
     margenes.value.abajo + margenes.value.arriba + alto.value
   );
-  console.log(dataBinding.value)
+
   var elipses = dataContainer.value.selectAll("custom.ellipse");
   elipses.each(function (d) {
     var elipse = d3.select(this);
@@ -269,9 +310,8 @@ function configurandoPictos() {
       2 * Math.PI
     );
     context.value.fill();
-    
+
     context.value.closePath();
-    
   });
   context.value.restore();
 }
@@ -280,81 +320,123 @@ function posicionScroleando() {
     .querySelector("#texto-intro-scroll-horizontal")
     .getBoundingClientRect();
   posicion.value =
-    (300 * rect.top) / rect.height > 0
+    (500 * rect.top) / rect.height > 0
       ? 0
-      : (300 * rect.top) / rect.height < -200
-      ? -200
-      : (300 * rect.top) / rect.height;
+      : (500 * rect.top) / rect.height < -400
+      ? -400
+      : (500 * rect.top) / rect.height;
+
   if (-50 < posicion.value) {
     paso_activo.value = 0;
   } else if (-150 < posicion.value && posicion.value <= -50) {
     paso_activo.value = 1;
-  } else if (posicion.value <= -150) {
+  } else if (-250 < posicion.value && posicion.value <= -150) {
     paso_activo.value = 2;
   }
-  console.log(posicion.value, paso_activo.value);
+  else if (-350 < posicion.value && posicion.value <= -250) {
+    paso_activo.value = 3;
+  }
+  else if (posicion.value <= -350) {
+    paso_activo.value = 4;
+  }
+
 }
-watch(paso_activo, (nv, ov) => {
+watch(paso_activo, cambioDePasos);
+function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    pictos.value
-      .attr("opacity", 0)
-      .style("fill", "#caff66")
-      .attr(
-        "cx",
-        (d) => ancho.value * 0.5 + 1 * escalaRad.value(d.rad) * Math.cos(d.ang)
-      )
-      .attr(
-        "cy",
-        (d) => alto.value * 0.5 + 1 * escalaRad.value(d.rad) * Math.sin(d.ang)
-      )
-      .transition()
-      //.duration(300)
-      .delay((d) => d.i % 700)
-      .attr("opacity", 0.5);
+    ladata_pintable.value = d3.range(0, 3815).map((d,i) => ({
+      i: d,
+      ang: i<1846 ? Math.random()* 0.48 * 2 * Math.PI  : (0.48 + Math.random()*.52) * 2 * Math.PI,
+      rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
+      r1: d3.max(escalaRad.value.range()) * 0.01,
+      r2: d3.max(escalaRad.value.range()) * 0.01,
+      fillStyle: "#CAFF66",
+    }));
+    configurandoPictos(toRaw(ladata_pintable.value));
+
+    var t = d3.timer((transcurrido) => {
+      dibujandoPictos();
+      if (transcurrido > 500) {
+        t.stop();
+      }
+    });
   }
-  if (nv == 1) {
-    pictos.value
-      .transition()
-      //.duration(300)
-      .delay((d) => d.i % 700)
-      .attr(
-        "cx",
-        (d) => ancho.value * 0.5 + 1 * escalaRad.value(d.rad) * Math.cos(d.ang)
-      )
-      .attr(
-        "cy",
-        (d) => alto.value * 0.5 + 1 * escalaRad.value(d.rad) * Math.sin(d.ang)
-      )
+  else if (nv == 1) {
+    ladata_pintable.value.forEach((d, i) => {
+      d.fillStyle = i < 1846 ? "#ff5ebc" : "#CAFF66";
+      d.rad = ov > 1 ? escalaRad.value(Math.pow(Math.random(), 0.5)) : d.rad;
+    });
+    configurandoPictos(toRaw(ladata_pintable.value));
 
-      .filter((d) => d.i < 1846)
-      .style("fill", "#caff66")
-
-      .transition()
-      //.duration(300)
-      .delay((d) => d.i % 700)
-
-      .style("fill", "#ff5ebc");
+    var t = d3.timer((transcurrido) => {
+      dibujandoPictos();
+      if (transcurrido > 500) {
+        t.stop();
+      }
+    });
   } else if (nv == 2) {
-    pictos.value
-      .transition()
-      .duration(300)
-      .delay((d) => d.i % 300)
-      .attr(
-        "cx",
-        (d) =>
-          ancho.value * 0.5 +
-          (d3.max([ancho.value, alto.value]) + escalaRad.value(d.rad)) *
-            Math.cos(d.ang)
-      )
-      .attr(
-        "cy",
-        (d) =>
-          alto.value * 0.5 +
-          (d3.max([ancho.value, alto.value]) + escalaRad.value(d.rad)) *
-            Math.sin(d.ang)
-      );
+
+    ladata_pintable.value = d3.range(0, 3815).map((d,i) => ({
+      i: d,
+      ang: i<1846 ? Math.random()* 0.48 * 2 * Math.PI  : (0.48 + Math.random()*.52) * 2 * Math.PI,
+      rad:
+        escalaRad.value(Math.pow(Math.random(), 0.5)) +
+        d3.max([ancho.value, alto.value]),
+      r1: d3.max(escalaRad.value.range()) * 0.01,
+      r2: d3.max(escalaRad.value.range()) * 0.01,
+      fillStyle: "#CAFF66",
+    }));
+    configurandoPictos(toRaw(ladata_pintable.value));
+
+    var t = d3.timer((transcurrido) => {
+      dibujandoPictos();
+      if (transcurrido > 500) {
+        t.stop();
+      }
+    });
   }
-});
+  else if(nv == 3){
+    ladata_pintable.value = d3.range(0, 90).map((d,i) => ({
+      i: d,
+      ang: 2* Math.PI * i / 90,
+      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
+      rad: escalaRad.value.range()[1],
+
+      r1: escalaRad.value.range()[1] *Math.PI/ 90,
+      r2: escalaRad.value.range()[1] *Math.PI/ 90,
+      fillStyle: i<30? "#ff5ebc": "#CAFF66",
+    }));
+    configurandoPictos(toRaw(ladata_pintable.value));
+
+    var t = d3.timer((transcurrido) => {
+      dibujandoPictos();
+      if (transcurrido > 500) {
+        t.stop();
+      }
+    });
+  }
+  else if(nv == 4){
+    ladata_pintable.value = d3.range(0, 51).map((d,i) => ({
+      i: d,
+      ang: 2* Math.PI * i / 51,
+      rad: escalaRad.value.range()[1],
+
+      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
+      r1: escalaRad.value.range()[1] *Math.PI/ 51,
+      r2: escalaRad.value.range()[1] *Math.PI/ 51,
+      fillStyle: i<17? "#ff5ebc": "#CAFF66",
+    }));
+    configurandoPictos(toRaw(ladata_pintable.value));
+
+    var t = d3.timer((transcurrido) => {
+      dibujandoPictos();
+      if (transcurrido > 500) {
+        t.stop();
+      }
+    });
+  }
+}
+
 function getPixelRatio(ctx) {
   //From https://www.html5rocks.com/en/tutorials/canvas/hidpi/
   let devicePixelRatio = window.devicePixelRatio || 1;
@@ -375,7 +457,7 @@ function getPixelRatio(ctx) {
   //background: #fff;
   //color: black;
   width: 100vw;
-  height: 330vh;
+  height: 500vh;
   position: relative;
   .horizontal-scroll_contenedor {
     width: 100vw;
@@ -389,7 +471,11 @@ function getPixelRatio(ctx) {
         height: 100vh;
         flex: 0 0 auto;
         .ancho-texto {
+          background-color: #232a25;
           max-width: 600px;
+          @media (max-width: $pantalla-movil) {
+            max-width: 80vw;
+          }
           padding: 0 16px;
           strong.rosa {
             background: #ff5ebc;
@@ -407,7 +493,6 @@ function getPixelRatio(ctx) {
         }
       }
     }
-    svg,
     canvas {
       //background: rgb(206, 206, 206);
       position: absolute;

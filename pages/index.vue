@@ -49,6 +49,42 @@
     </section>
 
     <InteractivosHorizontal></InteractivosHorizontal>
+    <section id="cita-1" class="contenedor-flex">
+      <div class="ancho-texto">
+        <blockquote>
+          “Muchas familias se van, abandonan por el tiempo que lleva un proceso.
+          Pierden su trabajo, recursos, se divorcian, abandonan a los otros
+          hijos. La Fiscalía, que no está capacitada para esto, desestima varias
+          denuncias”, recalca.
+        </blockquote>
+      </div>
+    </section>
+    <section id="casos-particulares" class="contenedor-flex">
+      <div class="ancho-texto">
+        <p>
+        Parecen casos aislados, atípicos, pero no lo son. Las actas de hechos
+        relacionadas con quejas y denuncias por delitos sexuales cometidos por
+        personal de colegios públicos y privados en contra de estudiantes de
+        educación básica muestran similitudes en el actuar de los adultos con
+        cargos en las escuelas.
+      </p>
+      <p>
+        En Querétaro, por ejemplo, hay un profesor de primaria que es
+        reincidente: tiene quejas previas por pedofilia en otros colegios; la
+        más reciente, de 2017, revela que besa a las niñas en la boca, las lleva
+        a su carro y las pone de cabeza para mirar su vulva. En Veracruz, un
+        profesor de secundaria abusó sexualmente de varias alumnas y las amenazó
+        con sus calificaciones; ya tenía un expediente previo por denuncias
+        similares.
+      </p>
+      <p>
+        Las estadísticas muestran una deficiencia clara en la prevención de este
+        delito, comenzando por lo más básico: los procedimientos de elección del
+        personal.
+      </p>
+      </div>
+      
+    </section>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -62,7 +98,7 @@
       text-align: center;
       color: $color-texto-base;
       max-width: 680px;
-      background-color: rgba(25, 23, 22, 0.9);
+      background-color: #232a25;
       backdrop-filter: blur(2px);
       padding: 16px;
       border-radius: 16px;
@@ -97,7 +133,7 @@
       max-width: 500px;
       color: $color-texto-base;
       margin: auto;
-      background-color: rgba(25, 23, 22, 0.9);
+      background-color: #232a25;
       padding: 16px;
       font-size: 18px;
       border-radius: 16px;
@@ -106,9 +142,13 @@
   #texto-intro {
     background: $color-txt-destacado;
     color: $color-fondo;
-    padding: 200px 0 ;
-    
   }
-  
+  #cita-1{
+    min-height: 100vh;
+  }
+  #casos-particulares{
+    min-height: 100vh;
+
+  }
 }
 </style>
