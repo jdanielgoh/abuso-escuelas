@@ -12,7 +12,7 @@
             <p>
               México ocupa el primer lugar en abuso sexual infantil, de acuerdo
               con la Organización para la Cooperación y el Desarrollo
-              Económico(OCDE).<strong>
+              Económico(OCDE).<strong style="background: #7f78ff">
                 Dentro de las escuelas, las Secretarías de Educación registraron
                 3,865 casos en la última década.</strong
               >
@@ -124,7 +124,7 @@
               los Derechos de la Infancia, A.C. (ODI), reconoce que la cifra
               negra en estos casos es incalculable. En uno de los casos que la
               organización acompañó legalmente, lograron consolidar <strong class="rosa">30 denuncias</strong> 
-              de víctimas, pero en realidad habían <strong>90 afectados</strong> .
+              de víctimas, pero en realidad habían <strong style="background: #7f78ff">90 afectados</strong> .
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-texto">
             <p>
-              En otro, de <strong>51 niños agredidos</strong> , <strong class="rosa">sólo 17 continuaron en el proceso</strong> .
+              En otro, de <strong style="background: #7f78ff">51 niños agredidos</strong> , <strong class="rosa">sólo 17 continuaron en el proceso</strong> .
               Sólo un tercio llegó ante el ministerio público.
             </p>
           </div>
@@ -173,7 +173,7 @@ onMounted(() => {
     rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
     r1: d3.max(escalaRad.value.range()) * 0.01,
     r2: d3.max(escalaRad.value.range()) * 0.01,
-    fillStyle: "#CAFF66",
+    fillStyle: "#7f78ff",
   }));
   configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -264,7 +264,7 @@ function configurandoPictos(ladata) {
           ancho_maximo * Math.sin(d.ang))
           .attr("r1", 0)
           .attr("r2", 0)
-          .attr("fillStyle", "#CAFF66"),
+          .attr("fillStyle", "#7f78ff"),
       (update) => update,
       (exit) => exit.transition()
         .duration(500)
@@ -350,7 +350,7 @@ function cambioDePasos(nv, ov) {
       rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
       r1: d3.max(escalaRad.value.range()) * 0.01,
       r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#CAFF66",
+      fillStyle: "#7f78ff",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -363,7 +363,7 @@ function cambioDePasos(nv, ov) {
   }
   else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 1846 ? "#ff5ebc" : "#CAFF66";
+      d.fillStyle = i < 1846 ? "#ff5ebc" : "#7f78ff";
       d.rad = ov > 1 ? escalaRad.value(Math.pow(Math.random(), 0.5)) : d.rad;
     });
     configurandoPictos(toRaw(ladata_pintable.value));
@@ -384,7 +384,7 @@ function cambioDePasos(nv, ov) {
         d3.max([ancho.value, alto.value]),
       r1: d3.max(escalaRad.value.range()) * 0.01,
       r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#CAFF66",
+      fillStyle: "#7f78ff",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -404,7 +404,7 @@ function cambioDePasos(nv, ov) {
 
       r1: escalaRad.value.range()[1] *Math.PI/ 90,
       r2: escalaRad.value.range()[1] *Math.PI/ 90,
-      fillStyle: i<30? "#ff5ebc": "#CAFF66",
+      fillStyle: i<30? "#ff5ebc": "#7f78ff",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -424,7 +424,7 @@ function cambioDePasos(nv, ov) {
       //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
       r1: escalaRad.value.range()[1] *Math.PI/ 51,
       r2: escalaRad.value.range()[1] *Math.PI/ 51,
-      fillStyle: i<17? "#ff5ebc": "#CAFF66",
+      fillStyle: i<17? "#ff5ebc": "#7f78ff",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -454,8 +454,14 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-intro-scroll-horizontal {
-  //background: #fff;
-  //color: black;
+  background-color: transparent;
+  transition: background-color 0.75s ease;
+
+  &.seccion-activa{
+    background-color: $color-fondo-claro;
+
+  }
+  color: $color-texto-oscuro;
   width: 100vw;
   height: 500vh;
   position: relative;
@@ -471,7 +477,8 @@ function getPixelRatio(ctx) {
         height: 100vh;
         flex: 0 0 auto;
         .ancho-texto {
-          background-color: #232a25;
+          border-radius: $radio-borde;
+          background: #e0e0e0b3;
           max-width: 600px;
           @media (max-width: $pantalla-movil) {
             max-width: 80vw;

@@ -23,7 +23,7 @@
           <div class="ancho-texto">
             <p>
               De estos, nueve de cada diez,
-              <strong style="background: #55ffe0"
+              <strong style="background: #4cdbc1"
                 >es decir 810, son hombres</strong
               >
               que cumplían alguna función dentro de los centros escolares y, en
@@ -282,7 +282,7 @@ function cambioDePasos(nv, ov) {
     });
   } else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 817 ? "#55ffe0" : "#ff5555";
+      d.fillStyle = i < 817 ? "#4cdbc1" : "#ff5555";
     });
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -336,8 +336,15 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-intro-scroll-horizontal-2 {
-  //background: #fff;
-  //color: black;
+  background-color: transparent;
+
+  transition: background-color 0.75s ease;
+
+  &.seccion-activa{
+    background-color: $color-fondo-claro;
+
+  }  
+  color: $color-texto-oscuro;
   width: 100vw;
   height: 300vh;
   position: relative;
@@ -353,25 +360,14 @@ function getPixelRatio(ctx) {
         height: 100vh;
         flex: 0 0 auto;
         .ancho-texto {
-          background-color: #232a25;
-          max-width: 600px;
+          border-radius: $radio-borde;
+          background: #e0e0e0b3;          max-width: 600px;
           @media (max-width: $pantalla-movil) {
             max-width: 80vw;
           }
           padding: 0 16px;
-          strong.rosa {
-            background: #ff5ebc;
-          }
-          table {
-            font-size: 12px;
-            margin: auto;
-            td.info-entregada-no {
-              color: red;
-            }
-            td.info-entregada-si {
-              color: green;
-            }
-          }
+
+
         }
       }
     }

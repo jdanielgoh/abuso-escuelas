@@ -56,7 +56,8 @@ header {
       position: absolute;
       height: 5px;
       width: 100%;
-      background: $color-texto-base;
+      backdrop-filter: invert(1);
+
       opacity: 1;
       left: 0;
       -webkit-transform: rotate(0deg);
@@ -103,7 +104,7 @@ header {
         a{
           color: $color-texto-enlaces;
           &.router-link-exact-active{
-            color: $color-texto-base;
+            color: $color-texto-claro;
           }
         }
      
@@ -113,7 +114,6 @@ header {
   &.abierto {
     button.icono-hamburguesa {
       span {
-        background: black;
 
         &:nth-child(1) {
           top: 18px;

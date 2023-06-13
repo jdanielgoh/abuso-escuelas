@@ -14,7 +14,7 @@ import gsap from "gsap";
 
 import archivos from "@/assets/datos/lista_documentos_portada.json";
 const parametros_gui = {
-  color_fondo: "#232a25",
+  color_fondo: "#2b2b2b",
 };
 const fog = ref(new THREE.Fog(parametros_gui.color_fondo, 0.1, 4));
 
@@ -39,7 +39,7 @@ const esta_corriendo = ref(true);
 
 const secciones = ref();
 //Luz
-const luzPuntual = ref(new THREE.PointLight("#ffd6ad", 0.88, 20));
+const luzPuntual = ref(new THREE.PointLight("#fee0cd", 0.88, 20));
 onMounted(() => {
   secciones.value = document.querySelectorAll("#pagina-inicio section");
 
@@ -104,7 +104,7 @@ function agregamosLuces() {
     .name("color de fondo y niebla")
     .onChange((value) => {
       scene.value.fog.color = new THREE.Color(value);
-      renderer.value.setClearColor(new THREE.Color(value));
+      //renderer.value.setClearColor(new THREE.Color(value));
     });
 }
 function moviendoCursorLuces(event) {
@@ -138,7 +138,9 @@ function creamosRender(_canvas) {
     canvas: _canvas,
     antialias: true,
   });
-  renderer.value.setClearColor(parametros_gui.color_fondo);
+  //renderer.value.setClearColor(parametros_gui.color_fondo);
+  renderer.value.setClearAlpha(0);
+
   renderer.value.setSize(sizes.value.width, sizes.value.height);
   renderer.value.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 }
@@ -174,6 +176,10 @@ function escroleando() {
       window.innerHeight * 0.5 <= d.y + d.height
     ) {
       newSection = i;
+      el.classList.add("seccion-activa")
+    }
+    else{
+      el.classList.remove("seccion-activa")
     }
   });
   //const newSection = Math.round(scrollY / sizes.value.height);
