@@ -6,7 +6,7 @@
     
   <script setup>
 // Transformaciones
-import { onMounted, ref, toRaw, onUnmounted, watch} from "vue";
+import { onMounted, ref, toRaw, onUnmounted, watch } from "vue";
 import * as THREE from "three";
 import * as dat from "lil-gui";
 import gsap from "gsap";
@@ -37,11 +37,11 @@ const gui = ref();
 
 const esta_corriendo = ref(true);
 
-const secciones = ref()
+const secciones = ref();
 //Luz
 const luzPuntual = ref(new THREE.PointLight("#ffd6ad", 0.88, 20));
 onMounted(() => {
-  secciones.value = document.querySelectorAll("#pagina-inicio section")
+  secciones.value = document.querySelectorAll("#pagina-inicio section");
 
   sizes.value = {
     width: window.innerWidth,
@@ -167,13 +167,15 @@ function creamosObjetos() {
 function escroleando() {
   let scrollY = window.scrollY;
   let newSection;
-  secciones.value.forEach((el,i)=> {
-    let d = el.getBoundingClientRect()
-    if(d.y <= window.innerHeight * .5 && window.innerHeight * .5 <= d.y+d.height){
-      newSection = i
-      console.log(d.y, scrollY, d.y + d.height , d, seccion_actual.value)
+  secciones.value.forEach((el, i) => {
+    let d = el.getBoundingClientRect();
+    if (
+      d.y <= window.innerHeight * 0.5 &&
+      window.innerHeight * 0.5 <= d.y + d.height
+    ) {
+      newSection = i;
     }
-  })
+  });
   //const newSection = Math.round(scrollY / sizes.value.height);
   //console.log(newSection);
   if (newSection !== seccion_actual.value) {
@@ -187,13 +189,13 @@ function escroleando() {
           z: (Math.random() - 0.2) * 1.2,
           x: (Math.random() - 0.5) * 2,
           y: (Math.random() - 0.5) * 5,
-          overwrite: true
+          overwrite: true,
         });
         gsap.to(archivos[i].mesh.scale, {
           duration: 1.5,
           x: 1,
           y: archivos[i].alto / archivos[i].ancho,
-          overwrite: true
+          overwrite: true,
         });
       }
     } else if (seccion_actual.value == 1) {
@@ -207,13 +209,13 @@ function escroleando() {
           x: (i % columnas) * escala - columnas * escala * 0.5,
           y: -parseInt(i / columnas) * escala * 1.5,
           z: 0,
-          overwrite: true
+          overwrite: true,
         });
         gsap.to(archivos[i].mesh.scale, {
           duration: 1.5,
           x: escala * 0.9,
           y: (escala * 0.9 * archivos[i].alto) / archivos[i].ancho,
-          overwrite: true
+          overwrite: true,
         });
       }
     } else if (seccion_actual.value == 2) {
@@ -225,55 +227,83 @@ function escroleando() {
           z: -4,
           delay: Math.random() * 1.5,
           overwrite: true,
-          onComplete: ()=>{if(archivos.length == i+1 ){esta_corriendo.value = false }}
-
+          onComplete: () => {
+            if (archivos.length == i + 1) {
+              esta_corriendo.value = false;
+            }
+          },
         });
       }
     } else if (seccion_actual.value == 3) {
       //esta_corriendo.value = false;
-    }
-    else if(seccion_actual.value == 4){
+    } else if (seccion_actual.value == 4) {
       for (var i = 0; i < archivos.length; i++) {
-
-      gsap.to(archivos[i].mesh.position, {
+        gsap.to(archivos[i].mesh.position, {
           duration: 1 + Math.random(),
           z: -4,
           delay: Math.random() * 1.5,
           overwrite: true,
-          onComplete: ()=>{if(archivos.length == i+1 ){esta_corriendo.value = false }}
+          onComplete: () => {
+            if (archivos.length == i + 1) {
+              esta_corriendo.value = false;
+            }
+          },
         });
       }
-        
-
-    }
-    else if(seccion_actual.value == 5){
+    } else if (seccion_actual.value == 5) {
       esta_corriendo.value = true;
-      for (var i = 0; i < archivos.length; i++) {
-
-        gsap.to(archivos[i].mesh.position, {
-          duration: 1.5,
-          z: (Math.random() - 0.2) * 1.2,
-          x: (Math.random() - 0.5) * 2,
-          y: (Math.random() - 0.5) * 5,
-          overwrite: true
-        });
-        gsap.to(archivos[i].mesh.scale, {
-          duration: 1.5,
-          x: 1,
-          y: archivos[i].alto / archivos[i].ancho,
-          overwrite: true
-        });
-      }
+      gsap.to(archivos[1].mesh.position, {
+        duration: 1.5,
+        z: -4,
+        overwrite: true,
+      });
+      gsap.to(archivos[0].mesh.position, {
+        duration: 1.5,
+        z: 0.5,
+        x: 0,
+        y: 0,
+        overwrite: true,
+      });
+      gsap.to(archivos[0].mesh.scale, {
+        duration: 1.5,
+        x: 1,
+        y: archivos[0].alto / archivos[0].ancho,
+        overwrite: true,
+      });
 
     }
-    console.log(seccion_actual.value, scrollY)
+    else if (seccion_actual.value == 6) {
+      esta_corriendo.value = true;
+      gsap.to(archivos[0].mesh.position, {
+        duration: 1.5,
+        z: -4,
+        overwrite: true,
+      });
+
+
+      gsap.to(archivos[1].mesh.position, {
+        duration: 1.5,
+        z: 0.5,
+        x: 0,
+        y: 0,
+        overwrite: true,
+      });
+      gsap.to(archivos[1].mesh.scale, {
+        duration: 1.5,
+        x: 1,
+        y: archivos[1].alto / archivos[1].ancho,
+        overwrite: true,
+      });
+
+    }
+    console.log(seccion_actual.value, scrollY);
   }
 }
-watch(esta_corriendo, (nv)=>{
-  if(nv === true ){
-    tick()
+watch(esta_corriendo, (nv) => {
+  if (nv === true) {
+    tick();
   }
-})
+});
 
 function moviendoCursor(event) {
   cursor.value.x = event.clientX / sizes.value.width - 0.5;
