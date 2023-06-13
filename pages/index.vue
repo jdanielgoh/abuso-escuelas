@@ -7,75 +7,83 @@
         <h2>Los casos que la SEP guarda debajo de la alfombra.</h2>
       </div>
     </section>
-    <section id="intro" class="contenedor-flex">
+    <section id="sumario" class="contenedor-flex">
       <p>
         En la última década se han registrado 3,865 casos de abuso sexual en
-        escuelas de educación básica: uno cada día. Son profesores, personal
-        administrativo o de intendencia los principales agresores. Pese al
-        cúmulo de casos, las secretarías de educación han hecho oídos sordos. La
-        violencia sexual habita las aulas.
+        escuelas de educación básica: uno cada día. Los principales agresores
+        son docentes. Niños con terrores nocturnos, que cambian su temperamento,
+        que pierden el habla o el interés por ir a la escuela son algunas de las
+        secuelas que existen. A pesar del cúmulo de testimonios, las secretarías
+        de educación han hecho oídos sordos y, en algunos casos, incumplido sus
+        propios protocolos de actuación. Así la violencia sexual habita todos
+        los días las aulas del país.
       </p>
     </section>
-    <section id="texto" class="contenedor-flex">
+    <section id="texto-intro" class="contenedor-flex">
       <div class="ancho-texto">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in
-          tempus neque, tincidunt lacinia sem. Aenean blandit lobortis nibh,
-          eget fringilla est venenatis id. Maecenas lobortis libero et dui
-          bibendum, eleifend congue enim porttitor. Etiam condimentum, lorem
-          quis accumsan pretium, odio arcu tincidunt orci, vel rhoncus neque
-          nisl nec mi. Interdum et malesuada fames ac ante ipsum primis in
-          faucibus. Nunc velit ex, malesuada nec interdum non, pharetra in enim.
-          Aliquam et massa ornare, vulputate tellus eu, laoreet nisl. Donec ut
-          elementum orci.
+          “En esta escuela nunca ha ocurrido algo similar”. Esta fue la única
+          respuesta que recibieron los padres de familia que acudieron ante la
+          directora del Centro de Atención Múltiple 7 (CAM) “Gabriela Mistral”,
+          ubicado en Ecatepec, Estado de México, al denunciar que el profesor de
+          salud había agredido sexualmente a sus hijas e hijos.
         </p>
         <p>
-          Aenean hendrerit turpis rutrum nunc bibendum vestibulum. Maecenas eros
-          quam, sodales a mollis sit amet, vulputate id metus. Sed tortor eros,
-          pretium nec leo pellentesque, luctus malesuada magna. Sed ornare, nisi
-          vel ultricies vehicula, libero nibh ornare eros, vel scelerisque dolor
-          magna sit amet orci. Vestibulum libero diam, malesuada vel enim sed,
-          tincidunt scelerisque erat. Aliquam consectetur feugiat ligula non
-          cursus. Quisque convallis erat in eleifend pharetra. Proin luctus ex
-          eget arcu facilisis, vel accumsan orci lacinia. Maecenas dolor dolor,
-          pulvinar et auctor dapibus, tincidunt in risus. Suspendisse malesuada
-          risus accumsan, fringilla nunc aliquam, fermentum nisi. Vestibulum id
-          urna leo.
+          Pero una sola denuncia ante las autoridades bastó para que comenzaran
+          a brotar las agresiones que se escondían detrás de las puertas de esta
+          escuela. En un abrir y cerrar de ojos, padres y madres se dieron
+          cuenta que ninguno de sus casos existía ante el Órgano Interno de
+          Control de los Servicios Educativos Integrados al Estado de México
+          (SEIEM) y mucho menos en las estadísticas del Ministerio Público,
+          procedimientos que la directora evitó hacer ante cada queja
+          interpuesta contra el maestro Héctor “N”.
         </p>
         <p>
-          Suspendisse a purus eu tortor vulputate dignissim. Nam quis ipsum
-          velit. Ut posuere imperdiet pellentesque. Nulla quis erat ut libero
-          rhoncus placerat. Aliquam erat volutpat. Phasellus pellentesque, arcu
-          ac accumsan feugiat, nunc neque mattis nulla, sed blandit turpis nunc
-          mollis mauris. Vestibulum dui arcu, consequat quis egestas sit amet,
-          facilisis nec quam. Suspendisse dui ex, dignissim a velit eget,
-          dignissim auctor magna. Nulla accumsan elementum sapien vitae
-          pulvinar. Phasellus massa turpis, consequat eu vulputate id, suscipit
-          et tortor. Nam et ligula purus.
-        </p>
-        <p>
-          Ut quis suscipit purus. Sed maximus, lorem a consectetur posuere,
-          turpis orci porttitor nunc, non rhoncus neque purus ut tortor.
-          Vestibulum eu bibendum ante. Aenean feugiat diam nisl, id tristique
-          diam volutpat in. Nullam at libero mauris. Quisque fermentum finibus
-          laoreet. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent ornare sapien ac magna
-          finibus cursus posuere ac quam. Morbi dignissim orci vitae nunc dictum
-          convallis. Aliquam eleifend, lacus eu porttitor convallis, urna arcu
-          luctus mi, accumsan porttitor massa nunc vel nulla. Etiam quis velit
-          nunc.
-        </p>
-        <p>
-          Aenean maximus venenatis justo, a luctus quam dignissim sed. Nunc
-          dictum magna at augue laoreet bibendum. Curabitur vitae rutrum ex.
-          Nulla vitae tristique ante. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Pellentesque
-          turpis magna, ullamcorper non viverra eu, dictum et mi. Proin ac
-          malesuada nulla. In ultricies hendrerit felis eget vulputate. Nunc in
-          scelerisque augue. Pellentesque arcu sapien, imperdiet nec imperdiet
-          a, tempus sed libero.
+          El CAM 7 es sólo una de las escuelas en las que algún adulto, miembro
+          de la comunidad educativa, ha violentado sexualmente a estudiantes de
+          educación básica. También un reflejo de lo que ocurre en todo el país,
+          donde las escuelas y las secretarías de educación evitan seguir los
+          lineamientos de prevención y atención a estos casos.
         </p>
       </div>
+    </section>
+
+    <InteractivosHorizontal></InteractivosHorizontal>
+    <section id="cita-1" class="contenedor-flex">
+      <div class="ancho-texto">
+        <blockquote>
+          “Muchas familias se van, abandonan por el tiempo que lleva un proceso.
+          Pierden su trabajo, recursos, se divorcian, abandonan a los otros
+          hijos. La Fiscalía, que no está capacitada para esto, desestima varias
+          denuncias”, recalca.
+        </blockquote>
+      </div>
+    </section>
+    <section id="casos-particulares" class="contenedor-flex">
+      <div class="ancho-texto">
+        <p>
+        Parecen casos aislados, atípicos, pero no lo son. Las actas de hechos
+        relacionadas con quejas y denuncias por delitos sexuales cometidos por
+        personal de colegios públicos y privados en contra de estudiantes de
+        educación básica muestran similitudes en el actuar de los adultos con
+        cargos en las escuelas.
+      </p>
+      <p>
+        En Querétaro, por ejemplo, hay un profesor de primaria que es
+        reincidente: tiene quejas previas por pedofilia en otros colegios; la
+        más reciente, de 2017, revela que besa a las niñas en la boca, las lleva
+        a su carro y las pone de cabeza para mirar su vulva. En Veracruz, un
+        profesor de secundaria abusó sexualmente de varias alumnas y las amenazó
+        con sus calificaciones; ya tenía un expediente previo por denuncias
+        similares.
+      </p>
+      <p>
+        Las estadísticas muestran una deficiencia clara en la prevención de este
+        delito, comenzando por lo más básico: los procedimientos de elección del
+        personal.
+      </p>
+      </div>
+      
     </section>
   </div>
 </template>
@@ -90,7 +98,7 @@
       text-align: center;
       color: $color-texto-base;
       max-width: 680px;
-      background-color: rgba(25, 23, 22, 0.9);
+      background-color: #232a25;
       backdrop-filter: blur(2px);
       padding: 16px;
       border-radius: 16px;
@@ -119,17 +127,28 @@
       }
     }
   }
-  #intro {
+  #sumario {
     height: calc(100vh - 50px);
     p {
       max-width: 500px;
       color: $color-texto-base;
       margin: auto;
-      background-color: rgba(25, 23, 22, 0.9);
+      background-color: #232a25;
       padding: 16px;
       font-size: 18px;
       border-radius: 16px;
     }
+  }
+  #texto-intro {
+    background: $color-txt-destacado;
+    color: $color-fondo;
+  }
+  #cita-1{
+    min-height: 100vh;
+  }
+  #casos-particulares{
+    min-height: 100vh;
+
   }
 }
 </style>
