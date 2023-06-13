@@ -296,6 +296,15 @@ function escroleando() {
       });
 
     }
+    else if (seccion_actual.value == 7) {
+      esta_corriendo.value = true;
+      gsap.to(archivos[1].mesh.position, {
+        duration: 1.5,
+        z: -4,
+        overwrite: true,
+      });
+
+    }
     console.log(seccion_actual.value, scrollY);
   }
 }

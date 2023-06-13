@@ -72,16 +72,14 @@
           En Querétaro, por ejemplo, hay un profesor de primaria que es
           reincidente: tiene quejas previas por pedofilia en otros colegios; la
           más reciente, de 2017, revela que besa a las niñas en la boca, las
-          lleva a su carro y las pone de cabeza para mirar su vulva. 
+          lleva a su carro y las pone de cabeza para mirar su vulva.
         </p>
       </div>
     </section>
     <section id="casos-particulares-2" class="contenedor-flex">
       <div class="ancho-texto">
-
         <p>
-          En
-          Veracruz, un profesor de secundaria abusó sexualmente de varias
+          En Veracruz, un profesor de secundaria abusó sexualmente de varias
           alumnas y las amenazó con sus calificaciones; ya tenía un expediente
           previo por denuncias similares.
         </p>
@@ -89,6 +87,46 @@
           Las estadísticas muestran una deficiencia clara en la prevención de
           este delito, comenzando por lo más básico: los procedimientos de
           elección del personal.
+        </p>
+      </div>
+    </section>
+    <InteractivosHorizontalVictimas></InteractivosHorizontalVictimas>
+    <section id="perfiles-victimas" class="contenedor-flex">
+      <div class="ancho-texto">
+        <p>
+          Las víctimas, en cambio, son diversas. De las más de mil quejas que
+          entregaron las Secretarías de Educación vía transparencia, se logró
+          identificar a 1,559 víctimas, de las cuales el 68% son mujeres, pero
+          también está el registro de 246 varones que sufrieron violencia sexual
+          dentro de los centros escolares
+        </p>
+        <p>
+          En algunos casos, hay múltiples víctimas y victimarios. En 18 estados
+          de la República se tienen, hasta ahora, 50 casos en donde no se cuenta
+          con detalles de los alumnos abusados o de los agresores, únicamente se
+          detalla cómo “varias personas”. Se vuelve “común” encontrar registros
+          en donde se enlista al director, intendente, encargado de cooperativa
+          y docente como un grupo de agresores en contra de los menores.
+        </p>
+      </div>
+    </section>
+
+    <section id="perfiles-victimas" class="contenedor-flex">
+      <div class="ancho-texto">
+        <p>
+          Las víctimas, en cambio, son diversas. De las más de mil quejas que
+          entregaron las Secretarías de Educación vía transparencia, se logró
+          identificar a 1,559 víctimas, de las cuales el 68% son mujeres, pero
+          también está el registro de 246 varones que sufrieron violencia sexual
+          dentro de los centros escolares
+        </p>
+        <p>
+          En algunos casos, hay múltiples víctimas y victimarios. En 18 estados
+          de la República se tienen, hasta ahora, 50 casos en donde no se cuenta
+          con detalles de los alumnos abusados o de los agresores, únicamente se
+          detalla cómo “varias personas”. Se vuelve “común” encontrar registros
+          en donde se enlista al director, intendente, encargado de cooperativa
+          y docente como un grupo de agresores en contra de los menores.
         </p>
       </div>
     </section>
@@ -135,7 +173,7 @@
     }
   }
   #sumario {
-    height: calc(100vh );
+    height: calc(100vh);
     p {
       max-width: 500px;
       color: $color-texto-base;
@@ -156,7 +194,7 @@
   #casos-particulares {
     min-height: 100vh;
   }
-  section{
+  section {
     min-height: 100vh;
   }
 }

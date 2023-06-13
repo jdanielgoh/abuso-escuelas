@@ -249,7 +249,7 @@ function calculandoEscalas() {
 }
 function configurandoPictos(ladata) {
   //dataContainer.value.selectAll("custom.ellipse").remove();
-
+  let ancho_maximo = d3.max([ancho.value, alto.value]) 
   dataBinding.value = dataContainer.value
     .selectAll("custom.ellipse")
     .data(ladata)
@@ -259,9 +259,9 @@ function configurandoPictos(ladata) {
           .append("custom")
           .classed("ellipse", true)
           .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]) * Math.cos(d.ang))
+          ancho_maximo * Math.cos(d.ang))
           .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]) * Math.sin(d.ang))
+          ancho_maximo * Math.sin(d.ang))
           .attr("r1", 0)
           .attr("r2", 0)
           .attr("fillStyle", "#CAFF66"),
@@ -269,9 +269,9 @@ function configurandoPictos(ladata) {
       (exit) => exit.transition()
         .duration(500)
         .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]) * Math.cos(d.ang))
+        ancho_maximo* Math.cos(d.ang))
         .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]) * Math.sin(d.ang))
+        ancho_maximo * Math.sin(d.ang))
         .remove()
     )
     .transition()

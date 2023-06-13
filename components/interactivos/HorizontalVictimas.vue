@@ -1,5 +1,5 @@
 <template>
-  <section id="texto-intro-scroll-horizontal">
+  <section id="texto-intro-scroll-horizontal-2">
     <div class="ancho-texto horizontal-scroll_contenedor">
       <canvas class="canvas-vis"></canvas>
 
@@ -11,42 +11,52 @@
           <div class="ancho-texto">
             <p>
               Los registros de 18 autoridades educativas del país permiten
-              identificar el perfil de, por lo menos, 904 probables agresores
-              que estuvieron involucrados en 1,763 quejas. De estos, nueve de
-              cada diez, es decir 810, son hombres que cumplían alguna función
-              dentro de los centros escolares y, en promedio, rondaban los 47
-              años de edad.
+              identificar el perfil de, por lo menos,
+              <strong style="background: #ff5555"
+                >904 probables agresores</strong
+              >
+              que estuvieron involucrados en 1,763 quejas.
             </p>
           </div>
         </div>
+        <div class="horizontal-scroll_item contenedor-flex">
+          <div class="ancho-texto">
+            <p>
+              De estos, nueve de cada diez,
+              <strong style="background: #55ffe0"
+                >es decir 810, son hombres</strong
+              >
+              que cumplían alguna función dentro de los centros escolares y, en
+              promedio, rondaban los 47 años de edad.
+            </p>
+          </div>
+        </div>
+
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-texto">
             <p>
               Los puestos que ocupaban muestran un patrón claro: jerarquía,
-              impunidad y falta de supervisión: 718 de estos probables agresores
-              (79%) eran docentes, resaltan aquellos en donde se especifica que
-              eran maestros de música o educación física, pero interinos. Hay
-              otros casos en los que su posición los blindó para cometer estos
-              delitos, se tiene documentados a 34 directivos que fueron acusados
-              por sus alumnos.
+              impunidad y falta de supervisión:
+              <strong style="background: #55adff"
+                >718 de estos probables agresores (79%) eran docentes</strong
+              >, resaltan aquellos en donde se especifica que eran maestros de
+              música o educación física, pero interinos. Hay otros casos en los
+              que su posición los blindó para cometer estos delitos, se tiene
+              documentados a
+              <strong style="background: #882992">34 directivos </strong>que
+              fueron acusados por sus alumnos.
             </p>
-          </div>
-        </div>
-
-        <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
             <p>
               La omisión de las autoridades educativas es clara en la
               estadística, su falta de vigilancia al personal que está en las
               escuelas, junto a los procesos laxos de contratación, se refleja
-              al tener plenamente identificados a 85 intendentes (9.4%) que
-              fueron señalados como los victimarios, principalmente en nivel
+              al tener plenamente identificados a
+              <strong style="background: #c89600">85 intendentes (9.4%)</strong>
+              que fueron señalados como los victimarios, principalmente en nivel
               preescolar y primaria.
             </p>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -62,7 +72,7 @@ const ancho = ref(0),
   margenes = ref({ arriba: 20, abajo: 20, izquierda: 20, derecha: 20 });
 const canvas = ref(),
   context = ref();
-const escalaRad = ref();
+const escalaLineal = ref();
 const paso_activo = ref();
 const info_fiscalias_sep = ref(info_js);
 const detachedContainer = ref(),
@@ -71,7 +81,9 @@ const detachedContainer = ref(),
 
 const ladata_pintable = ref();
 onMounted(() => {
-  canvas.value = d3.select("#texto-intro-scroll-horizontal canvas.canvas-vis");
+  canvas.value = d3.select(
+    "#texto-intro-scroll-horizontal-2 canvas.canvas-vis"
+  );
   context.value = canvas.value.node().getContext("2d");
 
   calculandoDimensionesCanvas();
@@ -80,9 +92,10 @@ onMounted(() => {
   ladata_pintable.value = d3.range(0, 3815).map((d) => ({
     i: d,
     ang: Math.random() * 2 * Math.PI,
-    rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-    r1: d3.max(escalaRad.value.range()) * 0.01,
-    r2: d3.max(escalaRad.value.range()) * 0.01,
+    y: d3.max([ancho.value, alto.value]) * (-5 + 5 * Math.random()),
+    x: d3.max([ancho.value, alto.value]) * (-5 + 5 * Math.random()),
+    w: d3.max(escalaLineal.value.range()) * 0.01,
+    h: d3.max(escalaLineal.value.range()) * 0.01,
     fillStyle: "#CAFF66",
   }));
   configurandoPictos(toRaw(ladata_pintable.value));
@@ -112,12 +125,12 @@ function calculandoDimensionesCanvas() {
   var dpr = Math.min(2, getPixelRatio(context.value));
 
   ancho.value =
-    document.querySelector("#texto-intro-scroll-horizontal").clientWidth -
+    document.querySelector("#texto-intro-scroll-horizontal-2").clientWidth -
     margenes.value.derecha -
     margenes.value.izquierda;
   alto.value =
     document.querySelector(
-      "#texto-intro-scroll-horizontal div.horizontal-scroll_item.contenedor-flex"
+      "#texto-intro-scroll-horizontal-2 div.horizontal-scroll_item.contenedor-flex"
     ).clientHeight -
     margenes.value.abajo -
     margenes.value.arriba;
@@ -149,67 +162,54 @@ function ligandoDatos() {
   dataContainer.value = d3.select(detachedContainer.value);
 }
 function calculandoEscalas() {
-  let dimension_minima = 0.5 * d3.min([ancho.value, alto.value]);
-  escalaRad.value = d3
+  let dimension_minima = d3.min([ancho.value, alto.value]);
+  escalaLineal.value = d3
     .scaleLinear()
     .domain([0, 1])
-    .range([0, dimension_minima]);
+    .range([-0.5 * dimension_minima, 0.5 * dimension_minima]);
 }
 function configurandoPictos(ladata) {
-  //dataContainer.value.selectAll("custom.ellipse").remove();
-
+  //dataContainer.value.selectAll("custom.rectangle").remove();
+  let ancho_maximo = d3.max([ancho.value, alto.value]);
   dataBinding.value = dataContainer.value
-    .selectAll("custom.ellipse")
+    .selectAll("custom.rectangle")
     .data(ladata)
     .join(
       (enter) =>
         enter
           .append("custom")
-          .classed("ellipse", true)
+          .classed("rectangle", true)
           .attr(
             "x",
-            (d) =>
-              ancho.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              d3.max([ancho.value, alto.value]) * Math.cos(d.ang)
+            (d) => d3.max([ancho.value, alto.value]) * (-5 + 10 * Math.random())
           )
           .attr(
             "y",
-            (d) =>
-              alto.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              d3.max([ancho.value, alto.value]) * Math.sin(d.ang)
+            (d) => d3.max([ancho.value, alto.value]) * (-5 + 10 * Math.random())
           )
-          .attr("r1", 0)
-          .attr("r2", 0)
-          .attr("fillStyle", "#CAFF66"),
-      (update) => update,
-      (exit) =>
-        exit
-          .transition()
-          .duration(500)
-          .attr(
+          .attr("w", 0)
+          .attr("h", 0)
+          .attr("fillStyle", "#ff5555"),
+      (update) =>
+        update.attr(
             "x",
-            (d) =>
-              ancho.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              d3.max([ancho.value, alto.value]) * Math.cos(d.ang)
+            (d) => d3.max([ancho.value, alto.value]) * (-5 + 10 * Math.random())
           )
           .attr(
             "y",
-            (d) =>
-              alto.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              d3.max([ancho.value, alto.value]) * Math.sin(d.ang)
-          )
-          .remove()
+            (d) => d3.max([ancho.value, alto.value]) * (-5 + 10 * Math.random())
+          ),
+      (exit) => exit.remove()
     )
+
     .transition()
     .duration(500)
-    .attr("x", (d) => ancho.value * 0.5 + d.rad * Math.cos(d.ang))
-    .attr("y", (d) => alto.value * 0.5 + d.rad * Math.sin(d.ang))
-    .attr("r1", (d) => d.r1)
-    .attr("r2", (d) => d.r2)
+    .attr("x", (d) => ancho.value * 0.5 + d.x)
+    .attr("y", (d) => {
+      return alto.value * 0.5 + d.y;
+    })
+    .attr("w", (d) => d.w)
+    .attr("h", (d) => d.h)
     .attr("fillStyle", (d) => d.fillStyle);
 }
 function dibujandoPictos() {
@@ -221,23 +221,20 @@ function dibujandoPictos() {
     margenes.value.abajo + margenes.value.arriba + alto.value
   );
 
-  var elipses = dataContainer.value.selectAll("custom.ellipse");
-  elipses.each(function (d) {
-    var elipse = d3.select(this);
+  var rectangulos = dataContainer.value.selectAll("custom.rectangle");
+  rectangulos.each(function (d) {
+    var rectangulo = d3.select(this);
     context.value.moveTo(
-      elipse.attr("x") + elipse.attr("r1"),
-      elipse.attr("y")
+      rectangulo.attr("x") + rectangulo.attr("w"),
+      rectangulo.attr("y")
     );
-    context.value.fillStyle = elipse.attr("fillStyle");
+    context.value.fillStyle = rectangulo.attr("fillStyle");
     context.value.beginPath();
-    context.value.ellipse(
-      elipse.attr("x"),
-      elipse.attr("y"),
-      elipse.attr("r1"),
-      elipse.attr("r2"),
-      0,
-      0,
-      2 * Math.PI
+    context.value.rect(
+      rectangulo.attr("x"),
+      rectangulo.attr("y"),
+      rectangulo.attr("w"),
+      rectangulo.attr("h")
     );
     context.value.fill();
 
@@ -247,14 +244,14 @@ function dibujandoPictos() {
 }
 function posicionScroleando() {
   let rect = document
-    .querySelector("#texto-intro-scroll-horizontal")
+    .querySelector("#texto-intro-scroll-horizontal-2")
     .getBoundingClientRect();
   posicion.value =
-    (500 * rect.top) / rect.height > 0
+    (300 * rect.top) / rect.height > 0
       ? 0
-      : (500 * rect.top) / rect.height < -400
-      ? -400
-      : (500 * rect.top) / rect.height;
+      : (300 * rect.top) / rect.height < -200
+      ? -200
+      : (300 * rect.top) / rect.height;
 
   if (-50 < posicion.value) {
     paso_activo.value = 0;
@@ -262,28 +259,21 @@ function posicionScroleando() {
     paso_activo.value = 1;
   } else if (-250 < posicion.value && posicion.value <= -150) {
     paso_activo.value = 2;
-  } else if (-350 < posicion.value && posicion.value <= -250) {
-    paso_activo.value = 3;
-  } else if (posicion.value <= -350) {
-    paso_activo.value = 4;
   }
 }
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
+    
+    ladata_pintable.value = d3.range(0, 904).map((d, i) => ({
       i: d,
-      ang:
-        i < 1846
-          ? Math.random() * 0.48 * 2 * Math.PI
-          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
-      rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: d3.max(escalaRad.value.range()) * 0.01,
-      r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#CAFF66",
+      x: escalaLineal.value((i % 30) / 30),
+      y: escalaLineal.value(parseInt(i / 30) / 30),
+      w: d3.max(escalaLineal.value.range()) * 0.04,
+      h: d3.max(escalaLineal.value.range()) * 0.04,
+      fillStyle: "#ff5555",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
-
     var t = d3.timer((transcurrido) => {
       dibujandoPictos();
       if (transcurrido > 500) {
@@ -292,8 +282,7 @@ function cambioDePasos(nv, ov) {
     });
   } else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 1846 ? "#ff5ebc" : "#CAFF66";
-      d.rad = ov > 1 ? escalaRad.value(Math.pow(Math.random(), 0.5)) : d.rad;
+      d.fillStyle = i < 817 ? "#55ffe0" : "#ff5555";
     });
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -304,56 +293,20 @@ function cambioDePasos(nv, ov) {
       }
     });
   } else if (nv == 2) {
-    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
+    ladata_pintable.value = d3.range(0, 904).map((d, i) => ({
       i: d,
-      ang:
-        i < 1846
-          ? Math.random() * 0.48 * 2 * Math.PI
-          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
-      rad:
-        escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]),
-      r1: d3.max(escalaRad.value.range()) * 0.01,
-      r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#CAFF66",
-    }));
-    configurandoPictos(toRaw(ladata_pintable.value));
-
-    var t = d3.timer((transcurrido) => {
-      dibujandoPictos();
-      if (transcurrido > 500) {
-        t.stop();
-      }
-    });
-  } else if (nv == 3) {
-    ladata_pintable.value = d3.range(0, 90).map((d, i) => ({
-      i: d,
-      ang: (2 * Math.PI * i) / 90,
-      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      rad: escalaRad.value.range()[1],
-
-      r1: (escalaRad.value.range()[1] * Math.PI) / 90,
-      r2: (escalaRad.value.range()[1] * Math.PI) / 90,
-      fillStyle: i < 30 ? "#ff5ebc" : "#CAFF66",
-    }));
-    configurandoPictos(toRaw(ladata_pintable.value));
-
-    var t = d3.timer((transcurrido) => {
-      dibujandoPictos();
-      if (transcurrido > 500) {
-        t.stop();
-      }
-    });
-  } else if (nv == 4) {
-    ladata_pintable.value = d3.range(0, 51).map((d, i) => ({
-      i: d,
-      ang: (2 * Math.PI * i) / 51,
-      rad: escalaRad.value.range()[1],
-
-      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: (escalaRad.value.range()[1] * Math.PI) / 51,
-      r2: (escalaRad.value.range()[1] * Math.PI) / 51,
-      fillStyle: i < 17 ? "#ff5ebc" : "#CAFF66",
+      x: escalaLineal.value((i % 30) / 30),
+      y: escalaLineal.value(parseInt(i / 30) / 30),
+      w: d3.max(escalaLineal.value.range()) * 0.04,
+      h: d3.max(escalaLineal.value.range()) * 0.04,
+      fillStyle:
+        i < 718
+          ? "#55adff"
+          : i < 718 + 34
+          ? "#882992"
+          : i < 718 + 34 + 85
+          ? "#c89600"
+          : "#ff5555",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -382,11 +335,11 @@ function getPixelRatio(ctx) {
 </script>
 
 <style lang="scss">
-#texto-intro-scroll-horizontal {
+#texto-intro-scroll-horizontal-2 {
   //background: #fff;
   //color: black;
   width: 100vw;
-  height: 500vh;
+  height: 300vh;
   position: relative;
   .horizontal-scroll_contenedor {
     width: 100vw;
