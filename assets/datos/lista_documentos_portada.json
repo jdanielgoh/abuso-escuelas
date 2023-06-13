@@ -1,81 +1,86 @@
 [
   {
-    "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-251.png",
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-251.png",
     "ancho": 775,
-    "alto":571,
+    "alto": 571,
     "velocidad": 1.8
   },
-    {
-      "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-2.png",
-      "ancho": 798,
-      "alto": 692,
-      "velocidad": 1
-    },
-    {
-      "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-52.png",
-      "ancho": 474,
-      "alto": 667,
-      "velocidad": 3
-    },
-    {
-      "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-57.png",
-      "ancho": 781,
-      "alto": 666,
-      "velocidad": 2
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-38.png",
-      "ancho": 635,
-      "alto": 558,
-      "velocidad": 1 
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-40.png",
-      "ancho": 703,
-      "alto":823,
-      "velocidad":1.1 
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-41.png",
-      "ancho": 885,
-      "alto": 549,
-      "velocidad": 1.2
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-43.png",
-      "ancho": 705,
-      "alto": 974,
-      "velocidad": 1.3
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-73.png",
-      "ancho": 648,
-      "alto": 709,
-      "velocidad": 1.5
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-80.png",
-      "ancho": 608,
-      "alto": 546,
-      "velocidad": 1.4
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-84.png",
-      "ancho": 622,
-      "alto": 540,
-      "velocidad": 1.6
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-1.png",
-      "ancho": 618,
-      "alto":410,
-      "velocidad": 1.7
-    },
-    {
-      "archivo":"/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-2.png",
-      "ancho": 607,
-      "alto":521,
-      "velocidad": 1.8
-    }
-    
-  ]
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-ver-portada.png",
+    "ancho": 1043,
+    "alto": 514,
+    "velocidad": 1.2
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-2.png",
+    "ancho": 798,
+    "alto": 692,
+    "velocidad": 1
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-52.png",
+    "ancho": 474,
+    "alto": 667,
+    "velocidad": 3
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-57.png",
+    "ancho": 781,
+    "alto": 666,
+    "velocidad": 2
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-38.png",
+    "ancho": 635,
+    "alto": 558,
+    "velocidad": 1
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-40.png",
+    "ancho": 703,
+    "alto": 823,
+    "velocidad": 1.1
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-41.png",
+    "ancho": 885,
+    "alto": 549,
+    "velocidad": 1.2
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-43.png",
+    "ancho": 705,
+    "alto": 974,
+    "velocidad": 1.3
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-73.png",
+    "ancho": 648,
+    "alto": 709,
+    "velocidad": 1.5
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-80.png",
+    "ancho": 608,
+    "alto": 546,
+    "velocidad": 1.4
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-84.png",
+    "ancho": 622,
+    "alto": 540,
+    "velocidad": 1.6
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-1.png",
+    "ancho": 618,
+    "alto": 410,
+    "velocidad": 1.7
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-2.png",
+    "ancho": 607,
+    "alto": 521,
+    "velocidad": 1.8
+  }
+]
