@@ -5,6 +5,24 @@
       <div class="titulo">
         <h1>Abuso sexual en escuelas.</h1>
         <h2>Los casos que la SEP guarda debajo de la alfombra.</h2>
+        <div class="logos contenedor-flex">
+          <div class="connectas">
+            <a href="https://www.connectas.org/">
+              <img
+                src="~/assets/imgs/logos/connectas_blanco.svg"
+                alt="logo de Connectas"
+              />
+            </a>
+          </div>
+          <div class="eluniversal">
+            <a href="https://www.eluniversal.com.mx/">
+              <img
+                src="~/assets/imgs/logos/logo-eluniversal.svg"
+                alt="logo de Connectas"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="sumario" class="contenedor-flex">
@@ -112,10 +130,9 @@
     </section>
 
     <InteractivosHorizontalProtocolos></InteractivosHorizontalProtocolos>
-
   </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 #pagina-inicio {
   position: relative;
   z-index: 1;
@@ -153,6 +170,32 @@
           font-size: 24px;
         }
       }
+      .logos {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        div {
+          &.eluniversal{
+            width: calc(60% - 40px);
+            max-width: 250px;
+          }
+          &.connectas{
+            width: calc(40% - 40px);
+            max-width: 180px;
+
+          }
+          a{
+            display: block;
+            width: 100%;
+          }
+          img {
+            width: 100%;
+            margin: auto;
+          }
+        }
+      }
     }
   }
   #sumario {
@@ -171,9 +214,10 @@
   #cita-1 {
     min-height: 100vh;
   }
-  #casos-particulares, #casos-particulares-2 {
+  #casos-particulares,
+  #casos-particulares-2 {
     min-height: 100vh;
-    .ancho-texto{
+    .ancho-texto {
       color: $color-texto-claro;
       margin: auto;
       background-color: $color-fondo-oscuro;
@@ -184,6 +228,98 @@
   }
   section {
     min-height: 100vh;
+    padding: 0 16px;
   }
+
+.texto-intro-scroll-horizontal {
+  padding: 0 ;
+
+  background-color: transparent;
+  transition: background-color 0.75s ease;
+
+  &.seccion-activa {
+    background-color: $color-fondo-claro;
+  }
+  color: $color-texto-oscuro;
+  width: 100vw;
+  position: relative;
+  .horizontal-scroll_contenedor {
+    width: 100vw;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    .horizontal-scroll_interior {
+      padding-top: 50px;
+      .horizontal-scroll_item {
+        width: 100%;
+        height: 100vh;
+        flex: 0 0 auto;
+        .ancho-texto,
+        .ancho-bullet {
+          border-radius: $radio-borde;
+
+          background: #e0e0e0cc;
+          backdrop-filter: blur(4px);
+          @media (max-width: $pantalla-movil) {
+            max-width: 80vw;
+          }
+
+          padding: 0 16px;
+          p {
+            @media (max-width: $pantalla-movil) {
+              font-size: 14px;
+            }
+          }
+          p.bullet {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+            @media (max-width: $pantalla-movil) {
+              font-size: 14px;
+            }
+            span {
+              max-width: 500px;
+              width: 100%;
+            }
+            span.derecha {
+              text-align: right;
+              margin: 0 0 0 auto;
+            }
+            span.izquierda {
+              text-align: left;
+              margin: 0 auto 0 0;
+            }
+            span.centro {
+              text-align: center;
+              margin: 0 auto;
+            }
+            span.dato-numerico {
+              font-size: 150px;
+              @media (max-width: $pantalla-movil) {
+                font-size: 18vw;
+              }
+              &.triple {
+                font-size: 70px;
+                @media (max-width: $pantalla-movil) {
+                  font-size: 12vw;
+                }
+              }
+            }
+          }
+        }
+        .ancho-bullet {
+          @media (max-width: $pantalla-movil) {
+            max-width: 60vw;
+          }
+        }
+      }
+    }
+    canvas, svg.svg-viz-horizontal {
+      //background: rgb(206, 206, 206);
+      position: absolute;
+      top: 0;
+    }
+  }
+}
 }
 </style>

@@ -1,60 +1,51 @@
 <template>
-  <section id="texto-intro-scroll-horizontal-protocolos">
+  <section
+    id="texto-horizontal-protocolos"
+    class="texto-intro-scroll-horizontal"
+  >
     <div class="ancho-texto horizontal-scroll_contenedor" :id="id_contenedor">
-      <svg id="svg-mapa" :width="ancho" :height="alto">
-          <g class="mapa" ></g>
-        </svg>
+      <svg
+        id="svg-mapa"
+        :width="ancho"
+        :height="alto"
+        class="svg-viz-horizontal"
+      >
+        <g class="mapa"></g>
+      </svg>
       <div
         class="horizontal-scroll_interior contenedor-flex"
         :style="{ transform: `translate(${posicion}%,0)` }"
       >
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Los registros de 18 autoridades educativas del país permiten
-              identificar el perfil de, por lo menos,
-              <strong style="background: #ff5555"
-                >904 probables agresores</strong
-              >
-              que estuvieron involucrados en 1,763 quejas.
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="dato-numerico centro" style="color:#b92d2d">17</span>
+              <span class="centro"> <b style="color:#b92d2d">estados</b>  no definen conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). </span>
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              De estos, nueve de cada diez,
-              <strong style="background: #4cdbc1"
-                >es decir 810, son hombres</strong
-              >
-              que cumplían alguna función dentro de los centros escolares y, en
-              promedio, rondaban los 47 años de edad.
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="dato-numerico centro" style="color:#b92d2d">7</span>
+              <span class="centro"> <b style="color:#b92d2d">estados</b>  no especifican que el protocolo sea aplicable a escuelas privadas. </span>
             </p>
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Los puestos que ocupaban muestran un patrón claro: jerarquía,
-              impunidad y falta de supervisión:
-              <strong style="background: #55adff"
-                >718 de estos probables agresores (79%) eran docentes</strong
-              >, resaltan aquellos en donde se especifica que eran maestros de
-              música o educación física, pero interinos. Hay otros casos en los
-              que su posición los blindó para cometer estos delitos, se tiene
-              documentados a
-              <strong style="background: #882992">34 directivos </strong>que
-              fueron acusados por sus alumnos.
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="dato-numerico centro" style="color:#b92d2d">11</span>
+              <span class="centro"> <b style="color:#b92d2d">estados</b>  no establecen como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso.</span>
             </p>
-            <p>
-              La omisión de las autoridades educativas es clara en la
-              estadística, su falta de vigilancia al personal que está en las
-              escuelas, junto a los procesos laxos de contratación, se refleja
-              al tener plenamente identificados a
-              <strong style="background: #c89600">85 intendentes (9.4%)</strong>
-              que fueron señalados como los victimarios, principalmente en nivel
-              preescolar y primaria.
+          </div>
+        </div>
+        <div class="horizontal-scroll_item contenedor-flex">
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="dato-numerico centro" style="color:#b92d2d">8</span>
+              <span class="centro"> <b style="color:#b92d2d">estados</b>  no establecen como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)</span>
             </p>
           </div>
         </div>
@@ -65,26 +56,39 @@
 <script setup>
 import { ref, onMounted, onUnmounted, watch, toRaw } from "vue";
 import * as d3 from "d3";
-
+let diccionario = {
+  "Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ":
+    "define_conductas",
+  "El protocolo es aplicable a escuelas públicas o privadas (Sí: dice explícitamente que es aplicable a escuelas privadas también; No: dice que solo es aplicable a públicas o no señala nada al respecto).":
+    "escuelas_privadas",
+  "Establece como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso. ":
+    "notificacion_penales",
+  "Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)":
+    "registro_textual",
+};
 const posicion = ref(0);
 const ancho = ref(0),
   alto = ref(0),
   margenes = ref({ arriba: 0, abajo: 0, izquierda: 0, derecha: 0 });
-const svg = ref(),grupo_poligonos=ref(), poligonos=ref();
-const geodata = ref()
+const svg = ref(),
+  grupo_poligonos = ref(),
+  poligonos = ref();
+const geodata = ref();
 const paso_activo = ref();
-const id_contenedor = ref('svg-mapa-contenedor')
-const proyeccion =ref(), path =ref(), catego = ref("define_conductas")
+const id_contenedor = ref("svg-mapa-contenedor");
+const proyeccion = ref(),
+  path = ref(),
+  catego = ref("define_conductas");
 onMounted(() => {
   svg.value = d3.select("#" + id_contenedor.value).select("svg");
   grupo_poligonos.value = svg.value.select("g.mapa");
   calculandoDimensionesSvg();
   d3.json("/datos/protocolos.geojson").then((datos_geograficos) => {
-    console.log(datos_geograficos)
-    geodata.value = datos_geograficos
-    creaMapa()
-    visualizarMapa(catego.value)
-  })
+    console.log(datos_geograficos);
+    geodata.value = datos_geograficos;
+    creaMapa();
+    visualizarMapa(catego.value);
+  });
   window.addEventListener("scroll", posicionScroleando);
   window.addEventListener("resize", reescalando);
 });
@@ -99,121 +103,79 @@ function reescalando() {
 }
 function calculandoDimensionesSvg() {
   ancho.value =
-    document.querySelector("#texto-intro-scroll-horizontal-protocolos").clientWidth -
+    document.querySelector("#texto-horizontal-protocolos").clientWidth -
     margenes.value.derecha -
     margenes.value.izquierda;
   alto.value =
     document.querySelector(
-      "#texto-intro-scroll-horizontal-protocolos div.horizontal-scroll_item.contenedor-flex"
+      "#texto-horizontal-protocolos div.horizontal-scroll_item.contenedor-flex"
     ).clientHeight -
     margenes.value.abajo -
     margenes.value.arriba;
-
 }
-function creaMapa(){
+function creaMapa() {
   poligonos.value = grupo_poligonos.value
-        .selectAll(".path-poligono")
-        .data(geodata.value.features)
-        .enter()
-        .append("path")
-        
+    .selectAll(".path-poligono")
+    .data(geodata.value.features)
+    .enter()
+    .append("path");
 }
 function visualizarMapa(categoria) {
   proyeccion.value = d3
-        .geoMercator()
-        .scale(1.75 * d3.min([alto.value, ancho.value]))
-        .center([-102, 25])
-        .translate([ancho.value * 0.5, alto.value * 0.5]);
+    .geoMercator()
+    .scale(1.75 * d3.min([alto.value, ancho.value]))
+    .center([-102, 25])
+    .translate([ancho.value * 0.5, alto.value * 0.5]);
 
   path.value = d3.geoPath().projection(proyeccion.value);
+  console.log(categoria, poligonos.value.filter(d=>      d.properties[categoria] != "Sí" 
+)._groups[0].length)
   poligonos.value
-        .attr("d", path.value)
-        .style("stroke", "#0f1e3d")
-        .style("stroke-width", "1px")
-        .style("cursor", "pointer")
-        .transition()
-        .style("fill", d=>d.properties[categoria]!= "Sí" ? "#ff5b5b" : "#e0e0e0")
-;
-  }
+    .attr("d", path.value)
+    .style("stroke", "#0f1e3d")
+    .style("stroke-width", "1px")
+    .style("cursor", "pointer")
+    .transition()
+    .style("fill", (d) =>
+      d.properties[categoria] != "Sí" ? "#b92d2d" : "#e0e0e0"
+    );
+}
 
 function posicionScroleando() {
   let rect = document
-    .querySelector("#texto-intro-scroll-horizontal-protocolos")
+    .querySelector("#texto-horizontal-protocolos")
     .getBoundingClientRect();
   posicion.value =
-    (300 * rect.top) / rect.height > 0
+    (400 * rect.top) / rect.height > 0
       ? 0
-      : (300 * rect.top) / rect.height < -200
-      ? -200
-      : (300 * rect.top) / rect.height;
+      : (400 * rect.top) / rect.height < -300
+      ? -300
+      : (400 * rect.top) / rect.height;
 
   if (-50 < posicion.value) {
-    catego.value = "define_conductas"
+    catego.value = "define_conductas";
   } else if (-150 < posicion.value && posicion.value <= -50) {
-    catego.value = "escuelas_privadas"
+    catego.value = "escuelas_privadas";
   } else if (-250 < posicion.value && posicion.value <= -150) {
-    catego.value = "notificacion_penales"
+    catego.value = "notificacion_penales";
+  } else if (-350 < posicion.value && posicion.value <= -250) {
+    catego.value = "registro_textual";
   }
 }
-watch(catego, (nv)=>visualizarMapa(nv));
+watch(catego, (nv) => visualizarMapa(nv));
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    visualizarMapa(nv)
-
+    visualizarMapa(nv);
   } else if (nv == 1) {
-    visualizarMapa(nv)
-
+    visualizarMapa(nv);
   } else if (nv == 2) {
-    visualizarMapa(nv)
-
-
+    visualizarMapa(nv);
   }
 }
-
 </script>
 
 <style lang="scss">
-#texto-intro-scroll-horizontal-protocolos {
-  background-color: transparent;
-
-  transition: background-color 0.75s ease;
-
-  &.seccion-activa{
-    background-color: $color-fondo-claro;
-
-  }  
-  color: $color-texto-oscuro;
-  width: 100vw;
-  height: 300vh;
-  position: relative;
-  .horizontal-scroll_contenedor {
-    width: 100vw;
-    position: sticky;
-    overflow: hidden;
-    top: 0;
-    .horizontal-scroll_interior {
-      padding-top: 50px;
-      .horizontal-scroll_item {
-        width: 100%;
-        height: 100vh;
-        flex: 0 0 auto;
-        .ancho-texto {
-          border-radius: $radio-borde;
-          background: #e0e0e0b3;          max-width: 600px;
-          @media (max-width: $pantalla-movil) {
-            max-width: 80vw;
-          }
-          padding: 0 16px;
-
-
-        }
-      }
-    }
-    svg {
-      //background: rgb(206, 206, 206);
-      position: absolute;
-      top: 0;
-    }
-  }
+#texto-horizontal-protocolos {
+  height: 400vh;
 }
 </style>
