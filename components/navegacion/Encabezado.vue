@@ -88,7 +88,8 @@ header {
     height: calc(100vh );
     position: relative;
     display:inline-flex;
-    background: #E5AB24;
+    background: #2b2b2bcc;
+    backdrop-filter: blur(4px);
     width: 300px;
 
     ul {

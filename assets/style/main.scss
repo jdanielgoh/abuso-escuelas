@@ -19,6 +19,10 @@ body, html{
         margin: auto;
         max-width: $ancho-texto;
     }
+    .ancho-bullet{
+        margin: auto;
+        max-width: $ancho-bullet;
+    }
 }
 
 blockquote{

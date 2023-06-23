@@ -90,7 +90,7 @@
         </p>
       </div>
     </section>
-    <InteractivosHorizontalVictimas></InteractivosHorizontalVictimas>
+    <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
     <section id="perfiles-victimas" class="contenedor-flex">
       <div class="ancho-texto">
         <p>

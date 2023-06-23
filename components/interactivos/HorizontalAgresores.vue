@@ -1,60 +1,68 @@
 <template>
-  <section id="texto-intro-scroll-horizontal-2">
+  <section id="texto-horizontal-agresores" class="texto-intro-scroll-horizontal">
     <div class="ancho-texto horizontal-scroll_contenedor">
       <canvas class="canvas-vis"></canvas>
 
       <div
         class="horizontal-scroll_interior contenedor-flex"
-        :style="{ transform: `translate(${posicion}%,0)` }"
+        :style="{ transform: `translate(${posicion}%,-55px)` }"
       >
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Los registros de 18 autoridades educativas del país permiten
-              identificar el perfil de, por lo menos,
-              <strong style="background: #ff5555"
-                >904 probables agresores</strong
-              >
-              que estuvieron involucrados en 1,763 quejas.
+          <div class="ancho-bullet">
+            
+            <p class="bullet">
+              <span class="izquierda"
+                  >Los registros de 18 autoridades educativas del país permiten
+              identificar el perfil de, por lo menos,</span
+                >
+                <span class="dato-numerico centro" style="color: #5e5e5e">904</span>
+                <span class="derecha">
+                  <b style="color: #5e5e5e"> probables agresores</b>  que estuvieron involucrados en 1,763 quejas.
+                </span>
+            
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              De estos, nueve de cada diez,
-              <strong style="background: #4cdbc1"
-                >es decir 810, son hombres</strong
-              >
-              que cumplían alguna función dentro de los centros escolares y, en
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="izquierda"
+                  >De estos,</span
+                >
+                <span class="dato-numerico centro" style="color: #21587e">810</span>
+                <span class="derecha">
+                  <b style="color: #21587e"> son hombres</b>  que cumplían alguna función dentro de los centros escolares y, en
               promedio, rondaban los 47 años de edad.
+                </span>
+            
             </p>
+
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Los puestos que ocupaban muestran un patrón claro: jerarquía,
-              impunidad y falta de supervisión:
-              <strong style="background: #55adff"
-                >718 de estos probables agresores (79%) eran docentes</strong
-              >, resaltan aquellos en donde se especifica que eran maestros de
-              música o educación física, pero interinos. Hay otros casos en los
-              que su posición los blindó para cometer estos delitos, se tiene
-              documentados a
-              <strong style="background: #882992">34 directivos </strong>que
-              fueron acusados por sus alumnos.
-            </p>
-            <p>
-              La omisión de las autoridades educativas es clara en la
-              estadística, su falta de vigilancia al personal que está en las
-              escuelas, junto a los procesos laxos de contratación, se refleja
-              al tener plenamente identificados a
-              <strong style="background: #c89600">85 intendentes (9.4%)</strong>
-              que fueron señalados como los victimarios, principalmente en nivel
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="izquierda"
+                  >Sobre los puestos que ocupaban: </span
+                >
+                <span class="dato-numerico triple centro" style="color: #55adff">718</span>
+                <span class="derecha">(79%) 
+                  <b style="color: #55adff"> eran docentes</b>, resaltan aquellos en donde se especifica que eran maestros de
+              música o educación física.
+                </span>
+                <span class="dato-numerico triple centro" style="color: #882992">34</span>
+                <span class="centro">
+                <b style="color: #882992"> eran directivos</b>
+                </span>
+                <span class="dato-numerico triple centro" style="color: #c89600">85</span>
+                <span class="derecha">
+                  (9.4%) <b style="color: #c89600"> fueron intendentes</b>, principalmente en nivel
               preescolar y primaria.
+                </span>
+            
             </p>
+
           </div>
         </div>
       </div>
@@ -82,7 +90,7 @@ const detachedContainer = ref(),
 const ladata_pintable = ref();
 onMounted(() => {
   canvas.value = d3.select(
-    "#texto-intro-scroll-horizontal-2 canvas.canvas-vis"
+    "#texto-horizontal-agresores canvas.canvas-vis"
   );
   context.value = canvas.value.node().getContext("2d");
 
@@ -125,12 +133,12 @@ function calculandoDimensionesCanvas() {
   var dpr = Math.min(2, getPixelRatio(context.value));
 
   ancho.value =
-    document.querySelector("#texto-intro-scroll-horizontal-2").clientWidth -
+    document.querySelector("#texto-horizontal-agresores").clientWidth -
     margenes.value.derecha -
     margenes.value.izquierda;
   alto.value =
     document.querySelector(
-      "#texto-intro-scroll-horizontal-2 div.horizontal-scroll_item.contenedor-flex"
+      "#texto-horizontal-agresores div.horizontal-scroll_item.contenedor-flex"
     ).clientHeight -
     margenes.value.abajo -
     margenes.value.arriba;
@@ -189,7 +197,7 @@ function configurandoPictos(ladata) {
           )
           .attr("w", 0)
           .attr("h", 0)
-          .attr("fillStyle", "#ff5555"),
+          .attr("fillStyle", "#5e5e5e"),
       (update) =>
         update.attr(
             "x",
@@ -244,7 +252,7 @@ function dibujandoPictos() {
 }
 function posicionScroleando() {
   let rect = document
-    .querySelector("#texto-intro-scroll-horizontal-2")
+    .querySelector("#texto-horizontal-agresores")
     .getBoundingClientRect();
   posicion.value =
     (300 * rect.top) / rect.height > 0
@@ -271,7 +279,7 @@ function cambioDePasos(nv, ov) {
       y: escalaLineal.value(parseInt(i / 30) / 30),
       w: d3.max(escalaLineal.value.range()) * 0.04,
       h: d3.max(escalaLineal.value.range()) * 0.04,
-      fillStyle: "#ff5555",
+      fillStyle: "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
     var t = d3.timer((transcurrido) => {
@@ -282,7 +290,7 @@ function cambioDePasos(nv, ov) {
     });
   } else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 817 ? "#4cdbc1" : "#ff5555";
+      d.fillStyle = i < 817 ? "#21587e" : "#5e5e5e";
     });
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -306,7 +314,7 @@ function cambioDePasos(nv, ov) {
           ? "#882992"
           : i < 718 + 34 + 85
           ? "#c89600"
-          : "#ff5555",
+          : "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -335,47 +343,8 @@ function getPixelRatio(ctx) {
 </script>
 
 <style lang="scss">
-#texto-intro-scroll-horizontal-2 {
-  background-color: transparent;
-
-  transition: background-color 0.75s ease;
-
-  &.seccion-activa{
-    background-color: $color-fondo-claro;
-
-  }  
-  color: $color-texto-oscuro;
-  width: 100vw;
+#texto-horizontal-agresores {
   height: 300vh;
-  position: relative;
-  .horizontal-scroll_contenedor {
-    width: 100vw;
-    position: sticky;
-    overflow: hidden;
-    top: 0;
-    .horizontal-scroll_interior {
-      padding-top: 50px;
-      .horizontal-scroll_item {
-        width: 100%;
-        height: 100vh;
-        flex: 0 0 auto;
-        .ancho-texto {
-          border-radius: $radio-borde;
-          background: #e0e0e0b3;          max-width: 600px;
-          @media (max-width: $pantalla-movil) {
-            max-width: 80vw;
-          }
-          padding: 0 16px;
 
-
-        }
-      }
-    }
-    canvas {
-      //background: rgb(206, 206, 206);
-      position: absolute;
-      top: 0;
-    }
-  }
 }
 </style>

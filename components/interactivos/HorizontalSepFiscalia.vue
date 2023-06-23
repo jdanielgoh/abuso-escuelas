@@ -1,48 +1,49 @@
 <template>
-  <section id="texto-intro-scroll-horizontal">
+  <section id="texto-horizontal-sep-fiscalia" class="texto-intro-scroll-horizontal">
     <div class="ancho-texto horizontal-scroll_contenedor">
       <canvas class="canvas-vis"></canvas>
 
       <div
         class="horizontal-scroll_interior contenedor-flex"
-        :style="{ transform: `translate(${posicion}%,0)` }"
+        :style="{ transform: `translate(${posicion}%,-55px)` }"
       >
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              México ocupa el primer lugar en abuso sexual infantil, de acuerdo
-              con la Organización para la Cooperación y el Desarrollo
-              Económico(OCDE).<strong style="background: #7f78ff">
-                Dentro de las escuelas, las Secretarías de Educación registraron
-                3,865 casos en la última década.</strong
-              >
-              Esto quiere decir que, en promedio, todos los días ocurre una
-              agresión sexual contra niñas, niños y adolescentes a manos de
-              personal de los colegios a los que asisten.
-            </p>
+          <div class="ancho-bullet">
+              <p class="bullet" style="color: #5e5e5e">
+                <span class="izquierda"
+                  >En la última década, las Secretarías de Educación han
+                  registrado</span
+                >
+                <span class="dato-numerico centro">3,865</span>
+                <span class="derecha">
+                  casos de abuso dentro de las escuelas. En promedio, todos los
+                  días ocurre una agresión sexual contra niñas, niños y
+                  adolescentes a manos de personal de los colegios a los que
+                  asisten.
+                </span>
+              </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Estos datos están muy por encima de los que llegan ante los
-              Ministerios Públicos en el país, en donde<strong class="rosa">
-                solo existen 1,846 carpetas de investigación por este
-                delito</strong
-              >. Apenas el 50% de lo que se registra en las secretarías de
-              educación del país.
-            </p>
+          <div class="ancho-bullet">
+              <p class="bullet" style="color: #038f83">
+                <span class="izquierda">En el mismo periodo llegaron sólo</span>
+                <span class="dato-numerico centro">1,846</span>
+                <span class="derecha">
+                  carpetas de investigación por este delito a los Ministerios
+                  Públicos. Apenas el 50% de lo que registran las secretarías de
+                  educación del país.
+                </span>
+              </p>
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
+          <div class="ancho-texto" >
             <p>
-              La cifra es, sin embargo, conservadora. Aunque vía transparencia
-              se solicitó a las Secretarías de Educación información sobre
-              quejas por abuso sexual infantil dentro de las aulas, sólo 23
-              entidades dieron los datos. Lo mismo con las Fiscalías de
-              Justicia, sólo 17 informaron.
+              La SEP entregó los datos solicitados via transparencia en 23
+              entidades. Mientras que en las Fiscalías de Justicia, solo 17
+              estados informaron.
             </p>
             <div class="contenedor-flex">
               <table>
@@ -100,41 +101,50 @@
                 </tr>
               </table>
             </div>
-
             <p>
-              Los vacíos de información son reflejo de la omisión de las
-              autoridades, la falta de atención a la problemática y el nulo
-              seguimiento a los casos reportados.
-            </p>
-            <p>
-              Otras dependencias, como comisiones dederechos humanos y oficinas
-              de protección a la infancia confirmaron, sin embargo, que en esos
-              estados donde ni la SEP ni las Fiscalías reconocen el abuso
-              sexual, estos delitos también están presentes: no hay un solo
-              estado que pueda presumir de no tener registros por acoso, abuso
-              sexual o violación.
+              Sin embargo, comisiones de derechos humanos y oficinas de
+              protección a la infancia confirmaron que en los estados donde ni
+              la SEP ni las Fiscalías dieron información, estos delitos están
+              presentes: no hay un solo estado que no tenga registros de
+              violencia sexual.
             </p>
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              Mariana Gil, abogada y directora de la Oficina de Defensoría de
-              los Derechos de la Infancia, A.C. (ODI), reconoce que la cifra
-              negra en estos casos es incalculable. En uno de los casos que la
-              organización acompañó legalmente, lograron consolidar <strong class="rosa">30 denuncias</strong> 
-              de víctimas, pero en realidad habían <strong style="background: #7f78ff">90 afectados</strong> .
-            </p>
+          <div class="ancho-bullet">
+              <p class="bullet">
+                <span class="izquierda"
+                  >Mariana Gil, abogada y directora de la Oficina de Defensoría
+                  de los Derechos de la Infancia, A.C. (ODI), reconoce que la
+                  cifra negra en estos casos es incalculable. En uno de los
+                  casos que la organización acompañó legalmente, lograron
+                  consolidar</span
+                >
+                <span class="dato-numerico centro" style="color: #0c8d96">30</span>
+                <span class="centro">
+                  deununcias de víctimas, pero en realidad habían
+                </span>
+                <span class="dato-numerico centro">90</span>
+                <span class="centro"> afectadas </span>
+              </p>
+
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-texto">
-            <p>
-              En otro, de <strong style="background: #7f78ff">51 niños agredidos</strong> , <strong class="rosa">sólo 17 continuaron en el proceso</strong> .
-              Sólo un tercio llegó ante el ministerio público.
-            </p>
+          <div class="ancho-bullet">
+              <p class="bullet">
+                <span class="centro"
+                  >En otro, de</span
+                >
+                <span class="dato-numerico centro">51</span>
+                <span class="centro">
+                  niños agredidos, sólo
+                </span>
+                <span class="dato-numerico centro" style="color: #038f83">17</span>
+                <span class="centro" > consolidaron una denuncia </span>
+              </p>
           </div>
         </div>
       </div>
@@ -161,7 +171,7 @@ const detachedContainer = ref(),
 
 const ladata_pintable = ref();
 onMounted(() => {
-  canvas.value = d3.select("#texto-intro-scroll-horizontal canvas.canvas-vis");
+  canvas.value = d3.select("#texto-horizontal-sep-fiscalia canvas.canvas-vis");
   context.value = canvas.value.node().getContext("2d");
 
   calculandoDimensionesCanvas();
@@ -173,7 +183,7 @@ onMounted(() => {
     rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
     r1: d3.max(escalaRad.value.range()) * 0.01,
     r2: d3.max(escalaRad.value.range()) * 0.01,
-    fillStyle: "#7f78ff",
+    fillStyle: "#5e5e5e",
   }));
   configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -187,29 +197,27 @@ onMounted(() => {
   context.value.globalAlpha = 0.8;
 
   window.addEventListener("scroll", posicionScroleando);
-  window.addEventListener("resize", reescalando)
+  window.addEventListener("resize", reescalando);
 });
 onUnmounted(() => {
   window.removeEventListener("scroll", posicionScroleando);
-  window.removeEventListener("resize", reescalando)
-
+  window.removeEventListener("resize", reescalando);
 });
-function reescalando(){
+function reescalando() {
   calculandoDimensionesCanvas();
   calculandoEscalas();
-  cambioDePasos(paso_activo.value)
-
+  cambioDePasos(paso_activo.value);
 }
 function calculandoDimensionesCanvas() {
   var dpr = Math.min(2, getPixelRatio(context.value));
 
   ancho.value =
-    document.querySelector("#texto-intro-scroll-horizontal").clientWidth -
+    document.querySelector("#texto-horizontal-sep-fiscalia").clientWidth -
     margenes.value.derecha -
     margenes.value.izquierda;
   alto.value =
     document.querySelector(
-      "#texto-intro-scroll-horizontal div.horizontal-scroll_item.contenedor-flex"
+      "#texto-horizontal-sep-fiscalia div.horizontal-scroll_item.contenedor-flex"
     ).clientHeight -
     margenes.value.abajo -
     margenes.value.arriba;
@@ -249,7 +257,7 @@ function calculandoEscalas() {
 }
 function configurandoPictos(ladata) {
   //dataContainer.value.selectAll("custom.ellipse").remove();
-  let ancho_maximo = d3.max([ancho.value, alto.value]) 
+  let ancho_maximo = d3.max([ancho.value, alto.value]);
   dataBinding.value = dataContainer.value
     .selectAll("custom.ellipse")
     .data(ladata)
@@ -258,21 +266,43 @@ function configurandoPictos(ladata) {
         enter
           .append("custom")
           .classed("ellipse", true)
-          .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-          ancho_maximo * Math.cos(d.ang))
-          .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-          ancho_maximo * Math.sin(d.ang))
+          .attr(
+            "x",
+            (d) =>
+              ancho.value * 0.5 +
+              escalaRad.value(Math.pow(Math.random(), 0.5)) +
+              ancho_maximo * Math.cos(d.ang)
+          )
+          .attr(
+            "y",
+            (d) =>
+              alto.value * 0.5 +
+              escalaRad.value(Math.pow(Math.random(), 0.5)) +
+              ancho_maximo * Math.sin(d.ang)
+          )
           .attr("r1", 0)
           .attr("r2", 0)
-          .attr("fillStyle", "#7f78ff"),
+          .attr("fillStyle", "#5e5e5e"),
       (update) => update,
-      (exit) => exit.transition()
-        .duration(500)
-        .attr("x", (d) => ancho.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        ancho_maximo* Math.cos(d.ang))
-        .attr("y", (d) => alto.value * 0.5 + escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        ancho_maximo * Math.sin(d.ang))
-        .remove()
+      (exit) =>
+        exit
+          .transition()
+          .duration(500)
+          .attr(
+            "x",
+            (d) =>
+              ancho.value * 0.5 +
+              escalaRad.value(Math.pow(Math.random(), 0.5)) +
+              ancho_maximo * Math.cos(d.ang)
+          )
+          .attr(
+            "y",
+            (d) =>
+              alto.value * 0.5 +
+              escalaRad.value(Math.pow(Math.random(), 0.5)) +
+              ancho_maximo * Math.sin(d.ang)
+          )
+          .remove()
     )
     .transition()
     .duration(500)
@@ -317,7 +347,7 @@ function dibujandoPictos() {
 }
 function posicionScroleando() {
   let rect = document
-    .querySelector("#texto-intro-scroll-horizontal")
+    .querySelector("#texto-horizontal-sep-fiscalia")
     .getBoundingClientRect();
   posicion.value =
     (500 * rect.top) / rect.height > 0
@@ -332,25 +362,25 @@ function posicionScroleando() {
     paso_activo.value = 1;
   } else if (-250 < posicion.value && posicion.value <= -150) {
     paso_activo.value = 2;
-  }
-  else if (-350 < posicion.value && posicion.value <= -250) {
+  } else if (-350 < posicion.value && posicion.value <= -250) {
     paso_activo.value = 3;
-  }
-  else if (posicion.value <= -350) {
+  } else if (posicion.value <= -350) {
     paso_activo.value = 4;
   }
-
 }
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    ladata_pintable.value = d3.range(0, 3815).map((d,i) => ({
+    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
       i: d,
-      ang: i<1846 ? Math.random()* 0.48 * 2 * Math.PI  : (0.48 + Math.random()*.52) * 2 * Math.PI,
+      ang:
+        i < 1846
+          ? Math.random() * 0.48 * 2 * Math.PI
+          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
       rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
       r1: d3.max(escalaRad.value.range()) * 0.01,
       r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#7f78ff",
+      fillStyle: "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -360,10 +390,9 @@ function cambioDePasos(nv, ov) {
         t.stop();
       }
     });
-  }
-  else if (nv == 1) {
+  } else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 1846 ? "#ff5ebc" : "#7f78ff";
+      d.fillStyle = i < 1846 ? "#038f83" : "#5e5e5e";
       d.rad = ov > 1 ? escalaRad.value(Math.pow(Math.random(), 0.5)) : d.rad;
     });
     configurandoPictos(toRaw(ladata_pintable.value));
@@ -375,16 +404,18 @@ function cambioDePasos(nv, ov) {
       }
     });
   } else if (nv == 2) {
-
-    ladata_pintable.value = d3.range(0, 3815).map((d,i) => ({
+    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
       i: d,
-      ang: i<1846 ? Math.random()* 0.48 * 2 * Math.PI  : (0.48 + Math.random()*.52) * 2 * Math.PI,
+      ang:
+        i < 1846
+          ? Math.random() * 0.48 * 2 * Math.PI
+          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
       rad:
         escalaRad.value(Math.pow(Math.random(), 0.5)) +
         d3.max([ancho.value, alto.value]),
       r1: d3.max(escalaRad.value.range()) * 0.01,
       r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#7f78ff",
+      fillStyle: "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -394,17 +425,16 @@ function cambioDePasos(nv, ov) {
         t.stop();
       }
     });
-  }
-  else if(nv == 3){
-    ladata_pintable.value = d3.range(0, 90).map((d,i) => ({
+  } else if (nv == 3) {
+    ladata_pintable.value = d3.range(0, 90).map((d, i) => ({
       i: d,
-      ang: 2* Math.PI * i / 90,
+      ang: (2 * Math.PI * i) / 90,
       //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
       rad: escalaRad.value.range()[1],
 
-      r1: escalaRad.value.range()[1] *Math.PI/ 90,
-      r2: escalaRad.value.range()[1] *Math.PI/ 90,
-      fillStyle: i<30? "#ff5ebc": "#7f78ff",
+      r1: (escalaRad.value.range()[1] * Math.PI) / 90,
+      r2: (escalaRad.value.range()[1] * Math.PI) / 90,
+      fillStyle: i < 30 ? "#038f83" : "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -414,17 +444,16 @@ function cambioDePasos(nv, ov) {
         t.stop();
       }
     });
-  }
-  else if(nv == 4){
-    ladata_pintable.value = d3.range(0, 51).map((d,i) => ({
+  } else if (nv == 4) {
+    ladata_pintable.value = d3.range(0, 51).map((d, i) => ({
       i: d,
-      ang: 2* Math.PI * i / 51,
+      ang: (2 * Math.PI * i) / 51,
       rad: escalaRad.value.range()[1],
 
       //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: escalaRad.value.range()[1] *Math.PI/ 51,
-      r2: escalaRad.value.range()[1] *Math.PI/ 51,
-      fillStyle: i<17? "#ff5ebc": "#7f78ff",
+      r1: (escalaRad.value.range()[1] * Math.PI) / 51,
+      r2: (escalaRad.value.range()[1] * Math.PI) / 51,
+      fillStyle: i < 17 ? "#038f83" : "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -453,41 +482,10 @@ function getPixelRatio(ctx) {
 </script>
 
 <style lang="scss">
-#texto-intro-scroll-horizontal {
-  background-color: transparent;
-  transition: background-color 0.75s ease;
+#texto-horizontal-sep-fiscalia {
 
-  &.seccion-activa{
-    background-color: $color-fondo-claro;
-
-  }
-  color: $color-texto-oscuro;
-  width: 100vw;
   height: 500vh;
-  position: relative;
-  .horizontal-scroll_contenedor {
-    width: 100vw;
-    position: sticky;
-    overflow: hidden;
-    top: 0;
-    .horizontal-scroll_interior {
-      padding-top: 50px;
-      .horizontal-scroll_item {
-        width: 100%;
-        height: 100vh;
-        flex: 0 0 auto;
-        .ancho-texto {
-          border-radius: $radio-borde;
-          background: #e0e0e0b3;
-          max-width: 600px;
-          @media (max-width: $pantalla-movil) {
-            max-width: 80vw;
-          }
-          padding: 0 16px;
-          strong.rosa {
-            background: #ff5ebc;
-          }
-          table {
+  table {
             font-size: 12px;
             margin: auto;
             td.info-entregada-no {
@@ -497,14 +495,6 @@ function getPixelRatio(ctx) {
               color: green;
             }
           }
-        }
-      }
-    }
-    canvas {
-      //background: rgb(206, 206, 206);
-      position: absolute;
-      top: 0;
-    }
-  }
+
 }
 </style>
