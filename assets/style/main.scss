@@ -33,3 +33,10 @@ blockquote{
     font-weight: 700;
     border-left: solid 4px $color-texto-claro;
 }
+
+.bullet-fondo-oscuro-transparencia{
+    background-color: $color-fondo-oscuro-transparencia;
+      border-radius: $radio-borde;
+      backdrop-filter: blur(2px);
+      padding: 16px;
+}

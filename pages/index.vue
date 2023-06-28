@@ -2,7 +2,7 @@
   <div id="pagina-inicio">
     <InteractivosPortada></InteractivosPortada>
     <section id="portada" class="contenedor-flex">
-      <div class="titulo">
+      <div class="titulo bullet-fondo-oscuro-transparencia">
         <h1>Abuso sexual en escuelas.</h1>
         <h2>Los casos que la SEP guarda debajo de la alfombra.</h2>
         <div class="logos contenedor-flex">
@@ -26,7 +26,7 @@
       </div>
     </section>
     <section id="sumario" class="contenedor-flex">
-      <p>
+      <p class="bullet-fondo-oscuro-transparencia">
         En la última década se han registrado 3,865 casos de abuso sexual en
         escuelas de educación básica: uno cada día. Los principales agresores
         son docentes. Niños con terrores nocturnos, que cambian su temperamento,
@@ -38,7 +38,7 @@
       </p>
     </section>
     <section id="texto-intro" class="contenedor-flex">
-      <div class="ancho-texto">
+      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           “En esta escuela nunca ha ocurrido algo similar”. Esta fue la única
           respuesta que recibieron los padres de familia que acudieron ante la
@@ -78,7 +78,7 @@
       </div>
     </section>
     <section id="casos-particulares" class="contenedor-flex">
-      <div class="ancho-texto">
+      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           Parecen casos aislados, atípicos, pero no lo son. Las actas de hechos
           relacionadas con quejas y denuncias por delitos sexuales cometidos por
@@ -95,7 +95,7 @@
       </div>
     </section>
     <section id="casos-particulares-2" class="contenedor-flex">
-      <div class="ancho-texto">
+      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           En Veracruz, un profesor de secundaria abusó sexualmente de varias
           alumnas y las amenazó con sus calificaciones; ya tenía un expediente
@@ -110,7 +110,7 @@
     </section>
     <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
     <section id="perfiles-victimas" class="contenedor-flex">
-      <div class="ancho-texto">
+      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           Las víctimas, en cambio, son diversas. De las más de mil quejas que
           entregaron las Secretarías de Educación vía transparencia, se logró
@@ -143,10 +143,6 @@
       text-align: center;
       color: $color-texto-claro;
       max-width: 680px;
-      background-color: $color-fondo-oscuro;
-      backdrop-filter: blur(2px);
-      padding: 16px;
-      border-radius: 16px;
       h1 {
         font-size: 76px;
         font-family: "Roboto Slab";
@@ -204,10 +200,7 @@
       max-width: 500px;
       color: $color-texto-claro;
       margin: auto;
-      background-color: $color-fondo-oscuro;
-      padding: 16px;
       font-size: 18px;
-      border-radius: 16px;
     }
   }
 
@@ -220,10 +213,7 @@
     .ancho-texto {
       color: $color-texto-claro;
       margin: auto;
-      background-color: $color-fondo-oscuro;
-      padding: 16px;
       font-size: 18px;
-      border-radius: 16px;
     }
   }
   section {

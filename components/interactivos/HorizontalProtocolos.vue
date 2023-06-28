@@ -127,7 +127,7 @@ function visualizarMapa(categoria) {
     .geoMercator()
     .scale(1.75 * d3.min([alto.value, ancho.value]))
     .center([-102, 25])
-    .translate([ancho.value * 0.5, alto.value * 0.5]);
+    .translate([ ancho.value * 0.5, ancho.value> 768 ? alto.value * 0.5:alto.value * 0.7 ]);
 
   path.value = d3.geoPath().projection(proyeccion.value);
   console.log(categoria, poligonos.value.filter(d=>      d.properties[categoria] != "Sí" 
@@ -179,5 +179,10 @@ function cambioDePasos(nv, ov) {
 <style lang="scss">
 #texto-horizontal-protocolos {
   height: 400vh;
+  .horizontal-scroll_item.contenedor-flex{
+    .ancho-bullet{
+      margin: 50px auto auto auto;
+    }
+  }
 }
 </style>

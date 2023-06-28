@@ -77,7 +77,7 @@ import info_js from "@/assets/datos/info_fiscalias_sep.json";
 const posicion = ref(0);
 const ancho = ref(0),
   alto = ref(0),
-  margenes = ref({ arriba: 20, abajo: 20, izquierda: 20, derecha: 20 });
+  margenes = ref({ arriba: 50, abajo: 50, izquierda: 50, derecha: 50 });
 const canvas = ref(),
   context = ref();
 const escalaLineal = ref();
