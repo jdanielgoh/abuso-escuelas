@@ -56,6 +56,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted, watch, toRaw } from "vue";
 import * as d3 from "d3";
+
+import datos_geograficos from "@/assets/datos/protocolos.json";
+
 let diccionario = {
   "Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ":
     "define_conductas",
@@ -66,6 +69,8 @@ let diccionario = {
   "Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)":
     "registro_textual",
 };
+
+
 const posicion = ref(0);
 const ancho = ref(0),
   alto = ref(0),
@@ -83,12 +88,9 @@ onMounted(() => {
   svg.value = d3.select("#" + id_contenedor.value).select("svg");
   grupo_poligonos.value = svg.value.select("g.mapa");
   calculandoDimensionesSvg();
-  d3.json("/datos/protocolos.geojson").then((datos_geograficos) => {
-    console.log(datos_geograficos);
     geodata.value = datos_geograficos;
     creaMapa();
     visualizarMapa(catego.value);
-  });
   window.addEventListener("scroll", posicionScroleando);
   window.addEventListener("resize", reescalando);
 });
