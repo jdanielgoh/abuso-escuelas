@@ -1,5 +1,8 @@
 <template>
-  <section id="texto-horizontal-sep-fiscalia" class="texto-intro-scroll-horizontal">
+  <section
+    id="texto-horizontal-sep-fiscalia"
+    class="texto-intro-scroll-horizontal"
+  >
     <div class="ancho-texto horizontal-scroll_contenedor">
       <canvas class="canvas-vis"></canvas>
 
@@ -9,35 +12,55 @@
       >
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
-              <p class="bullet" style="color: #5e5e5e">
-                <span class="izquierda"
-                  >En la última década, las Secretarías de Educación han
-                  registrado</span
-                >
-                <span class="dato-numerico centro">3,865</span>
-                <span class="derecha">
-                  casos de abuso dentro de las escuelas. En promedio, todos los
-                  días ocurre una agresión sexual contra niñas, niños y
-                  adolescentes a manos de personal de los colegios a los que
-                  asisten.
-                </span>
-              </p>
+            <p class="bullet" style="color: #5e5e5e">
+              <span class="izquierda"
+                >En la última década, las Secretarías de Educación han
+                registrado</span
+              >
+              <span class="dato-numerico centro">3,865</span>
+              <span class="derecha">
+                casos de abuso dentro de las escuelas. En promedio, todos los
+                días ocurre una agresión sexual contra niñas, niños y
+                adolescentes a manos de personal de los colegios a los que
+                asisten.
+              </span>
+            </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
-              <p class="bullet" style="color: #038f83">
-                <span class="izquierda">En el mismo periodo llegaron sólo</span>
-                <span class="dato-numerico centro">1,846</span>
-                <span class="derecha">
-                  carpetas de investigación por este delito a los Ministerios
-                  Públicos. Apenas el 50% de lo que registran las secretarías de
-                  educación del país.
-                </span>
-              </p>
+            <p class="bullet" style="color: #038f83">
+              <span class="izquierda">En el mismo periodo llegaron sólo</span>
+              <span class="dato-numerico centro">1,846</span>
+              <span class="derecha">
+                carpetas de investigación por este delito a los Ministerios
+                Públicos. Apenas el 50% de lo que registran las secretarías de
+                educación del país.
+              </span>
+            </p>
           </div>
         </div>
-
+        <div class="horizontal-scroll_item contenedor-flex">
+          <div class="ancho-bullet">
+            <p class="bullet">
+              <span class="izquierda"
+                >Mariana Gil, abogada y directora de la Oficina de Defensoría de
+                los Derechos de la Infancia, A.C. (ODI), reconoce que la cifra
+                negra en estos casos es incalculable. En uno de los casos que la
+                organización acompañó legalmente, lograron consolidar</span
+              >
+              <span class="dato-numerico centro" style="color: #0c8d96"
+                >30</span
+              >
+              <span class="centro">
+                deununcias de víctimas, pero en realidad habían
+              </span>
+              <span class="dato-numerico centro">90</span>
+              <span class="centro"> afectadas </span>
+            </p>
+          </div>
+        </div>
+        <!--
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-texto" >
             <p>
@@ -110,43 +133,7 @@
             </p>
           </div>
         </div>
-
-        <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-bullet">
-              <p class="bullet">
-                <span class="izquierda"
-                  >Mariana Gil, abogada y directora de la Oficina de Defensoría
-                  de los Derechos de la Infancia, A.C. (ODI), reconoce que la
-                  cifra negra en estos casos es incalculable. En uno de los
-                  casos que la organización acompañó legalmente, lograron
-                  consolidar</span
-                >
-                <span class="dato-numerico centro" style="color: #0c8d96">30</span>
-                <span class="centro">
-                  deununcias de víctimas, pero en realidad habían
-                </span>
-                <span class="dato-numerico centro">90</span>
-                <span class="centro"> afectadas </span>
-              </p>
-
-          </div>
-        </div>
-
-        <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-bullet">
-              <p class="bullet">
-                <span class="centro"
-                  >En otro, de</span
-                >
-                <span class="dato-numerico centro">51</span>
-                <span class="centro">
-                  niños agredidos, sólo
-                </span>
-                <span class="dato-numerico centro" style="color: #038f83">17</span>
-                <span class="centro" > consolidaron una denuncia </span>
-              </p>
-          </div>
-        </div>
+-->
       </div>
     </div>
   </section>
@@ -255,63 +242,7 @@ function calculandoEscalas() {
     .domain([0, 1])
     .range([0, dimension_minima]);
 }
-function configurandoPictos(ladata) {
-  //dataContainer.value.selectAll("custom.ellipse").remove();
-  let ancho_maximo = d3.max([ancho.value, alto.value]);
-  dataBinding.value = dataContainer.value
-    .selectAll("custom.ellipse")
-    .data(ladata)
-    .join(
-      (enter) =>
-        enter
-          .append("custom")
-          .classed("ellipse", true)
-          .attr(
-            "x",
-            (d) =>
-              ancho.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              ancho_maximo * Math.cos(d.ang)
-          )
-          .attr(
-            "y",
-            (d) =>
-              alto.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              ancho_maximo * Math.sin(d.ang)
-          )
-          .attr("r1", 0)
-          .attr("r2", 0)
-          .attr("fillStyle", "#5e5e5e"),
-      (update) => update,
-      (exit) =>
-        exit
-          .transition()
-          .duration(500)
-          .attr(
-            "x",
-            (d) =>
-              ancho.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              ancho_maximo * Math.cos(d.ang)
-          )
-          .attr(
-            "y",
-            (d) =>
-              alto.value * 0.5 +
-              escalaRad.value(Math.pow(Math.random(), 0.5)) +
-              ancho_maximo * Math.sin(d.ang)
-          )
-          .remove()
-    )
-    .transition()
-    .duration(500)
-    .attr("x", (d) => ancho.value * 0.5 + d.rad * Math.cos(d.ang))
-    .attr("y", (d) => alto.value * 0.5 + d.rad * Math.sin(d.ang))
-    .attr("r1", (d) => d.r1)
-    .attr("r2", (d) => d.r2)
-    .attr("fillStyle", (d) => d.fillStyle);
-}
+
 function dibujandoPictos() {
   context.value.save();
   context.value.clearRect(
@@ -350,11 +281,11 @@ function posicionScroleando() {
     .querySelector("#texto-horizontal-sep-fiscalia")
     .getBoundingClientRect();
   posicion.value =
-    (500 * rect.top) / rect.height > 0
+    (300 * rect.top) / rect.height > 0
       ? 0
-      : (500 * rect.top) / rect.height < -400
-      ? -400
-      : (500 * rect.top) / rect.height;
+      : (300 * rect.top) / rect.height < -200
+      ? -200
+      : (300 * rect.top) / rect.height;
 
   if (-50 < posicion.value) {
     paso_activo.value = 0;
@@ -362,21 +293,43 @@ function posicionScroleando() {
     paso_activo.value = 1;
   } else if (-250 < posicion.value && posicion.value <= -150) {
     paso_activo.value = 2;
-  } else if (-350 < posicion.value && posicion.value <= -250) {
-    paso_activo.value = 3;
-  } else if (posicion.value <= -350) {
-    paso_activo.value = 4;
   }
+}
+function configurandoPictos(ladata) {
+  //dataContainer.value.selectAll("custom.ellipse").remove();
+  dataBinding.value = dataContainer.value
+    .selectAll("custom.ellipse")
+    .data(ladata)
+    .join(
+      (enter) =>
+        enter
+          .append("custom")
+          .classed("ellipse", true)
+
+          .attr("r1", 0)
+          .attr("r2", 0)
+          .attr("fillStyle", "#5e5e5e"),
+      (update) => update,
+      (exit) =>
+        exit
+          .remove()
+    )
+    .transition()
+    .delay((d,i) => i<3815 ? 0 : 500 + 30 *(i%10))
+    .duration((d,i) => i<3815 ? 500 : 0)
+    .attr("x", (d) => ancho.value * 0.5 + d.rad * Math.cos(d.ang))
+    .attr("y", (d) => alto.value * 0.5 + d.rad * Math.sin(d.ang))
+    .attr("r1", (d) => d.r1)
+    .attr("r2", (d) => d.r2)
+    .attr("fillStyle", (d) => d.fillStyle)
+    ;
 }
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
     ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
       i: d,
-      ang:
-        i < 1846
-          ? Math.random() * 0.48 * 2 * Math.PI
-          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
+      ang: Math.random() * 2 * Math.PI,
       rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
       r1: d3.max(escalaRad.value.range()) * 0.01,
       r2: d3.max(escalaRad.value.range()) * 0.01,
@@ -386,15 +339,22 @@ function cambioDePasos(nv, ov) {
 
     var t = d3.timer((transcurrido) => {
       dibujandoPictos();
-      if (transcurrido > 500) {
+      if (transcurrido > 1000) {
         t.stop();
       }
     });
   } else if (nv == 1) {
-    ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 1846 ? "#038f83" : "#5e5e5e";
-      d.rad = ov > 1 ? escalaRad.value(Math.pow(Math.random(), 0.5)) : d.rad;
-    });
+    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
+      i: d,
+      ang:
+        i < 1846
+          ? Math.random() * 0.48 * 2 * Math.PI
+          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
+      rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
+      r1: d3.max(escalaRad.value.range()) * 0.01,
+      r2: d3.max(escalaRad.value.range()) * 0.01,
+      fillStyle: i < 1846 ? "#038f83" : "#5e5e5e",
+    }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
     var t = d3.timer((transcurrido) => {
@@ -404,62 +364,21 @@ function cambioDePasos(nv, ov) {
       }
     });
   } else if (nv == 2) {
-    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
+    ladata_pintable.value = d3.range(0, 38015).map((d, i) => ({
       i: d,
-      ang:
-        i < 1846
+      ang: i < 1846
           ? Math.random() * 0.48 * 2 * Math.PI
-          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
-      rad:
-        escalaRad.value(Math.pow(Math.random(), 0.5)) +
-        d3.max([ancho.value, alto.value]),
-      r1: d3.max(escalaRad.value.range()) * 0.01,
-      r2: d3.max(escalaRad.value.range()) * 0.01,
-      fillStyle: "#5e5e5e",
+          :  i< 3815 ? (0.48 + Math.random() * 0.52) * 2 * Math.PI : Math.random() * 2 * Math.PI,
+      rad: i < 3815 ? ladata_pintable.value[i].rad * 0.05 : escalaRad.value(Math.pow(Math.random(), 0.5)),
+      r1: d3.max(escalaRad.value.range()) * 0.005,
+      r2: d3.max(escalaRad.value.range()) * 0.005,
+      fillStyle: i < 1846 ? "#038f83" : i< 3815 ? "#5e5e5e" : "#b0b0b0",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
     var t = d3.timer((transcurrido) => {
       dibujandoPictos();
-      if (transcurrido > 500) {
-        t.stop();
-      }
-    });
-  } else if (nv == 3) {
-    ladata_pintable.value = d3.range(0, 90).map((d, i) => ({
-      i: d,
-      ang: (2 * Math.PI * i) / 90,
-      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      rad: escalaRad.value.range()[1],
-
-      r1: (escalaRad.value.range()[1] * Math.PI) / 90,
-      r2: (escalaRad.value.range()[1] * Math.PI) / 90,
-      fillStyle: i < 30 ? "#038f83" : "#5e5e5e",
-    }));
-    configurandoPictos(toRaw(ladata_pintable.value));
-
-    var t = d3.timer((transcurrido) => {
-      dibujandoPictos();
-      if (transcurrido > 500) {
-        t.stop();
-      }
-    });
-  } else if (nv == 4) {
-    ladata_pintable.value = d3.range(0, 51).map((d, i) => ({
-      i: d,
-      ang: (2 * Math.PI * i) / 51,
-      rad: escalaRad.value.range()[1],
-
-      //rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: (escalaRad.value.range()[1] * Math.PI) / 51,
-      r2: (escalaRad.value.range()[1] * Math.PI) / 51,
-      fillStyle: i < 17 ? "#038f83" : "#5e5e5e",
-    }));
-    configurandoPictos(toRaw(ladata_pintable.value));
-
-    var t = d3.timer((transcurrido) => {
-      dibujandoPictos();
-      if (transcurrido > 500) {
+      if (transcurrido > 1000) {
         t.stop();
       }
     });
@@ -483,18 +402,16 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-sep-fiscalia {
-
-  height: 500vh;
+  height: 300vh;
   table {
-            font-size: 12px;
-            margin: auto;
-            td.info-entregada-no {
-              color: red;
-            }
-            td.info-entregada-si {
-              color: green;
-            }
-          }
-
+    font-size: 12px;
+    margin: auto;
+    td.info-entregada-no {
+      color: red;
+    }
+    td.info-entregada-si {
+      color: green;
+    }
+  }
 }
 </style>
