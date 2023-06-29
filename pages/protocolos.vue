@@ -1,7 +1,8 @@
 <template >
     <div id="protocolos">
         <h1>Protocolos </h1>
-        <VisualizacionesProtocolos></VisualizacionesProtocolos>
+        <InteractivosHorizontalProtocolos></InteractivosHorizontalProtocolos>
+
     </div>
 
 </template>
