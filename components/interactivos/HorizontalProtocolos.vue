@@ -130,8 +130,7 @@ function visualizarMapa(categoria) {
     .translate([ ancho.value * 0.5, ancho.value> 768 ? alto.value * 0.5:alto.value * 0.7 ]);
 
   path.value = d3.geoPath().projection(proyeccion.value);
-  console.log(categoria, poligonos.value.filter(d=>      d.properties[categoria] != "Sí" 
-)._groups[0].length)
+
   poligonos.value
     .attr("d", path.value)
     .style("stroke", "#0f1e3d")

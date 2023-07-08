@@ -218,6 +218,9 @@
     min-height: 100vh;
     padding: 0 16px;
   }
+  #texto-horizontal-sep-fiscalia{
+    padding: 0;
+  }
 
 
 }

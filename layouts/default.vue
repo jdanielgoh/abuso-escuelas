@@ -6,7 +6,7 @@
 <style lang="scss">
 .texto-intro-scroll-horizontal {
   padding: 0 ;
-
+  margin: 0 -15px;
   background-color: transparent;
   transition: background-color 0.75s ease;
 
