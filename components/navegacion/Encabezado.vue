@@ -15,7 +15,7 @@ const esta_abierto = ref(false);
         <ul>
           <li><NuxtLink @click.native="esta_abierto =false" to="/"> Inicio</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="historias"> Historia</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="perfiles"> Perfiles</NuxtLink>  </li>
+          <li><NuxtLink @click.native="esta_abierto =false" to="agresores-en-las-aulas"> Agresores en las aulas</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="protocolos"> Protocolos</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="metodologia"> Metodología</NuxtLink>  </li>
 

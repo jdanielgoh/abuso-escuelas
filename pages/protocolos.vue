@@ -1,19 +1,25 @@
 <template >
-    <div id="protocolos">
-        <h1>Protocolos </h1>
-        <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
-
+  <div id="protocolos" class="vista-historias">
+    <article>
+      <section class="contenedor-flex">
+        <div class="ancho-texto ">
+          <h1>Protocolos</h1>
+          <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
+        </div>
+      </section>
+      <section>
         <InteractivosHorizontalProtocolos></InteractivosHorizontalProtocolos>
-    </div>
-
+      </section>
+    </article>
+  </div>
 </template>
-
 <style lang="scss" >
 #protocolos{
-    background:$color-fondo-claro;
-    padding: 50px 0px;
-    h1{    color: black;
-}
-    color: black;
-}
+
+    .ancho-texto{
+        margin: auto;
+        max-width: 1200px;
+        width: 100%;
+    }}
+
 </style>

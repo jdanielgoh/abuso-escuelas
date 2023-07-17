@@ -1,3 +1,6 @@
 <template>
-    <p>historias</p>
+    <div class="vista-historias">
+        <p>historias</p>
+
+    </div>
 </template>

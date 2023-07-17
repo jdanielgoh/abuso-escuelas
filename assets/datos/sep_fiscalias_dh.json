@@ -1,0 +1,194 @@
+[
+    {
+        "Entidad": "Aguascalientes",
+        "No_casos_SEP": "69",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "3"
+    },
+    {
+        "Entidad": "Baja California",
+        "No_casos_SEP": "55",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "34"
+    },
+    {
+        "Entidad": "Baja California Sur",
+        "No_casos_SEP": null,
+        "No_casos_Fiscalia": "33",
+        "No_casos_DH_y_OPI": "4"
+    },
+    {
+        "Entidad": "Campeche",
+        "No_casos_SEP": "57",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Chiapas",
+        "No_casos_SEP": "35",
+        "No_casos_Fiscalia": "38",
+        "No_casos_DH_y_OPI": "33"
+    },
+    {
+        "Entidad": "Chihuahua",
+        "No_casos_SEP": "30",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "4"
+    },
+    {
+        "Entidad": "Ciudad de México",
+        "No_casos_SEP": "1449",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Coahuila",
+        "No_casos_SEP": "54",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "10"
+    },
+    {
+        "Entidad": "Colima",
+        "No_casos_SEP": "12",
+        "No_casos_Fiscalia": "16",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Durango",
+        "No_casos_SEP": "6",
+        "No_casos_Fiscalia": "90",
+        "No_casos_DH_y_OPI": "15"
+    },
+    {
+        "Entidad": "Guanajuato",
+        "No_casos_SEP": "153",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "33"
+    },
+    {
+        "Entidad": "Guerrero",
+        "No_casos_SEP": "25",
+        "No_casos_Fiscalia": "29",
+        "No_casos_DH_y_OPI": "11"
+    },
+    {
+        "Entidad": "Hidalgo",
+        "No_casos_SEP": "28",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "64"
+    },
+    {
+        "Entidad": "Jalisco",
+        "No_casos_SEP": "509",
+        "No_casos_Fiscalia": "31",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Estado de México",
+        "No_casos_SEP": "573",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Michoacán",
+        "No_casos_SEP": "1",
+        "No_casos_Fiscalia": "190",
+        "No_casos_DH_y_OPI": "11"
+    },
+    {
+        "Entidad": "Morelos",
+        "No_casos_SEP": "6",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "2"
+    },
+    {
+        "Entidad": "Nayarit",
+        "No_casos_SEP": "15",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Nuevo León",
+        "No_casos_SEP": null,
+        "No_casos_Fiscalia": "215",
+        "No_casos_DH_y_OPI": "10"
+    },
+    {
+        "Entidad": "Oaxaca",
+        "No_casos_SEP": "25",
+        "No_casos_Fiscalia": "132",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Puebla",
+        "No_casos_SEP": "135",
+        "No_casos_Fiscalia": "288",
+        "No_casos_DH_y_OPI": "27"
+    },
+    {
+        "Entidad": "Querétaro",
+        "No_casos_SEP": "18",
+        "No_casos_Fiscalia": "187",
+        "No_casos_DH_y_OPI": "18"
+    },
+    {
+        "Entidad": "Quintana Roo",
+        "No_casos_SEP": "95",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "17"
+    },
+    {
+        "Entidad": "San Luis Potosí",
+        "No_casos_SEP": null,
+        "No_casos_Fiscalia": "226",
+        "No_casos_DH_y_OPI": "54"
+    },
+    {
+        "Entidad": "Sinaloa",
+        "No_casos_SEP": "7",
+        "No_casos_Fiscalia": "33",
+        "No_casos_DH_y_OPI": "17"
+    },
+    {
+        "Entidad": "Sonora",
+        "No_casos_SEP": null,
+        "No_casos_Fiscalia": "11",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Tabasco",
+        "No_casos_SEP": "39",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Tamaulipas",
+        "No_casos_SEP": "6",
+        "No_casos_Fiscalia": "165",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Tlaxcala",
+        "No_casos_SEP": "13",
+        "No_casos_Fiscalia": "7",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Veracruz",
+        "No_casos_SEP": "46",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": "31"
+    },
+    {
+        "Entidad": "Yucatán",
+        "No_casos_SEP": "86",
+        "No_casos_Fiscalia": "155",
+        "No_casos_DH_y_OPI": null
+    },
+    {
+        "Entidad": "Zacatecas",
+        "No_casos_SEP": "3",
+        "No_casos_Fiscalia": null,
+        "No_casos_DH_y_OPI": null
+    }
+]

@@ -1,3 +1,6 @@
 <template>
-    <p>metodologia</p>
+    <div class="vista-historias">
+        <p>metodologia</p>
+
+    </div>
 </template>

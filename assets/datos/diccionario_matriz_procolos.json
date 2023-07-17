@@ -1,152 +1,242 @@
 [
   {
-    "variable": "Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ",
-    "categoria": "Preliminares",
-    "id": 0
+      "": "0",
+      "variable": "Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ",
+      "categoria": "Marco base",
+      "id": "0",
+      "encabezado_columna": "Define delitos sexuales",
+      "info_extra": "Las define conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). "
   },
   {
-    "variable": "El protocolo es aplicable a escuelas públicas o privadas (Sí: dice explícitamente que es aplicable a escuelas privadas también; No: dice que solo es aplicable a públicas o no señala nada al respecto).",
-    "categoria": "Preliminares",
-    "id": 1
+      "": "1",
+      "variable": "El protocolo es aplicable a escuelas públicas o privadas (Sí: dice explícitamente que es aplicable a escuelas privadas también; No: dice que solo es aplicable a públicas o no señala nada al respecto).",
+      "categoria": "Marco base",
+      "id": "1",
+      "encabezado_columna": "Aplica a escuelas públicas y privadas ",
+      "info_extra": ""
   },
   {
-    "variable": "Indica la obligatoriedad de publicar los mecanismos de queja y su uso",
-    "categoria": "Prevención",
-    "id": 2
+      "": "2",
+      "variable": "Indica la obligatoriedad de publicar los mecanismos de queja y su uso",
+      "categoria": "Prevención",
+      "id": "2",
+      "encabezado_columna": "Mecanismos de queja",
+      "info_extra": "Especifica el uso y seguimiento a los mecanismos establecidos"
   },
   {
-    "variable": "Establece la necesidad de capacitar al personal docente y administrativo de las escuelas sobre normas y mecanismos de atención a casos de violencia sexual.",
-    "categoria": "Prevención",
-    "id": 3
+      "": "3",
+      "variable": "Establece la necesidad de capacitar al personal docente y administrativo de las escuelas sobre normas y mecanismos de atención a casos de violencia sexual.",
+      "categoria": "Prevención",
+      "id": "3",
+      "encabezado_columna": "Capacitación docente",
+      "info_extra": "Brinda información a su personal sobre normas y mecanismos de atención a casos de violencia sexual"
   },
   {
-    "variable": "Establece mecanismos de difusión de Protocolo de Atención a casos de violencia con personal docente, administrativo y estudiantes. ",
-    "categoria": "Prevención",
-    "id": 4
+      "": "4",
+      "variable": "Establece mecanismos de difusión de Protocolo de Atención a casos de violencia con personal docente, administrativo y estudiantes. ",
+      "categoria": "Prevención",
+      "id": "4",
+      "encabezado_columna": "Difusión del protocolo",
+      "info_extra": "Establece mecanismos para compartir el documento con estudiantes, familias y personal"
   },
   {
-    "variable": "Cuenta con mecanismos de queja INTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",
-    "categoria": "Prevención",
-    "id": 5
+      "": "5",
+      "variable": "Cuenta con mecanismos de queja INTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",
+      "categoria": "Prevención",
+      "id": "5",
+      "encabezado_columna": "Mecanismos de queja internos",
+      "info_extra": "Cuenta con teléfonos de ayuda, salas de chat, denuncia en línea, buzones para enviar mensajes confidenciales. "
   },
   {
-    "variable": "Cuenta con mecanismos de queja EXTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",
-    "categoria": "Prevención",
-    "id": 6
+      "": "6",
+      "variable": "Cuenta con mecanismos de queja EXTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",
+      "categoria": "Prevención",
+      "id": "6",
+      "encabezado_columna": "Mecanismos de queja externos",
+      "info_extra": "Cuenta con teléfonos de ayuda, salas de chat, denuncia en línea, buzones para enviar mensajes confidenciales. "
   },
   {
-    "variable": "Establece medidas la protección frente al riesgo generado por violencia sexual, para que éste cese y/o no resurja (medidas de protección inmediatas específicas o señala la obligación de tomar medidas inmediatas)",
-    "categoria": "Medidas inmediatas de protección",
-    "id": 7
+      "": "7",
+      "variable": "Establece medidas la protección frente al riesgo generado por violencia sexual, para que éste cese y/o no resurja (medidas de protección inmediatas específicas o señala la obligación de tomar medidas inmediatas)",
+      "categoria": "Medidas inmediatas de protección",
+      "id": "7",
+      "encabezado_columna": "Medidas de protección inmediatas para NNA ",
+      "info_extra": "Se establecen las medidas de protección para NNA frente al riesgo generado por violencia sexual."
   },
   {
-    "variable": "Establece la obligación de notificar de manera inmediata a los familiares del NNA",
-    "categoria": "Medidas inmediatas de protección",
-    "id": 8
+      "": "8",
+      "variable": "Establece la obligación de notificar de manera inmediata a los familiares del NNA",
+      "categoria": "Medidas inmediatas de protección",
+      "id": "8",
+      "encabezado_columna": "Notificación inmediata a familiares",
+      "info_extra": ""
   },
   {
-    "variable": "Regula la coordinación de la escuela con otros servicios sociales (institucionales o comunitarias) para la atención externa del NNA en caso de requerirlo. ",
-    "categoria": "Asistencia y remisión externa (coordinación)",
-    "id": 9
+      "": "9",
+      "variable": "Regula la coordinación de la escuela con otros servicios sociales (institucionales o comunitarias) para la atención externa del NNA en caso de requerirlo.",
+      "categoria": "Asistencia y remisión a servicios externos",
+      "id": "9",
+      "encabezado_columna": "Coordinación entre escuela y servicios externos",
+      "info_extra": "La finalidad es atender las necesidades de NNA con servicios especializados"
   },
   {
-    "variable": "Establece la obligación de obtener el consentimiento informado del niño o niña y sus familiares para la remisión a otros servicios de atención (excepto la denuncia)",
-    "categoria": "Asistencia y remisión externa (coordinación)",
-    "id": 10
+      "": "10",
+      "variable": "Establece la obligación de obtener el consentimiento informado del niño o niña y sus familiares para la remisión a otros servicios de atención (excepto la denuncia)",
+      "categoria": "Asistencia y remisión a servicios externos",
+      "id": "10",
+      "encabezado_columna": "Consentimiento para atención externa",
+      "info_extra": "NNA y sus familias deben entender las implicaciones de la canalización con servicios externos"
   },
   {
-    "variable": "Establece como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso. ",
-    "categoria": "Aviso a las autoridades",
-    "id": 11
+      "": "11",
+      "variable": "Establece como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso. ",
+      "categoria": "Aviso a las autoridades",
+      "id": "11",
+      "encabezado_columna": "Notificación inmediata autoridades penales",
+      "info_extra": ""
   },
   {
-    "variable": "Establece medidas de seguimiento sobre la eficacia de los métodos de denuncia y remisión",
-    "categoria": "Aviso a las autoridades",
-    "id": 12
+      "": "12",
+      "variable": "Establece medidas de seguimiento sobre la eficacia de los métodos de denuncia y remisión",
+      "categoria": "Aviso a las autoridades",
+      "id": "12",
+      "encabezado_columna": "Seguimiento a la eficacia de métodos de denuncia",
+      "info_extra": ""
   },
   {
-    "variable": "Establece como un paso de la atención la notificación inmediata a autoridades superiores escolares o en su ausencia.",
-    "categoria": "Aviso a las autoridades",
-    "id": 13
+      "": "13",
+      "variable": "Establece como un paso de la atención la notificación inmediata a autoridades superiores escolares o en su ausencia.",
+      "categoria": "Aviso a las autoridades",
+      "id": "13",
+      "encabezado_columna": "Notificación inmediata a autoridades escolares superiores",
+      "info_extra": ""
   },
   {
-    "variable": "Establece como un paso de la atención la notificación inmediata a autoridades de protección de la niñez",
-    "categoria": "Aviso a las autoridades",
-    "id": 14
+      "": "14",
+      "variable": "Establece como un paso de la atención la notificación inmediata a autoridades de protección de la niñez",
+      "categoria": "Aviso a las autoridades",
+      "id": "14",
+      "encabezado_columna": "Notificación inmediata a autoridades de protección de la niñez",
+      "info_extra": ""
   },
   {
-    "variable": "Establece la prohibición de obstaculización de procedimientos de atención e investigación. ",
-    "categoria": "Aviso a las autoridades",
-    "id": 15
+      "": "15",
+      "variable": "Establece la prohibición de obstaculización de procedimientos de atención e investigación.",
+      "categoria": "Aviso a las autoridades",
+      "id": "15",
+      "encabezado_columna": "Prohibe obstaculizar investigación y atención",
+      "info_extra": ""
   },
   {
-    "variable": "Diseña un proceso de investigación administrativa a cargo de profesionales cualificados  (Desginación de personal especializado (infancia y género) que lleve a cabo los procedimientos de queja)",
-    "categoria": "Estándares de atención",
-    "id": 16
+      "": "16",
+      "variable": "Diseña un proceso de investigación administrativa a cargo de profesionales cualificados  (Desginación de personal especializado (infancia y género) que lleve a cabo los procedimientos de queja)",
+      "categoria": "Estándares de atención",
+      "id": "16",
+      "encabezado_columna": "Investigación administrativa por personal calificado",
+      "info_extra": "La investigación administrativa determina la continuidad del señalado dentro del servicio educativo"
   },
   {
-    "variable": "Mandata la actuación de oficio de autoridades administrativas dentro de las escuelas en caso de tener cualquier información sobre un posible caso de violencia sexual (no requiere una denuncia o queja formal)",
-    "categoria": "Estándares de atención",
-    "id": 17
+      "": "17",
+      "variable": "Mandata la actuación de oficio de autoridades administrativas dentro de las escuelas en caso de tener cualquier información sobre un posible caso de violencia sexual (no requiere una denuncia o queja formal)",
+      "categoria": "Estándares de atención",
+      "id": "17",
+      "encabezado_columna": "Autoridades administrativas están obligadas a actuar de oficio",
+      "info_extra": ""
   },
   {
-    "variable": "Establece pautas de atención y escucha a los niños y niñas\n- Tomar en serio la queja\n- Escuchar de manera resptuosa y compresiva\n- Preguntar sobre preocupaciones, inquitudes, necesidades de estudiante y responder sus preguntas\n- Reconocer sentimientos\n- Responder sin hacer juicios de valor\n- Ofrecer apoyo emocional y práctico facilitando su acceso a los servicios psicosociales\n- Evitar manifestar afectación emocional por los hechos que cuenta la niña o niño\n- Expresar que se ha hecho lo correcto al contar lo sucedido y es muy valioso contarlo. \n- No prometer lo que no se puede cumplir.",
-    "categoria": "Estándares de atención",
-    "id": 18
+      "": "18",
+      "variable": "Establece pautas de atención y escucha a los niños y niñas\n- Tomar en serio la queja\n- Escuchar de manera resptuosa y compresiva\n- Preguntar sobre preocupaciones, inquitudes, necesidades de estudiante y responder sus preguntas\n- Reconocer sentimientos\n- Responder sin hacer juicios de valor\n- Ofrecer apoyo emocional y práctico facilitando su acceso a los servicios psicosociales\n- Evitar manifestar afectación emocional por los hechos que cuenta la niña o niño\n- Expresar que se ha hecho lo correcto al contar lo sucedido y es muy valioso contarlo. \n- No prometer lo que no se puede cumplir.",
+      "categoria": "Estándares de atención",
+      "id": "18",
+      "encabezado_columna": "Pautas de atención, escucha y credibilidad para NNA",
+      "info_extra": ""
   },
   {
-    "variable": "Establece medidas para evitar la revictimización del niño o niña\n- No cuestionar la violencia o el relato\n- No culpabilizar, negar o minimizar la violencia o abuso.\n- No pedir que se descubran el cuerpo para mostrar lesiones. \n- Extremar la prudencia para no perjudicar al niño causándole ulteriores daños con el proceso de investigación.\n- Evitar pedir al niño o niña que describa de manera repetir el incidente.\n- No presionarlos para que hablen.\n- Custodiar el expediente que contenga información sobre la situación por la que se activó el Protocolo. \n- No confrontar a la persona afectada con la persona agresora. (Prohibición de hacerlo).\n- En caso de violencia sexual, bajo ninguna circunstancia se debe interrogar a la persona menor de edad, basta con el relato espontáneo de los hechos, de otra manera se puede entorpecer el proceso judicial.",
-    "categoria": "Estándares de atención",
-    "id": 19
+      "": "19",
+      "variable": "Establece medidas para evitar la revictimización del niño o niña\n- No cuestionar la violencia o el relato\n- No culpabilizar, negar o minimizar la violencia o abuso.\n- No pedir que se descubran el cuerpo para mostrar lesiones. \n- Extremar la prudencia para no perjudicar al niño causándole ulteriores daños con el proceso de investigación.\n- Evitar pedir al niño o niña que describa de manera repetir el incidente.\n- No presionarlos para que hablen.\n- Custodiar el expediente que contenga información sobre la situación por la que se activó el Protocolo. \n- No confrontar a la persona afectada con la persona agresora. (Prohibición de hacerlo).\n- En caso de violencia sexual, bajo ninguna circunstancia se debe interrogar a la persona menor de edad, basta con el relato espontáneo de los hechos, de otra manera se puede entorpecer el proceso judicial.",
+      "categoria": "Estándares de atención",
+      "id": "19",
+      "encabezado_columna": "Medidas para evitar revictimización",
+      "info_extra": ""
   },
   {
-    "variable": "Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)",
-    "categoria": "Estándares de atención",
-    "id": 20
+      "": "20",
+      "variable": "Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)",
+      "categoria": "Estándares de atención",
+      "id": "20",
+      "encabezado_columna": "Registro textual de las palabras de NNA",
+      "info_extra": ""
   },
   {
-    "variable": "CONFIDENCIALIDAD Y PRIVACIDAD. Establece medidas para resguardar la privacidad del niño o niña víctima ",
-    "categoria": "Estándares de atención",
-    "id": 21
+      "": "21",
+      "variable": "CONFIDENCIALIDAD Y PRIVACIDAD. Establece medidas para resguardar la privacidad del niño o niña víctima",
+      "categoria": "Estándares de atención",
+      "id": "21",
+      "encabezado_columna": "Resguardan la privacidad de NNA",
+      "info_extra": ""
   },
   {
-    "variable": "CONFIDENCIALIDAD Y PRIVACIDAD. Establece la obligación de custodiar el expediente y separarlo del expediente académico, con acceso restringido",
-    "categoria": "Estándares de atención",
-    "id": 22
+      "": "22",
+      "variable": "CONFIDENCIALIDAD Y PRIVACIDAD. Establece la obligación de custodiar el expediente y separarlo del expediente académico, con acceso restringido",
+      "categoria": "Estándares de atención",
+      "id": "22",
+      "encabezado_columna": "Custodian expediente de queja y lo separan del académico",
+      "info_extra": ""
   },
   {
-    "variable": "Establece mecanismos de seguimiento periódico con las personas involucradas en el proceso",
-    "categoria": "Estándares de atención",
-    "id": 23
+      "": "23",
+      "variable": "Establece mecanismos de seguimiento periódico con las personas involucradas en el proceso",
+      "categoria": "Estándares de atención",
+      "id": "23",
+      "encabezado_columna": "Seguimiento periódico a las personas involucradas",
+      "info_extra": ""
   },
   {
-    "variable": "Considera como una pauta de actuación brindar información al NNA, de manera accesible y adecuada,  sobre las acciones a tomar en el caso. ",
-    "categoria": "Estándares de atención",
-    "id": 24
+      "": "24",
+      "variable": "Considera como una pauta de actuación brindar información al NNA, de manera accesible y adecuada,  sobre las acciones a tomar en el caso. ",
+      "categoria": "Estándares de atención",
+      "id": "24",
+      "encabezado_columna": "Brindan información accesible y adecuada a NNA",
+      "info_extra": ""
   },
   {
-    "variable": "Se consideran los principios de atención rápida, eficaz y no precipitada. (los nombra y/o desde su procedimiento los toma en cuenta, por ejemplo estableciendo plazos cortos y definidos de actuación). ",
-    "categoria": "Estándares de atención",
-    "id": 25
+      "": "25",
+      "variable": "Se consideran los principios de atención rápida, eficaz y no precipitada. (los nombra y/o desde su procedimiento los toma en cuenta, por ejemplo estableciendo plazos cortos y definidos de actuación). ",
+      "categoria": "Estándares de atención",
+      "id": "25",
+      "encabezado_columna": "Principios de atención rápida, eficaz y no precipitada",
+      "info_extra": "Los nombra y/o desde su procedimiento los toma en cuenta, por ejemplo estableciendo plazos cortos y definidos de actuación"
   },
   {
-    "variable": "Establece pautas para brindar apoyo al niño o niña con perspectiva de género ",
-    "categoria": "Medidas Transversales ",
-    "id": 26
+      "": "26",
+      "variable": "Establece pautas para brindar apoyo al niño o niña con perspectiva de género",
+      "categoria": "Medidas Transversales",
+      "id": "26",
+      "encabezado_columna": "Apoyo con perspectiva de género",
+      "info_extra": ""
   },
   {
-    "variable": "Establece la obligación de las autoridades de llevar los proceso de atencióin e investigación en un tiempo razonable. ",
-    "categoria": "Medidas Transversales ",
-    "id": 27
+      "": "27",
+      "variable": "Establece la obligación de las autoridades de llevar los proceso de atencióin e investigación en un tiempo razonable.",
+      "categoria": "Medidas Transversales",
+      "id": "27",
+      "encabezado_columna": "Establece tiempos razonables de investigación",
+      "info_extra": ""
   },
   {
-    "variable": "Nombra o considera el principio de protección reforzada frente a la infancia",
-    "categoria": "Medidas Transversales ",
-    "id": 28
+      "": "28",
+      "variable": "Nombra o considera el principio de protección reforzada frente a la infancia",
+      "categoria": "Medidas Transversales",
+      "id": "28",
+      "encabezado_columna": "Nombra el principio de protección reforzada",
+      "info_extra": ""
   },
   {
-    "variable": "Nombra o considera el principio de debida diligencia en el trato a víctimas o posibles víctimas",
-    "categoria": "Medidas Transversales ",
-    "id": 29
+      "": "29",
+      "variable": "Nombra o considera el principio de debida diligencia en el trato a víctimas o posibles víctimas",
+      "categoria": "Medidas Transversales",
+      "id": "29",
+      "encabezado_columna": "Considera el principio de debida diligencia",
+      "info_extra": ""
   }
 ]

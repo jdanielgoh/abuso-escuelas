@@ -2,7 +2,6 @@
 
 body, html{
     margin: 0;
-    background: $color-fondo-oscuro;
     font-family : 'Open Sans';
     color: $color-texto-claro;
 }
@@ -32,6 +31,12 @@ blockquote{
     font-size: 24px;
     font-weight: 700;
     border-left: solid 4px $color-texto-claro;
+    @media (max-width: $pantalla-movil) {
+        padding: 8px;
+        font-size: 18px;
+        margin: 16px;
+
+      }
 }
 
 .bullet-fondo-oscuro-transparencia{
@@ -39,4 +44,20 @@ blockquote{
       border-radius: $radio-borde;
       backdrop-filter: blur(2px);
       padding: 16px;
+}
+.vista-historias{
+    background:$color-fondo-claro;
+    padding: 100px 8px;
+    color: $color-texto-oscuro;
+    h1{
+        font-size: 28px;
+    }
+    h2.subtitulo{
+        font-size: 16px
+    }
+
+    p.resumen{
+        font-style: italic;
+        text-align: right;
+    }
 }
