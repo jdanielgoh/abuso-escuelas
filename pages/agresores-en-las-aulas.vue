@@ -124,7 +124,23 @@
             escuelas por algún miembro del personal educativo. La tendencia post
             pandémica se mantiene.
           </p>
-          <p style="color: rosybrown"><b>grafica</b></p>
+          <VisualizacionesSerieTiempo
+            :conversionTemporal="conversionTemporal"
+            :datos="datos_por_anio"
+            :linea_id="'lineas1'"
+            :margen="{ arriba: 10, abajo: 40, izquierda: 30, derecha: 30 }"
+            :nombre_columna_horizontal="'anio'"
+            :titulo_eje_x="'Eje horizontal (temporal)'"
+            :titulo_eje_y="'Eje vertical (numérico)'"
+            :tooltip_activo="true"
+            :variables="variables_anios"
+            :alto_vis="500"
+            :tipo_tooltip="'individual'"
+          >
+            <template v-slot:encabezado>
+              <h4>Casos que ha registrado la SE de 2012 a febrero de 2023</h4>
+            </template></VisualizacionesSerieTiempo
+          >
           <p>
             Los impactos para un sobreviviente de violencia sexual duran toda la
             vida. De inicio, surgen cambios en los hábitos y en el
@@ -205,9 +221,99 @@
             En general, de los casos registrados por las autoridades educativas
             sólo la mitad llegaron ante una fiscalía de justicia.
           </p>
-          
+          <p>
+            <span style="color: rosybrown">probable grafico </span>
+          </p>
+          <blockquote>
+            “La Fiscalía, que no está capacitada para esto, desestima varias
+            denuncias. Hay revictimización. Muchas familias se van, abandonan
+            por el tiempo que lleva un proceso por el mal actuar de las
+            autoridades, incluyendo las educativas. En el camino, pierden su
+            trabajo, recursos, se divorcian”. Mariana Gil
+          </blockquote>
+          <p>
+            Pero además, la justicia trabaja lento. Las carpetas de
+            investigación no necesariamente se traducen en una sentencia.
+            Normalmente la justicia en México es así: la probabilidad de que un
+            delito se resuelva es del 0.9%, según estimaciones de la
+            organización
+            <a href="https://www.impunidadcero.org/impunidad-en-mexico/"
+              >Impunidad Cero</a
+            >.
+          </p>
+          <h3>Omisión tras omisión</h3>
+          <p>
+            Coahuila es uno de los estados que asegura tener pocas quejas contra
+            su personal educativo. Afirma que en una década sólo ha recibido 54,
+            en dos de cada 10 casos las víctimas fueron pequeños de preescolar.
+            Los señalamientos en este estado —y otros en el país— no suelen
+            registrar el número de víctimas, por lo que un registro puede
+            esconder múltiples víctimas y victimarios.
+          </p>
+          <p>
+            Del Guadalupe Borja se abrieron siete carpetas de investigación,
+            según el expediente de queja ante la Comisión Estatal de Derechos
+            Humanos de noviembre de 2019. En él se detalla que siete niños
+            señalaron a “Cantos” y a “el que limpia las cosas cuando están
+            tiradas” como sus agresores.
+          </p>
+          <p>
+            Las declaraciones de los pequeños, asentadas en la carpeta de
+            investigación, identifican a las maestras como “buenas” porque les
+            curaban las heridas.
+          </p>
+          <p>
+            En la causa penal 1229-2020, correspondiente solo a una de las siete
+            denuncias, quedó asentado que el niño refirió abusos sexuales y
+            violaciones en el área de juegos, en el salón de canto y “en la
+            puerta secreta”. Los dictámenes periciales muestran que tanto en el
+            salón de música como en el de 1° B había cuartos ocultos, ubicados
+            al fondo de los salones, escondidos detrás de cortinas, estantes con
+            material didáctico y pesadas puertas en donde el profesor de música
+            y el intendente cometieron las agresiones. Servando era el único que
+            tenía llaves de este espacio, declaró la directora en el juicio.
+          </p>
+          <p>
+            La autoridad educativa del estado debió de haber realizado
+            recorridos en la escuela para detectar esos espacios. Pero no hay
+            información sobre que estas inspecciones hayan catalogado estas
+            zonas como un riesgo para los estudiantes. Se le preguntó a la
+            dependencia, pero rechazaron hacer comentarios sobre el caso.
+          </p>
+          <p>
+            Los dictámenes psicológicos a T., hermano mayor de J., revelaron que
+            le pidió ayuda a una maestra, pero que ella sólo dijo que regañaría
+            a “Cantos”.
+          </p>
+          <p>
+            La noticia dejó helada a la familia. “Todo hizo sentido. Él estaba
+            en 2º y empezamos a notar cambios: no quería estar con nosotros,
+            rompía sus juguetes, empezó con pesadillas y a no comer, por las
+            noches se hacía pipí y popó”, cuenta el padre. Acudió una decena de
+            veces con la maestra de grupo, que siempre minimizó los síntomas:
+            primero, que T. se estaba acoplando al colegio; luego, que los
+            golpes se los daban niños de tercero que eran bruscos. Cuando T.
+            dijo 'mañana me van a enseñar a chupar pipí en la escuela', la
+            directora culpó a otros niños.
+          </p>
+          <p>
+            “Debían salvaguardar la seguridad de los niños dentro de la
+            institución. Nosotros les dimos toda la confianza, les entregamos
+            nuestro más grande tesoro y fuimos defraudados. No fueron humanas en
+            sentir el dolor que estaba sintiendo mi hijo, no se tocaron el
+            corazón en prestarle auxilio, ocultaron muchas cosas.
+            Afortunadamente nos dimos cuenta. Salvamos a nuestros hijos y a
+            muchos otros alumnos que pasaban por lo mismo”, dice la madre.
+          </p>
+          <p>
+            Este caso, sigue los patrones detectados en la incidencia nacional.
+            La información analizada permitió consolidar una muestra con el
+            perfil de los victimarios y también establecer quiénes son las
+            víctimas de estas violencias.
+          </p>
         </div>
       </section>
+
       <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
     </article>
   </div>
@@ -217,14 +323,32 @@
 csv("datos/CIFRAS SEP-FISCALIAS-DH Y OP.V13072023 - paraviz.csv").then(D=>{
   console.log(D)
 })*/
+import por_anio from "@/assets/datos/por_anio.json";
 import sep_fiscalias_dh from "@/assets/datos/sep_fiscalias_dh.json";
 import { ref } from "vue";
+import { timeParse } from "d3";
+
+por_anio.forEach((d) => {
+  d.No_quejas = +d.No_quejas;
+});
+console.log(por_anio);
+const datos_por_anio = ref(por_anio);
+const conversionTemporal = ref(timeParse("%Y"));
+
 sep_fiscalias_dh.forEach((d) => {
   d.No_casos_Fiscalia = +d.No_casos_Fiscalia;
   d.No_casos_SEP = +d.No_casos_SEP;
   d.No_casos_DH_y_OPI = +d.No_casos_DH_y_OPI;
 });
 const datos_sep_fiscalias_dh = ref(sep_fiscalias_dh);
+const variables_anios = ref([
+  {
+    cve: "No_quejas",
+    nombre: "Registros",
+    color: "orange",
+  },
+]);
+
 const barras_variables = ref([
   {
     id: "No_casos_SEP",

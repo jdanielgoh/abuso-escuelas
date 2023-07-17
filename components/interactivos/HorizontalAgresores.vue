@@ -1,5 +1,8 @@
 <template>
-  <section id="texto-horizontal-agresores" class="texto-intro-scroll-horizontal">
+  <section
+    id="texto-horizontal-agresores"
+    class="texto-intro-scroll-horizontal"
+  >
     <div class="ancho-texto horizontal-scroll_contenedor">
       <canvas class="canvas-vis"></canvas>
 
@@ -9,60 +12,60 @@
       >
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
-            
             <p class="bullet">
               <span class="izquierda"
-                  >Los registros de 18 autoridades educativas del país permiten
-              identificar el perfil de, por lo menos,</span
-                >
-                <span class="dato-numerico centro" style="color: #5e5e5e">904</span>
-                <span class="derecha">
-                  <b style="color: #5e5e5e"> probables agresores</b>  que estuvieron involucrados en 1,763 quejas.
-                </span>
-            
+                >Se identificaron plenamente a 
+              </span>
+              <span class="dato-numerico centro" style="color: #5e5e5e"
+                >904</span
+              >
+              <span class="derecha">
+                <b style="color: #5e5e5e"> probables agresores*.</b>
+              </span>
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="izquierda"
-                  >De estos,</span
-                >
-                <span class="dato-numerico centro" style="color: #21587e">810</span>
-                <span class="derecha">
-                  <b style="color: #21587e"> son hombres</b>  que cumplían alguna función dentro de los centros escolares y, en
-              promedio, rondaban los 47 años de edad.
-                </span>
-            
+              <span class="izquierda">De estos,</span>
+              <span class="dato-numerico centro" style="color: #21587e"
+                >90%</span
+              >
+              <span class="derecha">
+                <b style="color: #21587e"> son hombres</b>
+              </span>
             </p>
-
           </div>
         </div>
 
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="izquierda"
-                  >Sobre los puestos que ocupaban: </span
-                >
-                <span class="dato-numerico triple centro" style="color: #55adff">718</span>
-                <span class="derecha">(79%) 
-                  <b style="color: #55adff"> eran docentes</b>, resaltan aquellos en donde se especifica que eran maestros de
-              música o educación física.
-                </span>
-                <span class="dato-numerico triple centro" style="color: #882992">34</span>
-                <span class="centro">
-                <b style="color: #882992"> eran directivos</b>
-                </span>
-                <span class="dato-numerico triple centro" style="color: #c89600">85</span>
-                <span class="derecha">
-                  (9.4%) <b style="color: #c89600"> fueron intendentes</b>, principalmente en nivel
-              preescolar y primaria.
-                </span>
-            
-            </p>
+              <span class="izquierda"></span>
+              <span class="dato-numerico triple centro" style="color: #55adff"
+                >718</span
+              >
+              <span class="derecha"
+                ><b style="color: #55adff"> son docentes</b>. Resaltan los profesores interinos: enseñan música, educación física e idiomas
 
+              </span>
+              <span class="dato-numerico triple centro" style="color: #882992"
+                >85</span
+              >
+              <span class="centro">
+                <b style="color: #882992"> son personal de limpieza</b>
+              </span>
+              <span class="dato-numerico triple centro" style="color: #c89600"
+                >34</span
+              >
+              <span class="derecha"> <b style="color: #c89600"> son directivos
+</b>,
+                principalmente en nivel preescolar y primaria.
+              </span>
+            </p>
+            <p>El resto son personal administrativo, becarios, encargados de cooperativa, entre otros.
+</p>
           </div>
         </div>
       </div>
@@ -89,9 +92,7 @@ const detachedContainer = ref(),
 
 const ladata_pintable = ref();
 onMounted(() => {
-  canvas.value = d3.select(
-    "#texto-horizontal-agresores canvas.canvas-vis"
-  );
+  canvas.value = d3.select("#texto-horizontal-agresores canvas.canvas-vis");
   context.value = canvas.value.node().getContext("2d");
 
   calculandoDimensionesCanvas();
@@ -199,7 +200,8 @@ function configurandoPictos(ladata) {
           .attr("h", 0)
           .attr("fillStyle", "#5e5e5e"),
       (update) =>
-        update.attr(
+        update
+          .attr(
             "x",
             (d) => d3.max([ancho.value, alto.value]) * (-5 + 10 * Math.random())
           )
@@ -272,7 +274,6 @@ function posicionScroleando() {
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    
     ladata_pintable.value = d3.range(0, 904).map((d, i) => ({
       i: d,
       x: escalaLineal.value((i % 30) / 30),
@@ -345,6 +346,5 @@ function getPixelRatio(ctx) {
 <style lang="scss">
 #texto-horizontal-agresores {
   height: 300vh;
-
 }
 </style>
