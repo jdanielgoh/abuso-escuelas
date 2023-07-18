@@ -199,179 +199,200 @@
         </div>
       </section>
       <InteractivosHorizontalProtocolos></InteractivosHorizontalProtocolos>
-
-
       <section class="contenedor-flex">
         <div class="ancho-texto">
           <p>
-            El perfil del agresor escolar coincide con la descripción del
-            “abusador situacional” que, según explica Julia Borbolla, psicóloga
-            especializada en abuso sexual, son personas que de forma deliberada
-            buscan contratarse como profesores, a veces suplentes, instructores
-            de deportes o idiomas para estar cerca de las y los niños.
+            Por ejemplo, en Querétaro, un profesor de primaria es reincidente:
+            tuvo quejas por pedofilia en varios colegios. En Veracruz, las
+            autoridades educativas consideraron a otro profesor de secundaria
+            reincidente, se le acusa de abusar sexualmente de varias alumnas y
+            amenazarlas con afectar sus calificaciones.
           </p>
           <p>
-            “Por eso es muy importante que los colegios hagan una muy buena
-            selección de personal.(...) Hay que hacer selección de personal
-            clínica, no solo de sus preferencias o aptitudes, sino de su salud
-            mental, hacer una especie de peritaje, pedir antecedentes penales,
-            investigar la vida familiar, con quién vive… rascarle un poquito más
-            porque van a estar con los niños”, aconseja.
+            "Sigue habiendo una gran impunidad para los victimarios, un agresor
+            sexual agrede en su vida al menos 61 veces. Por eso cuando cambian
+            de escuela a un maestro o una maestra, cuando cambian de Iglesia a
+            un padre o cuando cambian de campo de fútbol a un entrenador que es
+            un abusador, lo único que le están dando es otro espacio donde él va
+            a ser un violentador sexual", dice Josefina Vázquez Mota, presidenta
+            de la Comisión de Derechos de la Niñez y de la Adolescencia en el
+            Senado de la República.
           </p>
           <p>
-            Este tipo de omisiones se reflejan en los casos que ocurren dentro
-            de las escuelas. En el Centro de Atención Múltiple 7 (CAM) “Gabriela
-            Mistral” en Ecatepec, Estado de México, varios padres de familia
-            denunciaron a Héctor “N”, profesor de Salud, por presuntos
-            tocamientos sexuales por encima y debajo de la ropa, en contra de
-            varios de sus alumnos, todos ellos con alguna discapacidad.
+            La Comisión Interamericana de Derechos Humanos (CIDH) ha instado a
+            los países a que cumplan con los principios de protección reforzada
+            y debida diligencia. Se trata de establecer los procedimientos que
+            aseguren la aplicación, calidad, pertinencia, accesibilidad, impacto
+            y eficacia de medidas de protección ante casos de violaciones a
+            derechos humanos, según estableció la CIDH en el informe Hacia una
+            garantía efectiva de los derechos de niñas, niños y adolescentes.
+            Estos principios, en México están desdibujados para las infancias.
           </p>
           <p>
-            Héctor “N” es un enfermero sin preparación en pedagogía que fue
-            contratado para apoyar a las maestras con las múltiples necesidades
-            que tienen los alumnos con discapacidades diversas. Era “maestro de
-            apoyo”. Cuidaba a los grupos cuando una maestra tenía que salir,
-            llevaba a los estudiantes al baño o les revisaba si tenían algún
-            malestar físico. Ante la jubilación de un colega, sumó a sus
-            responsabilidades dar clases. Según los padres, no hay registros de
-            que la contratación de Héctor “N” estuviera justificada.
-            Actualmente, Héctor N enfrenta un proceso penal para determinar su
-            responsabilidad en los abusos sexuales reportados por sus
-            estudiantes.
+            "No hay un andamiaje institucional que proteja y que garantice, o
+            que cuando ya suceda este crimen se intervenga de manera rápida,
+            expedita y se dicte justicia. Es increíble que los papás tengan que
+            cerrar calles y avenidas para pedir justicia y que hasta entonces se
+            vayan a atender y que aún así, porque estoy segura porque aquí lo
+            vivimos de manera cotidiana, no se haga justicia", señala Vázquez
+            Mota, quien fue secretaria de Educación (2006-2009) en el sexenio de
+            Felipe Calderón.
           </p>
           <p>
-            Actas de hechos obtenidas por transparencia dan cuenta de la
-            debilidad de los procesos de contratación. Por ejemplo, en Oaxaca,
-            un hombre fue asignado como docente de preescolar en el municipio de
-            San Juan Bautista Cuicatlán. Era apenas estudiante de pedagogía,
-            pero era hijo de una maestra jubilada, lo que le dio pase directo al
-            cargo. Meses después de su asignación en 2016, las autoridades
-            encontraron en su celular y computadora imágenes sexuales que había
-            tomado a sus alumnos preescolares. La dependencia registró el caso,
-            pero no dio detalles del estatus del docente.
+            “Hay protocolos de cómo se debe de actuar, pero no hay un
+            cumplimiento exacto”, advierte Gustavo Martínez Juambelz, abogado
+            que ha defendido a víctimas agredidas sexualmente por el personal de
+            escuelas. Por ejemplo —explica— señalan que inmediatamente se tiene
+            que hacer un reporte y darle seguimiento. “¿Por qué tener esas
+            bitácoras? Porque así es como la escuela se defiende, pero el 90% de
+            escuelas no las tiene”.
+          </p>
+          <h3>Particulares sin supervisión</h3>
+          <p>
+            Un problema adicional es la falta de supervisión de las escuelas
+            privadas. En México hay 229,691 escuelas de educación básica. 87%
+            son públicas y el resto son particulares. En teoría, ambas opciones
+            educativas son vigiladas por la SEP y las dependencias educativas de
+            cada estado. Sin embargo, hay diferencias claras en la atención que
+            reciben uno u otro modelo cuando surgen sospechas de delitos
+            sexuales en sus instalaciones.
           </p>
           <p>
-            En México, el Sindicato Nacional de Trabajadores de la Educación
-            (SNTE) —que reúne al personal que trabaja en escuelas públicas de
-            educación básica— tiene un peso importante en la política educativa.
-            Es el sindicato más grande de América Latina y su origen está ligado
-            al Partido Revolucionario Institucional (PRI) que gobernó el país
-            por más de 70 años continuos; desde esa relación, ha influido en
-            cómo se educa en el país y ha sido acusado de participar en fraudes
-            electorales. En la última década se ha opuesto a la evaluación de
-            los docentes y a eliminar la “herencia” de plazas en las escuelas,
-            una práctica que permite que personal que no cuenta con el perfil
-            adecuado llegue a centros escolares. Se solicitó una entrevista con
-            el secretario general del SNTE, Alfonso Cepeda Salas, sin que hasta
-            el cierre de edición haya dado respuesta.
-          </p>
-          <img src="~/assets/imgs/cap1/ilustracion_2.jpg" alt="" />
-          <p>
-            Las víctimas son diversas: niñas, niños y adolescentes que de pronto
-            tienen terrores nocturnos, presentan incontinencia nocturna, cambian
-            su temperamento, pierden el habla o el interés en la escuela.
+            Todavía hay dependencias educativas que evaden su responsabilidad
+            ante las particulares. Querétaro, Zacatecas y Colima respondieron
+            que sólo dan seguimiento a lo que ocurre en escuelas públicas. “La
+            Secretaría de Educación no tiene datos porque el personal es
+            contratado bajo el esquema de la legislación civil”, respondió
+            Querétaro. “No se tiene conocimiento porque las instituciones
+            privadas acuden directamente a las autoridades competentes”, dijo
+            Zacatecas.
           </p>
           <p>
-            La mayoría son mujeres (68%)*, pero las agresiones contra hombres
-            también están presentes.
+            La educación particular, a ojos de quienes proveen el servicio y de
+            las mismas autoridades educativas, “constituyen negocios privados”,
+            explica Juan Martín Pérez, coordinador regional de Tejiendo Redes
+            Infancia en América Latina y El Caribe. Esta idea ha blindado a los
+            propietarios de escuelas particulares para evitar asumir su
+            responsabilidad en los delitos sexuales. Argumentan que son actos
+            realizados por terceros. Terceros que usualmente están contratados
+            por honorarios, es decir, no tienen un vínculo laboral fuerte con la
+            institución y tampoco forman parte de ningún sindicato.
           </p>
           <p>
-            La edad juega un factor en el tipo de violencia que se ejerce contra
-            ellos. Entre más pequeños más vulnerables al abuso y violación
-            sexual. Sin embargo, el 50% de los casos registrados ocurrieron en
-            secundaria, principalmente en contra de mujeres. Alumnas de entre 12
-            y 14 años reportan a docentes que han tenido acercamientos de índole
-            sexual con ellas, según en las actas de hechos que se recabaron vía
-            transparencia. La mayoría de denuncias son por acoso sexual que
-            ocurre durante las clases, los recesos e incluso por mensajes en
-            redes sociales. En algunos casos, la manipulación emocional, las
-            amenazas y los métodos coercitivos de los adultos terminan en
-            violaciones.
+            Son la SEP y las secretarías estatales quienes están obligadas a
+            vigilar, por medio de supervisiones anuales y reportes que alerten
+            anomalías, que los privados garanticen los derechos de los
+            educandos. El procedimiento no siempre es eficaz.
           </p>
           <p>
-            Las violencias sexuales contra estudiantes de primaria están en el
-            segundo lugar, hay 631 quejas. Se repite el patrón: las autoridades
-            educativas no declararon cuáles fueron las consecuencias
-            administrativas y/o penales en contra de los señalados, aunque se
-            les solicitó vía transparencia.
+            Por ejemplo, en papel, el Jardín de niños Montessori Matatena
+            cumplía con los requerimientos para operar. Tenía el personal,
+            instalaciones y programas de estudios adecuados. Pero en términos
+            prácticos, las violencias que vivieron decenas de niños, acreditan
+            que la escuela incumplió su obligación de garantizar seguridad e
+            integridad.
           </p>
           <p>
-            Incluso se encontraron 50 casos en donde no se puede establecer el
-            número exacto de víctimas o victimarios, en 18 estados de la
-            República estos casos se clasificaron como “varias personas”. Los
-            registros enlistan a directores, intendentes, encargados de
-            cooperativa y docentes como un grupo de agresores en contra de los
-            menores.
+            Poner en riesgo la salud o la seguridad de los educandos amerita
+            como mínimo una multa, pero puede llegar a la revocación de la
+            autorización que se traduce en la clausura de la escuela, según
+            establece la LGE.
           </p>
           <p>
-            La Oficina de Defensoría de los Derechos de la Infancia, A.C. (ODI)
-            en sus informes <i>Es un Secreto</i> y
-            <i
-              ><a
-                href="https://dispensariodi.com/wp-content/uploads/2023/05/Es-un-secreto.-Actualizacion-2023.pdf"
-                >Ya no es un secreto</a
-              >
-            </i>
-            denunció que hay indicios de abuso sexual organizado —varios adultos
-            participando en la ejecución de los delitos— en al menos 25 escuelas
-            de educación básica repartidas en 11 estados del país. Los delitos
-            sexuales, explican, son cometidos principalmente contra grupos de
-            niñas y niños de entre tres y cinco años; violentados por múltiples
-            personas que cometen agresiones ritualísticas o escenificadas, a
-            veces videograbadas. En todos los casos hay personal que facilita o
-            encubre el abuso.
-          </p>
-          <img src="~/assets/imgs/cap1/ilustracion_3.jpg" alt="" />
-
-          <h3>Sanción a medias</h3>
-          <p>
-            Durante el juicio contra el personal del Guadalupe Borja, se le
-            preguntó al perito en psicología que revisó a J: “¿Por qué creer el
-            dicho del niño de que fue abusado sexualmente por dos personas
-            adultas?”. El perito respondió: “Los niños a esta edad no realizan
-            mentiras, su capacidad para mentir no está desarrollada porque el
-            mentir y el engañar conlleva una maduración del lóbulo frontal que
-            los niños a este momento todavía no tienen”.
+            Ante las denuncias de los padres, autoridades delegacionales
+            clausuraron la escuela por incumplimientos a su programa de
+            protección civil: falta de extinguidores, mala condiciones de las
+            instalaciones, entre otros. El gobierno federal le retiró la
+            autorización para brindar servicios educativos meses después, hasta
+            que se corroboraron penalmente los delitos cometidos contra los
+            estudiantes
           </p>
           <p>
-            Ante esto, la psicóloga especializada en abuso sexual infantil,
-            Julia Borbolla, refuerza: “Los niños no inventan estas cosas, no
-            tienen capacidad de inventar algo que no conocen”.
+            Aunque fue una escuela privada la que movilizó al gobierno mexicano
+            a atender la violencia sexual cometida por personal de escuelas en
+            contra de sus estudiantes, no todos los protocolos instaurados en
+            los estados contemplan la obligación de las escuelas particulares de
+            cumplir con los lineamientos.
           </p>
           <p>
-            Las autoridades de justicia encontraron culpables a Gerardo “Cantos”
-            y a Servando “el que limpia las cosas cuando están tiradas”. Aunque
-            los delitos descritos por las víctimas y las pruebas físicas
-            evidenciaban violación, el ministerio público lo acusó por el delito
-            de abuso sexual, lo que permitió que la sanción para los victimarios
-            fuera menor. El delito de violación se castiga en el estado con 16
-            años de prisión, se considera más grave y aumenta en pena, si se
-            comete contra un menor de edad; dentro de un inmueble público, como
-            una escuela; y con abuso de autoridad, por ejemplo, si el agresor es
-            personal del colegio. Dos de las siete carpetas de investigación se
-            convirtieron en sentencia: una suma de 16 años de prisión para cada
-            uno por las agresiones cometidas contra J y T.
+            De los 32 protocolos estatales de respuesta ante casos de violencia
+            sexual escolar el 19% no establece claramente que su cumplimiento es
+            aplicable también a escuelas particulares.
           </p>
           <p>
-            Las familias perdieron recursos económicos y estabilidad. Mientras
-            tanto, el Jardín de Niños Guadalupe Borja sigue operando con
-            normalidad. La directora y las maestras, que tuvieron deficiencias
-            en los cuidados de sus estudiantes, siguen dando clases. El grupo de
-            abogados de los acusados aún intenta absolverlos. Ante las
-            sentencias que dictó un juez, los imputados ingresaron un amparo:
-            buscan su libertad.
+            “(En el caso de escuelas privadas) nos vamos a enfrentar a las
+            relaciones, el poder económico y a veces al poder político que
+            tienen estas instituciones. Es difícil llevar a cabo un proceso en
+            contra de alguien con tanto poder y genera demasiada impunidad
+            cuando se trata de escuelas de un alto perfil económico”, dice
+            Carrillo Estrada.
           </p>
           <p>
-            Las y los niños aún padecen las secuelas psicológicas y emocionales.
+            Después del caso de Matatena, surgieron otras denuncias contra
+            escuelas particulares. En 2017 se hizo público que en el Colegio
+            Williams, uno de los más renombrados de la Ciudad de México, un
+            docente abusó sexualmente de una niña de 3 años. Aunque el maestro
+            fue sentenciado en 2021, la madre da cuenta de los obstáculos que
+            enfrentó en el proceso. Primero, el dueño de la escuela la
+            amedrentó: “Yo voy a decir que en mi escuela no ocurrió y voy a
+            llevar las pruebas para comprobarlo”. Dos años después del abuso, el
+            colegio Williams la demandó por daño moral. Y fue hasta el 2022 que
+            la autoridad federal sancionó a la escuela con tan solo 160 mil
+            pesos al comprobar que no salvaguardaron la integridad física ni
+            psicológica de la niña Hasta el momento, este colegio sigue
+            operando.
           </p>
           <p>
-            “Cuando volvieron a clases presenciales su primera pregunta fue:
-            ‘Mamá, ¿las maestras de aquí sí son buenas?’ Nosotros buscamos
-            justicia para nuestros hijos, pero también para que ningún niño
-            vuelva a vivir lo que vivieron mis hijos. Las cosas tienen que
-            cambiar para ellos, tristemente cada semana vemos denuncias de
-            violación, abuso y acoso cometidos por maestros. Las cosas siguen
-            igual”, lamenta la madre de J. y T.
+            Ese mismo año, en la alcaldía Coyoacán, en el Colegio Carmel se
+            detuvo a un docente que abusó sexualmente de un alumno. Aunque se
+            comprobó penalmente el abuso y esto revelaba que la escuela había
+            incumplido sus obligaciones de cuidado para con sus alumnos, no
+            obtuvo ninguna sanción y siguió en funciones. En 2023, se hizo
+            público que otro un docente de este colegio presuntamente abusó y
+            violó sexualmente a más de 15 estudiantes de jardín de niños. El
+            juicio sigue abierto. El área de comunicación del Colegio rechazó
+            emitir comentarios.
+          </p>
+          <img src="~/assets/imgs/cap2/ilustracion_3.jpg" alt="" />
+          <h3>Impunidad repartida</h3>
+          <p>
+            "Necesitamos nuevos protocolos, actualizar legislaciones y, sobre
+            todo, que el victimario sepa que no va a tener impunidad", recalca
+            Vázquez Mota. Explica que se requiere un trabajo interinstitucional,
+            con un presupuesto sólido, que parte de definir las obligaciones de
+            la SEP, del Congreso, de la sociedad civil, las autoridades de
+            justicia y los padres de familia.
+          </p>
+          <p>
+            Los registros oficiales dan cuenta de que esta realidad sobrepasa el
+            interés y las capacidades de los gobiernos en turno.
+          </p>
+          <p>
+            En el caso Matatena, más de 100 familias fueron afectadas de manera
+            indirecta, había 20 casos confirmados, pero sólo siete llegaron ante
+            la Fiscalía de Justicia de la Ciudad de México.
+          </p>
+          <p>
+            Dos años después el agresor fue sentenciado. Un juez lo encontró
+            culpable por el delito de abuso sexual y le dictó una pena de sólo
+            cinco años y cinco meses, pues se le juzgó por abuso sexual y no por
+            violación. El proceso fue tan duro que al día de hoy sólo dos de las
+            familias afectadas siguen viviendo en México.
+          </p>
+          <p>
+            En México, sólo el 1% de los casos que llegan ante autoridades
+            judiciales resultan en sentencia condenatoria. Pese a ello, el caso
+            ícono terminó reflejando la impunidad compartida del Estado
+            mexicano. En 2019, las familias recibieron la noticia de que, por
+            fallas administrativas atribuibles al juez que llevó el caso, la
+            sentencia contra Rafael D. quedaba anulada. No obstante, en la
+            investigación se comprobó su responsabilidad.
+          </p>
+          <p>
+            “El sistema está hecho para que ellos estén libres. Y quienes tienen
+            que ejercerlo no están velando por los intereses de los niños
+            entonces, claro, que nos fallaron a nosotros”, lamenta la madre de
+            un sobreviviente.
           </p>
         </div>
       </section>
@@ -385,8 +406,7 @@
           <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
         </div>
       </section>
-      <section>
-      </section>
+      <section></section>
     </article>
   </div>
 </template>
