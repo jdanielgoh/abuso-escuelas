@@ -43,7 +43,7 @@
               font-size: 14px;
             }
           }
-          p.bullet {
+          p.bullet, ul.bullet {
             display: flex;
             flex-wrap: wrap;
             font-size: 18px;

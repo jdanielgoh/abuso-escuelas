@@ -14,7 +14,7 @@ import gsap from "gsap";
 
 import archivos from "@/assets/datos/lista_documentos_portada.json";
 const parametros_gui = {
-  color_fondo: "#2b2b2b",
+  color_fondo: "#181a25",
 };
 const fog = ref(new THREE.Fog(parametros_gui.color_fondo, 0.1, 4));
 

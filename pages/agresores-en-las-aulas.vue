@@ -1,13 +1,20 @@
 <template>
-  <div class="vista-historias">
+  <main class="vista-historias">
     <article>
+      <div class="cover-portada">
+        <img src="~/assets/imgs/cap1/ilustracion_principal_cap_1.jpg" alt="" />
+        <div class="contenedor-titulo">
+          <div class="titulo-centrado">
+            <h1>Agresores en las aulas</h1>
+            <h2 class="subtitulo">
+              En la última década se triplicó el abuso sexual infantil dentro de
+              las escuelas
+            </h2>
+          </div>
+        </div>
+      </div>
       <section class="contenedor-flex">
         <div class="ancho-texto">
-          <h1>Agresores en las aulas</h1>
-          <h2 class="subtitulo">
-            En la última década se triplicó el abuso sexual infantil dentro de
-            las escuelas
-          </h2>
           <p class="resumen">
             Los casos de delitos sexuales cometidos por el personal de las
             escuelas en contra de los alumnos va en aumento.
@@ -222,8 +229,16 @@
             sólo la mitad llegaron ante una fiscalía de justicia.
           </p>
           <p>
-            <span style="color: rosybrown">probable grafico </span>
+            Mariana Gil, abogada y directora de la Oficina de Defensoría de los
+            Derechos de la Infancia, A.C. (ODI), señala que la cifra negra en
+            estos casos es incalculable. Ejemplifica con casos que ha acompañado
+            la ODI.
           </p>
+        </div>
+      </section>
+      <InteractivosHorizontalCasosParticulares></InteractivosHorizontalCasosParticulares>
+      <section class="contenedor-flex">
+        <div class="ancho-texto">
           <blockquote>
             “La Fiscalía, que no está capacitada para esto, desestima varias
             denuncias. Hay revictimización. Muchas familias se van, abandonan
@@ -315,8 +330,179 @@
       </section>
 
       <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
+      <section class="contenedor-flex">
+        <div class="ancho-texto">
+          <p>
+            El perfil del agresor escolar coincide con la descripción del
+            “abusador situacional” que, según explica Julia Borbolla, psicóloga
+            especializada en abuso sexual, son personas que de forma deliberada
+            buscan contratarse como profesores, a veces suplentes, instructores
+            de deportes o idiomas para estar cerca de las y los niños.
+          </p>
+          <p>
+            “Por eso es muy importante que los colegios hagan una muy buena
+            selección de personal.(...) Hay que hacer selección de personal
+            clínica, no solo de sus preferencias o aptitudes, sino de su salud
+            mental, hacer una especie de peritaje, pedir antecedentes penales,
+            investigar la vida familiar, con quién vive… rascarle un poquito más
+            porque van a estar con los niños”, aconseja.
+          </p>
+          <p>
+            Este tipo de omisiones se reflejan en los casos que ocurren dentro
+            de las escuelas. En el Centro de Atención Múltiple 7 (CAM) “Gabriela
+            Mistral” en Ecatepec, Estado de México, varios padres de familia
+            denunciaron a Héctor “N”, profesor de Salud, por presuntos
+            tocamientos sexuales por encima y debajo de la ropa, en contra de
+            varios de sus alumnos, todos ellos con alguna discapacidad.
+          </p>
+          <p>
+            Héctor “N” es un enfermero sin preparación en pedagogía que fue
+            contratado para apoyar a las maestras con las múltiples necesidades
+            que tienen los alumnos con discapacidades diversas. Era “maestro de
+            apoyo”. Cuidaba a los grupos cuando una maestra tenía que salir,
+            llevaba a los estudiantes al baño o les revisaba si tenían algún
+            malestar físico. Ante la jubilación de un colega, sumó a sus
+            responsabilidades dar clases. Según los padres, no hay registros de
+            que la contratación de Héctor “N” estuviera justificada.
+            Actualmente, Héctor N enfrenta un proceso penal para determinar su
+            responsabilidad en los abusos sexuales reportados por sus
+            estudiantes.
+          </p>
+          <p>
+            Actas de hechos obtenidas por transparencia dan cuenta de la
+            debilidad de los procesos de contratación. Por ejemplo, en Oaxaca,
+            un hombre fue asignado como docente de preescolar en el municipio de
+            San Juan Bautista Cuicatlán. Era apenas estudiante de pedagogía,
+            pero era hijo de una maestra jubilada, lo que le dio pase directo al
+            cargo. Meses después de su asignación en 2016, las autoridades
+            encontraron en su celular y computadora imágenes sexuales que había
+            tomado a sus alumnos preescolares. La dependencia registró el caso,
+            pero no dio detalles del estatus del docente.
+          </p>
+          <p>
+            En México, el Sindicato Nacional de Trabajadores de la Educación
+            (SNTE) —que reúne al personal que trabaja en escuelas públicas de
+            educación básica— tiene un peso importante en la política educativa.
+            Es el sindicato más grande de América Latina y su origen está ligado
+            al Partido Revolucionario Institucional (PRI) que gobernó el país
+            por más de 70 años continuos; desde esa relación, ha influido en
+            cómo se educa en el país y ha sido acusado de participar en fraudes
+            electorales. En la última década se ha opuesto a la evaluación de
+            los docentes y a eliminar la “herencia” de plazas en las escuelas,
+            una práctica que permite que personal que no cuenta con el perfil
+            adecuado llegue a centros escolares. Se solicitó una entrevista con
+            el secretario general del SNTE, Alfonso Cepeda Salas, sin que hasta
+            el cierre de edición haya dado respuesta.
+          </p>
+          <p>
+            Las víctimas son diversas: niñas, niños y adolescentes que de pronto
+            tienen terrores nocturnos, presentan incontinencia nocturna, cambian
+            su temperamento, pierden el habla o el interés en la escuela.
+          </p>
+          <p>
+            La mayoría son mujeres (68%)*, pero las agresiones contra hombres
+            también están presentes.
+          </p>
+          <p>
+            La edad juega un factor en el tipo de violencia que se ejerce contra
+            ellos. Entre más pequeños más vulnerables al abuso y violación
+            sexual. Sin embargo, el 50% de los casos registrados ocurrieron en
+            secundaria, principalmente en contra de mujeres. Alumnas de entre 12
+            y 14 años reportan a docentes que han tenido acercamientos de índole
+            sexual con ellas, según en las actas de hechos que se recabaron vía
+            transparencia. La mayoría de denuncias son por acoso sexual que
+            ocurre durante las clases, los recesos e incluso por mensajes en
+            redes sociales. En algunos casos, la manipulación emocional, las
+            amenazas y los métodos coercitivos de los adultos terminan en
+            violaciones.
+          </p>
+          <p>
+            Las violencias sexuales contra estudiantes de primaria están en el
+            segundo lugar, hay 631 quejas. Se repite el patrón: las autoridades
+            educativas no declararon cuáles fueron las consecuencias
+            administrativas y/o penales en contra de los señalados, aunque se
+            les solicitó vía transparencia.
+          </p>
+          <p>
+            Incluso se encontraron 50 casos en donde no se puede establecer el
+            número exacto de víctimas o victimarios, en 18 estados de la
+            República estos casos se clasificaron como “varias personas”. Los
+            registros enlistan a directores, intendentes, encargados de
+            cooperativa y docentes como un grupo de agresores en contra de los
+            menores.
+          </p>
+          <p>
+            La Oficina de Defensoría de los Derechos de la Infancia, A.C. (ODI)
+            en sus informes <i>Es un Secreto</i> y
+            <i
+              ><a
+                href="https://dispensariodi.com/wp-content/uploads/2023/05/Es-un-secreto.-Actualizacion-2023.pdf"
+                >Ya no es un secreto</a
+              >
+            </i>
+            denunció que hay indicios de abuso sexual organizado —varios adultos
+            participando en la ejecución de los delitos— en al menos 25 escuelas
+            de educación básica repartidas en 11 estados del país. Los delitos
+            sexuales, explican, son cometidos principalmente contra grupos de
+            niñas y niños de entre tres y cinco años; violentados por múltiples
+            personas que cometen agresiones ritualísticas o escenificadas, a
+            veces videograbadas. En todos los casos hay personal que facilita o
+            encubre el abuso.
+          </p>
+          <h3>Sanción a medias</h3>
+          <p>
+            Durante el juicio contra el personal del Guadalupe Borja, se le
+            preguntó al perito en psicología que revisó a J: “¿Por qué creer el
+            dicho del niño de que fue abusado sexualmente por dos personas
+            adultas?”. El perito respondió: “Los niños a esta edad no realizan
+            mentiras, su capacidad para mentir no está desarrollada porque el
+            mentir y el engañar conlleva una maduración del lóbulo frontal que
+            los niños a este momento todavía no tienen”.
+          </p>
+          <p>
+            Ante esto, la psicóloga especializada en abuso sexual infantil,
+            Julia Borbolla, refuerza: “Los niños no inventan estas cosas, no
+            tienen capacidad de inventar algo que no conocen”.
+          </p>
+          <p>
+            Las autoridades de justicia encontraron culpables a Gerardo “Cantos”
+            y a Servando “el que limpia las cosas cuando están tiradas”. Aunque
+            los delitos descritos por las víctimas y las pruebas físicas
+            evidenciaban violación, el ministerio público lo acusó por el delito
+            de abuso sexual, lo que permitió que la sanción para los victimarios
+            fuera menor. El delito de violación se castiga en el estado con 16
+            años de prisión, se considera más grave y aumenta en pena, si se
+            comete contra un menor de edad; dentro de un inmueble público, como
+            una escuela; y con abuso de autoridad, por ejemplo, si el agresor es
+            personal del colegio. Dos de las siete carpetas de investigación se
+            convirtieron en sentencia: una suma de 16 años de prisión para cada
+            uno por las agresiones cometidas contra J y T.
+          </p>
+          <p>
+            Las familias perdieron recursos económicos y estabilidad. Mientras
+            tanto, el Jardín de Niños Guadalupe Borja sigue operando con
+            normalidad. La directora y las maestras, que tuvieron deficiencias
+            en los cuidados de sus estudiantes, siguen dando clases. El grupo de
+            abogados de los acusados aún intenta absolverlos. Ante las
+            sentencias que dictó un juez, los imputados ingresaron un amparo:
+            buscan su libertad.
+          </p>
+          <p>
+            Las y los niños aún padecen las secuelas psicológicas y emocionales.
+          </p>
+          <p>
+            “Cuando volvieron a clases presenciales su primera pregunta fue:
+            ‘Mamá, ¿las maestras de aquí sí son buenas?’ Nosotros buscamos
+            justicia para nuestros hijos, pero también para que ningún niño
+            vuelva a vivir lo que vivieron mis hijos. Las cosas tienen que
+            cambiar para ellos, tristemente cada semana vemos denuncias de
+            violación, abuso y acoso cometidos por maestros. Las cosas siguen
+            igual”, lamenta la madre de J. y T.
+          </p>
+        </div>
+      </section>
     </article>
-  </div>
+  </main>
 </template>
 <script setup>
 /*import {csv} from "d3"
@@ -345,7 +531,7 @@ const variables_anios = ref([
   {
     cve: "No_quejas",
     nombre: "Registros",
-    color: "orange",
+    color: "#af3400",
   },
 ]);
 
@@ -353,7 +539,7 @@ const barras_variables = ref([
   {
     id: "No_casos_SEP",
     nombre_colores: "Registros de la SEP",
-    color: "orange",
+    color: "#af3400",
   },
   {
     id: "No_casos_Fiscalia",
