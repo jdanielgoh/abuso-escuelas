@@ -64,7 +64,7 @@
                 principalmente en nivel preescolar y primaria.
               </span>
             </p>
-            <p>El resto son personal administrativo, becarios, encargados de cooperativa, entre otros.
+            <p style="color:#5e5e5e">El resto son personal administrativo, becarios, encargados de cooperativa, entre otros.
 </p>
           </div>
         </div>

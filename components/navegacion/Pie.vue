@@ -35,7 +35,7 @@
           <li><NuxtLink  to="/"> Inicio</NuxtLink>  </li>
           <li><NuxtLink  to="historias"> Historia</NuxtLink>  </li>
           <li><NuxtLink  to="perfiles"> Perfiles</NuxtLink>  </li>
-          <li><NuxtLink  to="protocolos"> Protocolos</NuxtLink>  </li>
+          <li><NuxtLink  to="nuestros-protocolos-no-existen"> Protocolos</NuxtLink>  </li>
           <li><NuxtLink  to="metodologia"> Metodología</NuxtLink>  </li>
 
         </ul>

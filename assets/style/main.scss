@@ -17,6 +17,10 @@ body, html{
     .ancho-texto{
         margin: auto;
         max-width: $ancho-texto;
+        img{
+            max-width: 100%;
+            border-radius: $radio-borde;
+        }
     }
     .ancho-bullet{
         margin: auto;
@@ -48,16 +52,12 @@ blockquote{
 .vista-historias{
     background:$color-fondo-claro;
     color: $color-texto-oscuro;
-    h1{
-        font-size: 28px;
-    }
-    h2.subtitulo{
-        font-size: 16px
-    }
-
     p.resumen{
         font-style: italic;
         text-align: right;
+    }
+    p{
+        margin: 20px 0;
     }
 }
 .cover-portada{
@@ -86,19 +86,41 @@ blockquote{
             max-width: $pantalla-movil;
             padding: 16px;
             text-align: center;
-            margin: auto auto 100px auto;
+            margin: auto auto 80px auto;
 
             h1{
                 font-size:64px;
                 text-shadow: 0 0 5px $color-texto-oscuro, 0 0 10px  $color-texto-oscuro;
                 margin-bottom: 20px;
+                font-family: "Roboto Slab";
+                font-weight: 400;
+
+
             }
             h2{
                 font-size:28px;
                 text-shadow: 0 0 5px  $color-texto-oscuro, 0 0 10px  $color-texto-oscuro;
             }
+            @media (max-width: $pantalla-movil) {
+                max-width: 300px;
+
+                h1{
+                    font-size:40px;
+                    line-height: 1;
+
+                }
+                h2{
+                    font-size:18px;
+                }
+                margin: auto auto 40px auto;
+
+        
+              }
 
         }
         
     }
+}
+article{
+    padding-bottom: 100px
 }

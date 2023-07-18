@@ -2,7 +2,7 @@
   <main class="vista-historias">
     <article>
       <div class="cover-portada">
-        <img src="~/assets/imgs/cap1/ilustracion_principal_cap_1.jpg" alt="" />
+        <img src="~/assets/imgs/cap1/ilustracion_1.jpg" alt="" />
         <div class="contenedor-titulo">
           <div class="titulo-centrado">
             <h1>Agresores en las aulas</h1>
@@ -394,6 +394,7 @@
             el secretario general del SNTE, Alfonso Cepeda Salas, sin que hasta
             el cierre de edición haya dado respuesta.
           </p>
+          <img src="~/assets/imgs/cap1/ilustracion_2.jpg" alt="" />
           <p>
             Las víctimas son diversas: niñas, niños y adolescentes que de pronto
             tienen terrores nocturnos, presentan incontinencia nocturna, cambian
@@ -449,6 +450,8 @@
             veces videograbadas. En todos los casos hay personal que facilita o
             encubre el abuso.
           </p>
+          <img src="~/assets/imgs/cap1/ilustracion_3.jpg" alt="" />
+
           <h3>Sanción a medias</h3>
           <p>
             Durante el juicio contra el personal del Guadalupe Borja, se le
