@@ -1,38 +1,52 @@
 <template>
   <div class="contenedor-vis-tabla contenido-flex" id="matriz-protocolos">
     <div class="ancho-texto">
-      <fieldset>
-        <legend>Selecciona una categoría</legend>
-        <select
-          name="selector-categorias"
-          id="selector-categorias"
-          v-model="categoria_seleccionada"
-        >
-          <option
-            :value="categoria"
-            v-for="(categoria, i) in categorias"
-            :key="i"
-          >
-            {{ categoria }}
-          </option>
-        </select>
-      </fieldset>
+      <div class="contenedor-flex">
+        <div class="ancho-texto">
+          <h3>
+            ¿Qué deben hacer las escuelas cuando se presenta un caso de abuso
+            sexual en sus instalaciones?
+          </h3>
+          <p>
+            Con esta herramienta conocerás si los protocolos de las 32 entidades
+            del país cumplen con los estándares que se han desarrollado a nivel
+            internacional sobre cómo deben actuar las autoridades ante estos
+            casos.
+          </p>
+          <fieldset>
+            <legend>Selecciona una categoría</legend>
+            <select
+              name="selector-categorias"
+              id="selector-categorias"
+              v-model="categoria_seleccionada"
+            >
+              <option
+                :value="categoria"
+                v-for="(categoria, i) in categorias"
+                :key="i"
+              >
+                {{ categoria }}
+              </option>
+            </select>
+          </fieldset>
+        </div>
+      </div>
 
       <div class="contenedor-tabla">
         <table>
           <thead>
             <tr class="renglon-encabezado">
               <th>Estado</th>
-              <th>Puntaje</th>
+              <th>Puntaje de cumplimiento</th>
               <th v-for="variable in diccionario_mostrado" :key="variable.id">
                 <div class="celda-h">
                   {{ variable.encabezado_columna }}
                   <VTooltip
                     v-if="variable.info_extra"
                     :triggers="['hover', 'focus']"
-                    :placement="'bottom'" 
+                    :placement="'bottom'"
                   >
-                    <button>i</button>
+                    <button class="boton-info">i</button>
 
                     <template #popper>
                       {{ variable.info_extra }}
@@ -54,35 +68,65 @@
 
               <td v-for="variable in diccionario_mostrado" :key="variable.id">
                 <div class="contenedor-flex">
-                  <Transition name="icono">
-                    <img
-                      v-if="edo[variable.id] == 2"
-                      src="@/assets/imgs/iconos/si.svg"
-                      alt="sí"
-                      class="icono-tabla"
-                    />
-                  </Transition>
-                  <Transition name="icono">
-                    <img
-                      v-if="edo[variable.id] == 0"
-                      src="@/assets/imgs/iconos/no.svg"
-                      alt="no"
-                      class="icono-tabla"
-                    />
-                  </Transition>
-                  <Transition name="icono">
-                    <img
-                      v-if="edo[variable.id] == 1"
-                      src="@/assets/imgs/iconos/regular.svg"
-                      alt="regular"
-                      class="icono-tabla"
-                    />
-                  </Transition>
+                  <img
+                    v-if="edo[variable.id] == 2"
+                    src="@/assets/imgs/iconos/si.svg"
+                    alt="sí"
+                    class="icono-tabla"
+                  />
+                  <img
+                    v-if="edo[variable.id] == 0"
+                    src="@/assets/imgs/iconos/no.svg"
+                    alt="no"
+                    class="icono-tabla"
+                  />
+                  <img
+                    v-if="edo[variable.id] == 1"
+                    src="@/assets/imgs/iconos/regular.svg"
+                    alt="regular"
+                    class="icono-tabla"
+                  />
                 </div>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="ancho-texto">
+        <div class="contenedor-flex">
+          <div class="ancho-texto" style="text-align: left; font-size: 14px">
+            <p>
+              Se asignó un valor de 0 cuando el protocolo
+              <b style="color: #b51e00">no especifica</b>
+              <img
+                src="@/assets/imgs/iconos/no.svg"
+                alt="no"
+                class="icono-tabla"
+                style="transform: translateY(4px)"
+              />
+              la acción a seguir, el valor de 1 cuando el protocolo considera
+              de manera <b style="color: #d49102">parcial</b>
+              <img
+                src="@/assets/imgs/iconos/regular.svg"
+                alt="regular"
+                class="icono-tabla"
+                style="transform: translateY(4px)"
+              />
+              la acción y se asignó el valor de 2 cuando
+              <b style="color: #01ab8e">sí especifica</b>
+              <img
+                src="@/assets/imgs/iconos/si.svg"
+                alt="sí"
+                class="icono-tabla"
+                style="transform: translateY(4px)"
+              />
+              de forma explicita la acción a seguir. Finalmente, para calcular
+              los puntajes estatales se suman sus valores y se normaliza tomando el valor de 10 como máximo, correspondiente a un caso en el cual un estado tenga todos sus valores en <b style="color: #01ab8e">sí especifica</b>.
+            </p>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -105,7 +149,7 @@ csv("datos/diccionario-categorias - diccionario-categorias.csv").then(D=>{
 const interpolacionColor = interpolateRgbBasis([
   "#b51e00",
   "#d49102",
-  "#00b55e",
+  "#01ab8e",
 ]);
 const categoria_seleccionada = ref("Todas las categorias");
 const categorias = ref([
@@ -152,7 +196,10 @@ function cambioCategoria(nv) {
 </style>
 <style scoped lang="scss">
 #matriz-protocolos {
-  width: 100%;
+  padding: 8px;
+  width: calc(100% - 16px);
+  max-width: 1200px;
+  margin: auto;
   fieldset {
     border: none;
     padding: 8px;
@@ -170,12 +217,10 @@ function cambioCategoria(nv) {
   }
 }
 .celda-h {
-  max-height: 100px;
-  overflow-y: auto;
+  max-height: 120px;
   min-width: 120px;
   font-size: 14px;
   font-weight: 400;
-  
 }
 img.icono-tabla {
   max-height: 20px;
@@ -190,6 +235,7 @@ div.contenedor-tabla {
   max-height: calc(100vh - 100px);
 
   table {
+    margin: auto;
     border-collapse: collapse;
     thead {
       tr {
@@ -202,6 +248,17 @@ div.contenedor-tabla {
           left: 0;
           &:first-child {
             z-index: 3;
+          }
+          button.boton-info {
+            font-weight: 700;
+            font-style: italic;
+            border-radius: 50%;
+            border: solid 0px transparent;
+            background: $color-fondo-oscuro-transparencia;
+            color: $color-texto-claro;
+            font-size: 18px;
+            width: 20px;
+            height: 20px;
           }
         }
       }

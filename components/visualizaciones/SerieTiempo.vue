@@ -55,7 +55,14 @@
       </div>
 
     </div>
-    <slot name="pie"></slot>
+    <slot name="pie">
+      <div class="pie"> 
+        <p class="nomenclatura"> <span :style="{background: color_2016} "></span> 2016: llamado nacional para creación protocolos</p>
+        <p class="nomenclatura"><span :style="{background: color_2020} "></span> 2020 y 2021: crisis de la pandemia</p>  
+      </div> 
+      
+
+    </slot>
 
   </div>
 </template>
@@ -93,7 +100,7 @@ export default {
     },
     ancho_tooltip: {
       type: Number,
-      default: 180
+      default: 120
     },
     margen: {
       type: Object,
@@ -166,7 +173,9 @@ export default {
       ancho_leyenda_y: 0,
       ancho:0,
 
-      tooltip_data_seleccionada: Object
+      tooltip_data_seleccionada: Object,
+      color_2016: "#57b9c7bd",
+      color_2020: "#e1b02ebd"
 
     }
   },
@@ -261,6 +270,8 @@ export default {
           .attr("height", this.alto + this.margen.arriba + this.margen.abajo)
           .style("left", this.ancho_leyenda_y + "px");
 
+          this.grupo_fondo
+          .attr("transform", `translate(${this.margen.izquierda},${this.margen.arriba})`);
       this.grupo_contenedor
           .attr("transform", `translate(${this.margen.izquierda},${this.margen.arriba})`);
       this.grupo_frente.attr("transform", `translate(${this.margen.izquierda},${this.margen.arriba})`);
@@ -302,6 +313,9 @@ export default {
     },
 
     creandoLineas() {
+      this.rect_llamado = this.grupo_fondo.append("rect")
+      this.rect_crisis = this.grupo_fondo.append("rect")
+
       this.grupo_contenedor.selectAll("g.grupos-lineas-puntos").remove()
       this.grupos_series = this.grupo_contenedor
           .selectAll("grupos-lineas-puntos")
@@ -361,6 +375,20 @@ export default {
 
     },
     actualizandoLineas() {
+      this.rect_llamado
+        .attr("x",this.escalaX(this.conversionTemporal("2016")))
+        .attr("y",0)
+        .attr("rx",10)
+        .attr("width",this.escalaX(this.conversionTemporal("2017")) - this.escalaX(this.conversionTemporal("2016")))
+        .attr("height", this.alto)
+        .style("fill",this.color_2016)
+
+      this.rect_crisis.attr("x",this.escalaX(this.conversionTemporal("2020")))
+        .attr("y",0)
+        .attr("rx",10)
+        .attr("width",this.escalaX(this.conversionTemporal("2022")) - this.escalaX(this.conversionTemporal("2020")))
+        .attr("height", this.alto)
+        .style("fill",this.color_2020)
       this.grupos_lineas
           .attr("d", (dd) => {
 
@@ -548,6 +576,21 @@ svg.svg-lineas {
 svg.svg-barras :deep(text) {
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+div.pie{
+  margin-bottom:40px;
+  p.nomenclatura{
+    font-size: 14px;
+    margin: 5px;
+    span{
+      width: 20px;
+      height: 16px;
+      border-radius: 4px;
+      transform: translateY(2px);
+      position: relative;
+      display: inline-block;
+    }
+  }
 }
 
 div.contenedor-tooltip-svg {

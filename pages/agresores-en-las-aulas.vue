@@ -533,7 +533,7 @@ const variables_anios = ref([
   {
     cve: "No_quejas",
     nombre: "Registros",
-    color: "#af3400",
+    color: "#ed6931",
   },
 ]);
 
@@ -541,7 +541,7 @@ const barras_variables = ref([
   {
     id: "No_casos_SEP",
     nombre_colores: "Registros de la SEP",
-    color: "#af3400",
+    color: "#ed6931",
   },
   {
     id: "No_casos_Fiscalia",

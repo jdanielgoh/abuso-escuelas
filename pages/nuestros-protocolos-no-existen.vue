@@ -247,6 +247,11 @@
             bitácoras? Porque así es como la escuela se defiende, pero el 90% de
             escuelas no las tiene”.
           </p>
+        </div>
+      </section>
+      <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
+      <section class="contenedor-flex">
+        <div class="ancho-texto">
           <h3>Particulares sin supervisión</h3>
           <p>
             Un problema adicional es la falta de supervisión de las escuelas
@@ -398,17 +403,6 @@
       </section>
     </article>
   </main>
-  <div id="protocolos" class="vista-historias">
-    <article>
-      <section class="contenedor-flex">
-        <div class="ancho-texto">
-          <h1>Protocolos</h1>
-          <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
-        </div>
-      </section>
-      <section></section>
-    </article>
-  </div>
 </template>
 <style lang="scss" >
 #protocolos {

@@ -43,11 +43,11 @@
           <div class="ancho-bullet">
             <p class="bullet">
               <span class="izquierda"></span>
-              <span class="dato-numerico triple centro" style="color: #55adff"
+              <span class="dato-numerico triple centro" style="color: #00c0d7"
                 >718</span
               >
               <span class="derecha"
-                ><b style="color: #55adff"> son docentes</b>. Resaltan los profesores interinos: enseñan música, educación física e idiomas
+                ><b style="color: #00c0d7"> son docentes</b>. Resaltan los profesores interinos: enseñan música, educación física e idiomas
 
               </span>
               <span class="dato-numerico triple centro" style="color: #882992"
@@ -310,7 +310,7 @@ function cambioDePasos(nv, ov) {
       h: d3.max(escalaLineal.value.range()) * 0.04,
       fillStyle:
         i < 718
-          ? "#55adff"
+          ? "#00c0d7"
           : i < 718 + 34
           ? "#882992"
           : i < 718 + 34 + 85
@@ -345,6 +345,6 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-agresores {
-  height: 300vh;
+  height: 600vh;
 }
 </style>

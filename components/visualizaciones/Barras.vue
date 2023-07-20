@@ -588,7 +588,7 @@ div.contenedor-tooltip-svg {
       span.nomenclatura-tooltip {
         width: 10px;
         height: 10px;
-        border-radius: 50%;
+        border-radius: 0%;
         border: solid 1px rgba(255, 255, 255, 0.7);
         display: inline-block;
       }

@@ -54,7 +54,7 @@
           <div class="ancho-bullet">
             <p class="bullet">
               <span
-                > <strong style="color:#00b55e">Sólo Tabasco y Zacatecas establecen investigaciones
+                > <strong style="color:#01ab8e">Sólo Tabasco y Zacatecas establecen investigaciones
                 administrativas realizadas por personal especializado en la
                 materia</strong>, las cuales están pensadas para evitar que los agresores
                 sean cambiados a otros colegios y repliquen las violencias como
@@ -148,7 +148,7 @@ function visualizarMapa(categoria) {
     .transition()
     .style("fill", (d) =>
       +d.properties[categoria] == 2
-        ? "#00b55e"
+        ? "#01ab8e"
         : +d.properties[categoria] == 1
         ? "#b51e00"
         : "#b51e00"
@@ -204,7 +204,7 @@ function cambioDePasos(nv, ov) {
 
 <style lang="scss">
 #texto-horizontal-protocolos {
-  height: 300vh;
+  height: 600vh;
   .horizontal-scroll_item.contenedor-flex {
     .ancho-bullet {
       margin: 50px auto auto auto;

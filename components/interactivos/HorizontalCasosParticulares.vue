@@ -312,6 +312,6 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-casos-particulares {
-  height: 200vh;
+  height: 500vh;
 }
 </style>
