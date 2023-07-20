@@ -6,7 +6,7 @@
 <style lang="scss">
 .texto-intro-scroll-horizontal {
   padding: 0 ;
-
+  margin: 0 -15px;
   background-color: transparent;
   transition: background-color 0.75s ease;
 
@@ -43,7 +43,7 @@
               font-size: 14px;
             }
           }
-          p.bullet {
+          p.bullet, ul.bullet {
             display: flex;
             flex-wrap: wrap;
             font-size: 18px;
@@ -84,6 +84,9 @@
           @media (max-width: $pantalla-movil) {
             max-width: 60vw;
           }
+        }
+        strong{
+            background-color: transparent;
         }
       }
     }

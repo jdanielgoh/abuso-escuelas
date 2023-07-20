@@ -19,16 +19,33 @@
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="dato-numerico centro" style="color:#b92d2d">17</span>
-              <span class="centro"> <b style="color:#b92d2d">estados</b>  no definen conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). </span>
+              <span
+                >En <strong style="color: #b92d2d"> 21 </strong> de los 32
+                estados, los protocolos
+                <strong style="color: #b92d2d"
+                  >no definen los delitos sexuales acordes al código penal
+                  estatal.</strong
+                >
+              </span>
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="dato-numerico centro" style="color:#b92d2d">7</span>
-              <span class="centro"> <b style="color:#b92d2d">estados</b>  no especifican que el protocolo sea aplicable a escuelas privadas. </span>
+              <span>
+                <strong style="color: #b92d2d"
+                  >13 estados no establecen con claridad que las autoridades
+                  educativas tienen la obligación de denunciar los delitos
+                  sexuales cometidos dentro de las escuelas como lo establece la
+                  Ley General de Educación.</strong
+                >
+                Pese a que la Ley, en su artículo 74, indica que es obligatorio
+                “hacer del conocimiento de las autoridades competentes las
+                conductas que pueden resultar constitutivas de infracciones o
+                delitos cometidos en contra de las niñas, los niños,
+                adolescentes”.
+              </span>
             </p>
           </div>
         </div>
@@ -36,40 +53,29 @@
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="dato-numerico centro" style="color:#b92d2d">11</span>
-              <span class="centro"> <b style="color:#b92d2d">estados</b>  no establecen como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso.</span>
+              <span
+                > <strong style="color:#01ab8e">Sólo Tabasco y Zacatecas establecen investigaciones
+                administrativas realizadas por personal especializado en la
+                materia</strong>, las cuales están pensadas para evitar que los agresores
+                sean cambiados a otros colegios y repliquen las violencias como
+                ha quedado asentado en actas de hechos de las secretarías de
+                educación en las que se recalca que ciertos maestros tenían
+                antecedentes de violencia sexual contra estudiantes en otros
+                espacios.
+              </span>
             </p>
           </div>
         </div>
-        <div class="horizontal-scroll_item contenedor-flex">
-          <div class="ancho-bullet">
-            <p class="bullet">
-              <span class="dato-numerico centro" style="color:#b92d2d">8</span>
-              <span class="centro"> <b style="color:#b92d2d">estados</b>  no establecen como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)</span>
-            </p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 </template>
 <script setup>
-import { ref, onMounted, onUnmounted, watch, toRaw } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
 import * as d3 from "d3";
 
 import datos_geograficos from "@/assets/datos/protocolos.json";
-
-let diccionario = {
-  "Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ":
-    "define_conductas",
-  "El protocolo es aplicable a escuelas públicas o privadas (Sí: dice explícitamente que es aplicable a escuelas privadas también; No: dice que solo es aplicable a públicas o no señala nada al respecto).":
-    "escuelas_privadas",
-  "Establece como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso. ":
-    "notificacion_penales",
-  "Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia)":
-    "registro_textual",
-};
-
 
 const posicion = ref(0);
 const ancho = ref(0),
@@ -88,9 +94,9 @@ onMounted(() => {
   svg.value = d3.select("#" + id_contenedor.value).select("svg");
   grupo_poligonos.value = svg.value.select("g.mapa");
   calculandoDimensionesSvg();
-    geodata.value = datos_geograficos;
-    creaMapa();
-    visualizarMapa(catego.value);
+  geodata.value = datos_geograficos;
+  creaMapa();
+  visualizarMapa(catego.value);
   window.addEventListener("scroll", posicionScroleando);
   window.addEventListener("resize", reescalando);
 });
@@ -127,11 +133,13 @@ function visualizarMapa(categoria) {
     .geoMercator()
     .scale(1.75 * d3.min([alto.value, ancho.value]))
     .center([-102, 25])
-    .translate([ ancho.value * 0.5, ancho.value> 768 ? alto.value * 0.5:alto.value * 0.7 ]);
+    .translate([
+      ancho.value * 0.5,
+      ancho.value > 768 ? alto.value * 0.5 : alto.value * 0.7,
+    ]);
 
   path.value = d3.geoPath().projection(proyeccion.value);
-  console.log(categoria, poligonos.value.filter(d=>      d.properties[categoria] != "Sí" 
-)._groups[0].length)
+
   poligonos.value
     .attr("d", path.value)
     .style("stroke", "#0f1e3d")
@@ -139,7 +147,27 @@ function visualizarMapa(categoria) {
     .style("cursor", "pointer")
     .transition()
     .style("fill", (d) =>
-      d.properties[categoria] != "Sí" ? "#b92d2d" : "#e0e0e0"
+      +d.properties[categoria] == 2
+        ? "#01ab8e"
+        : +d.properties[categoria] == 1
+        ? "#b51e00"
+        : "#b51e00"
+    )
+    .style("fill-opacity", (d) =>{
+      if(categoria!="investigacion_administrativa"){
+       return (+d.properties[categoria] == 2
+        ? ".2"
+        : +d.properties[categoria] == 1
+        ? "1"
+        : "1")
+    }
+    else{
+      return (+d.properties[categoria] == 2
+        ? "1"
+        : +d.properties[categoria] == 1
+        ? ".2"
+        : ".2")
+    }}
     );
 }
 
@@ -148,20 +176,18 @@ function posicionScroleando() {
     .querySelector("#texto-horizontal-protocolos")
     .getBoundingClientRect();
   posicion.value =
-    (400 * rect.top) / rect.height > 0
+    (300 * rect.top) / rect.height > 0
       ? 0
-      : (400 * rect.top) / rect.height < -300
-      ? -300
-      : (400 * rect.top) / rect.height;
+      : (300 * rect.top) / rect.height < -200
+      ? -200
+      : (300 * rect.top) / rect.height;
 
   if (-50 < posicion.value) {
     catego.value = "define_conductas";
   } else if (-150 < posicion.value && posicion.value <= -50) {
-    catego.value = "escuelas_privadas";
-  } else if (-250 < posicion.value && posicion.value <= -150) {
     catego.value = "notificacion_penales";
-  } else if (-350 < posicion.value && posicion.value <= -250) {
-    catego.value = "registro_textual";
+  } else if (-250 < posicion.value && posicion.value <= -150) {
+    catego.value = "investigacion_administrativa";
   }
 }
 watch(catego, (nv) => visualizarMapa(nv));
@@ -178,9 +204,9 @@ function cambioDePasos(nv, ov) {
 
 <style lang="scss">
 #texto-horizontal-protocolos {
-  height: 400vh;
-  .horizontal-scroll_item.contenedor-flex{
-    .ancho-bullet{
+  height: 600vh;
+  .horizontal-scroll_item.contenedor-flex {
+    .ancho-bullet {
       margin: 50px auto auto auto;
     }
   }

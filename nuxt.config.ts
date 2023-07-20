@@ -42,6 +42,7 @@ export default defineNuxtConfig({
       },
     },
     modules:[
+      'floating-vue/nuxt',
       ['@nuxtjs/google-fonts', {
         families: {
           'Roboto+Mono': true,

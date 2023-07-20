@@ -2,7 +2,6 @@
 
 body, html{
     margin: 0;
-    background: $color-fondo-oscuro;
     font-family : 'Open Sans';
     color: $color-texto-claro;
 }
@@ -18,6 +17,10 @@ body, html{
     .ancho-texto{
         margin: auto;
         max-width: $ancho-texto;
+        img{
+            max-width: 100%;
+            border-radius: $radio-borde;
+        }
     }
     .ancho-bullet{
         margin: auto;
@@ -32,6 +35,12 @@ blockquote{
     font-size: 24px;
     font-weight: 700;
     border-left: solid 4px $color-texto-claro;
+    @media (max-width: $pantalla-movil) {
+        padding: 8px;
+        font-size: 18px;
+        margin: 16px;
+
+      }
 }
 
 .bullet-fondo-oscuro-transparencia{
@@ -39,4 +48,88 @@ blockquote{
       border-radius: $radio-borde;
       backdrop-filter: blur(2px);
       padding: 16px;
+}
+.vista-historias{
+    background:$color-fondo-claro;
+    color: $color-texto-oscuro;
+    section.contenedor-flex{
+        padding: 8px;
+    }
+    p.resumen{
+        font-style: italic;
+        text-align: right;
+    }
+    p{
+        margin: 20px 0;
+        a{
+            color: #0b7c73
+        }
+        strong{
+            background-color: #e3ff95;
+        }
+    }
+}
+.cover-portada{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0 0 100px 0;
+    img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin:0;
+    }
+    .contenedor-titulo{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        color:$color-texto-claro;
+        .titulo-centrado{
+            max-width: $pantalla-movil;
+            padding: 16px;
+            text-align: center;
+            margin: auto auto 80px auto;
+
+            h1{
+                font-size:64px;
+                text-shadow: 0 0 5px $color-texto-oscuro, 0 0 10px  $color-texto-oscuro;
+                margin-bottom: 20px;
+                font-family: "Roboto Slab";
+                font-weight: 400;
+
+
+            }
+            h2{
+                font-size:28px;
+                text-shadow: 0 0 5px  $color-texto-oscuro, 0 0 10px  $color-texto-oscuro;
+            }
+            @media (max-width: $pantalla-movil) {
+                max-width: 300px;
+
+                h1{
+                    font-size:40px;
+                    line-height: 1;
+
+                }
+                h2{
+                    font-size:18px;
+                }
+                margin: auto auto 40px auto;
+
+        
+              }
+
+        }
+        
+    }
+}
+article{
+    padding-bottom: 100px
 }

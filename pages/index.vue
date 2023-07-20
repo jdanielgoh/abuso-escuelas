@@ -3,8 +3,9 @@
     <InteractivosPortada></InteractivosPortada>
     <section id="portada" class="contenedor-flex">
       <div class="titulo bullet-fondo-oscuro-transparencia">
-        <h1>Abuso sexual en escuelas.</h1>
-        <h2>Los casos que la SEP guarda debajo de la alfombra.</h2>
+        <h1>Maestros abusadores</h1>
+
+        <p class="autoras">Por Alejandra Crail y Daniela Guazo</p>
         <div class="logos contenedor-flex">
           <div class="connectas">
             <a href="https://www.connectas.org/">
@@ -27,120 +28,91 @@
     </section>
     <section id="sumario" class="contenedor-flex">
       <p class="bullet-fondo-oscuro-transparencia">
-        En la última década se han registrado 3,865 casos de abuso sexual en
-        escuelas de educación básica: uno cada día. Los principales agresores
-        son docentes. Niños con terrores nocturnos, que cambian su temperamento,
-        que pierden el habla o el interés por ir a la escuela son algunas de las
-        secuelas que existen. A pesar del cúmulo de testimonios, las secretarías
-        de educación han hecho oídos sordos y, en algunos casos, incumplido sus
-        propios protocolos de actuación. Así la violencia sexual habita todos
-        los días las aulas del país.
+        Diariamente, un niño o niña son agredidos sexualmente por el personal de
+        las escuelas a las que asisten. Mientras que el gobierno mexicano ha
+        fallado en garantizar la seguridad al interior de las aulas, el número
+        de denuncias va en aumento
       </p>
     </section>
-    <section id="texto-intro" class="contenedor-flex">
-      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
-        <p>
-          “En esta escuela nunca ha ocurrido algo similar”. Esta fue la única
-          respuesta que recibieron los padres de familia que acudieron ante la
-          directora del Centro de Atención Múltiple 7 (CAM) “Gabriela Mistral”,
-          ubicado en Ecatepec, Estado de México, al denunciar que el profesor de
-          salud había agredido sexualmente a sus hijas e hijos.
-        </p>
-        <p>
-          Pero una sola denuncia ante las autoridades bastó para que comenzaran
-          a brotar las agresiones que se escondían detrás de las puertas de esta
-          escuela. En un abrir y cerrar de ojos, padres y madres se dieron
-          cuenta que ninguno de sus casos existía ante el Órgano Interno de
-          Control de los Servicios Educativos Integrados al Estado de México
-          (SEIEM) y mucho menos en las estadísticas del Ministerio Público,
-          procedimientos que la directora evitó hacer ante cada queja
-          interpuesta contra el maestro Héctor “N”.
-        </p>
-        <p>
-          El CAM 7 es sólo una de las escuelas en las que algún adulto, miembro
-          de la comunidad educativa, ha violentado sexualmente a estudiantes de
-          educación básica. También un reflejo de lo que ocurre en todo el país,
-          donde las escuelas y las secretarías de educación evitan seguir los
-          lineamientos de prevención y atención a estos casos.
-        </p>
-      </div>
+    <section id="sumario" class="contenedor-flex">
+      <p class="bullet-fondo-oscuro-transparencia">
+        J. salió de la escuela sumido en llanto, envuelto en un intenso dolor.
+        Al llegar a casa, su madre se dio cuenta de que el niño de tres años
+        tenía heridas en el área rectal. Llevaba apenas 27 días como alumno de
+        1° de jardín de niños. Más tarde, se sabría que “Cantos”, el maestro de
+        música, y Servando “el que barre”, lo agredieron sexualmente en el
+        colegio.
+      </p>
     </section>
 
     <InteractivosHorizontalSepFiscalia></InteractivosHorizontalSepFiscalia>
-    <section id="cita-1" class="contenedor-flex">
-      <div class="ancho-texto">
+
+    <section id="cierre" class="contenedor-flex">
+      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
+        <p>
+          Para esta investigación se solicitaron estadísticas y versiones
+          públicas de las actas de hechos de estos delitos registrados en las
+          secretarías de Educación de los 32 estados del país. Se creó la
+          primera base de datos a nivel nacional que reúne los casos registrados
+          de manera oficial, así se pudo determinar que en México todos los días
+          ocurre una agresión sexual cometida por el personal de las escuelas en
+          contra de sus estudiantes de educación básica.
+        </p>
+        <p>
+          Aunque desde 2016 el gobierno federal intentó homologar la prevención
+          y atención a estos delitos en las aulas por medio de protocolos de
+          atención, los casos lejos de reducirse van en aumento. El regreso a
+          clases tras la pandemia duplicó la violencia sexual contra niñas,
+          niños y adolescentes. Los datos oficiales arrojan un patrón: la
+          mayoría de los agresores son hombres, resaltan los docentes.
+        </p>
         <blockquote>
-          “Muchas familias se van, abandonan por el tiempo que lleva un proceso.
-          Pierden su trabajo, recursos, se divorcian, abandonan a los otros
-          hijos. La Fiscalía, que no está capacitada para esto, desestima varias
-          denuncias”, recalca.
+          “Nosotros les dimos toda la confianza, les entregamos nuestro más
+          grande tesoro y fuimos defraudados”, dice la madre de J.
         </blockquote>
       </div>
     </section>
-    <section id="casos-particulares" class="contenedor-flex">
-      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
-        <p>
-          Parecen casos aislados, atípicos, pero no lo son. Las actas de hechos
-          relacionadas con quejas y denuncias por delitos sexuales cometidos por
-          personal de colegios públicos y privados en contra de estudiantes de
-          educación básica muestran similitudes en el actuar de los adultos con
-          cargos en las escuelas.
-        </p>
-        <p>
-          En Querétaro, por ejemplo, hay un profesor de primaria que es
-          reincidente: tiene quejas previas por pedofilia en otros colegios; la
-          más reciente, de 2017, revela que besa a las niñas en la boca, las
-          lleva a su carro y las pone de cabeza para mirar su vulva.
-        </p>
-      </div>
-    </section>
-    <section id="casos-particulares-2" class="contenedor-flex">
-      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
-        <p>
-          En Veracruz, un profesor de secundaria abusó sexualmente de varias
-          alumnas y las amenazó con sus calificaciones; ya tenía un expediente
-          previo por denuncias similares.
-        </p>
-        <p>
-          Las estadísticas muestran una deficiencia clara en la prevención de
-          este delito, comenzando por lo más básico: los procedimientos de
-          elección del personal.
-        </p>
-      </div>
-    </section>
-    <section id="perfiles-victimas" class="contenedor-flex">
-      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
-        <p>
-          Las víctimas, en cambio, son diversas. De las más de mil quejas que
-          entregaron las Secretarías de Educación vía transparencia, se logró
-          identificar a 1,559 víctimas, de las cuales el 68% son mujeres, pero
-          también está el registro de 246 varones que sufrieron violencia sexual
-          dentro de los centros escolares
-        </p>
-        <p>
-          En algunos casos, hay múltiples víctimas y victimarios. En 18 estados
-          de la República se tienen, hasta ahora, 50 casos en donde no se cuenta
-          con detalles de los alumnos abusados o de los agresores, únicamente se
-          detalla cómo “varias personas”. Se vuelve “común” encontrar registros
-          en donde se enlista al director, intendente, encargado de cooperativa
-          y docente como un grupo de agresores en contra de los menores.
-        </p>
-      </div>
-    </section>
+    <section class="final">
+      <div class="titulo-historias">
+            Historias
+          </div>
+      <div class="contenedor-flex contenedor-tarjetas">
+        
+        <NavegacionTarjetas
+        class="t-50"
+        :ruta="'agresores-en-las-aulas'"
+        :titulo="'Agresores en las aulas'"
+        :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
+        ></NavegacionTarjetas>
+        <NavegacionTarjetas
+        class="t-50"
 
+        :ruta="'nuestros-protocolos-no-existen'"
+        :titulo='`"Nuestros protocolos no existen"`'
+        :descripcion="'La historia de una política fallida'"
+        ></NavegacionTarjetas>
+      </div>
+      <div class="cover-portada-img">
+        <div class="degradado-oscuro">
+          
+        </div>
+      </div>
+     
+    </section>
   </div>
 </template>
 <style lang="scss">
 #pagina-inicio {
   position: relative;
   z-index: 1;
+  background: $color-fondo-oscuro;
   #portada {
     height: calc(100vh - 50px);
     .titulo {
       margin: auto;
       text-align: center;
       color: $color-texto-claro;
-      max-width: 680px;
+      max-width: 500px;
       h1 {
         font-size: 76px;
         font-family: "Roboto Slab";
@@ -164,6 +136,9 @@
           font-size: 24px;
         }
       }
+      .autoras {
+        font-size: 18px;
+      }
       .logos {
         width: 100%;
         flex-wrap: nowrap;
@@ -171,16 +146,15 @@
         align-items: center;
         justify-content: center;
         div {
-          &.eluniversal{
+          &.eluniversal {
             width: calc(60% - 40px);
             max-width: 250px;
           }
-          &.connectas{
+          &.connectas {
             width: calc(40% - 40px);
             max-width: 180px;
-
           }
-          a{
+          a {
             display: block;
             width: 100%;
           }
@@ -205,20 +179,62 @@
   #cita-1 {
     min-height: 100vh;
   }
-  #casos-particulares,
-  #casos-particulares-2 {
-    min-height: 100vh;
-    .ancho-texto {
-      color: $color-texto-claro;
-      margin: auto;
-      font-size: 18px;
-    }
-  }
+
   section {
     min-height: 100vh;
     padding: 0 16px;
   }
-
-
+  section#cierre {
+    background: $color-fondo-oscuro;
+  }
+  #texto-horizontal-sep-fiscalia {
+    padding: 0;
+  }
+  section.final {
+    padding: 0;
+    background: $color-fondo-oscuro;
+    .titulo-historias{
+      width: 100%;
+          text-align: center;
+          font-size: 32px;
+          font-weight:700;
+          padding:  48px 0 ;
+    }
+    .cover-portada-img {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url("@/assets/imgs/inicio/ilustracion_1.jpg");
+      box-shadow: inset 0px 10px 10px $color-fondo-oscuro;
+      //-moz-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      //-webkit-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      //-khtml-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      display: flex;
+      div.degradado-oscuro{
+        position: relative;
+        width: 100%;
+        background: linear-gradient(transparent, $color-fondo-oscuro , $color-fondo-oscuro);
+        display: flex;
+        align-items: stretch;
+        margin-top:auto;
+        div.contenido-abajo{
+          margin-top:auto;
+          padding-top: 78px;
+          width: 100%;
+          text-align: center;
+          font-size: 32px;
+          font-weight:700
+        }
+      }
+    }
+    .contenedor-flex.contenedor-tarjetas{
+      max-width: 800px;
+      padding:16px;
+      gap: 32px;
+      margin: auto;
+      padding-bottom: 150px
+    }
+  }
 }
 </style>

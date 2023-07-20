@@ -14,7 +14,7 @@ import gsap from "gsap";
 
 import archivos from "@/assets/datos/lista_documentos_portada.json";
 const parametros_gui = {
-  color_fondo: "#2b2b2b",
+  color_fondo: "#040e12",
 };
 const fog = ref(new THREE.Fog(parametros_gui.color_fondo, 0.1, 4));
 
@@ -197,15 +197,15 @@ function escroleando() {
           overwrite: true,
         });
         gsap.to(archivos[i].mesh.scale, {
-          duration: 1.5,
+          duration: 1,
           x: 1,
           y: archivos[i].alto / archivos[i].ancho,
           overwrite: true,
         });
       }
     } else if (seccion_actual.value == 1) {
-      let escala = 0.4;
-      let columnas = 4;
+      let escala = window.innerWidth> 700 ?  0.4 : .2;
+      let columnas = 6;
       for (var i = 0; i < archivos.length; i++) {
         esta_corriendo.value = true;
 
@@ -217,7 +217,7 @@ function escroleando() {
           overwrite: true,
         });
         gsap.to(archivos[i].mesh.scale, {
-          duration: 1.5,
+          duration: 1,
           x: escala * 0.9,
           y: (escala * 0.9 * archivos[i].alto) / archivos[i].ancho,
           overwrite: true,
@@ -226,6 +226,25 @@ function escroleando() {
     } else if (seccion_actual.value == 2) {
       for (var i = 0; i < archivos.length; i++) {
         esta_corriendo.value = true;
+
+        gsap.to(archivos[i].mesh.position, {
+          duration: Math.random(),
+          z: -4,
+          delay: Math.random() * 1.5,
+          overwrite: true,
+          onComplete: () => {
+            if (archivos.length == i + 1) {
+              esta_corriendo.value = false;
+            }
+          },
+        });
+      }
+    } else if (seccion_actual.value == 3) {
+      esta_corriendo.value = false;
+    } else if (seccion_actual.value == 4) {
+      esta_corriendo.value = false;
+
+      /*for (var i = 0; i < archivos.length; i++) {
 
         gsap.to(archivos[i].mesh.position, {
           duration: 1 + Math.random(),
@@ -238,25 +257,10 @@ function escroleando() {
             }
           },
         });
-      }
-    } else if (seccion_actual.value == 3) {
-      //esta_corriendo.value = false;
-    } else if (seccion_actual.value == 4) {
-      for (var i = 0; i < archivos.length; i++) {
-        gsap.to(archivos[i].mesh.position, {
-          duration: 1 + Math.random(),
-          z: -4,
-          delay: Math.random() * 1.5,
-          overwrite: true,
-          onComplete: () => {
-            if (archivos.length == i + 1) {
-              esta_corriendo.value = false;
-            }
-          },
-        });
-      }
+      }*/
     } else if (seccion_actual.value == 5) {
-      esta_corriendo.value = true;
+      esta_corriendo.value = false;
+      /*
       gsap.to(archivos[1].mesh.position, {
         duration: 1.5,
         z: -4,
@@ -275,8 +279,10 @@ function escroleando() {
         y: archivos[0].alto / archivos[0].ancho,
         overwrite: true,
       });
+      */
     } else if (seccion_actual.value == 6) {
-      esta_corriendo.value = true;
+      esta_corriendo.value = false;
+      /*
       gsap.to(archivos[0].mesh.position, {
         duration: 1.5,
         z: -4,
@@ -296,15 +302,15 @@ function escroleando() {
         y: archivos[1].alto / archivos[1].ancho,
         overwrite: true,
       });
+      */
     } else if (seccion_actual.value == 7) {
-      esta_corriendo.value = true;
-      gsap.to(archivos[1].mesh.position, {
+      esta_corriendo.value = false;
+      /*gsap.to(archivos[1].mesh.position, {
         duration: 1.5,
         z: -4,
         overwrite: true,
-      });
+      });*/
     }
-    console.log(seccion_actual.value, scrollY);
   }
 }
 watch(esta_corriendo, (nv) => {

@@ -4,6 +4,17 @@
     class="texto-intro-scroll-horizontal"
   >
     <div class="ancho-texto horizontal-scroll_contenedor">
+      <img
+        src="~/assets/imgs/inicio/puntos.png"
+        alt=""
+        class="imagen-precanvas"
+        :style="{
+          width: ancho + margenes.izquierda + margenes.derecha + 'px',
+          height: alto + margenes.arriba + margenes.abajo + 'px',
+          opacity: paso_activo == 2 ? 0.2 : 0,
+          transform: paso_activo == 2 ? 'scale(1)' : 'scale(2)',
+        }"
+      />
       <canvas class="canvas-vis"></canvas>
 
       <div
@@ -12,30 +23,33 @@
       >
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
-            <p class="bullet" style="color: #5e5e5e">
-              <span class="izquierda"
-                >En la última década, las Secretarías de Educación han
-                registrado</span
+            <p class="bullet">
+              Los casos como el de J. son más frecuentes de lo que se reconoce
+              oficialmente.
+            </p>
+            <p class="bullet">
+              <span class="izquierda">En la última década se registraron</span>
+              <span class="dato-numerico centro" style="color: #5e5e5e"
+                >3,550</span
               >
-              <span class="dato-numerico centro">3,865</span>
-              <span class="derecha">
-                casos de abuso dentro de las escuelas. En promedio, todos los
-                días ocurre una agresión sexual contra niñas, niños y
-                adolescentes a manos de personal de los colegios a los que
-                asisten.
-              </span>
+              <span class="derecha"> casos similares </span>
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
-            <p class="bullet" style="color: #038f83">
-              <span class="izquierda">En el mismo periodo llegaron sólo</span>
-              <span class="dato-numerico centro">1,846</span>
+            <p class="bullet">
+              Aunque en la ley está establecida la responsabilidad del personal
+              de los colegios de denunciar los presuntos delitos ante la
+              justicia, esto no siempre se cumple.
+            </p>
+            <p class="bullet">
+              <span class="izquierda">Sólo el</span>
+              <span class="dato-numerico centro" style="color: #038f83"
+                >50%</span
+              >
               <span class="derecha">
-                carpetas de investigación por este delito a los Ministerios
-                Públicos. Apenas el 50% de lo que registran las secretarías de
-                educación del país.
+                de estos casos llegó a una carpeta de investigación.
               </span>
             </p>
           </div>
@@ -44,19 +58,13 @@
           <div class="ancho-bullet">
             <p class="bullet">
               <span class="izquierda"
-                >Mariana Gil, abogada y directora de la Oficina de Defensoría de
-                los Derechos de la Infancia, A.C. (ODI), reconoce que la cifra
-                negra en estos casos es incalculable. En uno de los casos que la
-                organización acompañó legalmente, lograron consolidar</span
+                >La estadística es conservadora en relación a la problemática.
+                Hay dependencias que no reconocen la violencia sexual en sus
+                escuelas, que no registran los casos o que evitan hacerlos
+                públicos.</span
               >
-              <span class="dato-numerico centro" style="color: #0c8d96"
-                >30</span
-              >
-              <span class="centro">
-                deununcias de víctimas, pero en realidad habían
-              </span>
-              <span class="dato-numerico centro">90</span>
-              <span class="centro"> afectadas </span>
+
+              <span class="izquierda"> La cifra negra es inmensa. </span>
             </p>
           </div>
         </div>
@@ -310,29 +318,27 @@ function configurandoPictos(ladata) {
           .attr("r2", 0)
           .attr("fillStyle", "#5e5e5e"),
       (update) => update,
-      (exit) =>
-        exit
-          .remove()
+      (exit) => exit.remove()
     )
     .transition()
-    .delay((d,i) => i<3815 ? 0 : 500 + 30 *(i%10))
-    .duration((d,i) => i<3815 ? 500 : 0)
+    //.delay((d, i) => (i < 3815 ? 0 : 500 + 30 * (i % 10)))
+    .duration(500)
     .attr("x", (d) => ancho.value * 0.5 + d.rad * Math.cos(d.ang))
     .attr("y", (d) => alto.value * 0.5 + d.rad * Math.sin(d.ang))
     .attr("r1", (d) => d.r1)
     .attr("r2", (d) => d.r2)
-    .attr("fillStyle", (d) => d.fillStyle)
-    ;
+    .attr("fillStyle", (d) => d.fillStyle);
 }
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
+  let radio_punto = d3.max(escalaRad.value.range()) * 0.01;
   if (nv == 0) {
     ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
       i: d,
       ang: Math.random() * 2 * Math.PI,
       rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: d3.max(escalaRad.value.range()) * 0.01,
-      r2: d3.max(escalaRad.value.range()) * 0.01,
+      r1: radio_punto,
+      r2: radio_punto,
       fillStyle: "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
@@ -351,8 +357,8 @@ function cambioDePasos(nv, ov) {
           ? Math.random() * 0.48 * 2 * Math.PI
           : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
       rad: escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: d3.max(escalaRad.value.range()) * 0.01,
-      r2: d3.max(escalaRad.value.range()) * 0.01,
+      r1: radio_punto,
+      r2: radio_punto,
       fillStyle: i < 1846 ? "#038f83" : "#5e5e5e",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
@@ -364,15 +370,19 @@ function cambioDePasos(nv, ov) {
       }
     });
   } else if (nv == 2) {
-    ladata_pintable.value = d3.range(0, 38015).map((d, i) => ({
+    ladata_pintable.value = d3.range(0, 3815).map((d, i) => ({
       i: d,
-      ang: i < 1846
+      ang:
+        i < 1846
           ? Math.random() * 0.48 * 2 * Math.PI
-          :  i< 3815 ? (0.48 + Math.random() * 0.52) * 2 * Math.PI : Math.random() * 2 * Math.PI,
-      rad: i < 3815 ? ladata_pintable.value[i].rad * 0.05 : escalaRad.value(Math.pow(Math.random(), 0.5)),
-      r1: d3.max(escalaRad.value.range()) * 0.005,
-      r2: d3.max(escalaRad.value.range()) * 0.005,
-      fillStyle: i < 1846 ? "#038f83" : i< 3815 ? "#5e5e5e" : "#b0b0b0",
+          : (0.48 + Math.random() * 0.52) * 2 * Math.PI,
+      rad: Math.pow(
+        (3 * Math.pow(escalaRad.value(Math.pow(Math.random(), 0.5)), 2)) / 100,
+        0.5
+      ),
+      r1: (radio_punto * 3) / 10,
+      r2: (radio_punto * 3) / 10,
+      fillStyle: i < 1846 ? "#038f83" : i < 3815 ? "#5e5e5e" : "#b0b0b0",
     }));
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -402,16 +412,19 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-sep-fiscalia {
-  height: 300vh;
-  table {
-    font-size: 12px;
-    margin: auto;
-    td.info-entregada-no {
-      color: red;
-    }
-    td.info-entregada-si {
-      color: green;
-    }
+  margin:0;
+  .imagen-precanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
   }
+  height: 600vh;
+
 }
 </style>

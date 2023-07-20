@@ -1,0 +1,49 @@
+,variable,categoria,id,encabezado_columna,info_extra
+0,"Define conductas específicas de violencia sexual conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). ",Marco base,0,Define delitos sexuales,"Las define conforme al marco normativo (acoso sexual, abuso sexual, violación equiparada, hostigamiento sexual). "
+1,El protocolo es aplicable a escuelas públicas o privadas (Sí: dice explícitamente que es aplicable a escuelas privadas también; No: dice que solo es aplicable a públicas o no señala nada al respecto).,Marco base,1,Aplica a escuelas públicas y privadas ,
+2,Indica la obligatoriedad de publicar los mecanismos de queja y su uso,Prevención,2,Mecanismos de queja,Especifica el uso y seguimiento a los mecanismos establecidos
+3,Establece la necesidad de capacitar al personal docente y administrativo de las escuelas sobre normas y mecanismos de atención a casos de violencia sexual.,Prevención,3,Capacitación docente,Brinda información a su personal sobre normas y mecanismos de atención a casos de violencia sexual
+4,"Establece mecanismos de difusión de Protocolo de Atención a casos de violencia con personal docente, administrativo y estudiantes. ",Prevención,4,Difusión del protocolo,"Establece mecanismos para compartir el documento con estudiantes, familias y personal"
+5,"Cuenta con mecanismos de queja INTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",Prevención,5,Mecanismos de queja internos,"Cuenta con teléfonos de ayuda, salas de chat, denuncia en línea, buzones para enviar mensajes confidenciales. "
+6,"Cuenta con mecanismos de queja EXTERNOS (teléfonos de ayuda, las salas de chat, la denuncia en línea, los buzones para el envío de mensajes confidenciales) y establece medios de difusión",Prevención,6,Mecanismos de queja externos,"Cuenta con teléfonos de ayuda, salas de chat, denuncia en línea, buzones para enviar mensajes confidenciales. "
+7,"Establece medidas la protección frente al riesgo generado por violencia sexual, para que éste cese y/o no resurja (medidas de protección inmediatas específicas o señala la obligación de tomar medidas inmediatas)",Medidas inmediatas de protección,7,Medidas de protección inmediatas para NNA ,Se establecen las medidas de protección para NNA frente al riesgo generado por violencia sexual.
+8,Establece la obligación de notificar de manera inmediata a los familiares del NNA,Medidas inmediatas de protección,8,Notificación inmediata a familiares,
+9,Regula la coordinación de la escuela con otros servicios sociales (institucionales o comunitarias) para la atención externa del NNA en caso de requerirlo.,Asistencia y remisión a servicios externos,9,Coordinación entre escuela y servicios externos,La finalidad es atender las necesidades de NNA con servicios especializados
+10,Establece la obligación de obtener el consentimiento informado del niño o niña y sus familiares para la remisión a otros servicios de atención (excepto la denuncia),Asistencia y remisión a servicios externos,10,Consentimiento para atención externa,NNA y sus familias deben entender las implicaciones de la canalización con servicios externos
+11,"Establece como un paso de la atención, la obligación de notificar de manera inmediata a autoridades penales, una vez que se conoce del caso. ",Aviso a las autoridades,11,Notificación inmediata autoridades penales,
+12,Establece medidas de seguimiento sobre la eficacia de los métodos de denuncia y remisión,Aviso a las autoridades,12,Seguimiento a la eficacia de métodos de denuncia,
+13,Establece como un paso de la atención la notificación inmediata a autoridades superiores escolares o en su ausencia.,Aviso a las autoridades,13,Notificación inmediata a autoridades escolares superiores,
+14,Establece como un paso de la atención la notificación inmediata a autoridades de protección de la niñez,Aviso a las autoridades,14,Notificación inmediata a autoridades de protección de la niñez,
+15,Establece la prohibición de obstaculización de procedimientos de atención e investigación.,Aviso a las autoridades,15,Prohibe obstaculizar investigación y atención,
+16,Diseña un proceso de investigación administrativa a cargo de profesionales cualificados  (Desginación de personal especializado (infancia y género) que lleve a cabo los procedimientos de queja),Estándares de atención,16,Investigación administrativa por personal calificado,La investigación administrativa determina la continuidad del señalado dentro del servicio educativo
+17,Mandata la actuación de oficio de autoridades administrativas dentro de las escuelas en caso de tener cualquier información sobre un posible caso de violencia sexual (no requiere una denuncia o queja formal),Estándares de atención,17,Autoridades administrativas están obligadas a actuar de oficio,
+18,"Establece pautas de atención y escucha a los niños y niñas
+- Tomar en serio la queja
+- Escuchar de manera resptuosa y compresiva
+- Preguntar sobre preocupaciones, inquitudes, necesidades de estudiante y responder sus preguntas
+- Reconocer sentimientos
+- Responder sin hacer juicios de valor
+- Ofrecer apoyo emocional y práctico facilitando su acceso a los servicios psicosociales
+- Evitar manifestar afectación emocional por los hechos que cuenta la niña o niño
+- Expresar que se ha hecho lo correcto al contar lo sucedido y es muy valioso contarlo. 
+- No prometer lo que no se puede cumplir.",Estándares de atención,18,"Pautas de atención, escucha y credibilidad para NNA",
+19,"Establece medidas para evitar la revictimización del niño o niña
+- No cuestionar la violencia o el relato
+- No culpabilizar, negar o minimizar la violencia o abuso.
+- No pedir que se descubran el cuerpo para mostrar lesiones. 
+- Extremar la prudencia para no perjudicar al niño causándole ulteriores daños con el proceso de investigación.
+- Evitar pedir al niño o niña que describa de manera repetir el incidente.
+- No presionarlos para que hablen.
+- Custodiar el expediente que contenga información sobre la situación por la que se activó el Protocolo. 
+- No confrontar a la persona afectada con la persona agresora. (Prohibición de hacerlo).
+- En caso de violencia sexual, bajo ninguna circunstancia se debe interrogar a la persona menor de edad, basta con el relato espontáneo de los hechos, de otra manera se puede entorpecer el proceso judicial.",Estándares de atención,19,Medidas para evitar revictimización,
+20,Establece como pauta de actuación la obligación de  registrar en forma textual lo que el niño o niña señala. (Medida de no revictimización y resguardo de evidencia),Estándares de atención,20,Registro textual de las palabras de NNA,
+21,CONFIDENCIALIDAD Y PRIVACIDAD. Establece medidas para resguardar la privacidad del niño o niña víctima,Estándares de atención,21,Resguardan la privacidad de NNA,
+22,"CONFIDENCIALIDAD Y PRIVACIDAD. Establece la obligación de custodiar el expediente y separarlo del expediente académico, con acceso restringido",Estándares de atención,22,Custodian expediente de queja y lo separan del académico,
+23,Establece mecanismos de seguimiento periódico con las personas involucradas en el proceso,Estándares de atención,23,Seguimiento periódico a las personas involucradas,
+24,"Considera como una pauta de actuación brindar información al NNA, de manera accesible y adecuada,  sobre las acciones a tomar en el caso. ",Estándares de atención,24,Brindan información accesible y adecuada a NNA,
+25,"Se consideran los principios de atención rápida, eficaz y no precipitada. (los nombra y/o desde su procedimiento los toma en cuenta, por ejemplo estableciendo plazos cortos y definidos de actuación). ",Estándares de atención,25,"Principios de atención rápida, eficaz y no precipitada","Los nombra y/o desde su procedimiento los toma en cuenta, por ejemplo estableciendo plazos cortos y definidos de actuación"
+26,Establece pautas para brindar apoyo al niño o niña con perspectiva de género,Medidas Transversales,26,Apoyo con perspectiva de género,
+27,Establece la obligación de las autoridades de llevar los proceso de atencióin e investigación en un tiempo razonable.,Medidas Transversales,27,Establece tiempos razonables de investigación,
+28,Nombra o considera el principio de protección reforzada frente a la infancia,Medidas Transversales,28,Nombra el principio de protección reforzada,
+29,Nombra o considera el principio de debida diligencia en el trato a víctimas o posibles víctimas,Medidas Transversales,29,Considera el principio de debida diligencia,
