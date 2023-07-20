@@ -173,7 +173,7 @@
             :barras_id="'barras-sfd'"
             :nombre_barra="'Entidad'"
             :nombre_color="'nombre_colores'"
-            :margen="{ arriba: 0, abajo: 0, derecha: 10, izquierda: 90 }"
+            :margen="{ arriba: 0, abajo: 20, derecha: 10, izquierda: 90 }"
             titulo_eje_x="Número de casos"
             titulo_eje_y="Entidad"
             :apiladas_o_agrupadas="'agrupadas'"
@@ -520,7 +520,6 @@ import { timeParse } from "d3";
 por_anio.forEach((d) => {
   d.No_quejas = +d.No_quejas;
 });
-console.log(por_anio);
 const datos_por_anio = ref(por_anio);
 const conversionTemporal = ref(timeParse("%Y"));
 

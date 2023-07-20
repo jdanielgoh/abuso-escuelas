@@ -142,7 +142,6 @@ function cambioCategoria(nv) {
       ...d,
     };
   });
-  console.log(datos_mostrados.value, diccionario_mostrado.value);
 }
 </script>
 <style>

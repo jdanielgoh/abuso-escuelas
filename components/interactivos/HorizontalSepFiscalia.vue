@@ -412,6 +412,7 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-sep-fiscalia {
+  margin:0;
   .imagen-precanvas {
     position: absolute;
     top: 0;
@@ -423,16 +424,7 @@ function getPixelRatio(ctx) {
     transform: scale(2);
     transition: all 0.5s ease-in-out;
   }
-  height: 300vh;
-  table {
-    font-size: 12px;
-    margin: auto;
-    td.info-entregada-no {
-      color: red;
-    }
-    td.info-entregada-si {
-      color: green;
-    }
-  }
+  height: 600vh;
+
 }
 </style>

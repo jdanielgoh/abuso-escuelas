@@ -14,10 +14,8 @@ const esta_abierto = ref(false);
       <nav>
         <ul>
           <li><NuxtLink @click.native="esta_abierto =false" to="/"> Inicio</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="historias"> Historia</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="agresores-en-las-aulas"> Agresores en las aulas</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="nuestros-protocolos-no-existen"> "Nuestros protocolos no existen"</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="metodologia"> Metodología</NuxtLink>  </li>
 
         </ul>
       </nav>
@@ -35,6 +33,7 @@ header {
   height: 55px;
 
   button.icono-hamburguesa {
+    
     position: absolute;
     margin: 18px 0 15px 20px;
     background: transparent;
@@ -89,8 +88,10 @@ header {
     position: relative;
     display:inline-flex;
     background: $color-fondo-oscuro-transparencia;
-    backdrop-filter: blur(4px);
-    width: 300px;
+    backdrop-filter: blur(0px);
+    max-width: 500px;
+    opacity: 0;
+    transition: all .6s ease-in-out;
 
     ul {
       padding: 0;
@@ -101,6 +102,18 @@ header {
         position: relative;
         list-style: none;
         transition: 0.25s ease-in-out 0.1s;
+        &:nth-child(1){
+          transition: 0.25s ease-in-out 0.0s;
+
+        }
+        &:nth-child(2){
+          transition: 0.25s ease-in-out 0.2s;
+
+        }
+        &:nth-child(3){
+          transition: 0.25s ease-in-out 0.4s;
+
+        }
         padding: 8px 20px;
         a{
           color: $color-texto-enlaces;
@@ -113,6 +126,11 @@ header {
     }
   }
   &.abierto {
+    nav{
+    backdrop-filter: blur(4px);
+    opacity: 1;
+
+    }
     button.icono-hamburguesa {
       span {
 

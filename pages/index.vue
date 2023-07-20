@@ -4,13 +4,8 @@
     <section id="portada" class="contenedor-flex">
       <div class="titulo bullet-fondo-oscuro-transparencia">
         <h1>Maestros abusadores</h1>
-        <p>
-          Diariamente, un niño o niña son agredidos sexualmente por el personal
-          de las escuelas a las que asisten. Mientras que el gobierno mexicano
-          ha fallado en garantizar la seguridad al interior de las aulas, el
-          número de denuncias va en aumento
-        </p>
-        <p>Por Alejandra Crail y Daniela Guazo</p>
+
+        <p class="autoras">Por Alejandra Crail y Daniela Guazo</p>
         <div class="logos contenedor-flex">
           <div class="connectas">
             <a href="https://www.connectas.org/">
@@ -33,6 +28,14 @@
     </section>
     <section id="sumario" class="contenedor-flex">
       <p class="bullet-fondo-oscuro-transparencia">
+        Diariamente, un niño o niña son agredidos sexualmente por el personal de
+        las escuelas a las que asisten. Mientras que el gobierno mexicano ha
+        fallado en garantizar la seguridad al interior de las aulas, el número
+        de denuncias va en aumento
+      </p>
+    </section>
+    <section id="sumario" class="contenedor-flex">
+      <p class="bullet-fondo-oscuro-transparencia">
         J. salió de la escuela sumido en llanto, envuelto en un intenso dolor.
         Al llegar a casa, su madre se dio cuenta de que el niño de tres años
         tenía heridas en el área rectal. Llevaba apenas 27 días como alumno de
@@ -44,7 +47,7 @@
 
     <InteractivosHorizontalSepFiscalia></InteractivosHorizontalSepFiscalia>
 
-    <section id="casos-particulares" class="contenedor-flex">
+    <section id="cierre" class="contenedor-flex">
       <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           Para esta investigación se solicitaron estadísticas y versiones
@@ -55,10 +58,6 @@
           ocurre una agresión sexual cometida por el personal de las escuelas en
           contra de sus estudiantes de educación básica.
         </p>
-      </div>
-    </section>
-    <section id="casos-particulares-2" class="contenedor-flex">
-      <div class="ancho-texto bullet-fondo-oscuro-transparencia">
         <p>
           Aunque desde 2016 el gobierno federal intentó homologar la prevención
           y atención a estos delitos en las aulas por medio de protocolos de
@@ -67,17 +66,39 @@
           niños y adolescentes. Los datos oficiales arrojan un patrón: la
           mayoría de los agresores son hombres, resaltan los docentes.
         </p>
-      </div>
-    </section>
-    <section id="cita-1" class="contenedor-flex">
-      <div class="ancho-texto">
         <blockquote>
           “Nosotros les dimos toda la confianza, les entregamos nuestro más
           grande tesoro y fuimos defraudados”, dice la madre de J.
         </blockquote>
       </div>
     </section>
+    <section class="final">
+      <div class="titulo-historias">
+            Historias
+          </div>
+      <div class="contenedor-flex contenedor-tarjetas">
+        
+        <NavegacionTarjetas
+        class="t-50"
+        :ruta="'agresores-en-las-aulas'"
+        :titulo="'Agresores en las aulas'"
+        :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
+        ></NavegacionTarjetas>
+        <NavegacionTarjetas
+        class="t-50"
 
+        :ruta="'nuestros-protocolos-no-existen'"
+        :titulo='`"Nuestros protocolos no existen"`'
+        :descripcion="'La historia de una política fallida'"
+        ></NavegacionTarjetas>
+      </div>
+      <div class="cover-portada-img">
+        <div class="degradado-oscuro">
+          
+        </div>
+      </div>
+     
+    </section>
   </div>
 </template>
 <style lang="scss">
@@ -91,7 +112,7 @@
       margin: auto;
       text-align: center;
       color: $color-texto-claro;
-      max-width: 680px;
+      max-width: 500px;
       h1 {
         font-size: 76px;
         font-family: "Roboto Slab";
@@ -114,6 +135,9 @@
         @media (max-width: $pantalla-movil) {
           font-size: 24px;
         }
+      }
+      .autoras {
+        font-size: 18px;
       }
       .logos {
         width: 100%;
@@ -155,21 +179,62 @@
   #cita-1 {
     min-height: 100vh;
   }
-  #casos-particulares,
-  #casos-particulares-2 {
-    min-height: 100vh;
-    .ancho-texto {
-      color: $color-texto-claro;
-      margin: auto;
-      font-size: 18px;
-    }
-  }
+
   section {
     min-height: 100vh;
     padding: 0 16px;
   }
+  section#cierre {
+    background: $color-fondo-oscuro;
+  }
   #texto-horizontal-sep-fiscalia {
     padding: 0;
+  }
+  section.final {
+    padding: 0;
+    background: $color-fondo-oscuro;
+    .titulo-historias{
+      width: 100%;
+          text-align: center;
+          font-size: 32px;
+          font-weight:700;
+          padding:  48px 0 ;
+    }
+    .cover-portada-img {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url("@/assets/imgs/inicio/ilustracion_1.jpg");
+      box-shadow: inset 0px 10px 10px $color-fondo-oscuro;
+      //-moz-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      //-webkit-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      //-khtml-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
+      display: flex;
+      div.degradado-oscuro{
+        position: relative;
+        width: 100%;
+        background: linear-gradient(transparent, $color-fondo-oscuro , $color-fondo-oscuro);
+        display: flex;
+        align-items: stretch;
+        margin-top:auto;
+        div.contenido-abajo{
+          margin-top:auto;
+          padding-top: 78px;
+          width: 100%;
+          text-align: center;
+          font-size: 32px;
+          font-weight:700
+        }
+      }
+    }
+    .contenedor-flex.contenedor-tarjetas{
+      max-width: 800px;
+      padding:16px;
+      gap: 32px;
+      margin: auto;
+      padding-bottom: 150px
+    }
   }
 }
 </style>

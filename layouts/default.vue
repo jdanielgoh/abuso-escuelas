@@ -85,6 +85,9 @@
             max-width: 60vw;
           }
         }
+        strong{
+            background-color: transparent;
+        }
       }
     }
     canvas, svg.svg-viz-horizontal {

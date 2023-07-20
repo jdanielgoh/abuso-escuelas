@@ -52,12 +52,21 @@ blockquote{
 .vista-historias{
     background:$color-fondo-claro;
     color: $color-texto-oscuro;
+    section.contenedor-flex{
+        padding: 8px;
+    }
     p.resumen{
         font-style: italic;
         text-align: right;
     }
     p{
         margin: 20px 0;
+        a{
+            color: #0b7c73
+        }
+        strong{
+            background-color: #e3ff95;
+        }
     }
 }
 .cover-portada{

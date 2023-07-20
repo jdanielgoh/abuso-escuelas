@@ -1,86 +1,236 @@
 [
   {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-251.png",
-    "ancho": 775,
-    "alto": 571,
-    "velocidad": 1.8
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-ver-portada.png",
-    "ancho": 1043,
-    "alto": 514,
-    "velocidad": 1.2
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-2.png",
-    "ancho": 798,
-    "alto": 692,
-    "velocidad": 1
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-52.png",
-    "ancho": 474,
-    "alto": 667,
-    "velocidad": 3
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-57.png",
-    "ancho": 781,
-    "alto": 666,
-    "velocidad": 2
-  },
-  {
     "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-38.png",
     "ancho": 635,
     "alto": 558,
-    "velocidad": 1
+    "velocidad": 1.219806631243087
   },
   {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-40.png",
-    "ancho": 703,
-    "alto": 823,
-    "velocidad": 1.1
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-41.png",
-    "ancho": 885,
-    "alto": 549,
-    "velocidad": 1.2
-  },
-  {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-43.png",
-    "ancho": 705,
-    "alto": 974,
-    "velocidad": 1.3
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Hidalgo_2023_DH.PNG",
+    "ancho": 631,
+    "alto": 250,
+    "velocidad": 1.0107885001415753
   },
   {
     "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-73.png",
     "ancho": 648,
     "alto": 709,
-    "velocidad": 1.5
+    "velocidad": 1.3577987911131113
   },
   {
     "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-80.png",
     "ancho": 608,
     "alto": 546,
-    "velocidad": 1.4
+    "velocidad": 1.6117406810072423
   },
   {
-    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-84.png",
-    "ancho": 622,
-    "alto": 540,
-    "velocidad": 1.6
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-57.png",
+    "ancho": 781,
+    "alto": 666,
+    "velocidad": 1.1625997267593766
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Chihuahua_2021_SE.PNG",
+    "ancho": 943,
+    "alto": 690,
+    "velocidad": 1.0984216145792538
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Chiapas_2022_SE.PNG",
+    "ancho": 626,
+    "alto": 661,
+    "velocidad": 1.3336541906984796
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Guerrero, 2017_DH.PNG",
+    "ancho": 806,
+    "alto": 473,
+    "velocidad": 1.8642888466688732
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-43.png",
+    "ancho": 705,
+    "alto": 974,
+    "velocidad": 1.2607899939724425
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Chihuahua_2021_ _SE.PNG",
+    "ancho": 901,
+    "alto": 504,
+    "velocidad": 1.4375870086312568
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-40.png",
+    "ancho": 703,
+    "alto": 823,
+    "velocidad": 1.2367830155772812
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/HIDALGO_2012_DH.PNG",
+    "ancho": 1089,
+    "alto": 454,
+    "velocidad": 1.9454885999796008
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Baja California_2019_antecedentes.PNG",
+    "ancho": 850,
+    "alto": 730,
+    "velocidad": 1.1090497207691077
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Hidalgo_2017_DH_1.PNG",
+    "ancho": 591,
+    "alto": 427,
+    "velocidad": 1.8815858501856235
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Guerrero_2017_DH.PNG",
+    "ancho": 955,
+    "alto": 754,
+    "velocidad": 1.2191688754642729
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-ver-portada.png",
+    "ancho": 1043,
+    "alto": 514,
+    "velocidad": 1.2016230809550086
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Veracruz_2018_DH_secu.PNG",
+    "ancho": 578,
+    "alto": 811,
+    "velocidad": 1.4439385852177877
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Veracruz_2019_DH_.PNG",
+    "ancho": 879,
+    "alto": 381,
+    "velocidad": 1.6777449963984832
   },
   {
     "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-1.png",
     "ancho": 618,
     "alto": 410,
-    "velocidad": 1.7
+    "velocidad": 1.94661266959028
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-52.png",
+    "ancho": 474,
+    "alto": 667,
+    "velocidad": 1.8963793922335777
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/QUERÉTARO_CONDUCTA REITERADA DE PEDOFILIA_2017.PNG",
+    "ancho": 894,
+    "alto": 689,
+    "velocidad": 1.104537599391779
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-41.png",
+    "ancho": 885,
+    "alto": 549,
+    "velocidad": 1.1039826546803195
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Veracruz_2019_DH.PNG",
+    "ancho": 849,
+    "alto": 464,
+    "velocidad": 1.702206985095711
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/HIDALGO_2015_DH.PNG",
+    "ancho": 1037,
+    "alto": 670,
+    "velocidad": 1.0062770045478813
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Puebla_2014_DH.PNG",
+    "ancho": 609,
+    "alto": 247,
+    "velocidad": 1.626016580108787
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-comision-2.png",
+    "ancho": 798,
+    "alto": 692,
+    "velocidad": 1.0900720874819192
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-84.png",
+    "ancho": 622,
+    "alto": 540,
+    "velocidad": 1.613883089624121
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Chihuahua_2022_SE.PNG",
+    "ancho": 1062,
+    "alto": 647,
+    "velocidad": 1.481990255801677
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Quintana Roo_2022_DIF.PNG",
+    "ancho": 923,
+    "alto": 781,
+    "velocidad": 1.0101667637300773
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/2015_HIDALGO_dh.PNG",
+    "ancho": 1104,
+    "alto": 454,
+    "velocidad": 1.8210075036928386
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/OAXACA_cuarto vivienda dentro de la escuela.PNG",
+    "ancho": 823,
+    "alto": 424,
+    "velocidad": 1.3282136565377138
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Hidalgo_2018_DH.PNG",
+    "ancho": 892,
+    "alto": 742,
+    "velocidad": 1.5300226547148648
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Quintana Roo_2020_DIF.PNG",
+    "ancho": 1183,
+    "alto": 763,
+    "velocidad": 1.16816824617687
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-251.png",
+    "ancho": 775,
+    "alto": 571,
+    "velocidad": 1.2784079009465827
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Veracruz_2018_DH.PNG",
+    "ancho": 633,
+    "alto": 789,
+    "velocidad": 1.2070560103296017
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/2022_Quintana Roo_DIF.PNG",
+    "ancho": 1091,
+    "alto": 679,
+    "velocidad": 1.6249702611570194
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/2022_Qroo_secu_dif.PNG",
+    "ancho": 1372,
+    "alto": 803,
+    "velocidad": 1.862474915323828
+  },
+  {
+    "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/Hidalgo_2018_DH_.PNG",
+    "ancho": 557,
+    "alto": 734,
+    "velocidad": 1.8954700366797028
   },
   {
     "archivo": "/proyectos/abuso-sexual-escuelas/texturas/documentos/acta-sec-85-2.png",
     "ancho": 607,
     "alto": 521,
-    "velocidad": 1.8
+    "velocidad": 1.684159410657087
   }
 ]
