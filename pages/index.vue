@@ -73,34 +73,44 @@
       </div>
     </section>
     <section class="final">
-      <div class="titulo-historias">
-            Historias
-          </div>
+      <div class="titulo-historias">Historias</div>
       <div class="contenedor-flex contenedor-tarjetas">
-        
         <NavegacionTarjetas
-        class="t-50"
-        :ruta="'agresores-en-las-aulas'"
-        :titulo="'Agresores en las aulas'"
-        :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
+          class="t-50"
+          :ruta="'agresores-en-las-aulas'"
+          :titulo="'Agresores en las aulas'"
+          :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
         ></NavegacionTarjetas>
         <NavegacionTarjetas
-        class="t-50"
-
-        :ruta="'nuestros-protocolos-no-existen'"
-        :titulo='`"Nuestros protocolos no existen"`'
-        :descripcion="'La historia de una política fallida'"
+          class="t-50"
+          :ruta="'nuestros-protocolos-no-existen'"
+          :titulo="`&quot;Nuestros protocolos no existen&quot;`"
+          :descripcion="'La historia de una política fallida'"
         ></NavegacionTarjetas>
       </div>
       <div class="cover-portada-img">
-        <div class="degradado-oscuro">
-          
-        </div>
+        <div class="degradado-oscuro"></div>
       </div>
-     
     </section>
   </div>
 </template>
+<script setup>
+import { ref } from "vue";
+const title = ref("Maestros abusadores");
+const description =
+  ref(`Diariamente, un niño o niña son agredidos sexualmente por el personal de
+        las escuelas a las que asisten. Mientras que el gobierno mexicano ha
+        fallado en garantizar la seguridad al interior de las aulas, el número
+        de denuncias va en aumento`);
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+});
+</script>
 <style lang="scss">
 #pagina-inicio {
   position: relative;
@@ -193,12 +203,12 @@
   section.final {
     padding: 0;
     background: $color-fondo-oscuro;
-    .titulo-historias{
+    .titulo-historias {
       width: 100%;
-          text-align: center;
-          font-size: 32px;
-          font-weight:700;
-          padding:  48px 0 ;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      padding: 48px 0;
     }
     .cover-portada-img {
       width: 100%;
@@ -211,29 +221,33 @@
       //-webkit-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
       //-khtml-box-shadow: inset 10px 10px 5px $color-fondo-oscuro;
       display: flex;
-      div.degradado-oscuro{
+      div.degradado-oscuro {
         position: relative;
         width: 100%;
-        background: linear-gradient(transparent, $color-fondo-oscuro , $color-fondo-oscuro);
+        background: linear-gradient(
+          transparent,
+          $color-fondo-oscuro,
+          $color-fondo-oscuro
+        );
         display: flex;
         align-items: stretch;
-        margin-top:auto;
-        div.contenido-abajo{
-          margin-top:auto;
+        margin-top: auto;
+        div.contenido-abajo {
+          margin-top: auto;
           padding-top: 78px;
           width: 100%;
           text-align: center;
           font-size: 32px;
-          font-weight:700
+          font-weight: 700;
         }
       }
     }
-    .contenedor-flex.contenedor-tarjetas{
+    .contenedor-flex.contenedor-tarjetas {
       max-width: 800px;
-      padding:16px;
+      padding: 16px;
       gap: 32px;
       margin: auto;
-      padding-bottom: 150px
+      padding-bottom: 150px;
     }
   }
 }

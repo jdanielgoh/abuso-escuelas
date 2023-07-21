@@ -516,6 +516,21 @@ import por_anio from "@/assets/datos/por_anio.json";
 import sep_fiscalias_dh from "@/assets/datos/sep_fiscalias_dh.json";
 import { ref } from "vue";
 import { timeParse } from "d3";
+const title = ref("Agresores en las aulas");
+const description =
+  ref(`Los casos de delitos sexuales cometidos por el personal de las
+            escuelas en contra de los alumnos va en aumento.
+            Entre 2012 y 2015 hubo, en promedio, 145 al año. A
+            partir de entonces, la cifra fue en aumento.
+              En 2022, se incrementaron hasta los 500 casos anuales.`);
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+});
 
 por_anio.forEach((d) => {
   d.No_quejas = +d.No_quejas;

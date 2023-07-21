@@ -353,7 +353,7 @@
             comprobó penalmente el abuso y esto revelaba que la escuela había
             incumplido sus obligaciones de cuidado para con sus alumnos, no
             obtuvo ninguna sanción y siguió en funciones. En 2023, se hizo
-            público que otro un docente de este colegio presuntamente abusó y
+            público que otro docente de este colegio presuntamente abusó y
             violó sexualmente a más de 15 estudiantes de jardín de niños. El
             juicio sigue abierto. El área de comunicación del Colegio rechazó
             emitir comentarios.
@@ -404,6 +404,23 @@
     </article>
   </main>
 </template>
+<script setup>
+import { ref } from "vue";
+const title = ref("Nuestros protocolos no existen");
+const description =
+  ref(`El gobierno mexicano carece de una política efectiva de prevención y
+            actuación ante la violencia sexual dentro de las aulas. El único
+            intento por homologar a nivel nacional los protocolos de atención
+            para combatir esta problemática fracasó`);
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+});
+</script>
 <style lang="scss" >
 #protocolos {
   .ancho-texto {
