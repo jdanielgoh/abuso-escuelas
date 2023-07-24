@@ -14,9 +14,11 @@
         <div class="ancho-texto">
           <p class="resumen">
             El gobierno mexicano carece de una política efectiva de prevención y
-            actuación ante la violencia sexual dentro de las aulas. El único
-            intento por homologar a nivel nacional los protocolos de atención
-            para combatir esta problemática fracasó
+            actuación ante la violencia sexual dentro de las aulas.
+            <strong
+              >El único intento por homologar a nivel nacional los protocolos de
+              atención para combatir esta problemática fracasó.</strong
+            >
           </p>
           <p>
             Una decena de abusos y violaciones sexuales cometidos en contra de
@@ -81,30 +83,31 @@
             tiempo, intentó poner su pene en la boca de la mujer. Ante esta
             señal de alerta, la madre llevó al pequeño con una psicóloga
             infantil. “Tu hijo está siendo abusado”, le confirmó. El agresor,
-            detalló el pequeño, era Rafael D., esposo de la directora, y quien
-            lo obligaba a “jugar al doctor”.
+            detalló el pequeño, era Rafael D., esposo de la directora, quien lo
+            obligaba a “jugar al doctor”.
           </p>
-
         </div>
         <div class="ancho-imagen">
           <img src="~/assets/imgs/cap2/ilustracion_2.jpg" alt="" />
         </div>
-        <div class="ancho-texto">          <p>
-            Ante las acusaciones, la directora y dueña del colegio negó todo y
-            pidió a la madre no ejercer ninguna acción penal. No emitió el
-            reporte interno sobre los señalamientos, tampoco notificó a las
-            autoridades educativas ni denunció el delito. La madre dio aviso a
-            otras familias y terminó por destapar la historia de una década de
-            abusos y violaciones sexuales cometidas por el hombre en contra de
-            los preescolares que asistían al colegio.
-          </p>
+        <div class="ancho-texto">
           <p>
+            Ante las acusaciones, la directora y dueña del colegio negó todo y
+            pidió no ejercer ninguna acción penal, recuerda la madre. No emitió
+            el reporte interno sobre los señalamientos, tampoco notificó a las
+            autoridades educativas ni denunció el delito. La madre dio aviso a
+            otras familias y terminó por destapar más abusos y violaciones
+            sexuales cometidas por el hombre en contra de los preescolares que
+            asistían al kínder.
+          </p>
+          <blockquote>
             Luis Ignacio Sánchez, quien era titular de la AEFCM, reconoció:
             “Nuestros protocolos de prevención, como tal, no existen, no
             funcionan y hay que hacer algo”. La Comisión Investigadora de la SEP
             confirmó: hubo negligencia, falta de sensibilidad e ineficiencia en
             la supervisión escolar.
-          </p>
+          </blockquote>
+
           <p>
             En medio de la presión mediática, el Gobierno fortaleció el Programa
             Nacional de Convivencia Escolar (PNCE) que tenía como misión brindar
@@ -155,9 +158,11 @@
             creación de estos documentos ni el seguimiento de la autoridad
             federal a lo implementado por cada estado del país. Por si fuera
             poco, el PNCE dejó de existir en 2021, durante la administración de
-            Andrés Manuel López Obrador. A partir de entonces, la SEP dejó de
-            mencionar la atención al abuso sexual infantil como una de sus
-            líneas de acción.
+            Andrés Manuel López Obrador.
+            <strong
+              >A partir de entonces, la SEP dejó de mencionar la atención al
+              abuso sexual infantil como una de sus líneas de acción.</strong
+            >
           </p>
           <h3>Protocolos de papel</h3>
           <p>
@@ -205,10 +210,11 @@
       <section class="contenedor-flex">
         <div class="ancho-texto">
           <p>
-            Por ejemplo, en Querétaro, un profesor de primaria es reincidente:
-            tuvo quejas por pedofilia en varios colegios. En Veracruz, las
-            autoridades educativas consideraron a otro profesor de secundaria
-            reincidente, se le acusa de abusar sexualmente de varias alumnas y
+            Un ejemplo de esta falla es Querétaro, un profesor de primaria tuvo
+            quejas por pedofilia en varios colegios; la más reciente, de 2017,
+            revela que besaba a las niñas en la boca, las llevaba a su carro y
+            las ponía de cabeza para mirar su vulva. En Veracruz, un profesor de
+            secundaria fue acusado por varias alumnas de abusar de ellas y
             amenazarlas con afectar sus calificaciones.
           </p>
           <p>
@@ -232,14 +238,14 @@
             Estos principios, en México están desdibujados para las infancias.
           </p>
           <p>
-            "No hay un andamiaje institucional que proteja y que garantice, o
-            que cuando ya suceda este crimen se intervenga de manera rápida,
-            expedita y se dicte justicia. Es increíble que los papás tengan que
-            cerrar calles y avenidas para pedir justicia y que hasta entonces se
-            vayan a atender y que aún así, porque estoy segura porque aquí lo
-            vivimos de manera cotidiana, no se haga justicia", señala Vázquez
-            Mota, quien fue secretaria de Educación (2006-2009) en el sexenio de
-            Felipe Calderón.
+            “La Secretaría de Educación Pública, a nivel federal y en los
+            estados, tiene el 100% de responsabilidad. Las personas están
+            llevando a sus hijos e hijas a un lugar donde supuestamente deben
+            estar seguros. Hay gente mala que puede cometer delitos, pero si tú
+            no tienes los protocolos, no hay capacitación, hay lugares
+            inseguros, es su culpa porque les dieron el escenario ideal para
+            cometer el delito en la escuela”, señala Mariana Gil, de la Oficina
+            por los Derechos de la Infancia.
           </p>
           <p>
             “Hay protocolos de cómo se debe de actuar, pero no hay un
@@ -327,52 +333,72 @@
             sexual escolar el 19% no establece claramente que su cumplimiento es
             aplicable también a escuelas particulares.
           </p>
-          <p>
+          <blockquote>
             “(En el caso de escuelas privadas) nos vamos a enfrentar a las
             relaciones, el poder económico y a veces al poder político que
             tienen estas instituciones. Es difícil llevar a cabo un proceso en
             contra de alguien con tanto poder y genera demasiada impunidad
             cuando se trata de escuelas de un alto perfil económico”, dice
             Carrillo Estrada.
-          </p>
+          </blockquote>
           <p>
             Después del caso de Matatena, surgieron otras denuncias contra
             escuelas particulares. En 2017 se hizo público que en el Colegio
             Williams, uno de los más renombrados de la Ciudad de México, un
-            docente abusó sexualmente de una niña de 3 años. Aunque el maestro
-            fue sentenciado en 2021, la madre da cuenta de los obstáculos que
-            enfrentó en el proceso. Primero, el dueño de la escuela la
-            amedrentó: “Yo voy a decir que en mi escuela no ocurrió y voy a
-            llevar las pruebas para comprobarlo”. Dos años después del abuso, el
-            colegio Williams la demandó por daño moral. Y fue hasta el 2022 que
-            la autoridad federal sancionó a la escuela con tan solo 160 mil
-            pesos al comprobar que no salvaguardaron la integridad física ni
-            psicológica de la niña Hasta el momento, este colegio sigue
-            operando.
+            docente abusó sexualmente de una niña de 3 años. Y, aunque el
+            Colegio aseguró, mediante un cuestionario escrito, que desde que se
+            les informó de la sospecha de que una menor había sido vulnerada por
+            un profesor su postura fue "informar a la autoridad superior y
+            realizar una investigación interna para llegar al fondo de las cosas
+            activando los protocolos correspondientes", la madre de la niña
+            recuerda aún las palabras del dueño: "Yo voy a decir que mi escuela
+            no ocurrió y voy a llevar las pruebas para comprobarlo". Dos años
+            después del abuso, el colegio Williams la demandó por la vía civil
+            por daño moral.
           </p>
           <p>
-            Ese mismo año, en la alcaldía Coyoacán, en el Colegio Carmel se
-            detuvo a un docente que abusó sexualmente de un alumno. Aunque se
-            comprobó penalmente el abuso y esto revelaba que la escuela había
-            incumplido sus obligaciones de cuidado para con sus alumnos, no
-            obtuvo ninguna sanción y siguió en funciones. En 2023, se hizo
-            público que otro docente de este colegio presuntamente abusó y
-            violó sexualmente a más de 15 estudiantes de jardín de niños. El
-            juicio sigue abierto. El área de comunicación del Colegio rechazó
-            emitir comentarios.
+            El maestro agresor fue sentenciado en 2021. Hasta el momento, el
+            colegio sigue operando, la autoridad educativa tardó tres años en su
+            investigación administrativa y terminó por concluir que "no existen
+            situaciones de riesgo en el Colegio que puedan propiciar situaciones
+            de abuso".
+          </p>
+          <p>
+            Ese mismo año, en la alcaldía Coyoacán, se detuvo a un docente del
+            Colegio Carmel porque se comprobó judicialmente que abusó
+            sexualmente de un alumno. Aunque esto, según el marco normativo,
+            revelaba que la escuela había incumplido sus obligaciones de cuidado
+            para con sus alumnos, la Autoridad Educativa determinó únicamente
+            medidas de prevención. Según informó el Colegio a través de un
+            posicionamiento por escrito, ante esto “extremó desde hace más de
+            cinco años los protocolos de seguridad y prevención de riesgos hacia
+            los alumnos; entre otras cosas, con una red de cámaras que
+            monitorean la totalidad de accesos y corredores de nuestras
+            instalaciones”. No obstante, en 2023, se hizo público que otro
+            docente de este colegio presuntamente abusó y violó a más de 15
+            estudiantes de jardín de niños. El juicio sigue abierto. Sobre esto,
+            el área de comunicación del Carmel únicamente señaló que “hemos
+            puesto todo este material (en referencia a los videos) en manos de
+            las autoridades correspondientes”.
           </p>
         </div>
         <div class="ancho-imagen">
           <img src="~/assets/imgs/cap2/ilustracion_3.jpg" alt="" />
         </div>
-        <div class="ancho-texto">          <h3>Impunidad repartida</h3>
+        <div class="ancho-texto">
+          <h3>Impunidad repartida</h3>
           <p>
-            "Necesitamos nuevos protocolos, actualizar legislaciones y, sobre
-            todo, que el victimario sepa que no va a tener impunidad", recalca
-            Vázquez Mota. Explica que se requiere un trabajo interinstitucional,
-            con un presupuesto sólido, que parte de definir las obligaciones de
-            la SEP, del Congreso, de la sociedad civil, las autoridades de
-            justicia y los padres de familia.
+            "No hay un andamiaje institucional que proteja y que garantice, o
+            que cuando ya suceda este crimen se intervenga de manera rápida,
+            expedita y se dicte justicia. Es increíble que los papás tengan que
+            cerrar calles y avenidas para pedir justicia y que hasta entonces se
+            vayan a atender y que aún así, porque estoy segura porque aquí lo
+            vivimos de manera cotidiana, no se haga justicia", señala Vázquez
+            Mota, quien fue secretaria de Educación (2006-2009) en el sexenio de
+            Felipe Calderón. Explica que se requiere un trabajo
+            interinstitucional, con un presupuesto sólido, que parte de definir
+            las obligaciones de la SEP, del Congreso, de la sociedad civil, las
+            autoridades de justicia y los padres de familia.
           </p>
           <p>
             Los registros oficiales dan cuenta de que esta realidad sobrepasa el
@@ -385,19 +411,21 @@
           </p>
           <p>
             Dos años después el agresor fue sentenciado. Un juez lo encontró
-            culpable por el delito de abuso sexual y le dictó una pena de sólo
-            cinco años y cinco meses, pues se le juzgó por abuso sexual y no por
-            violación. El proceso fue tan duro que al día de hoy sólo dos de las
-            familias afectadas siguen viviendo en México.
+            culpable por el delito de abuso sexual contra tres niños del Colegio
+            Montessori Matatena y le dictó una pena de sólo cinco años y cinco
+            meses, pues se le juzgó por abuso sexual y no por violación. El
+            proceso fue tan duro que al día de hoy sólo dos de las familias
+            afectadas siguen viviendo en el país.
           </p>
           <p>
             En México, sólo el 1% de los casos que llegan ante autoridades
             judiciales resultan en sentencia condenatoria. Pese a ello, el caso
-            ícono terminó reflejando la impunidad compartida del Estado
-            mexicano. En 2019, las familias recibieron la noticia de que, por
-            fallas administrativas atribuibles al juez que llevó el caso, la
-            sentencia contra Rafael D. quedaba anulada. No obstante, en la
-            investigación se comprobó su responsabilidad.
+            ícono terminó reflejando las fallas en los procesos de justicia en
+            el país, en 2021 quedó sin efecto la primera sentencia dictada en
+            contra de Rafael N. y, después de una serie de amparos, fue
+            encontrado culpable nuevamente y sentenciado de nuevo a cinco años,
+            pero por el tiempo que llevaba en prisión fue puesto en libertad en
+            febrero de 2022.
           </p>
           <p>
             “El sistema está hecho para que ellos estén libres. Y quienes tienen
@@ -408,7 +436,10 @@
         </div>
       </section>
     </article>
+    
   </main>
+  <NavegacionCompartidera></NavegacionCompartidera>
+
 </template>
 <script setup>
 import { ref } from "vue";
@@ -423,8 +454,8 @@ useSeoMeta({
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
 });
 </script>
 <style lang="scss" >

@@ -40,11 +40,7 @@
                   sexuales cometidos dentro de las escuelas como lo establece la
                   Ley General de Educación.</strong
                 >
-                Pese a que la Ley, en su artículo 74, indica que es obligatorio
-                “hacer del conocimiento de las autoridades competentes las
-                conductas que pueden resultar constitutivas de infracciones o
-                delitos cometidos en contra de las niñas, los niños,
-                adolescentes”.
+
               </span>
             </p>
           </div>
@@ -57,11 +53,7 @@
                 > <strong style="color:#01ab8e">Sólo Tabasco y Zacatecas establecen investigaciones
                 administrativas realizadas por personal especializado en la
                 materia</strong>, las cuales están pensadas para evitar que los agresores
-                sean cambiados a otros colegios y repliquen las violencias como
-                ha quedado asentado en actas de hechos de las secretarías de
-                educación en las que se recalca que ciertos maestros tenían
-                antecedentes de violencia sexual contra estudiantes en otros
-                espacios.
+                sean cambiados a otros colegios y repliquen las violencias.
               </span>
             </p>
           </div>

@@ -10,20 +10,21 @@
             es una investigación de
           </p>
           <div class="contenedor-flex logos">
-            <div class="eluniversal contenedor-flex">
-              <a href="https://www.eluniversal.com.mx/" style="margin: auto 0">
-                <img
-                  style="width: 200px"
-                  src="~/assets/imgs/logos/logo-eluniversal.svg"
-                  alt="logo de Connectas"
-                />
-              </a>
-            </div>
+            
             <div class="connectas">
               <a href="https://www.connectas.org/">
                 <img
                   style="width: 150px"
                   src="~/assets/imgs/logos/connectas_blanco.svg"
+                  alt="logo de Connectas"
+                />
+              </a>
+            </div>
+            <div class="eluniversal contenedor-flex">
+              <a href="https://www.eluniversal.com.mx/" style="margin: auto 0">
+                <img
+                  style="width: 200px"
+                  src="~/assets/imgs/logos/logo-eluniversal.svg"
                   alt="logo de Connectas"
                 />
               </a>

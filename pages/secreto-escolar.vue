@@ -486,6 +486,8 @@
       </section>
     </article>
   </main>
+  <NavegacionCompartidera></NavegacionCompartidera>
+
 </template>
 <script setup>
 /*import {csv} from "d3"

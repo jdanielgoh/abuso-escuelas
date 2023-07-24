@@ -97,6 +97,7 @@
       </div>
     </section>
   </div>
+  <NavegacionCompartidera></NavegacionCompartidera>
 </template>
 <script setup>
 import { ref } from "vue";

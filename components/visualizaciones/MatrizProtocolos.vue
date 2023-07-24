@@ -4,14 +4,12 @@
       <div class="contenedor-flex">
         <div class="ancho-texto">
           <h3>
-            ¿Qué deben hacer las escuelas cuando se presenta un caso de abuso
-            sexual en sus instalaciones?
+            Reprobados: la mayoría de los estados no cumplen con los estándares
+            de atención recomendados
           </h3>
           <p>
-            Con esta herramienta conocerás si los protocolos de las 32 entidades
-            del país cumplen con los estándares que se han desarrollado a nivel
-            internacional sobre cómo deben actuar las autoridades ante estos
-            casos.
+            Explora la herramienta: descubre con qué estándares internacionales
+            cumple el protocolo de atención de tu entidad.
           </p>
           <fieldset>
             <legend>Selecciona una categoría</legend>
@@ -37,7 +35,7 @@
           <thead>
             <tr class="renglon-encabezado">
               <th>Estado</th>
-              <th>Puntaje de cumplimiento</th>
+              <th>Calificación</th>
               <th v-for="variable in diccionario_mostrado" :key="variable.id">
                 <div class="celda-h">
                   {{ variable.encabezado_columna }}
@@ -105,8 +103,8 @@
                 class="icono-tabla"
                 style="transform: translateY(4px)"
               />
-              la acción a seguir, el valor de 1 cuando el protocolo considera
-              de manera <b style="color: #d49102">parcial</b>
+              la acción a seguir, el valor de 1 cuando el protocolo considera de
+              manera <b style="color: #d49102">parcial</b>
               <img
                 src="@/assets/imgs/iconos/regular.svg"
                 alt="regular"
@@ -122,9 +120,12 @@
                 style="transform: translateY(4px)"
               />
               de forma explicita la acción a seguir. Finalmente, para calcular
-              los puntajes estatales se suman sus valores y se normaliza tomando el valor de 10 como máximo, correspondiente a un caso en el cual un estado tenga todos sus valores en <b style="color: #01ab8e">sí especifica</b>.
+              los puntajes estatales se sumaron sus valores y se estandarizó. La
+              calificación mínima es 0 y el valor máximo es 10, este último
+              correspondería al estado en el que los protocolos cuentan con
+              todos los estándares de actuación recomendados a nivel
+              internacional.
             </p>
-
           </div>
         </div>
       </div>
