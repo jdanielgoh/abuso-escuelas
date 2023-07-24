@@ -57,8 +57,10 @@
     </div>
     <slot name="pie">
       <div class="pie"> 
-        <p class="nomenclatura"> <span :style="{background: color_2016} "></span> 2016: llamado nacional para creación protocolos</p>
-        <p class="nomenclatura"><span :style="{background: color_2020} "></span> 2020 y 2021: crisis de la pandemia</p>  
+        <p class="nomenclatura"> <span :style="{background: color_2016} "></span> 2016-2017: Llamado nacional para crear protocolos de atención.</p>
+        <p class="nomenclatura"><span :style="{background: color_2020} "></span> 2020-2021: Pandemia por Covid-19.</p>  
+        <p class="nomenclatura fuente">  Fuente: Base de datos propia, construida con información de las secretarías de Educación de 28 estados del país. Baja California Sur, Nuevo León, San Luis Potosí y Sonora no entregaron información.</p>  
+
       </div> 
       
 
@@ -137,7 +139,7 @@ export default {
           let entidad = this.variables.filter(d => d.cve == this.tooltip_data_seleccionada.cve)[0]
           return `
 							
-							Año: ${this.tooltip_data_seleccionada.fech.toLocaleDateString('en-GB').split("/").slice(-1)}<br/>
+							Año: ${this.tooltip_data_seleccionada.fech.toLocaleDateString('en-GB').split("/").slice(-1) == 2023 ? "Febrero de 2023": this.tooltip_data_seleccionada.fech.toLocaleDateString('en-GB').split("/").slice(-1)}<br/>
 							${entidad.nombre}: ${this.tooltip_data_seleccionada.cat.toLocaleString('en')}  <br/>
 						`
         }
@@ -430,6 +432,10 @@ export default {
       //   return this.eje_x.select("path").attr("d").replace("M0,6", "M0,0").replace("V6", "V0")
       // })
       this.eje_x.selectAll("text").style("transform",`rotate(${-90}deg)translate(${-25}px,${-15}px)`)
+        .text((d,i)=>{
+
+          return this.multiFormat(d) == 2023 ? " Febrero de 2023": this.multiFormat(d)
+        })
       this.eje_y.attr("transform", `translate(${this.margen.izquierda}, ${this.margen.arriba})`)
           .call(d3.axisLeft(this.escalaY).ticks(5));
       this.eje_y.select("path").style("opacity", 0);

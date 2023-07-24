@@ -17,7 +17,7 @@
                 >Se identificaron plenamente a 
               </span>
               <span class="dato-numerico centro" style="color: #5e5e5e"
-                >904</span
+                >911</span
               >
               <span class="derecha">
                 <b style="color: #5e5e5e"> probables agresores*.</b>
@@ -44,20 +44,20 @@
             <p class="bullet">
               <span class="izquierda"></span>
               <span class="dato-numerico triple centro" style="color: #00c0d7"
-                >718</span
+                >717</span
               >
               <span class="derecha"
                 ><b style="color: #00c0d7"> son docentes</b>. Resaltan los profesores interinos: enseñan música, educación física e idiomas
 
               </span>
               <span class="dato-numerico triple centro" style="color: #882992"
-                >85</span
+                >88</span
               >
               <span class="centro">
                 <b style="color: #882992"> son personal de limpieza</b>
               </span>
               <span class="dato-numerico triple centro" style="color: #c89600"
-                >34</span
+                >33</span
               >
               <span class="derecha"> <b style="color: #c89600"> son directivos
 </b>,
@@ -274,7 +274,7 @@ function posicionScroleando() {
 watch(paso_activo, cambioDePasos);
 function cambioDePasos(nv, ov) {
   if (nv == 0) {
-    ladata_pintable.value = d3.range(0, 904).map((d, i) => ({
+    ladata_pintable.value = d3.range(0, 911).map((d, i) => ({
       i: d,
       x: escalaLineal.value((i % 30) / 30),
       y: escalaLineal.value(parseInt(i / 30) / 30),
@@ -291,7 +291,7 @@ function cambioDePasos(nv, ov) {
     });
   } else if (nv == 1) {
     ladata_pintable.value.forEach((d, i) => {
-      d.fillStyle = i < 817 ? "#21587e" : "#5e5e5e";
+      d.fillStyle = i < 811 ? "#21587e" : "#5e5e5e";
     });
     configurandoPictos(toRaw(ladata_pintable.value));
 
@@ -302,18 +302,18 @@ function cambioDePasos(nv, ov) {
       }
     });
   } else if (nv == 2) {
-    ladata_pintable.value = d3.range(0, 904).map((d, i) => ({
+    ladata_pintable.value = d3.range(0, 911).map((d, i) => ({
       i: d,
       x: escalaLineal.value((i % 30) / 30),
       y: escalaLineal.value(parseInt(i / 30) / 30),
       w: d3.max(escalaLineal.value.range()) * 0.04,
       h: d3.max(escalaLineal.value.range()) * 0.04,
       fillStyle:
-        i < 718
+        i < 717
           ? "#00c0d7"
-          : i < 718 + 34
+          : i < 717 + 33
           ? "#882992"
-          : i < 718 + 34 + 85
+          : i < 717 + 33 + 88
           ? "#c89600"
           : "#5e5e5e",
     }));

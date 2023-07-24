@@ -5,7 +5,7 @@
         <div class="creditos">
           <p>
             <NuxtLink to="/">
-              <strong>Maestros abusadores</strong>
+              <strong>Depredadores en las aulas </strong>
             </NuxtLink>
             es una investigación de
           </p>
@@ -41,7 +41,7 @@
               </a>
             </div>
           </div>
-          <p><strong style="font-size: 24px"> Cŕeditos </strong></p>
+          <p><strong style="font-size: 24px"> Créditos </strong></p>
           <p>
             <strong>Investigación</strong><br /><a
               href="https://twitter.com/AleCrail"

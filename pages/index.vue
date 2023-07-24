@@ -3,18 +3,9 @@
     <InteractivosPortada></InteractivosPortada>
     <section id="portada" class="contenedor-flex">
       <div class="titulo bullet-fondo-oscuro-transparencia">
-        <h1>Maestros abusadores</h1>
+        <h1>Depredadores en las aulas</h1>
 
-        <p class="autoras">Por Alejandra Crail y Daniela Guazo</p>
         <div class="logos contenedor-flex">
-          <div class="connectas">
-            <a href="https://www.connectas.org/">
-              <img
-                src="~/assets/imgs/logos/connectas_blanco.svg"
-                alt="logo de Connectas"
-              />
-            </a>
-          </div>
           <div class="eluniversal">
             <a href="https://www.eluniversal.com.mx/">
               <img
@@ -23,25 +14,40 @@
               />
             </a>
           </div>
+          <div class="connectas">
+            <a href="https://www.connectas.org/">
+              <img
+                src="~/assets/imgs/logos/connectas_blanco.svg"
+                alt="logo de Connectas"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section id="sumario" class="contenedor-flex">
-      <p class="bullet-fondo-oscuro-transparencia">
+      <p class="bullet-fondo-oscuro-transparencia sumario">
         Diariamente, un niño o niña son agredidos sexualmente por el personal de
         las escuelas a las que asisten. Mientras que el gobierno mexicano ha
         fallado en garantizar la seguridad al interior de las aulas, el número
         de denuncias va en aumento
+        <br />
+        Por Alejandra Crail y Daniela Guazo
       </p>
     </section>
-    <section id="sumario" class="contenedor-flex">
+    <section class="img-ppal">
+      <div class="cover-portada-img">
+        <div class="degradado-oscuro"></div>
+      </div>
+    </section>
+    <section id="caso" class="contenedor-flex">
       <p class="bullet-fondo-oscuro-transparencia">
         J. salió de la escuela sumido en llanto, envuelto en un intenso dolor.
         Al llegar a casa, su madre se dio cuenta de que el niño de tres años
         tenía heridas en el área rectal. Llevaba apenas 27 días como alumno de
         1° de jardín de niños. Más tarde, se sabría que “Cantos”, el maestro de
         música, y Servando “el que barre”, lo agredieron sexualmente en el
-        colegio.
+        kínder.
       </p>
     </section>
 
@@ -52,17 +58,18 @@
         <p>
           Para esta investigación se solicitaron estadísticas y versiones
           públicas de las actas de hechos de estos delitos registrados en las
-          secretarías de Educación de los 32 estados del país. Se creó la
-          primera base de datos a nivel nacional que reúne los casos registrados
-          de manera oficial, así se pudo determinar que en México todos los días
-          ocurre una agresión sexual cometida por el personal de las escuelas en
-          contra de sus estudiantes de educación básica.
+          secretarías de Educación de los 32 estados del país. Se creó una base
+          de datos a nivel nacional que reúne los casos registrados de manera
+          oficial entre 2012 y febrero de 2023, así se pudo determinar que en
+          México todos los días ocurre una agresión sexual cometida por el
+          personal de las escuelas en contra de sus estudiantes de educación
+          básica.
         </p>
         <p>
           Aunque desde 2016 el gobierno federal intentó homologar la prevención
           y atención a estos delitos en las aulas por medio de protocolos de
           atención, los casos lejos de reducirse van en aumento. El regreso a
-          clases tras la pandemia duplicó la violencia sexual contra niñas,
+          clases tras la pandemia aumentó la violencia sexual contra niñas,
           niños y adolescentes. Los datos oficiales arrojan un patrón: la
           mayoría de los agresores son hombres, resaltan los docentes.
         </p>
@@ -77,8 +84,8 @@
       <div class="contenedor-flex contenedor-tarjetas">
         <NavegacionTarjetas
           class="t-50"
-          :ruta="'agresores-en-las-aulas'"
-          :titulo="'Agresores en las aulas'"
+          :ruta="'secreto-escolar'"
+          :titulo="'Secreto escolar.'"
           :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
         ></NavegacionTarjetas>
         <NavegacionTarjetas
@@ -88,15 +95,12 @@
           :descripcion="'La historia de una política fallida'"
         ></NavegacionTarjetas>
       </div>
-      <div class="cover-portada-img">
-        <div class="degradado-oscuro"></div>
-      </div>
     </section>
   </div>
 </template>
 <script setup>
 import { ref } from "vue";
-const title = ref("Maestros abusadores");
+const title = ref("Depredadores en las aulas");
 const description =
   ref(`Diariamente, un niño o niña son agredidos sexualmente por el personal de
         las escuelas a las que asisten. Mientras que el gobierno mexicano ha
@@ -107,8 +111,8 @@ useSeoMeta({
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
 });
 </script>
 <style lang="scss">
@@ -122,7 +126,7 @@ useSeoMeta({
       margin: auto;
       text-align: center;
       color: $color-texto-claro;
-      max-width: 500px;
+      max-width: 600px;
       h1 {
         font-size: 76px;
         font-family: "Roboto Slab";
@@ -177,13 +181,27 @@ useSeoMeta({
     }
   }
   #sumario {
-    height: calc(100vh);
+    height: calc(120vh);
     p {
       max-width: 500px;
       color: $color-texto-claro;
       margin: auto;
       font-size: 18px;
     }
+  }
+  #caso {
+    height: calc(100vh);
+    background: $color-fondo-oscuro;
+
+    p {
+      max-width: 500px;
+      color: $color-texto-claro;
+      margin: auto;
+      font-size: 18px;
+    }
+  }
+  p.sumario {
+    text-align: center;
   }
 
   #cita-1 {
@@ -199,6 +217,10 @@ useSeoMeta({
   }
   #texto-horizontal-sep-fiscalia {
     padding: 0;
+    background-color: $color-fondo-oscuro;
+    &.seccion-activa {
+      background-color: $color-fondo-claro;
+    }
   }
   section.final {
     padding: 0;
@@ -210,6 +232,18 @@ useSeoMeta({
       font-weight: 700;
       padding: 48px 0;
     }
+
+    .contenedor-flex.contenedor-tarjetas {
+      max-width: 800px;
+      padding: 16px;
+      gap: 32px;
+      margin: auto;
+      padding-bottom: 150px;
+    }
+  }
+  section.img-ppal {
+    padding: 0;
+    background: $color-fondo-oscuro;
     .cover-portada-img {
       width: 100%;
       height: 100vh;
@@ -241,13 +275,6 @@ useSeoMeta({
           font-weight: 700;
         }
       }
-    }
-    .contenedor-flex.contenedor-tarjetas {
-      max-width: 800px;
-      padding: 16px;
-      gap: 32px;
-      margin: auto;
-      padding-bottom: 150px;
     }
   }
 }

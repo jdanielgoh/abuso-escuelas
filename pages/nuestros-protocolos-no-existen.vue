@@ -85,8 +85,11 @@
             lo obligaba a “jugar al doctor”.
           </p>
 
+        </div>
+        <div class="ancho-imagen">
           <img src="~/assets/imgs/cap2/ilustracion_2.jpg" alt="" />
-          <p>
+        </div>
+        <div class="ancho-texto">          <p>
             Ante las acusaciones, la directora y dueña del colegio negó todo y
             pidió a la madre no ejercer ninguna acción penal. No emitió el
             reporte interno sobre los señalamientos, tampoco notificó a las
@@ -358,8 +361,11 @@
             juicio sigue abierto. El área de comunicación del Colegio rechazó
             emitir comentarios.
           </p>
+        </div>
+        <div class="ancho-imagen">
           <img src="~/assets/imgs/cap2/ilustracion_3.jpg" alt="" />
-          <h3>Impunidad repartida</h3>
+        </div>
+        <div class="ancho-texto">          <h3>Impunidad repartida</h3>
           <p>
             "Necesitamos nuevos protocolos, actualizar legislaciones y, sobre
             todo, que el victimario sepa que no va a tener impunidad", recalca

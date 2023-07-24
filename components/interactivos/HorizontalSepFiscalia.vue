@@ -30,9 +30,9 @@
             <p class="bullet">
               <span class="izquierda">En la última década se registraron</span>
               <span class="dato-numerico centro" style="color: #5e5e5e"
-                >3,550</span
+                >3,534</span
               >
-              <span class="derecha"> casos similares </span>
+              <span class="derecha"> casos similares. </span>
             </p>
           </div>
         </div>
@@ -46,25 +46,22 @@
             <p class="bullet">
               <span class="izquierda">Sólo el</span>
               <span class="dato-numerico centro" style="color: #038f83"
-                >50%</span
+                >52%</span
               >
-              <span class="derecha">
-                de estos casos llegó a una carpeta de investigación.
-              </span>
+              <span class="derecha"> de estos casos llegó a la Fiscalía. </span>
             </p>
           </div>
         </div>
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              <span class="izquierda"
-                >La estadística es conservadora en relación a la problemática.
-                Hay dependencias que no reconocen la violencia sexual en sus
-                escuelas, que no registran los casos o que evitan hacerlos
-                públicos.</span
-              >
-
               <span class="izquierda"> La cifra negra es inmensa. </span>
+
+              <span class="izquierda"
+                >Hay dependencias que no reconocen la violencia sexual en sus
+                escuelas, que no registran los casos o que evitan hacerlos
+                públicos.
+              </span>
             </p>
           </div>
         </div>
@@ -412,7 +409,7 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-sep-fiscalia {
-  margin:0;
+  margin: 0;
   .imagen-precanvas {
     position: absolute;
     top: 0;
@@ -425,6 +422,5 @@ function getPixelRatio(ctx) {
     transition: all 0.5s ease-in-out;
   }
   height: 600vh;
-
 }
 </style>

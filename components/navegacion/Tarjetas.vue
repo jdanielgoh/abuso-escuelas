@@ -4,7 +4,7 @@
       <img
         src="~/assets/imgs/cap1/ilustracion_1.jpg"
         alt=""
-        v-if="titulo == 'Agresores en las aulas'"
+        v-if="titulo == 'Secreto escolar.'"
       />
       <img
         src="~/assets/imgs/cap2/ilustracion_1.jpg"

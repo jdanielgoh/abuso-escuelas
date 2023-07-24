@@ -5,7 +5,7 @@
         <img src="~/assets/imgs/cap1/ilustracion_1.jpg" alt="" />
         <div class="contenedor-titulo">
           <div class="titulo-centrado">
-            <h1>Agresores en las aulas</h1>
+            <h1>Secreto escolar.</h1>
             <h2 class="subtitulo">
               En la última década se triplicó el abuso sexual infantil dentro de
               las escuelas
@@ -16,13 +16,10 @@
       <section class="contenedor-flex">
         <div class="ancho-texto">
           <p class="resumen">
-            Los casos de delitos sexuales cometidos por el personal de las
-            escuelas en contra de los alumnos va en aumento.
-            <strong>Entre 2012 y 2015 hubo, en promedio, 145 al año</strong> . A
-            partir de entonces, la cifra fue en aumento.
-            <strong>
-              En 2022, se incrementaron hasta los 500 casos anuales.</strong
-            >
+            Los registros de casos de delitos sexuales cometidos por el personal
+            de las escuelas en contra de los alumnos va en aumento. Entre 2012 y
+            2015 hubo, en promedio, 149 al año. A partir de entonces, la cifra
+            se incrementó. En 2022, se registraron más de 550 casos.
           </p>
           <p>
             A las puertas del Jardín de Niños “Guadalupe Borja de Díaz Ordaz”,
@@ -64,8 +61,8 @@
             agregó información que, de acuerdo con el relato de los padres, el
             niño no mencionó y evadió su obligación de dar aviso a las
             autoridades de justicia ante la probable comisión de un delito. Se
-            solicitó entrevista a la directora sin que al cierre de edición haya
-            dado respuesta.
+            solicitó entrevista a las autoridades escolares sin que al cierre de
+            edición hayan dado respuesta.
           </p>
           <p>
             Los padres de J. se movilizaron y denunciaron, pues no era la
@@ -89,7 +86,7 @@
           </p>
           <p>
             Los abusos y violaciones sexuales cometidos por los servidores
-            públicos en el Guadalupe Borja, son solo uno de los 3,550 casos que
+            públicos en el Guadalupe Borja, son solo uno de los 3,534 casos que
             se han registrado en México entre 2012 y febrero de 2023. La
             información fue obtenida tras el análisis de una base de datos
             propia, creada con la información que las secretarías de Educación
@@ -100,29 +97,46 @@
           <p>
             El análisis revela que esta problemática no se ha frenado en la
             última década; por el contrario, va en aumento. Entre 2012 y 2015
-            las distintas secretarías de educación del país reportaron 598 casos
-            en todo México, un promedio de 145 al año. Los registros en ese
+            las distintas secretarías de educación del país reportaron 596 casos
+            en todo México, un promedio de 149 al año. Los registros en ese
             periodo son pocos, pues las mismas dependencias educativas reconocen
             que no registraban la información ni daban seguimiento a estos
             casos. Sinaloa, por ejemplo, respondió: "Si bien se llegaron a
             acercar o presentar algún caso no se creaban como tal expedientes".
           </p>
+          <VisualizacionesSerieTiempo
+            :conversionTemporal="conversionTemporal"
+            :datos="datos_por_anio"
+            :linea_id="'lineas1'"
+            :margen="{ arriba: 10, abajo: 80, izquierda: 30, derecha: 30 }"
+            :nombre_columna_horizontal="'anio'"
+            :titulo_eje_x="'Año'"
+            :titulo_eje_y="'Número de casos'"
+            :tooltip_activo="true"
+            :variables="variables_anios"
+            :alto_vis="500"
+            :tipo_tooltip="'individual'"
+          >
+            <template v-slot:encabezado>
+              <h4>
+                Casos registrados por autoridades educativas 2012-febrero 2013
+              </h4>
+            </template></VisualizacionesSerieTiempo
+          >
           <p>
             A partir de 2017, se incrementó el número de registros oficiales
-            hasta el punto de duplicar el registro anual. En 2018, se enlistaron
-            340 casos. La tendencia se mantuvo así hasta que llegó la pandemia
-            por Covid-19 y aunque los niños y adolescentes dejaron las aulas
-            para estudiar desde casa, las violencias desde las escuelas no
-            cesaron. En 2020 y 2021 se registraron 215 denuncias, principalmente
-            por acoso sexual del personal cometido de manera virtual contra los
-            estudiantes, como se pudo acreditar con las actas de hechos de este
-            periodo obtenidas para la investigación.
+            hasta el punto de duplicar el registro anual. La tendencia se
+            mantuvo al alza hasta que llegó la pandemia por Covid-19 y aunque
+            los niños y adolescentes dejaron las aulas para estudiar desde casa,
+            las violencias desde las escuelas no cesaron, los registros son
+            principalmente por acoso sexual del personal cometido de manera
+            virtual contra los estudiantes, como se pudo acreditar con las actas
+            de hechos de este periodo obtenidas para la investigación.
           </p>
           <p>
             Una vez que la emergencia sanitaria bajó de nivel y los alumnos
             regresaron físicamente a las escuelas, la violencia sexual contra
-            ellos arrasó: en 2022 se registraron más de 500 quejas en todo el
-            país.
+            ellos arrasó: en 2022 se registraron 574 quejas en todo el país.
           </p>
           <p>
             Las cifras oficiales de enero y febrero 2023 muestran un panorama
@@ -131,33 +145,17 @@
             escuelas por algún miembro del personal educativo. La tendencia post
             pandémica se mantiene.
           </p>
-          <VisualizacionesSerieTiempo
-            :conversionTemporal="conversionTemporal"
-            :datos="datos_por_anio"
-            :linea_id="'lineas1'"
-            :margen="{ arriba: 10, abajo: 40, izquierda: 30, derecha: 30 }"
-            :nombre_columna_horizontal="'anio'"
-            :titulo_eje_x="'Eje horizontal (temporal)'"
-            :titulo_eje_y="'Eje vertical (numérico)'"
-            :tooltip_activo="true"
-            :variables="variables_anios"
-            :alto_vis="500"
-            :tipo_tooltip="'individual'"
-          >
-            <template v-slot:encabezado>
-              <h4>Casos que ha registrado la SE de 2012 a febrero de 2023</h4>
-            </template></VisualizacionesSerieTiempo
-          >
+
           <p>
-            Los impactos para un sobreviviente de violencia sexual duran toda la
-            vida. De inicio, surgen cambios en los hábitos y en el
-            comportamiento. Hay ansiedad, estrés, agresión. A mediano plazo,
-            dejan heridas graves en su relación con la escuela: bajas en el
-            rendimiento académico o abandono escolar. A largo plazo, pueden caer
-            en conductas de alto riesgo que ponen en peligro su salud. “Son
-            impactos en varios aspectos de la vida de una persona y puede durar
-            toda una vida, por eso es importante prevenirlo”, insiste Hollander
-            de Unicef.
+            Los impactos para un sobreviviente de violencia sexual son vastos.
+            De inicio, surgen cambios en los hábitos y en el comportamiento. Hay
+            ansiedad, estrés, agresión. A mediano plazo, dejan heridas graves en
+            su relación con la escuela: bajas en el rendimiento académico o
+            abandono escolar. A largo plazo, pueden caer en conductas de alto
+            riesgo que ponen en peligro su salud. “Son impactos en varios
+            aspectos de la vida de una persona y puede durar toda una vida, por
+            eso es importante prevenirlo”, dice Astrid Hollander, jefa de
+            educación en Unicef México.
           </p>
           <h3>Visibilizar para prevenir</h3>
           <p>
@@ -182,31 +180,27 @@
           >
             <template v-slot:encabezado>
               <h4>
-                Casos de abuso sexual en escuelas registrados por la SEP, las
-                fiscalías y distingas organizaciones en México
+                Registros de abuso sexual ante Educación, Fiscalías y oficinas
+                de Protección y Derechos Humanos
               </h4>
             </template>
           </VisualizacionesBarras>
+
           <p>
-            Por ejemplo, la Secretaría de Educación de Nuevo León dice que
+            La falta de desagregación en la mayoría de los datos obtenidos
+            impide hacer un análisis más detallado de cada caso. Por ejemplo, la
+            Secretaría de Educación de Nuevo León dice que
             <cite
               >“no existen antecedentes referentes al abuso sexual presuntamente
               cometido por algún servidor público”</cite
             >. No obstante, de 2017 a febrero de 2023, la Fiscalía General de
             Justicia estatal registró 215 delitos sexuales en sus instituciones
-            educativas.
+            educativas. En Baja California Sur y Sonora se negaron a otorgar la
+            información, pero sus fiscalías abrieron 33 y 11 carpetas
+            respectivamente en un periodo de cinco años. En Michoacán, Educación
+            solo admitió un caso, pero la Fiscalía tiene 190 denuncias.
           </p>
-          <p>
-            <cite
-              >“Esta autoridad carece de facultades para conocer o investigar
-              los hechos de ese tipo”</cite
-            >, contestó su homóloga en San Luis Potosí, donde la autoridad
-            judicial abrió 226 carpetas de investigación. En Baja California Sur
-            y Sonora se negaron a otorgar la información, pero sus fiscalías
-            abrieron 33 y 11 carpetas respectivamente en un periodo de cinco
-            años. En Michoacán, Educación solo admitió un caso, pero la Fiscalía
-            tiene 190 denuncias.
-          </p>
+
           <blockquote>
             “Los registros nos permiten visibilizar una problemática. Quizá es
             una problemática de la que no nos gusta hablar, pero que tiene
@@ -216,13 +210,11 @@
           </blockquote>
           <p>
             En otros casos, los pocos registros que existen muestran que pocas
-            denuncias llegan al ámbito penal.
-          </p>
-          <p>
-            En Jalisco, por ejemplo, se registraron 503 quejas, mientras que la
-            Fiscalía únicamente abrió 31 carpetas de investigación. En cambio,
-            en el Estado de México, las autoridades judiciales dicen no saber
-            cuántos delitos ocurrieron en escuelas.
+            denuncias llegan al ámbito penal. En Jalisco, por ejemplo, se
+            registraron 503 quejas, mientras que la Fiscalía abrió 31 carpetas
+            de investigación. En cambio en el Estado de México, donde las
+            autoridades judiciales dicen no saber cuántos delitos ocurrieron en
+            escuelas.
           </p>
           <p>
             En general, de los casos registrados por las autoridades educativas
@@ -231,8 +223,8 @@
           <p>
             Mariana Gil, abogada y directora de la Oficina de Defensoría de los
             Derechos de la Infancia, A.C. (ODI), señala que la cifra negra en
-            estos casos es incalculable. Ejemplifica con casos que ha acompañado
-            la ODI.
+            estos casos es incalculable. Ejemplifica con casos que han
+            acompañado legalmente desde su organización.
           </p>
         </div>
       </section>
@@ -281,19 +273,15 @@
             En la causa penal 1229-2020, correspondiente solo a una de las siete
             denuncias, quedó asentado que el niño refirió abusos sexuales y
             violaciones en el área de juegos, en el salón de canto y “en la
-            puerta secreta”. Los dictámenes periciales muestran que tanto en el
+            puerta secreta”. <strong>Los dictámenes periciales muestran que tanto en el
             salón de música como en el de 1° B había cuartos ocultos, ubicados
             al fondo de los salones, escondidos detrás de cortinas, estantes con
             material didáctico y pesadas puertas en donde el profesor de música
-            y el intendente cometieron las agresiones. Servando era el único que
+            y el intendente cometieron las agresiones.</strong>  Servando era el único que
             tenía llaves de este espacio, declaró la directora en el juicio.
           </p>
           <p>
-            La autoridad educativa del estado debió de haber realizado
-            recorridos en la escuela para detectar esos espacios. Pero no hay
-            información sobre que estas inspecciones hayan catalogado estas
-            zonas como un riesgo para los estudiantes. Se le preguntó a la
-            dependencia, pero rechazaron hacer comentarios sobre el caso.
+            La autoridad educativa del estado debió de haber realizado recorridos en la escuela para detectar esos espacios. Pero no hay información sobre que estas inspecciones hayan catalogado estas zonas como un riesgo para los estudiantes. Se le preguntó a la dependencia sobre su actuación ante este caso, pero rechazó pronunciarse por considerar que todavía está en litigio. Dijo que hasta 2020 actualizaron su protocolo interno de actuación ante posibles riesgos dentro de las escuelas, incluyendo la violencia sexual.
           </p>
           <p>
             Los dictámenes psicológicos a T., hermano mayor de J., revelaron que
@@ -306,7 +294,7 @@
             rompía sus juguetes, empezó con pesadillas y a no comer, por las
             noches se hacía pipí y popó”, cuenta el padre. Acudió una decena de
             veces con la maestra de grupo, que siempre minimizó los síntomas:
-            primero, que T. se estaba acoplando al colegio; luego, que los
+            primero, que T. se estaba acoplando al kínder; luego, que los
             golpes se los daban niños de tercero que eran bruscos. Cuando T.
             dijo 'mañana me van a enseñar a chupar pipí en la escuela', la
             directora culpó a otros niños.
@@ -332,6 +320,7 @@
       <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
       <section class="contenedor-flex">
         <div class="ancho-texto">
+          <p class="fuente">Fuente: Base de datos propia, creada con información de actas de hechos y estadísticas de Educación.</p>
           <p>
             El perfil del agresor escolar coincide con la descripción del
             “abusador situacional” que, según explica Julia Borbolla, psicóloga
@@ -379,6 +368,11 @@
             tomado a sus alumnos preescolares. La dependencia registró el caso,
             pero no dio detalles del estatus del docente.
           </p>
+        </div>
+        <div class="ancho-imagen">
+          <img src="~/assets/imgs/cap1/caso_oax.png" alt="" />
+        </div>
+        <div class="ancho-texto">
           <p>
             En México, el Sindicato Nacional de Trabajadores de la Educación
             (SNTE) —que reúne al personal que trabaja en escuelas públicas de
@@ -394,14 +388,17 @@
             el secretario general del SNTE, Alfonso Cepeda Salas, sin que hasta
             el cierre de edición haya dado respuesta.
           </p>
+        </div>
+        <div class="ancho-imagen">
           <img src="~/assets/imgs/cap1/ilustracion_2.jpg" alt="" />
+        </div>
+        <div class="ancho-texto">
           <p>
-            Las víctimas son diversas: niñas, niños y adolescentes que de pronto
-            tienen terrores nocturnos, presentan incontinencia nocturna, cambian
-            su temperamento, pierden el habla o el interés en la escuela.
+            El análisis realizado a nivel nacional muestra que las víctimas son diversas: niñas, niños y adolescentes que de pronto tienen terrores nocturnos, presentan incontinencia nocturna, cambian su temperamento, pierden el habla o el interés en la escuela. 
+
           </p>
           <p>
-            La mayoría son mujeres (68%)*, pero las agresiones contra hombres
+            La mayoría son mujeres (68%), pero las agresiones contra hombres
             también están presentes.
           </p>
           <p>
@@ -425,22 +422,18 @@
             les solicitó vía transparencia.
           </p>
           <p>
-            Incluso se encontraron 50 casos en donde no se puede establecer el
-            número exacto de víctimas o victimarios, en 18 estados de la
-            República estos casos se clasificaron como “varias personas”. Los
-            registros enlistan a directores, intendentes, encargados de
-            cooperativa y docentes como un grupo de agresores en contra de los
-            menores.
+            Además  se encontraron 45 casos en Jalisco y Guanajuato en donde no se puede establecer el número exacto de victimarios, se clasificaron como “varios”. Los registros enlistan a directores, intendentes, encargados de cooperativa y docentes como un grupo de agresores en contra de los menores. 
+
           </p>
           <p>
             La Oficina de Defensoría de los Derechos de la Infancia, A.C. (ODI)
-            en sus informes <i>Es un Secreto</i> y
+            en su informe <i><a href="https://dispensariodi.com/wp-content/uploads/2021/05/es-un-secreto-la-explotacion-sexual-infantil-en-escuelas-2.pdf">Es un Secreto. La explotación sexual infantil en escuelas</a></i> —y sus dos actualizaciones
             <i
               ><a
                 href="https://dispensariodi.com/wp-content/uploads/2023/05/Es-un-secreto.-Actualizacion-2023.pdf"
-                >Ya no es un secreto</a
+                >(2022 y 2023)</a
               >
-            </i>
+            </i>—
             denunció que hay indicios de abuso sexual organizado —varios adultos
             participando en la ejecución de los delitos— en al menos 25 escuelas
             de educación básica repartidas en 11 estados del país. Los delitos
@@ -450,8 +443,11 @@
             veces videograbadas. En todos los casos hay personal que facilita o
             encubre el abuso.
           </p>
+        </div>
+        <div class="ancho-imagen">
           <img src="~/assets/imgs/cap1/ilustracion_3.jpg" alt="" />
-
+        </div>
+        <div class="ancho-texto">
           <h3>Sanción a medias</h3>
           <p>
             Durante el juicio contra el personal del Guadalupe Borja, se le
@@ -468,27 +464,11 @@
             tienen capacidad de inventar algo que no conocen”.
           </p>
           <p>
-            Las autoridades de justicia encontraron culpables a Gerardo “Cantos”
-            y a Servando “el que limpia las cosas cuando están tiradas”. Aunque
-            los delitos descritos por las víctimas y las pruebas físicas
-            evidenciaban violación, el ministerio público lo acusó por el delito
-            de abuso sexual, lo que permitió que la sanción para los victimarios
-            fuera menor. El delito de violación se castiga en el estado con 16
-            años de prisión, se considera más grave y aumenta en pena, si se
-            comete contra un menor de edad; dentro de un inmueble público, como
-            una escuela; y con abuso de autoridad, por ejemplo, si el agresor es
-            personal del colegio. Dos de las siete carpetas de investigación se
-            convirtieron en sentencia: una suma de 16 años de prisión para cada
-            uno por las agresiones cometidas contra J y T.
+            Las autoridades de justicia encontraron culpables a Gerardo “Cantos” y a Servando “el que limpia las cosas cuando están tiradas”. Aunque los delitos descritos por las víctimas y las pruebas físicas evidenciaban violación, el ministerio público lo acusó por el delito de abuso sexual, lo que permitió que la sanción para los victimarios fuera menor. El delito de violación se castiga en el estado con una pena de entre ocho a 15 años de prisión, se considera más grave y aumenta, si se comete contra un menor de edad; dentro de un inmueble público, como una escuela; y con abuso de autoridad, por ejemplo, si el agresor es personal de la escuela. Dos de las siete carpetas de investigación se convirtieron en sentencia: una suma de 16 años de prisión para cada uno por las agresiones cometidas contra J y T. 
           </p>
           <p>
-            Las familias perdieron recursos económicos y estabilidad. Mientras
-            tanto, el Jardín de Niños Guadalupe Borja sigue operando con
-            normalidad. La directora y las maestras, que tuvieron deficiencias
-            en los cuidados de sus estudiantes, siguen dando clases. El grupo de
-            abogados de los acusados aún intenta absolverlos. Ante las
-            sentencias que dictó un juez, los imputados ingresaron un amparo:
-            buscan su libertad.
+            Las familias perdieron recursos económicos y estabilidad. Mientras tanto, el Jardín de Niños Guadalupe Borja sigue operando con normalidad, la SEDU encargada de su operación no se pronunció respecto a cambios en pro de la prevención. La directora y las maestras, que tuvieron deficiencias en los cuidados de sus estudiantes, siguen dando clases. A pesar de la sentencia que encontró culpables a los acusados, el grupo de abogados de los acusados aún intentan que recuperen su libertad.
+
           </p>
           <p>
             Las y los niños aún padecen las secuelas psicológicas y emocionales.
@@ -516,7 +496,7 @@ import por_anio from "@/assets/datos/por_anio.json";
 import sep_fiscalias_dh from "@/assets/datos/sep_fiscalias_dh.json";
 import { ref } from "vue";
 import { timeParse } from "d3";
-const title = ref("Agresores en las aulas");
+const title = ref("Secreto escolar");
 const description =
   ref(`Los casos de delitos sexuales cometidos por el personal de las
             escuelas en contra de los alumnos va en aumento.
@@ -528,8 +508,8 @@ useSeoMeta({
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
 });
 
 por_anio.forEach((d) => {
@@ -571,6 +551,9 @@ const barras_variables = ref([
 ]);
 </script>
 <style>
+section.contenedor-flex {
+  flex-wrap: wrap;
+}
 #barras-sfd {
   width: 100%;
 }

@@ -14,7 +14,7 @@ const esta_abierto = ref(false);
       <nav>
         <ul>
           <li><NuxtLink @click.native="esta_abierto =false" to="/"> Inicio</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="agresores-en-las-aulas"> Agresores en las aulas</NuxtLink>  </li>
+          <li><NuxtLink @click.native="esta_abierto =false" to="secreto-escolar"> Secreto escolar</NuxtLink>  </li>
           <li><NuxtLink @click.native="esta_abierto =false" to="nuestros-protocolos-no-existen"> "Nuestros protocolos no existen"</NuxtLink>  </li>
 
         </ul>
