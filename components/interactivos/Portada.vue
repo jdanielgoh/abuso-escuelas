@@ -79,7 +79,7 @@ function agregamosLuces() {
     camera.value.position.y + 5,
     camera.value.position.z + 5
   );
-  luzPuntual.value.castShadow = true;
+  luzPuntual.value.castShadow = false;
 
   scene.value.add(luzPuntual.value);
 
