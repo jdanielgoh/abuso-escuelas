@@ -3,37 +3,20 @@
     <div class="ancho-texto">
       <div class="contenedor-flex creditos">
         <div class="creditos">
-          <p>
-            <NuxtLink to="/">
-              <strong>Depredadores en las aulas </strong>
-            </NuxtLink>
-            es una investigación de
-          </p>
+
           <div class="contenedor-flex logos">
-            
-            <div class="connectas">
-              <a href="https://www.connectas.org/">
-                <img
-                  style="width: 150px"
-                  src="~/assets/imgs/logos/connectas_blanco.svg"
-                  alt="logo de Connectas"
-                />
-              </a>
-            </div>
             <div class="eluniversal contenedor-flex">
-              <a href="https://www.eluniversal.com.mx/" style="margin: auto 0">
+              <a target="_blank" href="https://www.eluniversal.com.mx/" style="margin: auto 0">
                 <img
                   style="width: 200px"
                   src="~/assets/imgs/logos/logo-eluniversal.svg"
-                  alt="logo de Connectas"
+                  alt="logo de el universal"
                 />
               </a>
             </div>
-          </div>
-          <p>Con el apoyo de</p>
-          <div class="contenedor-flex logos">
-            <div class="connectas">
-              <a href="https://www.icfj.org/">
+            <div class="contenedor-flex logos">
+            <div class="icfj contenedor-flex">
+              <a target="_blank" href="https://www.icfj.org/">
                 <img
                   style="width: 150px"
                   src="~/assets/imgs/logos/icfj.png"
@@ -42,16 +25,28 @@
               </a>
             </div>
           </div>
+            <div class="connectas">
+              <a target="_blank" href="https://www.connectas.org/">
+                <img
+                  style="width: 150px"
+                  src="~/assets/imgs/logos/connectas_blanco.svg"
+                  alt="logo de Connectas"
+                />
+              </a>
+            </div>
+
+          </div>
+          
           <p><strong style="font-size: 24px"> Créditos </strong></p>
           <p>
             <strong>Investigación</strong><br /><a
               href="https://twitter.com/AleCrail"
               >Alejandra Crail</a>
-            y <a href="https://twitter.com/danygm87"> Daniela Guazo</a>
+            y <a target="_blank" href="https://twitter.com/danygm87"> Daniela Guazo</a>
           </p>
           <p>
             <strong>Desarrollo web y visualización de datos</strong><br /><a
-              href="https://tirandocodigo.mx/"
+              href="https://tirandocodigo.mx/" target="_blank"
               >Daniel Gómez Hernández</a
             >
           </p>
@@ -67,7 +62,7 @@
 
           <p>
             <strong>Acompañamiento editorial</strong> <br />
-            <a href="https://www.connectas.org/equipo-connectas/"
+            <a target="_blank" href="https://www.connectas.org/equipo-connectas/"
               >Equipo CONNECTAS</a
             >
           </p>

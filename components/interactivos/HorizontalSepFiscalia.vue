@@ -409,7 +409,6 @@ function getPixelRatio(ctx) {
 
 <style lang="scss">
 #texto-horizontal-sep-fiscalia {
-  margin: 0;
   .imagen-precanvas {
     position: absolute;
     top: 0;

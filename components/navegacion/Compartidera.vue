@@ -4,8 +4,9 @@
       <ul>
         <li>
           <a
-            :href="`http://www.facebook.com/sharer.php?u=${link }`"
+            :href="`http://www.facebook.com/sharer.php?u=${link}`"
             title="Compartir en facebook"
+            target="_blank"
             ><svg height="20" viewBox="0 0 448 512">
               <path
                 fill="#fff"
@@ -15,8 +16,10 @@
           </a>
         </li>
         <li>
-          <a
-            :href="`https://twitter.com/intent/tweet?text=${encodeURIComponent(texto)}&url=${link}&hashtags=${hashtags}`"
+          <a target="_blank"
+            :href="`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+              texto
+            )}&url=${link}&hashtags=${hashtags}`"
             title="Compartir en twitter"
             ><svg height="20" viewBox="0 0 14 12">
               <path
@@ -27,8 +30,10 @@
           </a>
         </li>
         <li>
-          <a
-            :href="`https://api.whatsapp.com/send?text=${encodeURIComponent(texto)} ${link}&amp;utm_medium=social_buttons&amp;utm_campaign=social_sharing&amp;utm_content=whatsapp`"
+          <a target="_blank"
+            :href="`https://api.whatsapp.com/send?text=${encodeURIComponent(
+              texto
+            )} ${link}`"
             title="Compartir en WhatsApp"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +45,7 @@
 
                 <clipPath id="a">
                   <rect
-                    width="16.relative411"
+                    width="16.411"
                     height="16.411"
                     transform="translate(112)"
                     fill="#fff"
@@ -57,7 +62,7 @@
           </a>
         </li>
         <li>
-          <a
+          <a target="_blank"
             :href="`fb-messenger://share/?link=${link}`"
             title="Compartir en Messenger"
             ><svg height="20" viewBox="0 0 512 512">
@@ -69,24 +74,35 @@
           </a>
         </li>
         <li>
-          <button type="button" class="copiar" id="copy-link">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <path
-                fill="#fff"
-                d="M4.2 19.8C4.7 20.2 5.2 20.6 5.8 20.9 6.5 21.1 7.1 21.2 7.8 21.2 8.4 21.2 9.1 21.1 9.7 20.9 10.3 20.6 10.8 20.2 11.3 19.8L14.1 16.9 12.7 15.5 9.9 18.4C9.3 18.9 8.6 19.2 7.8 19.2 7 19.2 6.2 18.9 5.6 18.4 5.1 17.8 4.8 17 4.8 16.2 4.8 15.4 5.1 14.7 5.6 14.1L8.5 11.3 7.1 9.9 4.2 12.7C3.3 13.6 2.8 14.9 2.8 16.2 2.8 17.6 3.3 18.8 4.2 19.8V19.8ZM19.8 11.3C20.7 10.4 21.2 9.1 21.2 7.8 21.2 6.4 20.7 5.2 19.8 4.2 18.8 3.3 17.6 2.8 16.2 2.8 14.9 2.8 13.6 3.3 12.7 4.2L9.9 7.1 11.3 8.5 14.1 5.6C14.7 5.1 15.4 4.8 16.2 4.8 17 4.8 17.8 5.1 18.4 5.6 18.9 6.2 19.2 7 19.2 7.8 19.2 8.6 18.9 9.3 18.4 9.9L15.5 12.7 16.9 14.1 19.8 11.3Z"
-              ></path>
-              <path
-                fill="#fff"
-                d="M8.5 17L7 15.5 15.5 7.1 17 8.5 8.5 17Z"
-              ></path>
-            </svg>
-          </button>
+          <VTooltip :triggers="['hover', 'focus']" :placement="'left'">
+            <button
+              type="button"
+              class="copiar"
+              id="copy-link"
+              @click="copiaTexto()"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  fill="#fff"
+                  d="M4.2 19.8C4.7 20.2 5.2 20.6 5.8 20.9 6.5 21.1 7.1 21.2 7.8 21.2 8.4 21.2 9.1 21.1 9.7 20.9 10.3 20.6 10.8 20.2 11.3 19.8L14.1 16.9 12.7 15.5 9.9 18.4C9.3 18.9 8.6 19.2 7.8 19.2 7 19.2 6.2 18.9 5.6 18.4 5.1 17.8 4.8 17 4.8 16.2 4.8 15.4 5.1 14.7 5.6 14.1L8.5 11.3 7.1 9.9 4.2 12.7C3.3 13.6 2.8 14.9 2.8 16.2 2.8 17.6 3.3 18.8 4.2 19.8V19.8ZM19.8 11.3C20.7 10.4 21.2 9.1 21.2 7.8 21.2 6.4 20.7 5.2 19.8 4.2 18.8 3.3 17.6 2.8 16.2 2.8 14.9 2.8 13.6 3.3 12.7 4.2L9.9 7.1 11.3 8.5 14.1 5.6C14.7 5.1 15.4 4.8 16.2 4.8 17 4.8 17.8 5.1 18.4 5.6 18.9 6.2 19.2 7 19.2 7.8 19.2 8.6 18.9 9.3 18.4 9.9L15.5 12.7 16.9 14.1 19.8 11.3Z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M8.5 17L7 15.5 15.5 7.1 17 8.5 8.5 17Z"
+                ></path>
+              </svg>
+            </button>
+            <template #popper>
+                {{ enlace_copiado ? "Copiado": "Copiar enlace" }}
+            </template>
+          </VTooltip>
         </li>
       </ul>
     </nav>
   </div>
 </template>
 <script setup>
+import {ref} from "vue"
 const props = defineProps({
   link: {
     type: String,
@@ -95,15 +111,21 @@ const props = defineProps({
   },
   texto: {
     type: String,
-    default:
-      "Maestros abusadores",
+    default: "Maestros abusadores",
   },
   hashtags: {
     type: String,
-    default:
-      "Maestrosabusadores",
+    default: "Maestrosabusadores",
   },
+  
 });
+const enlace_copiado = ref(false)
+function copiaTexto() {
+  enlace_copiado.value = true
+
+  navigator.clipboard.writeText(props.link);
+
+}
 </script>
 <style lang="scss" scoped>
 div.compartidera {
@@ -123,6 +145,7 @@ div.compartidera {
       background: transparent;
       border: none;
       padding: 0;
+      cursor: pointer;
     }
   }
 }

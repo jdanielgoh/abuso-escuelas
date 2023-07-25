@@ -147,7 +147,7 @@
             “Esta iniciativa ha homologado las acciones con las que se contaba y
             actualmente favorece la detección temprana de factores de riesgo en
             los estudiantes", se lee en su sexto
-            <a
+            <a target="_blank"
               href="https://www.planeacion.sep.gob.mx/Doc/informes/labores/2012_2018/6to_informe_de_labores.pdf"
               >informe</a
             >
@@ -179,7 +179,7 @@
             vigilancia y seguridad efectivas para salvaguardar la integridad
             física y psicológica de los menores que tenía bajo su cargo, según
             quedó asentado en la recomendación
-            <a
+            <a target="_blank"
               href="http://www.cedhslp.org.mx/Web2/Recomendaciones/2019/Recomendacion%2027/Recomendacion%20-%2027-19.pdf"
               >27/2019</a
             >, que contiene la investigación que realizó la Comisión de derechos
@@ -438,8 +438,11 @@
     </article>
     
   </main>
-  <NavegacionCompartidera></NavegacionCompartidera>
-
+  <NavegacionCompartidera
+    :link="'https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/nuestros-protocolos-no-existen'"
+    :texto="description"
+    :hashtags="'Depredadoresenlasaulas'"
+  ></NavegacionCompartidera>
 </template>
 <script setup>
 import { ref } from "vue";

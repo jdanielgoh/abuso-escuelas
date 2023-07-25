@@ -7,15 +7,15 @@
 
         <div class="logos contenedor-flex">
           <div class="eluniversal">
-            <a href="https://www.eluniversal.com.mx/">
+            <a href="https://www.eluniversal.com.mx/" target="_blank">
               <img
                 src="~/assets/imgs/logos/logo-eluniversal.svg"
-                alt="logo de Connectas"
+                alt="logo de Universal"
               />
             </a>
           </div>
           <div class="connectas">
-            <a href="https://www.connectas.org/">
+            <a href="https://www.connectas.org/" target="_blank">
               <img
                 src="~/assets/imgs/logos/connectas_blanco.svg"
                 alt="logo de Connectas"
@@ -30,7 +30,7 @@
         Diariamente, un niño o niña son agredidos sexualmente por el personal de
         las escuelas a las que asisten. Mientras que el gobierno mexicano ha
         fallado en garantizar la seguridad al interior de las aulas, el número
-        de denuncias va en aumento
+        de denuncias va en aumento.
         <br />
         Por Alejandra Crail y Daniela Guazo
       </p>
@@ -80,12 +80,12 @@
       </div>
     </section>
     <section class="final">
-      <div class="titulo-historias">Historias</div>
+      <div class="titulo-historias">Lee la investigación completa</div>
       <div class="contenedor-flex contenedor-tarjetas">
         <NavegacionTarjetas
           class="t-50"
           :ruta="'secreto-escolar'"
-          :titulo="'Secreto escolar.'"
+          :titulo="'Secreto escolar'"
           :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
         ></NavegacionTarjetas>
         <NavegacionTarjetas
@@ -97,7 +97,11 @@
       </div>
     </section>
   </div>
-  <NavegacionCompartidera></NavegacionCompartidera>
+  <NavegacionCompartidera
+    :link="'https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas'"
+    :texto="description"
+    :hashtags="'Depredadoresenlasaulas'"
+  ></NavegacionCompartidera>
 </template>
 <script setup>
 import { ref } from "vue";

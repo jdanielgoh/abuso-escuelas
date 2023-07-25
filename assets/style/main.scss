@@ -26,12 +26,15 @@ body, html{
         }
     }
     .ancho-imagen{
-        margin: auto;
         width: 100%;
-        max-width: $ancho-imagen;
+        display: flex;
         img{
             max-width: 100%;
             border-radius: $radio-borde;
+            max-width: $ancho-imagen;
+            margin: auto;
+
+
         }
     }
     .ancho-bullet{

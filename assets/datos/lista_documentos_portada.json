@@ -1,5 +1,11 @@
 [
   {
+    "archivo": "./texturas/documentos/acta-comision-2.png",
+    "ancho": 798,
+    "alto": 692,
+    "velocidad": 1.0900720874819192
+  },
+  {
     "archivo": "./texturas/documentos/acta-sec-38.png",
     "ancho": 635,
     "alto": 558,
@@ -148,12 +154,6 @@
     "ancho": 609,
     "alto": 247,
     "velocidad": 1.626016580108787
-  },
-  {
-    "archivo": "./texturas/documentos/acta-comision-2.png",
-    "ancho": 798,
-    "alto": 692,
-    "velocidad": 1.0900720874819192
   },
   {
     "archivo": "./texturas/documentos/acta-sec-84.png",

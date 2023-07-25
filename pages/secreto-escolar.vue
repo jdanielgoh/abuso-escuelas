@@ -244,7 +244,7 @@
             Normalmente la justicia en México es así: la probabilidad de que un
             delito se resuelva es del 0.9%, según estimaciones de la
             organización
-            <a href="https://www.impunidadcero.org/impunidad-en-mexico/"
+            <a target="_blank" href="https://www.impunidadcero.org/impunidad-en-mexico/"
               >Impunidad Cero</a
             >.
           </p>
@@ -427,9 +427,9 @@
           </p>
           <p>
             La Oficina de Defensoría de los Derechos de la Infancia, A.C. (ODI)
-            en su informe <i><a href="https://dispensariodi.com/wp-content/uploads/2021/05/es-un-secreto-la-explotacion-sexual-infantil-en-escuelas-2.pdf">Es un Secreto. La explotación sexual infantil en escuelas</a></i> —y sus dos actualizaciones
+            en su informe <i><a target="_blank" href="https://dispensariodi.com/wp-content/uploads/2021/05/es-un-secreto-la-explotacion-sexual-infantil-en-escuelas-2.pdf">Es un Secreto. La explotación sexual infantil en escuelas</a></i> —y sus dos actualizaciones
             <i
-              ><a
+              ><a target="_blank"
                 href="https://dispensariodi.com/wp-content/uploads/2023/05/Es-un-secreto.-Actualizacion-2023.pdf"
                 >(2022 y 2023)</a
               >
@@ -486,8 +486,11 @@
       </section>
     </article>
   </main>
-  <NavegacionCompartidera></NavegacionCompartidera>
-
+  <NavegacionCompartidera
+    :link="'https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/secreto-escolar'"
+    :texto="description"
+    :hashtags="'Depredadoresenlasaulas'"
+  ></NavegacionCompartidera>
 </template>
 <script setup>
 /*import {csv} from "d3"
