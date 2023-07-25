@@ -39,7 +39,7 @@ const esta_corriendo = ref(true);
 
 const secciones = ref();
 //Luz
-const luzPuntual = ref(new THREE.PointLight(0xe8f7bc, 0.4, 10));
+const luzPuntual = ref(new THREE.PointLight("#5295ab", 0.6, 10));
 onMounted(() => {
   secciones.value = document.querySelectorAll("#pagina-inicio section");
 
@@ -71,7 +71,7 @@ onMounted(() => {
   tick();
 });
 function agregamosLuces() {
-  const ambientLight = new THREE.AmbientLight(0xc0d4d3, 0.7);
+  const ambientLight = new THREE.AmbientLight("#f4fae3", 0.5);
   scene.value.add(ambientLight);
 
   luzPuntual.value.position.set(

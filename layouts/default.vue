@@ -1,5 +1,6 @@
 <template>
     <NavegacionEncabezado></NavegacionEncabezado>
+    <iframe width="100%" height="1" src="https://www.connectas.org/RECURSOS/depredadores-en-las-aulas.html" frameborder="0" scrolling="no" style="width:100%;height:1px !important;padding:0;margin:0;min-height:1px;border:0;display:block;overflow:hidden !important;"></iframe>
     <div class="vista"><slot/></div>
     <NavegacionPie></NavegacionPie>
 </template>
