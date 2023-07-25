@@ -17,9 +17,12 @@
         <div class="ancho-texto">
           <p class="resumen">
             Los registros de casos de delitos sexuales cometidos por el personal
-            de las escuelas en contra de los alumnos va en aumento. Entre 2012 y
-            2015 hubo, en promedio, 149 al año. A partir de entonces, la cifra
-            se incrementó. En 2022, se registraron más de 550 casos.
+            de las escuelas en contra de los alumnos va en aumento.
+            <strong
+              >Entre 2012 y 2015 hubo, en promedio, 149 al año. A partir de
+              entonces, la cifra se incrementó. En 2022, se registraron más de
+              550 casos.</strong
+            >
           </p>
           <p>
             A las puertas del Jardín de Niños “Guadalupe Borja de Díaz Ordaz”,
@@ -157,21 +160,27 @@
             eso es importante prevenirlo”, dice Astrid Hollander, jefa de
             educación en Unicef México.
           </p>
+          <p>
+            Se solicitó entrevista sobre esta problemática a la Secretaría de
+            Educación Pública (SEP) federal por ser la coordinadora de la
+            educación en el país, pero rechazó emitir un posicionamiento y pidió
+            buscar a cada secretaría estatal.
+          </p>
           <h3>Visibilizar para prevenir</h3>
           <p>
             La cifra obtenida es conservadora, minúscula en relación a la
             problemática. La falta de registros en las secretarías de Educación
-            choca con lo reportado por otros organismos: no hay ningún estado en
-            el país que pueda presumir no tener denuncias de abuso en sus
-            escuelas.
+            choca con lo reportado por Fiscalías de justicia, comisiones de
+            Derechos Humanos y oficinas de Protección a la Infancia: no hay
+            ningún estado en el país que pueda presumir no tener denuncias de
+            abuso en sus escuelas.
           </p>
         </div>
         <div class="ancho-visualizacion">
           <VisualizacionesTableroBarras
-          class="visualizacion-contenedor"
+            class="visualizacion-contenedor"
             :datos_sep_fiscalias_dh="datos_sep_fiscalias_dh"
             :barras_variables="barras_variables"
-
           >
             <template v-slot:encabezado>
               <p>
@@ -179,25 +188,17 @@
                 de Protección y Derechos Humanos
               </p>
             </template>
-          </VisualizacionesTableroBarras>        
+          </VisualizacionesTableroBarras>
         </div>
         <div class="ancho-texto">
-
-          
-
           <p>
             La falta de desagregación en la mayoría de los datos obtenidos
             impide hacer un análisis más detallado de cada caso. Por ejemplo, la
-            Secretaría de Educación de Nuevo León dice que
-            <cite
-              >“no existen antecedentes referentes al abuso sexual presuntamente
-              cometido por algún servidor público”</cite
-            >. No obstante, de 2017 a febrero de 2023, la Fiscalía General de
-            Justicia estatal registró 215 delitos sexuales en sus instituciones
-            educativas. En Baja California Sur y Sonora se negaron a otorgar la
-            información, pero sus fiscalías abrieron 33 y 11 carpetas
-            respectivamente en un periodo de cinco años. En Michoacán, Educación
-            solo admitió un caso, pero la Fiscalía tiene 190 denuncias.
+            Secretaría de Educación de San Luis Potosí no entregó información,
+            pero la comisión de Derechos Humanos registró 54 quejas.En Baja
+            California Sur y Sonora se negaron a otorgar la información, pero
+            sus fiscalías abrieron 33 y 11 carpetas respectivamente en un
+            periodo de cinco años.
           </p>
 
           <blockquote>
@@ -205,15 +206,15 @@
             una problemática de la que no nos gusta hablar, pero que tiene
             afectaciones muy graves en la vida de las personas y por ello hay
             que visibilizar para prevenir, detectar y actuar adecuadamente”,
-            dice Astrid Hollander, jefa de educación en Unicef México.
+            dice Hollander.
           </blockquote>
           <p>
             En otros casos, los pocos registros que existen muestran que pocas
             denuncias llegan al ámbito penal. En Jalisco, por ejemplo, se
-            registraron 503 quejas, mientras que la Fiscalía abrió 31 carpetas
-            de investigación. En cambio en el Estado de México, donde las
-            autoridades judiciales dicen no saber cuántos delitos ocurrieron en
-            escuelas.
+            registraron 509 quejas, mientras que la Fiscalía abrió 31 carpetas
+            de investigación. En cambio en la Ciudad de México, aunque tiene
+            1,449 quejas en una década, la Fiscalía dice no saber cuántos
+            delitos sexuales ocurrieron en escuelas.
           </p>
           <p>
             En general, de los casos registrados por las autoridades educativas
@@ -241,11 +242,13 @@
             Pero además, la justicia trabaja lento. Las carpetas de
             investigación no necesariamente se traducen en una sentencia.
             Normalmente la justicia en México es así: la probabilidad de que un
-            delito se resuelva es del 0.9%, según estimaciones de la
-            organización
-            <a target="_blank" href="https://www.impunidadcero.org/impunidad-en-mexico/"
+            delito se resuelva es del 0.9%, según estimaciones de
+            <a
+              target="_blank"
+              href="https://www.impunidadcero.org/impunidad-en-mexico/"
               >Impunidad Cero</a
-            >.
+            >, una organización de la sociedad civil que estudia, analiza y
+            visibiliza el problema de la impunidad en México.
           </p>
           <h3>Omisión tras omisión</h3>
           <p>
@@ -272,15 +275,23 @@
             En la causa penal 1229-2020, correspondiente solo a una de las siete
             denuncias, quedó asentado que el niño refirió abusos sexuales y
             violaciones en el área de juegos, en el salón de canto y “en la
-            puerta secreta”. <strong>Los dictámenes periciales muestran que tanto en el
-            salón de música como en el de 1° B había cuartos ocultos, ubicados
-            al fondo de los salones, escondidos detrás de cortinas, estantes con
-            material didáctico y pesadas puertas en donde el profesor de música
-            y el intendente cometieron las agresiones.</strong>  Servando era el único que
-            tenía llaves de este espacio, declaró la directora en el juicio.
+            puerta secreta”.
+            <strong
+              >Los dictámenes periciales muestran que tanto en el salón de
+              música como en el de 1° B había “cuartos ocultos”, ubicados al
+              fondo de los salones, escondidos detrás de cortinas, a un costado
+              de estantes con material didáctico y pesadas puertas en donde el
+              profesor de música y el intendente cometieron las agresiones.
+            </strong>
+            Servando era el único que tenía llaves de este espacio, declaró la
+            directora en el juicio.
           </p>
           <p>
-            La autoridad educativa del estado debió de haber realizado recorridos en la escuela para detectar esos espacios. Pero no hay información sobre que estas inspecciones hayan catalogado estas zonas como un riesgo para los estudiantes. Se le preguntó a la dependencia sobre su actuación ante este caso, pero rechazó pronunciarse por considerar que todavía está en litigio. Dijo que hasta 2020 actualizaron su protocolo interno de actuación ante posibles riesgos dentro de las escuelas, incluyendo la violencia sexual.
+            Se le preguntó a la dependencia sobre su actuación ante este caso,
+            pero rechazó pronunciarse por considerar que todavía está en
+            litigio. Dijo que hasta 2020 actualizaron su protocolo interno de
+            actuación ante posibles riesgos dentro de las escuelas, incluyendo
+            la violencia sexual.
           </p>
           <p>
             Los dictámenes psicológicos a T., hermano mayor de J., revelaron que
@@ -293,10 +304,10 @@
             rompía sus juguetes, empezó con pesadillas y a no comer, por las
             noches se hacía pipí y popó”, cuenta el padre. Acudió una decena de
             veces con la maestra de grupo, que siempre minimizó los síntomas:
-            primero, que T. se estaba acoplando al kínder; luego, que los
-            golpes se los daban niños de tercero que eran bruscos. Cuando T.
-            dijo 'mañana me van a enseñar a chupar pipí en la escuela', la
-            directora culpó a otros niños.
+            primero, que T. se estaba acoplando al kínder; luego, que los golpes
+            se los daban niños de tercero que eran bruscos. Cuando T. dijo
+            'mañana me van a enseñar a chupar pipí en la escuela', la directora
+            culpó a otros niños.
           </p>
           <p>
             “Debían salvaguardar la seguridad de los niños dentro de la
@@ -319,7 +330,10 @@
       <InteractivosHorizontalAgresores></InteractivosHorizontalAgresores>
       <section class="contenedor-flex">
         <div class="ancho-texto">
-          <p class="fuente">Fuente: Base de datos propia, creada con información de actas de hechos y estadísticas de Educación.</p>
+          <p class="fuente">
+            Fuente: Base de datos propia, creada con información de actas de
+            hechos y estadísticas de Educación.
+          </p>
           <p>
             El perfil del agresor escolar coincide con la descripción del
             “abusador situacional” que, según explica Julia Borbolla, psicóloga
@@ -335,37 +349,17 @@
             investigar la vida familiar, con quién vive… rascarle un poquito más
             porque van a estar con los niños”, aconseja.
           </p>
-          <p>
-            Este tipo de omisiones se reflejan en los casos que ocurren dentro
-            de las escuelas. En el Centro de Atención Múltiple 7 (CAM) “Gabriela
-            Mistral” en Ecatepec, Estado de México, varios padres de familia
-            denunciaron a Héctor “N”, profesor de Salud, por presuntos
-            tocamientos sexuales por encima y debajo de la ropa, en contra de
-            varios de sus alumnos, todos ellos con alguna discapacidad.
-          </p>
-          <p>
-            Héctor “N” es un enfermero sin preparación en pedagogía que fue
-            contratado para apoyar a las maestras con las múltiples necesidades
-            que tienen los alumnos con discapacidades diversas. Era “maestro de
-            apoyo”. Cuidaba a los grupos cuando una maestra tenía que salir,
-            llevaba a los estudiantes al baño o les revisaba si tenían algún
-            malestar físico. Ante la jubilación de un colega, sumó a sus
-            responsabilidades dar clases. Según los padres, no hay registros de
-            que la contratación de Héctor “N” estuviera justificada.
-            Actualmente, Héctor N enfrenta un proceso penal para determinar su
-            responsabilidad en los abusos sexuales reportados por sus
-            estudiantes.
-          </p>
+
           <p>
             Actas de hechos obtenidas por transparencia dan cuenta de la
             debilidad de los procesos de contratación. Por ejemplo, en Oaxaca,
             un hombre fue asignado como docente de preescolar en el municipio de
             San Juan Bautista Cuicatlán. Era apenas estudiante de pedagogía,
-            pero era hijo de una maestra jubilada, lo que le dio pase directo al
-            cargo. Meses después de su asignación en 2016, las autoridades
-            encontraron en su celular y computadora imágenes sexuales que había
-            tomado a sus alumnos preescolares. La dependencia registró el caso,
-            pero no dio detalles del estatus del docente.
+            pero era hijo de una maestra jubilada, lo que facilitó su selección
+            como docente. Meses después de su asignación en 2016, las
+            autoridades encontraron en su celular y computadora imágenes
+            sexuales que había tomado a sus alumnos preescolares. La dependencia
+            registró el caso, pero no dio detalles del estatus del docente.
           </p>
         </div>
         <div class="ancho-imagen">
@@ -393,8 +387,10 @@
         </div>
         <div class="ancho-texto">
           <p>
-            El análisis realizado a nivel nacional muestra que las víctimas son diversas: niñas, niños y adolescentes que de pronto tienen terrores nocturnos, presentan incontinencia nocturna, cambian su temperamento, pierden el habla o el interés en la escuela. 
-
+            El análisis realizado a nivel nacional muestra que las víctimas son
+            diversas: niñas, niños y adolescentes que de pronto tienen terrores
+            nocturnos, presentan incontinencia nocturna, cambian su
+            temperamento, pierden el habla o el interés en la escuela.
           </p>
           <p>
             La mayoría son mujeres (68%), pero las agresiones contra hombres
@@ -403,7 +399,7 @@
           <p>
             La edad juega un factor en el tipo de violencia que se ejerce contra
             ellos. Entre más pequeños más vulnerables al abuso y violación
-            sexual. Sin embargo, el 50% de los casos registrados ocurrieron en
+            sexual. Sin embargo, el 37% de los casos registrados ocurrieron en
             secundaria, principalmente en contra de mujeres. Alumnas de entre 12
             y 14 años reportan a docentes que han tenido acercamientos de índole
             sexual con ellas, según en las actas de hechos que se recabaron vía
@@ -415,32 +411,43 @@
           </p>
           <p>
             Las violencias sexuales contra estudiantes de primaria están en el
-            segundo lugar, hay 631 quejas. Se repite el patrón: las autoridades
+            segundo lugar, hay 884 quejas. Se repite el patrón: las autoridades
             educativas no declararon cuáles fueron las consecuencias
             administrativas y/o penales en contra de los señalados, aunque se
             les solicitó vía transparencia.
           </p>
           <p>
-            Además  se encontraron 45 casos en Jalisco y Guanajuato en donde no se puede establecer el número exacto de victimarios, se clasificaron como “varios”. Los registros enlistan a directores, intendentes, encargados de cooperativa y docentes como un grupo de agresores en contra de los menores. 
-
+            Además se encontraron 45 casos en Jalisco y Guanajuato en donde no
+            se puede establecer el número exacto de victimarios, se clasificaron
+            como “varios”. Los registros enlistan a directores, intendentes,
+            encargados de cooperativa y docentes como un grupo de agresores en
+            contra de los menores.
           </p>
           <p>
             La Oficina de Defensoría de los Derechos de la Infancia, A.C. (ODI)
-            en su informe <i><a target="_blank" href="https://dispensariodi.com/wp-content/uploads/2021/05/es-un-secreto-la-explotacion-sexual-infantil-en-escuelas-2.pdf">Es un Secreto. La explotación sexual infantil en escuelas</a></i> —y sus dos actualizaciones
+            en su informe
             <i
-              ><a target="_blank"
+              ><a
+                target="_blank"
+                href="https://dispensariodi.com/wp-content/uploads/2021/05/es-un-secreto-la-explotacion-sexual-infantil-en-escuelas-2.pdf"
+                >Es un Secreto. La explotación sexual infantil en escuelas</a
+              ></i
+            >
+            —y sus dos actualizaciones
+            <i
+              ><a
+                target="_blank"
                 href="https://dispensariodi.com/wp-content/uploads/2023/05/Es-un-secreto.-Actualizacion-2023.pdf"
                 >(2022 y 2023)</a
-              >
-            </i>—
-            denunció que hay indicios de abuso sexual organizado —varios adultos
-            participando en la ejecución de los delitos— en al menos 25 escuelas
-            de educación básica repartidas en 11 estados del país. Los delitos
-            sexuales, explican, son cometidos principalmente contra grupos de
-            niñas y niños de entre tres y cinco años; violentados por múltiples
-            personas que cometen agresiones ritualísticas o escenificadas, a
-            veces videograbadas. En todos los casos hay personal que facilita o
-            encubre el abuso.
+              > </i
+            >— denunció que hay indicios de abuso sexual organizado —varios
+            adultos participando en la ejecución de los delitos— en al menos 25
+            escuelas de educación básica repartidas en 11 estados del país. Los
+            delitos sexuales, explican, son cometidos principalmente contra
+            grupos de niñas y niños de entre tres y cinco años; violentados por
+            múltiples personas que cometen agresiones ritualísticas o
+            escenificadas, a veces videograbadas. En todos los casos hay
+            personal que facilita o encubre el abuso.
           </p>
         </div>
         <div class="ancho-imagen">
@@ -463,11 +470,26 @@
             tienen capacidad de inventar algo que no conocen”.
           </p>
           <p>
-            Las autoridades de justicia encontraron culpables a Gerardo “Cantos” y a Servando “el que limpia las cosas cuando están tiradas”. Aunque los delitos descritos por las víctimas y las pruebas físicas evidenciaban violación, el ministerio público lo acusó por el delito de abuso sexual, lo que permitió que la sanción para los victimarios fuera menor. El delito de violación se castiga en el estado con una pena de entre ocho a 15 años de prisión, se considera más grave y aumenta, si se comete contra un menor de edad; dentro de un inmueble público, como una escuela; y con abuso de autoridad, por ejemplo, si el agresor es personal de la escuela. Dos de las siete carpetas de investigación se convirtieron en sentencia: una suma de 16 años de prisión para cada uno por las agresiones cometidas contra J y T. 
+            Las autoridades de justicia encontraron culpables a Gerardo “Cantos”
+            y a Servando “el que limpia las cosas cuando están tiradas”. Aunque
+            los delitos descritos por las víctimas y las pruebas físicas
+            evidenciaban violación, el ministerio público lo acusó por el delito
+            de abuso sexual, lo que permitió que la sanción para los victimarios
+            fuera menor. El delito de violación se castiga en el estado con una
+            pena de entre ocho a 15 años de prisión, se considera más grave y
+            aumenta, si se comete contra un menor de edad; dentro de un inmueble
+            público, como una escuela; y con abuso de autoridad, por ejemplo, si
+            el agresor es personal de la escuela. Dos de las siete carpetas de
+            investigación se convirtieron en sentencia: una suma de 16 años de
+            prisión para cada uno por las agresiones cometidas contra J y T.
           </p>
           <p>
-            Las familias perdieron recursos económicos y estabilidad. Mientras tanto, el Jardín de Niños Guadalupe Borja sigue operando con normalidad, la SEDU encargada de su operación no se pronunció respecto a cambios en pro de la prevención. La directora y las maestras, que tuvieron deficiencias en los cuidados de sus estudiantes, siguen dando clases. A pesar de la sentencia que encontró culpables a los acusados, el grupo de abogados de los acusados aún intentan que recuperen su libertad.
-
+            Las familias perdieron recursos económicos y estabilidad. La
+            secretaría de Educación estatal, encargada de la operación del
+            Jardín de Niños Guadalupe Borja, no se pronunció respecto a cambios
+            en pro de la prevención de este tipo de delitos al interior del
+            colegio. A pesar de la sentencia que encontró culpables a los
+            acusados, sus abogados aún intentan que recuperen su libertad.
           </p>
           <p>
             Las y los niños aún padecen las secuelas psicológicas y emocionales.

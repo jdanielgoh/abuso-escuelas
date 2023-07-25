@@ -14,7 +14,7 @@
           <div class="ancho-bullet">
             <p class="bullet" style="color: #5e5e5e">
               <span class="izquierda"
-                >6.1-El caso de las agresiones cometidas por el conserje del colegio Andrés Oscoy (2011) nos da un panorama:</span
+                >El caso de las agresiones cometidas por el conserje del colegio Andrés Oscoy (2011) nos da un panorama:</span
               >
               
             </p>

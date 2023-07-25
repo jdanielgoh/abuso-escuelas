@@ -4,8 +4,7 @@
     <section id="portada" class="contenedor-flex">
       <div class="titulo bullet-fondo-oscuro-transparencia">
         <h1>Depredadores en las aulas</h1>
-        <p class="creditos">        Por Alejandra Crail y Daniela Guazo
-</p>
+        <p class="creditos">Por Alejandra Crail y Daniela Guazo</p>
 
         <div class="logos contenedor-flex">
           <div class="eluniversal">
@@ -29,10 +28,10 @@
     </section>
     <section id="sumario" class="contenedor-flex">
       <p class="bullet-fondo-oscuro-transparencia sumario">
-        Diariamente, un niño o niña son agredidos sexualmente por el personal de
-        las escuelas a las que asisten. Mientras que el gobierno mexicano ha
-        fallado en garantizar la seguridad al interior de las aulas, el número
-        de denuncias va en aumento.
+        Diariamente, un niño o niña es agredido sexualmente por el personal de
+        la escuela a la que asiste. Mientras que el gobierno mexicano ha fallado
+        en garantizar la seguridad al interior de las aulas, el número de
+        denuncias va en aumento.
       </p>
     </section>
     <section class="img-ppal">
@@ -59,19 +58,18 @@
           Para esta investigación se solicitaron estadísticas y versiones
           públicas de las actas de hechos de estos delitos registrados en las
           secretarías de Educación de los 32 estados del país. Se creó una base
-          de datos a nivel nacional que reúne los casos registrados de manera
-          oficial entre 2012 y febrero de 2023, así se pudo determinar que en
-          México todos los días ocurre una agresión sexual cometida por el
-          personal de las escuelas en contra de sus estudiantes de educación
-          básica.
+          de datos a nivel nacional que reúne los casos oficiales entre 2012 y
+          febrero de 2023, así se pudo determinar que en México todos los días
+          ocurre una agresión sexual cometida por el personal de las escuelas en
+          contra de sus estudiantes de educación básica.
         </p>
         <p>
           Aunque desde 2016 el gobierno federal intentó homologar la prevención
           y atención a estos delitos en las aulas por medio de protocolos de
-          atención, los casos lejos de reducirse van en aumento. El regreso a
-          clases tras la pandemia aumentó la violencia sexual contra niñas,
-          niños y adolescentes. Los datos oficiales arrojan un patrón: la
-          mayoría de los agresores son hombres, resaltan los docentes.
+          atención, los casos están lejos de reducirse. El regreso a clases tras
+          la pandemia aumentó la violencia sexual contra niñas, niños y
+          adolescentes. Los datos oficiales arrojan un patrón: la mayoría de los
+          agresores son hombres, resaltan los docentes.
         </p>
         <blockquote>
           “Nosotros les dimos toda la confianza, les entregamos nuestro más
@@ -208,8 +206,8 @@ useSeoMeta({
   p.sumario {
     text-align: center;
   }
-  p.creditos{
-    font-size:18px;
+  p.creditos {
+    font-size: 18px;
   }
 
   #cita-1 {

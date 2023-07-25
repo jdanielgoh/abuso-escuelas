@@ -16,7 +16,7 @@
             El gobierno mexicano carece de una política efectiva de prevención y
             actuación ante la violencia sexual dentro de las aulas.
             <strong
-              >El único intento por homologar a nivel nacional los protocolos de
+              >El intento por homologar a nivel nacional los protocolos de
               atención para combatir esta problemática fracasó.</strong
             >
           </p>
@@ -24,9 +24,9 @@
             Una decena de abusos y violaciones sexuales cometidos en contra de
             niños y niñas del Jardín de niños Montessori Matatena, un colegio
             privado en la Ciudad de México, puso en jaque al gobierno mexicano.
-            Era 2016 y la administración pública aún no tenía lineamientos que
-            dieran atención y seguimiento a los delitos sexuales cometidos por
-            el personal de los colegios.
+            Era 2016 y la administración pública aún no tenía lineamientos
+            homologados que dieran atención y seguimiento a los delitos sexuales
+            cometidos por el personal de los colegios.
           </p>
           <p>
             Apenas unos meses antes, el Gobierno de Enrique Peña Nieto había
@@ -39,8 +39,11 @@
           </p>
           <p>
             Por eso, cuando los padres del Jardín de Niños Montessori Matatena
-            acudieron a los medios de comunicación a evidenciar las omisiones de
-            las autoridades educativas, al Gobierno no le quedó más que pedir
+            —ubicado en la alcaldía Benito Juárez, una de las zonas con mayor
+            plusvalía de la Ciudad de México— acudieron a los medios de
+            comunicación a evidenciar las omisiones de las autoridades
+            educativas, que habían desoído sus pedidos de ayuda para atender las
+            violencias contra sus hijos, al Gobierno no le quedó más que pedir
             perdón.
           </p>
           <p>
@@ -63,28 +66,24 @@
           </p>
           <h3>“Tu hijo está siendo abusado”</h3>
           <p>
-            La cadena de omisiones era evidente. A finales de 2015 un padre de
-            un alumno del kínder Montessori Matatena, ubicado en la alcaldía
-            Benito Juárez —una de las zonas con mayor plusvalía de la Ciudad de
-            México— solicitó a la Autoridad Educativa Federal de la Ciudad de
-            México (AEFCM), órgano que depende de la SEP, investigar la
-            presencia cotidiana del esposo de la directora en el colegio. Le
-            parecía sospechoso que convivía demasiado con los niños.
+            La cadena de omisiones era evidente. La Autoridad Educativa Federal
+            de la Ciudad de México (AEFCM), órgano que depende de la SEP, no
+            atendió la preocupación de un padre, en relación a la presencia
+            cotidiana del esposo de la directora. Fue omisa, , según reconoció
+            la misma dependencia en mayo de 2016 a través de un
+            <a
+              href="https://www.gob.mx/sep/en/articulos/en-el-caso-montessori-matatena-hubo-negligencia-falta-de-sensibilidad-e-ineficiencia-en-la-supervision-escolar-revela-investigacion-de-sep"
+              target="_blank"
+              >boletín de prensa</a
+            >.
           </p>
           <p>
-            Por Ley, la AEFCM estaba obligada a vigilar que la escuela privada
-            brindara el servicio garantizando la salud, seguridad y dignidad de
-            los educandos, pero fue omisa ante las quejas que recibió antes de
-            que los abusos salieran a la luz.
-          </p>
-          <p>
-            Cuatro meses después, la preocupación resultó fundada. Un niño de
-            tres años le dijo a su cuidadora: “te voy a dar medicina” y, al
-            tiempo, intentó poner su pene en la boca de la mujer. Ante esta
-            señal de alerta, la madre llevó al pequeño con una psicóloga
-            infantil. “Tu hijo está siendo abusado”, le confirmó. El agresor,
-            detalló el pequeño, era Rafael D., esposo de la directora, quien lo
-            obligaba a “jugar al doctor”.
+            La preocupación estaba fundada. Un niño de tres años le dijo a su
+            cuidadora: “te voy a dar medicina” y, al tiempo, intentó poner su
+            pene en la boca de la mujer. Ante esta señal de alerta, la madre
+            llevó al pequeño con una psicóloga infantil. “Tu hijo está siendo
+            abusado”, le confirmó. El agresor, detalló el pequeño, era Rafael
+            D., esposo de la directora, quien lo obligaba a “jugar al doctor”.
           </p>
         </div>
         <div class="ancho-imagen">
@@ -132,22 +131,18 @@
           </p>
           <p>
             Parte del presupuesto asignado se destinó al desarrollo de los
-            protocolos estatales —la información pública no permite establecer
-            cuánto costó la creación de estas guías.
+            protocolos estatales, aunque la información pública no permite
+            establecer cuánto costó la creación de estas guías. Inicialmente la
+            SEP gastó 73.5 millones de pesos, pero llegó a superar el gasto
+            anual de 200 millones, según la Cuenta Pública.
           </p>
-          <p>
-            En 2016, la SEP gastó 73.5 millones de pesos en el PNCE, según el
-            ejercicio capturado en la Cuenta Pública. El monto fue subiendo
-            paulatinamente año con año, llegando a superar el gasto anual de 200
-            millones.
-          </p>
+
           <p>
             A la SEP le tomó tres años lograr que las 32 entidades tuvieran
-            protocolos para dar atención a la violencia sexual en las aulas.
-            “Esta iniciativa ha homologado las acciones con las que se contaba y
-            actualmente favorece la detección temprana de factores de riesgo en
-            los estudiantes", se lee en su sexto
-            <a target="_blank"
+            protocolos para dar atención a la violencia sexual en las aulas,
+            según el sexto
+            <a
+              target="_blank"
               href="https://www.planeacion.sep.gob.mx/Doc/informes/labores/2012_2018/6to_informe_de_labores.pdf"
               >informe</a
             >
@@ -179,7 +174,8 @@
             vigilancia y seguridad efectivas para salvaguardar la integridad
             física y psicológica de los menores que tenía bajo su cargo, según
             quedó asentado en la recomendación
-            <a target="_blank"
+            <a
+              target="_blank"
               href="http://www.cedhslp.org.mx/Web2/Recomendaciones/2019/Recomendacion%2027/Recomendacion%20-%2027-19.pdf"
               >27/2019</a
             >, que contiene la investigación que realizó la Comisión de derechos
@@ -247,15 +243,6 @@
             cometer el delito en la escuela”, señala Mariana Gil, de la Oficina
             por los Derechos de la Infancia.
           </p>
-          <p>
-            “Hay protocolos de cómo se debe de actuar, pero no hay un
-            cumplimiento exacto”, advierte Gustavo Martínez Juambelz, abogado
-            que ha defendido a víctimas agredidas sexualmente por el personal de
-            escuelas. Por ejemplo —explica— señalan que inmediatamente se tiene
-            que hacer un reporte y darle seguimiento. “¿Por qué tener esas
-            bitácoras? Porque así es como la escuela se defiende, pero el 90% de
-            escuelas no las tiene”.
-          </p>
         </div>
       </section>
       <VisualizacionesMatrizProtocolos></VisualizacionesMatrizProtocolos>
@@ -274,12 +261,9 @@
           <p>
             Todavía hay dependencias educativas que evaden su responsabilidad
             ante las particulares. Querétaro, Zacatecas y Colima respondieron
-            que sólo dan seguimiento a lo que ocurre en escuelas públicas. “La
-            Secretaría de Educación no tiene datos porque el personal es
-            contratado bajo el esquema de la legislación civil”, respondió
-            Querétaro. “No se tiene conocimiento porque las instituciones
-            privadas acuden directamente a las autoridades competentes”, dijo
-            Zacatecas.
+            que sólo dan seguimiento a lo que ocurre en escuelas públicas. La
+            Secretaría de Educación de Querétaro no tiene datos, explica que el
+            personal “es contratado bajo el esquema de la legislación civil”.
           </p>
           <p>
             La educación particular, a ojos de quienes proveen el servicio y de
@@ -298,6 +282,11 @@
             anomalías, que los privados garanticen los derechos de los
             educandos. El procedimiento no siempre es eficaz.
           </p>
+        </div>
+        <div class="ancho-imagen">
+          <img src="~/assets/imgs/cap2/ilustracion_supervision.jpg" alt="" />
+        </div>
+        <div class="ancho-texto">
           <p>
             Por ejemplo, en papel, el Jardín de niños Montessori Matatena
             cumplía con los requerimientos para operar. Tenía el personal,
@@ -312,15 +301,7 @@
             autorización que se traduce en la clausura de la escuela, según
             establece la LGE.
           </p>
-          <p>
-            Ante las denuncias de los padres, autoridades delegacionales
-            clausuraron la escuela por incumplimientos a su programa de
-            protección civil: falta de extinguidores, mala condiciones de las
-            instalaciones, entre otros. El gobierno federal le retiró la
-            autorización para brindar servicios educativos meses después, hasta
-            que se corroboraron penalmente los delitos cometidos contra los
-            estudiantes
-          </p>
+
           <p>
             Aunque fue una escuela privada la que movilizó al gobierno mexicano
             a atender la violencia sexual cometida por personal de escuelas en
@@ -339,7 +320,8 @@
             tienen estas instituciones. Es difícil llevar a cabo un proceso en
             contra de alguien con tanto poder y genera demasiada impunidad
             cuando se trata de escuelas de un alto perfil económico”, dice
-            Carrillo Estrada.
+            Víctor Carrillo Estrada, quien litigó inicialmente a favor de las
+            víctimas de Matatena.
           </blockquote>
           <p>
             Después del caso de Matatena, surgieron otras denuncias contra
@@ -354,32 +336,32 @@
             recuerda aún las palabras del dueño: "Yo voy a decir que mi escuela
             no ocurrió y voy a llevar las pruebas para comprobarlo". Dos años
             después del abuso, el colegio Williams la demandó por la vía civil
-            por daño moral.
+            por daño moral; el área legal de la escuela aseguró que estas
+            acciones fueron encaminadas a "proteger a las y los menores que
+            toman clase en la institución, y que eventualmente se vieron
+            afectados por las acciones de las partes involucradas".
           </p>
           <p>
-            El maestro agresor fue sentenciado en 2021. Hasta el momento, el
-            colegio sigue operando, la autoridad educativa tardó tres años en su
-            investigación administrativa y terminó por concluir que "no existen
-            situaciones de riesgo en el Colegio que puedan propiciar situaciones
-            de abuso".
+            El maestro agresor fue sentenciado en 2021. Luego de tres años de
+            investigación administrativa, la autoridad educativa concluyó que
+            "no existen situaciones de riesgo en el Colegio que puedan propiciar
+            situaciones de abuso".
           </p>
           <p>
             Ese mismo año, en la alcaldía Coyoacán, se detuvo a un docente del
             Colegio Carmel porque se comprobó judicialmente que abusó
-            sexualmente de un alumno. Aunque esto, según el marco normativo,
-            revelaba que la escuela había incumplido sus obligaciones de cuidado
-            para con sus alumnos, la Autoridad Educativa determinó únicamente
-            medidas de prevención. Según informó el Colegio a través de un
-            posicionamiento por escrito, ante esto “extremó desde hace más de
-            cinco años los protocolos de seguridad y prevención de riesgos hacia
-            los alumnos; entre otras cosas, con una red de cámaras que
-            monitorean la totalidad de accesos y corredores de nuestras
-            instalaciones”. No obstante, en 2023, se hizo público que otro
-            docente de este colegio presuntamente abusó y violó a más de 15
-            estudiantes de jardín de niños. El juicio sigue abierto. Sobre esto,
-            el área de comunicación del Carmel únicamente señaló que “hemos
-            puesto todo este material (en referencia a los videos) en manos de
-            las autoridades correspondientes”.
+            sexualmente de un alumno. La Autoridad Educativa determinó
+            únicamente medidas de prevención para el colegio. Según informó el
+            Colegio a través de un posicionamiento por escrito, ante esto
+            “extremó desde hace más de cinco años los protocolos de seguridad y
+            prevención de riesgos hacia los alumnos; entre otras cosas, con una
+            red de cámaras que monitorean la totalidad de accesos y corredores
+            de nuestras instalaciones”. No obstante, en 2023, se hizo público
+            que otro docente de este colegio presuntamente abusó y violó a más
+            de 15 estudiantes de jardín de niños. El juicio sigue abierto. Sobre
+            esto, el área de comunicación del Carmel únicamente señaló que
+            “hemos puesto todo este material (en referencia a los videos) en
+            manos de las autoridades correspondientes”.
           </p>
         </div>
         <div class="ancho-imagen">
@@ -388,17 +370,13 @@
         <div class="ancho-texto">
           <h3>Impunidad repartida</h3>
           <p>
-            "No hay un andamiaje institucional que proteja y que garantice, o
-            que cuando ya suceda este crimen se intervenga de manera rápida,
-            expedita y se dicte justicia. Es increíble que los papás tengan que
-            cerrar calles y avenidas para pedir justicia y que hasta entonces se
-            vayan a atender y que aún así, porque estoy segura porque aquí lo
-            vivimos de manera cotidiana, no se haga justicia", señala Vázquez
-            Mota, quien fue secretaria de Educación (2006-2009) en el sexenio de
-            Felipe Calderón. Explica que se requiere un trabajo
-            interinstitucional, con un presupuesto sólido, que parte de definir
-            las obligaciones de la SEP, del Congreso, de la sociedad civil, las
-            autoridades de justicia y los padres de familia.
+            "La SEP juega un papel central, es la gran coordinadora, la que esté
+            atenta a Protocolos, a programas de prevención, a ayudar al
+            magisterio. No hay manera de ignorar esta responsabilidad o de
+            hacerse a un lado. Alrededor de esta autoridad se suma lo demás.
+            Pero hoy día dialogar está satanizado, la polarización es el peor
+            escenario para los niños”,señala Vázquez Mota, quien fue secretaria
+            de Educación (2006-2009) en el sexenio de Felipe Calderón.
           </p>
           <p>
             Los registros oficiales dan cuenta de que esta realidad sobrepasa el
@@ -407,16 +385,10 @@
           <p>
             En el caso Matatena, más de 100 familias fueron afectadas de manera
             indirecta, había 20 casos confirmados, pero sólo siete llegaron ante
-            la Fiscalía de Justicia de la Ciudad de México.
+            la Fiscalía de Justicia de la Ciudad de México, asegura Mariana, la
+            madre de uno de los sobrevivientes.
           </p>
-          <p>
-            Dos años después el agresor fue sentenciado. Un juez lo encontró
-            culpable por el delito de abuso sexual contra tres niños del Colegio
-            Montessori Matatena y le dictó una pena de sólo cinco años y cinco
-            meses, pues se le juzgó por abuso sexual y no por violación. El
-            proceso fue tan duro que al día de hoy sólo dos de las familias
-            afectadas siguen viviendo en el país.
-          </p>
+
           <p>
             En México, sólo el 1% de los casos que llegan ante autoridades
             judiciales resultan en sentencia condenatoria. Pese a ello, el caso
@@ -425,7 +397,7 @@
             contra de Rafael N. y, después de una serie de amparos, fue
             encontrado culpable nuevamente y sentenciado de nuevo a cinco años,
             pero por el tiempo que llevaba en prisión fue puesto en libertad en
-            febrero de 2022.
+            febrero de 2022, según confirmó su abogado en entrevista.
           </p>
           <p>
             “El sistema está hecho para que ellos estén libres. Y quienes tienen
@@ -436,7 +408,6 @@
         </div>
       </section>
     </article>
-    
   </main>
   <NavegacionCompartidera
     :link="'https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/nuestros-protocolos-no-existen'"

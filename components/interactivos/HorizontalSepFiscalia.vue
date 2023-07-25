@@ -39,9 +39,9 @@
         <div class="horizontal-scroll_item contenedor-flex">
           <div class="ancho-bullet">
             <p class="bullet">
-              Aunque en la ley está establecida la responsabilidad del personal
-              de los colegios de denunciar los presuntos delitos ante la
-              justicia, esto no siempre se cumple.
+              Aunque en la Ley General de Educación está establecida la
+              responsabilidad del personal de los colegios de denunciar los
+              presuntos delitos ante la justicia, esto no siempre se cumple.
             </p>
             <p class="bullet">
               <span class="izquierda">Sólo el</span>

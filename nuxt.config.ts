@@ -2,8 +2,9 @@
 import glsl from 'vite-plugin-glsl'
 
 export default defineNuxtConfig({
+  ssr:true,
   app: {
-    baseURL: '/proyectos/abuso-sexual-escuelas/',
+    baseURL: '/2023/abuso-sexual-escuelas/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',

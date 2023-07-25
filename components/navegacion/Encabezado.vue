@@ -4,7 +4,7 @@ const esta_abierto = ref(false);
 </script>
 
 <template>
-  <div>
+  <div id="contenedor-header">
     <header :class="{ abierto: esta_abierto }">
       <button class="icono-hamburguesa" @click="esta_abierto = !esta_abierto">
         <span></span>

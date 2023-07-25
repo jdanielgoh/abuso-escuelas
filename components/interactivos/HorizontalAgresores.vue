@@ -60,12 +60,10 @@
                 >33</span
               >
               <span class="derecha"> <b style="color: #c89600"> son directivos
-</b>,
-                principalmente en nivel preescolar y primaria.
+</b>
               </span>
             </p>
-            <p style="color:#5e5e5e">El resto son personal administrativo, becarios, encargados de cooperativa, entre otros.
-</p>
+
           </div>
         </div>
       </div>

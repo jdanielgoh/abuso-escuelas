@@ -392,7 +392,7 @@ export default {
                 this.escalaXSub(d.data.key) + .5 * this.escalaXSub.bandwidth()
             )
             .attr("y", (d) => (d.data[d.data.key]=="NE" || d.data[d.data.key]=="ND") ? this.alto :  -2 + this.escalaY(d[1] - d[0]))
-            .text(d=> {console.log(d.data[d.data.key]); return d.data[d.data.key]})
+            .text(d=> { return d.data[d.data.key]})
             .style("font-size", "14px")
             .style("text-anchor", "middle")
             .style("font-weight", "700")
