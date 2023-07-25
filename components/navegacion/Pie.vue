@@ -78,15 +78,7 @@
     </div>
   </footer>
 </template>
-<script setup>
-import {onBeforeMount} from "vue"
-onBeforeMount(()=>{
-  console.log(document.querySelector("footer.contenedor-flex") + "")
-  if(document.querySelector("footer.contenedor-flex")){
-    document.querySelector("footer.contenedor-flex").remove()
-  }
-})
-</script>
+
 
 <style lang="scss" scoped>
 footer {
