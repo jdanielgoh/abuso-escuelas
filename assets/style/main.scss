@@ -29,12 +29,22 @@ body, html{
         width: 100%;
         display: flex;
         img{
-            max-width: 100%;
+            width: 100%;
             border-radius: $radio-borde;
             max-width: $ancho-imagen;
+            margin: 50px auto;
+
+
+        }
+    }
+    .ancho-visualizacion{
+        width: 100%;
+        display: flex;
+        .visualizacion-contenedor{
+            width: 100%;
+            border-radius: $radio-borde;
+            max-width: $ancho-viz;
             margin: auto;
-
-
         }
     }
     .ancho-bullet{
@@ -44,14 +54,14 @@ body, html{
 }
 
 blockquote{
-    background: $texto-subrayado;
-    border-radius: $radio-borde;
-    color: black;
+    background: $texto-citas;
+    color: $color-texto-oscuro;
     padding: 16px;
     font-size: 24px;
     font-weight: 700;
-    border-left: solid 4px $color-texto-claro;
-    //text-shadow: 2px 2px 10px  $color-texto-claro;
+    border-left: solid 4px $color-texto-oscuro;
+    margin: 40px 20px;
+    //text-shadow: 2px 2px 10px  $color-texto-oscuro;
 
     @media (max-width: $pantalla-movil) {
         padding: 8px;
@@ -83,7 +93,7 @@ blockquote{
             color: #0b7c73
         }
         strong{
-            background-color: #e3ff95;
+            background-color: $texto-subrayado;
         }
     }
 }

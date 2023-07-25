@@ -39,7 +39,7 @@ const esta_corriendo = ref(true);
 
 const secciones = ref();
 //Luz
-const luzPuntual = ref(new THREE.PointLight("#fee0cd", 0.88, 20));
+const luzPuntual = ref(new THREE.PointLight(0xe8f7bc, 0.4, 10));
 onMounted(() => {
   secciones.value = document.querySelectorAll("#pagina-inicio section");
 
@@ -71,7 +71,7 @@ onMounted(() => {
   tick();
 });
 function agregamosLuces() {
-  const ambientLight = new THREE.AmbientLight(0xeeeeee, 0.2);
+  const ambientLight = new THREE.AmbientLight(0xc0d4d3, 0.7);
   scene.value.add(ambientLight);
 
   luzPuntual.value.position.set(
@@ -151,7 +151,7 @@ function creamosObjetos() {
     let material = new THREE.MeshStandardMaterial({
       map: textureLoader.load(archivos[i].archivo),
     });
-    material.metalness = 0.0;
+    material.metalness = 0.1;
     material.roughness = 0.9;
     let mesh = new THREE.Mesh(geometria, material);
     mesh.position.x = (Math.random() - 0.5) * 2;

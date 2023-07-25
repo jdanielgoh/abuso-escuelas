@@ -165,26 +165,25 @@
             el país que pueda presumir no tener denuncias de abuso en sus
             escuelas.
           </p>
-          <VisualizacionesBarras
-            :datos="datos_sep_fiscalias_dh"
-            :variables="barras_variables"
-            :barras_id="'barras-sfd'"
-            :nombre_barra="'Entidad'"
-            :nombre_color="'nombre_colores'"
-            :margen="{ arriba: 0, abajo: 20, derecha: 10, izquierda: 90 }"
-            titulo_eje_x="Número de casos"
-            titulo_eje_y="Entidad"
-            :apiladas_o_agrupadas="'agrupadas'"
-            :alto_vis="600"
-            :orientacion="'horizontal'"
+        </div>
+        <div class="ancho-visualizacion">
+          <VisualizacionesTableroBarras
+          class="visualizacion-contenedor"
+            :datos_sep_fiscalias_dh="datos_sep_fiscalias_dh"
+            :barras_variables="barras_variables"
+
           >
             <template v-slot:encabezado>
-              <h4>
+              <p>
                 Registros de abuso sexual ante Educación, Fiscalías y oficinas
                 de Protección y Derechos Humanos
-              </h4>
+              </p>
             </template>
-          </VisualizacionesBarras>
+          </VisualizacionesTableroBarras>        
+        </div>
+        <div class="ancho-texto">
+
+          
 
           <p>
             La falta de desagregación en la mayoría de los datos obtenidos
@@ -493,10 +492,10 @@
   ></NavegacionCompartidera>
 </template>
 <script setup>
-/*import {csv} from "d3"
-csv("datos/CIFRAS SEP-FISCALIAS-DH Y OP.V13072023 - paraviz.csv").then(D=>{
-  console.log(D)
-})*/
+/*import { csv } from "d3";
+csv("datos/CIFRAS SEP-FISCALIAS-DH Y OP.V13072023 - paraviz.csv").then((D) => {
+  console.log(D);
+});*/
 import por_anio from "@/assets/datos/por_anio.json";
 import sep_fiscalias_dh from "@/assets/datos/sep_fiscalias_dh.json";
 import { ref } from "vue";
@@ -524,9 +523,18 @@ const datos_por_anio = ref(por_anio);
 const conversionTemporal = ref(timeParse("%Y"));
 
 sep_fiscalias_dh.forEach((d) => {
-  d.No_casos_Fiscalia = +d.No_casos_Fiscalia;
-  d.No_casos_SEP = +d.No_casos_SEP;
-  d.No_casos_DH_y_OPI = +d.No_casos_DH_y_OPI;
+  d.No_casos_Fiscalia =
+    d.No_casos_Fiscalia != "NE" && d.No_casos_Fiscalia != "ND"
+      ? +d.No_casos_Fiscalia
+      : d.No_casos_Fiscalia;
+  d.No_casos_SEP =
+    d.No_casos_SEP != "NE" && d.No_casos_SEP != "ND"
+      ? +d.No_casos_SEP
+      : d.No_casos_SEP;
+  d.No_casos_DH_y_OPI =
+    d.No_casos_DH_y_OPI != "NE" && d.No_casos_DH_y_OPI != "ND"
+      ? +d.No_casos_DH_y_OPI
+      : d.No_casos_DH_y_OPI;
 });
 const datos_sep_fiscalias_dh = ref(sep_fiscalias_dh);
 const variables_anios = ref([

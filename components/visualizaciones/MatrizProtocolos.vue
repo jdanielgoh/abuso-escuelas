@@ -146,6 +146,12 @@ import { interpolateRgbBasis } from "d3-interpolate";
 csv("datos/diccionario-categorias - diccionario-categorias.csv").then(D=>{
   console.log(D)
 })*/
+/*
+import {csv} from "d3"
+
+csv("datos/base_protocolos_tabla.csv").then(D=>{
+  console.log(D)
+})*/
 
 const interpolacionColor = interpolateRgbBasis([
   "#b51e00",

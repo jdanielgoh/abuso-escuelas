@@ -89,7 +89,7 @@ export default {
     espaciado_barras: {
       type: Number,
       default: function () {
-        return 0.2;
+        return 0.0;
       },
     },
     logo_conacyt: {
@@ -130,7 +130,7 @@ export default {
     },
     padding_agrupadas: {
       type: Number,
-      default: () => 0,
+      default: () => 0.1,
     },
   },
   watch: {
@@ -237,7 +237,7 @@ export default {
               0,
               d3.max(
                 this.datos.map((d) =>
-                  d3.max(this.variables.map((dd) => d[dd.id]))
+                  d3.max(this.variables.map((dd) => d[dd.id]).filter(d=> d!="NE" && d!="ND"))
                 )
               ),
             ])
@@ -350,6 +350,12 @@ export default {
         .data((d) => d)
         .enter()
         .append("rect");
+      
+        this.cifras_barras = this.barras_juntadas
+        .selectAll("text")
+        .data((d) => d)
+        .enter()
+        .append("text");
 
       if (this.tooltip_activo) {
         this.svg
@@ -378,6 +384,18 @@ export default {
                 this.escalaXSub(d.data.key)
             )
             .attr("y", (d) => this.escalaY(d[1] - d[0]));
+          
+            this.cifras_barras.attr(
+              "x",
+              (d) =>
+                this.escalaX(d.data[this.nombre_barra]) +
+                this.escalaXSub(d.data.key) + .5 * this.escalaXSub.bandwidth()
+            )
+            .attr("y", (d) => (d.data[d.data.key]=="NE" || d.data[d.data.key]=="ND") ? this.alto :  -2 + this.escalaY(d[1] - d[0]))
+            .text(d=> {console.log(d.data[d.data.key]); return d.data[d.data.key]})
+            .style("font-size", "14px")
+            .style("text-anchor", "middle")
+            .style("font-weight", "700")
         }
       } else {
         if (this.apiladas_o_agrupadas === "apiladas") {

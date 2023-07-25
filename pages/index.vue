@@ -4,6 +4,8 @@
     <section id="portada" class="contenedor-flex">
       <div class="titulo bullet-fondo-oscuro-transparencia">
         <h1>Depredadores en las aulas</h1>
+        <p class="creditos">        Por Alejandra Crail y Daniela Guazo
+</p>
 
         <div class="logos contenedor-flex">
           <div class="eluniversal">
@@ -31,8 +33,6 @@
         las escuelas a las que asisten. Mientras que el gobierno mexicano ha
         fallado en garantizar la seguridad al interior de las aulas, el número
         de denuncias va en aumento.
-        <br />
-        Por Alejandra Crail y Daniela Guazo
       </p>
     </section>
     <section class="img-ppal">
@@ -207,6 +207,9 @@ useSeoMeta({
   }
   p.sumario {
     text-align: center;
+  }
+  p.creditos{
+    font-size:18px;
   }
 
   #cita-1 {

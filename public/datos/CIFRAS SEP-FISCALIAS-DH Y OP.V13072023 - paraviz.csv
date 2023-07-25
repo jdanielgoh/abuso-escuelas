@@ -1,33 +1,33 @@
 Entidad,No_casos_SEP,No_casos_Fiscalia,No_casos_DH_y_OPI
-Aguascalientes,69,,3
-Baja California,55,,34
-Baja California Sur,,33,4
-Campeche,57,,
+Aguascalientes,69,NE,3
+Baja California,55,ND,34
+Baja California Sur,ND,33,4
+Campeche,57,NE,ND
 Chiapas,35,38,33
-Chihuahua,30,,4
-Ciudad de México,1449,,
-Coahuila,54,,10
-Colima,12,16,
+Chihuahua,30,NE,4
+Ciudad de México,1449,NE,ND
+Coahuila,54,ND,10
+Colima,12,16,0
 Durango,6,90,15
-Guanajuato,153,,33
+Guanajuato,153,NE,33
 Guerrero,25,29,11
-Hidalgo,28,,64
-Jalisco,509,31,
-México,573,,
+Hidalgo,28,ND,64
+Jalisco,509,31,ND
+México,570,NE,ND
 Michoacán,1,190,11
-Morelos,6,,2
-Nayarit,15,,
-Nuevo León,,215,10
-Oaxaca,25,132,
+Morelos,6,NE,2
+Nayarit,15,NE,0
+Nuevo León,ND,215,10
+Oaxaca,25,132,0
 Puebla,135,288,27
 Querétaro,18,187,18
-Quintana Roo,95,,17
-San Luis Potosí,,226,54
+Quintana Roo,95,NE,17
+San Luis Potosí,ND,226,54
 Sinaloa,7,33,17
-Sonora,,11,
-Tabasco,39,,
-Tamaulipas,6,165,
-Tlaxcala,13,7,
-Veracruz,46,,31
-Yucatán,86,155,
-Zacatecas,3,,
+Sonora,ND,11,0
+Tabasco,26,NE,0
+Tamaulipas,6,165,ND
+Tlaxcala,13,7,ND
+Veracruz,46,NE,31
+Yucatán,86,155,0
+Zacatecas,3,NE,ND
