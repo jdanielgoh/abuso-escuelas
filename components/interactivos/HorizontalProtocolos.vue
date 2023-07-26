@@ -50,7 +50,7 @@
           <div class="ancho-bullet">
             <p class="bullet">
               <span
-                > <strong style="color:#01ab8e">Sólo Tabasco y Zacatecas establecen investigaciones
+                > <strong style="color:#01ab8e">Sólo Tabasco y Zacatecas establecen plenamente investigaciones
                 administrativas realizadas por personal especializado en la
                 materia</strong>, las cuales están pensadas para evitar que los agresores
                 sean cambiados a otros colegios y repliquen las violencias.

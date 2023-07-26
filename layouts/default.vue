@@ -1,13 +1,69 @@
 <template>
-    <NavegacionEncabezado></NavegacionEncabezado>
-    <div class="vista"><slot/></div>
-    <NavegacionPie></NavegacionPie>
-    <iframe width="100%" height="1" src="https://www.connectas.org/RECURSOS/depredadores-en-las-aulas.html" frameborder="0" scrolling="no" style="width:100%;height:1px !important;padding:0;margin:0;min-height:1px;border:0;display:block;overflow:hidden !important;"></iframe>
-
+  <NavegacionEncabezado></NavegacionEncabezado>
+  <div class="vista"><slot /></div>
+  <NavegacionPie></NavegacionPie>
+  <iframe
+    id="iframe-connectas"
+    width="100%"
+    height="1"
+    src="https://www.connectas.org/RECURSOS/depredadores-en-las-aulas.html"
+    frameborder="0"
+    scrolling="no"
+    style="
+      width: 100%;
+      height: 1px !important;
+      padding: 0;
+      margin: 0;
+      min-height: 1px;
+      border: 0;
+      display: block;
+      overflow: hidden !important;
+    "
+  ></iframe>
 </template>
+<script setup>
+import { onMounted, onUpdated } from "vue";
+const footer = ref();
+const vista = ref();
+const iframe_connectas = ref()
+onMounted(() => {
+  borrandoDuplicados();
+});
+onUpdated(() => {
+  borrandoDuplicados();
+});
+
+function borrandoDuplicados() {
+  vista.value = document.querySelectorAll("div.vista");
+  console.log(vista.value);
+  vista.value.forEach((el, i) => {
+    if (i > 0) {
+      el.remove();
+    }
+  });
+  footer.value = document.querySelectorAll("footer.contenedor-flex");
+  console.log(footer.value);
+
+  footer.value.forEach((el, i) => {
+    if (i > 0) {
+      el.remove();
+    }
+  });
+  iframe_connectas.value = document.querySelectorAll("iframe#iframe-connectas");
+  console.log(iframe_connectas.value);
+
+  iframe_connectas.value.forEach((el, i) => {
+    if (i > 0) {
+      el.remove();
+    }
+  });
+}
+</script>
+
+
 <style lang="scss">
 .texto-intro-scroll-horizontal {
-  padding: 0 ;
+  padding: 0;
   margin: 0 -15px;
   background-color: transparent;
   transition: background-color 0.75s ease;
@@ -45,7 +101,8 @@
               font-size: 14px;
             }
           }
-          p.bullet, ul.bullet {
+          p.bullet,
+          ul.bullet {
             display: flex;
             flex-wrap: wrap;
             font-size: 18px;
@@ -87,12 +144,13 @@
             max-width: 60vw;
           }
         }
-        strong{
-            background-color: transparent;
+        strong {
+          background-color: transparent;
         }
       }
     }
-    canvas, svg.svg-viz-horizontal {
+    canvas,
+    svg.svg-viz-horizontal {
       //background: rgb(206, 206, 206);
       position: absolute;
       top: 0;

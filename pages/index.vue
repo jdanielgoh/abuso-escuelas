@@ -142,6 +142,9 @@ useSeoMeta({
         @media (max-width: $pantalla-movil) {
           font-size: 40px;
         }
+        @media (max-width: 400px) {
+          font-size: 30px;
+        }
       }
       h2 {
         font-size: 28px;
@@ -224,6 +227,7 @@ useSeoMeta({
   #texto-horizontal-sep-fiscalia {
     padding: 0;
     background-color: $color-fondo-oscuro;
+    margin:0;
     &.seccion-activa {
       background-color: $color-fondo-claro;
     }
