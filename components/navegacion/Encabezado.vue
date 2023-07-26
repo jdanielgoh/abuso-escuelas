@@ -13,10 +13,34 @@ const esta_abierto = ref(false);
       </button>
       <nav>
         <ul>
-          <li><NuxtLink @click.native="esta_abierto =false" to="/"> Inicio</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="secreto-escolar"> Secreto escolar</NuxtLink>  </li>
-          <li><NuxtLink @click.native="esta_abierto =false" to="nuestros-protocolos-no-existen"> "Nuestros protocolos no existen"</NuxtLink>  </li>
-
+          <li>
+            <NuxtLink @click.native="esta_abierto = false" to="/">
+              Inicio</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink @click.native="esta_abierto = false" to="secreto-escolar">
+              Secreto escolar</NuxtLink
+            >
+          </li>
+          <!--<li>
+            <NuxtLink
+              @click.native="esta_abierto = false"
+              to="nuestros-protocolos-no-existen"
+            >
+              "Nuestros protocolos no existen"</NuxtLink
+            >
+          </li>-->
+          <li>
+            <a target="_blank" href="https://forms.gle/SFPFivLw3De317Pu8"
+              >Cuenta tu historia</a
+            >
+          </li>
+          <li>
+            <NuxtLink @click.native="esta_abierto = false" to="metodologia">
+              Metodología</NuxtLink
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -33,7 +57,6 @@ header {
   height: 55px;
 
   button.icono-hamburguesa {
-    
     position: absolute;
     margin: 18px 0 15px 20px;
     background: transparent;
@@ -79,19 +102,19 @@ header {
     }
   }
   // Borde de abajo
-  
+
   //Navegacion
   nav {
     visibility: hidden;
     top: 0;
-    height: calc(100vh );
+    height: calc(100vh);
     position: relative;
-    display:inline-flex;
+    display: inline-flex;
     background: $color-fondo-oscuro-transparencia;
     backdrop-filter: blur(0px);
     max-width: 500px;
     opacity: 0;
-    transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 
     ul {
       padding: 0;
@@ -102,38 +125,38 @@ header {
         position: relative;
         list-style: none;
         transition: 0.25s ease-in-out 0.1s;
-        &:nth-child(1){
-          transition: 0.25s ease-in-out 0.0s;
-
+        &:nth-child(1) {
+          transition: 0.25s ease-in-out 0s;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
+          transition: 0.25s ease-in-out 0.1s;
+        }
+        &:nth-child(3) {
           transition: 0.25s ease-in-out 0.2s;
-
         }
-        &:nth-child(3){
+        &:nth-child(4) {
+          transition: 0.25s ease-in-out 0.3s;
+        }
+        &:nth-child(5) {
           transition: 0.25s ease-in-out 0.4s;
-
         }
         padding: 8px 20px;
-        a{
+        a {
           color: $color-texto-enlaces;
-          &.router-link-exact-active{
+          &.router-link-exact-active {
             color: $color-texto-claro;
           }
         }
-     
       }
     }
   }
   &.abierto {
-    nav{
-    backdrop-filter: blur(4px);
-    opacity: 1;
-
+    nav {
+      backdrop-filter: blur(4px);
+      opacity: 1;
     }
     button.icono-hamburguesa {
       span {
-
         &:nth-child(1) {
           top: 18px;
           -webkit-transform: rotate(135deg);

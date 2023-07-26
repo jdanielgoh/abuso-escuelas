@@ -122,7 +122,7 @@
           >
             <template v-slot:encabezado>
               <h4>
-                Casos registrados por autoridades educativas 2012-febrero 2013
+                Casos registrados por autoridades educativas 2012-febrero 2023
               </h4>
             </template></VisualizacionesSerieTiempo
           >
@@ -489,7 +489,12 @@
             Jardín de Niños Guadalupe Borja, no se pronunció respecto a cambios
             en pro de la prevención de este tipo de delitos al interior del
             colegio. A pesar de la sentencia que encontró culpables a los
-            acusados, sus abogados aún intentan que recuperen su libertad.
+            acusados, sus abogados aún intentan que recuperen su libertad. Se
+            solicitó entrevista por distintas vías con las personas involucradas
+            en el caso, incluyendo al personal de la escuela, los familiares de
+            los señalados, a la secretaría de educación estatal y a la sección 5
+            del Sindicato Nacional de Trabajadores de la Educación, sin que al
+            cierre de edición hayan dado respuesta.
           </p>
           <p>
             Las y los niños aún padecen las secuelas psicológicas y emocionales.
@@ -503,6 +508,23 @@
             violación, abuso y acoso cometidos por maestros. Las cosas siguen
             igual”, lamenta la madre de J. y T.
           </p>
+        </div>
+      </section>
+      <section class="final">
+        <div class="titulo-historias">Lee la investigación completa</div>
+        <div class="contenedor-flex contenedor-tarjetas">
+          <!--<NavegacionTarjetas
+            class="t-50"
+            :ruta="'nuestros-protocolos-no-existen'"
+            :titulo="`&quot;Nuestros protocolos no existen&quot;`"
+            :descripcion="'La historia de una política fallida'"
+          ></NavegacionTarjetas>-->
+          <NavegacionTarjetas
+            class="t-50"
+            :ruta="'/'"
+            :titulo="'Inicio'"
+            :descripcion="'Depredadores en las aulas'"
+          ></NavegacionTarjetas>
         </div>
       </section>
     </article>
@@ -524,17 +546,13 @@ import { ref } from "vue";
 import { timeParse } from "d3";
 const title = ref("Secreto escolar");
 const description =
-  ref(`Los casos de delitos sexuales cometidos por el personal de las
-            escuelas en contra de los alumnos va en aumento.
-            Entre 2012 y 2015 hubo, en promedio, 145 al año. A
-            partir de entonces, la cifra fue en aumento.
-              En 2022, se incrementaron hasta los 500 casos anuales.`);
+  ref("Los casos de delitos sexuales cometidos por el personal de las escuelas en contra de los alumnos va en aumento. Entre 2012 y 2015 hubo, en promedio, 145 al año. A partir de entonces, la cifra fue en aumento. En 2022, se incrementaron hasta los 500 casos anuales.");
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://example.com/image.png",
+  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-secreto.png",
   twitterCard: "summary_large_image",
 });
 
@@ -585,11 +603,32 @@ const barras_variables = ref([
   },
 ]);
 </script>
-<style>
+<style lang="scss">
 section.contenedor-flex {
   flex-wrap: wrap;
 }
 #barras-sfd {
   width: 100%;
+}
+section.final {
+  padding: 0;
+  .titulo-historias {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 48px 0;
+  }
+
+  .contenedor-flex.contenedor-tarjetas {
+    max-width: 800px;
+    padding: 16px;
+    gap: 32px;
+    margin: auto;
+    padding-bottom: 150px;
+    .tarjeta-historia {
+      background: $color-fondo-oscuro-transparencia;
+    }
+  }
 }
 </style>

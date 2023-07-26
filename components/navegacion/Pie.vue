@@ -15,15 +15,7 @@
               </a>
             </div>
             <div class="contenedor-flex logos">
-            <div class="icfj contenedor-flex">
-              <a target="_blank" href="https://www.icfj.org/">
-                <img
-                  style="width: 150px"
-                  src="~/assets/imgs/logos/icfj.png"
-                  alt="logo de icfj"
-                />
-              </a>
-            </div>
+            
           </div>
             <div class="connectas">
               <a target="_blank" href="https://www.connectas.org/">
@@ -35,6 +27,21 @@
               </a>
             </div>
 
+          </div>
+          <div class="creditos">
+            <p> <b>Con el apoyo de: </b></p>
+            <div class="contenedor-flex logos">
+
+            <div class="icfj contenedor-flex">
+              <a target="_blank" href="https://www.icfj.org/">
+                <img
+                  style="width: 150px"
+                  src="~/assets/imgs/logos/icfj.png"
+                  alt="logo de icfj"
+                />
+              </a>
+            </div>
+            </div>
           </div>
           
           <p><strong style="font-size: 24px"> Créditos </strong></p>

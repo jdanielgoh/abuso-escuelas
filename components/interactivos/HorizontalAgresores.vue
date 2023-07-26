@@ -46,21 +46,20 @@
               <span class="dato-numerico triple centro" style="color: #00c0d7"
                 >717</span
               >
-              <span class="derecha"
-                ><b style="color: #00c0d7"> son docentes</b>. Resaltan los profesores interinos: enseñan música, educación física e idiomas
+              <span class="centro"
+                > son docentes
 
               </span>
               <span class="dato-numerico triple centro" style="color: #882992"
                 >88</span
               >
               <span class="centro">
-                <b style="color: #882992"> son personal de limpieza</b>
+ son personal de limpieza
               </span>
               <span class="dato-numerico triple centro" style="color: #c89600"
                 >33</span
               >
-              <span class="derecha"> <b style="color: #c89600"> son directivos
-</b>
+              <span class="centro">  son directivos
               </span>
             </p>
 

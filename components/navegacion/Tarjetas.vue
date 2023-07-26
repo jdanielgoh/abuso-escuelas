@@ -11,6 +11,11 @@
         alt=""
         v-if="titulo == `&quot;Nuestros protocolos no existen&quot;`"
       />
+      <img
+        src="~/assets/imgs/inicio/ilustracion_1.jpg"
+        alt=""
+        v-if="titulo == `Inicio`"
+      />
     </div>
     <div class="contenido-texto">
       <p class="conflicto">

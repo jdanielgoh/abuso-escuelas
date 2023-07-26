@@ -76,6 +76,18 @@
           grande tesoro y fuimos defraudados”, dice la madre de J.
         </blockquote>
       </div>
+      <div class="ancho-texto">
+        <iframe
+          width="560"
+          height="500"
+          style="width: 100%"
+          src="https://www.youtube.com/embed/SztZsvEVu4c"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
     <section class="final">
       <div class="titulo-historias">Lee la investigación completa</div>
@@ -86,12 +98,12 @@
           :titulo="'Secreto escolar'"
           :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
         ></NavegacionTarjetas>
-        <NavegacionTarjetas
+        <!--<NavegacionTarjetas
           class="t-50"
           :ruta="'nuestros-protocolos-no-existen'"
           :titulo="`&quot;Nuestros protocolos no existen&quot;`"
           :descripcion="'La historia de una política fallida'"
-        ></NavegacionTarjetas>
+        ></NavegacionTarjetas>-->
       </div>
     </section>
   </div>
@@ -105,16 +117,13 @@
 import { ref } from "vue";
 const title = ref("Depredadores en las aulas");
 const description =
-  ref(`Diariamente, un niño o niña son agredidos sexualmente por el personal de
-        las escuelas a las que asisten. Mientras que el gobierno mexicano ha
-        fallado en garantizar la seguridad al interior de las aulas, el número
-        de denuncias va en aumento`);
+  ref(`Diariamente, un niño o niña son agredidos sexualmente por el personal de las escuelas a las que asisten. Mientras que el gobierno mexicano ha fallado en garantizar la seguridad al interior de las aulas, el número de denuncias va en aumento`);
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://example.com/image.png",
+  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-depredadores.png",
   twitterCard: "summary_large_image",
 });
 </script>
@@ -227,7 +236,7 @@ useSeoMeta({
   #texto-horizontal-sep-fiscalia {
     padding: 0;
     background-color: $color-fondo-oscuro;
-    margin:0;
+    margin: 0;
     &.seccion-activa {
       background-color: $color-fondo-claro;
     }

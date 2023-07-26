@@ -35,14 +35,12 @@ onUpdated(() => {
 
 function borrandoDuplicados() {
   vista.value = document.querySelectorAll("div.vista");
-  console.log(vista.value);
   vista.value.forEach((el, i) => {
     if (i > 0) {
       el.remove();
     }
   });
   footer.value = document.querySelectorAll("footer.contenedor-flex");
-  console.log(footer.value);
 
   footer.value.forEach((el, i) => {
     if (i > 0) {
@@ -50,7 +48,6 @@ function borrandoDuplicados() {
     }
   });
   iframe_connectas.value = document.querySelectorAll("iframe#iframe-connectas");
-  console.log(iframe_connectas.value);
 
   iframe_connectas.value.forEach((el, i) => {
     if (i > 0) {
@@ -72,10 +69,10 @@ function borrandoDuplicados() {
     background-color: $color-fondo-claro;
   }
   color: $color-texto-oscuro;
-  width: 100vw;
+  width: 100%;
   position: relative;
   .horizontal-scroll_contenedor {
-    width: 100vw;
+    width: 100%;
     position: sticky;
     overflow: hidden;
     top: 0;
@@ -89,10 +86,12 @@ function borrandoDuplicados() {
         .ancho-bullet {
           border-radius: $radio-borde;
 
-          background: #e0e0e0cc;
-          backdrop-filter: blur(4px);
+          background: #e0e0e0d0;
+          backdrop-filter: blur(2px);
           @media (max-width: $pantalla-movil) {
             max-width: 80vw;
+            background: #e0e0e0a4;
+
           }
 
           padding: 0 16px;

@@ -1,5 +1,5 @@
 <template >
-  <main class="vista-historias">
+  <main class="vista-historias" id="protocolos">
     <article>
       <div class="cover-portada">
         <img src="~/assets/imgs/cap2/ilustracion_1.jpg" alt="" />
@@ -407,6 +407,23 @@
           </p>
         </div>
       </section>
+      <section class="final">
+        <div class="titulo-historias">Sigue leyendo</div>
+        <div class="contenedor-flex contenedor-tarjetas">
+          <NavegacionTarjetas
+            class="t-50"
+            :ruta="'secreto-escolar'"
+            :titulo="'Secreto escolar'"
+            :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
+          ></NavegacionTarjetas>
+          <NavegacionTarjetas
+            class="t-50"
+            :ruta="'/'"
+            :titulo="'Inicio'"
+            :descripcion="'Depredadores en las aulas'"
+          ></NavegacionTarjetas>
+        </div>
+      </section>
     </article>
   </main>
   <NavegacionCompartidera
@@ -419,25 +436,39 @@
 import { ref } from "vue";
 const title = ref("Nuestros protocolos no existen");
 const description =
-  ref(`El gobierno mexicano carece de una política efectiva de prevención y
-            actuación ante la violencia sexual dentro de las aulas. El único
-            intento por homologar a nivel nacional los protocolos de atención
-            para combatir esta problemática fracasó`);
+  ref(`El gobierno mexicano carece de una política efectiva de prevención y actuación ante la violencia sexual dentro de las aulas. El único intento por homologar a nivel nacional los protocolos de atención para combatir esta problemática fracasó`);
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://example.com/image.png",
+  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-protocolos.png",
   twitterCard: "summary_large_image",
 });
 </script>
 <style lang="scss" >
 #protocolos {
-  .ancho-texto {
-    margin: auto;
-    max-width: 1200px;
-    width: 100%;
+
+  section.final {
+    padding: 0;
+    .titulo-historias {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      padding: 48px 0;
+    }
+
+    .contenedor-flex.contenedor-tarjetas {
+      max-width: 800px;
+      padding: 16px;
+      gap: 32px;
+      margin: auto;
+      padding-bottom: 150px;
+      .tarjeta-historia {
+        background: $color-fondo-oscuro-transparencia;
+      }
+    }
   }
 }
 </style>
