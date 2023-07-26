@@ -436,7 +436,7 @@
 import { ref } from "vue";
 const title = ref("Nuestros protocolos no existen");
 const description =
-  ref(`El gobierno mexicano carece de una política efectiva de prevención y actuación ante la violencia sexual dentro de las aulas. El único intento por homologar a nivel nacional los protocolos de atención para combatir esta problemática fracasó`);
+  ref(`El gobierno mexicano carece de una política efectiva de prevención y actuación ante la violencia sexual dentro de las aulas. El intento por homologar los protocolos de actuación para combatir esta problemática fracasó.`);
 useSeoMeta({
   title: title,
   ogTitle: title,

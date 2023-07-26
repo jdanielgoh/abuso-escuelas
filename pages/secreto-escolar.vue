@@ -546,7 +546,7 @@ import { ref } from "vue";
 import { timeParse } from "d3";
 const title = ref("Secreto escolar");
 const description =
-  ref("Los casos de delitos sexuales cometidos por el personal de las escuelas en contra de los alumnos va en aumento. Entre 2012 y 2015 hubo, en promedio, 145 al año. A partir de entonces, la cifra fue en aumento. En 2022, se incrementaron hasta los 500 casos anuales.");
+  ref("Las agresiones sexuales cometidas por el personal de las escuelas en contra de alumnos de educación básica aumentó en la última década. Ningún año está libre de quejas. Tras la pandemia se rompió récord: 574 casos sólo en 2022.");
 useSeoMeta({
   title: title,
   ogTitle: title,

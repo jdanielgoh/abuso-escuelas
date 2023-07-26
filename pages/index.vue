@@ -232,6 +232,7 @@ useSeoMeta({
   }
   section#cierre {
     background: $color-fondo-oscuro;
+    flex-wrap: wrap;
   }
   #texto-horizontal-sep-fiscalia {
     padding: 0;
