@@ -492,9 +492,9 @@
             acusados, sus abogados aún intentan que recuperen su libertad. Se
             solicitó entrevista por distintas vías con las personas involucradas
             en el caso, incluyendo al personal de la escuela, los familiares de
-            los señalados, a la secretaría de educación estatal y a la sección 5
-            del Sindicato Nacional de Trabajadores de la Educación, sin que al
-            cierre de edición hayan dado respuesta.
+            los señalados y a la sección 5 del Sindicato Nacional de
+            Trabajadores de la Educación, sin que al cierre de edición hayan
+            dado respuesta.
           </p>
           <p>
             Las y los niños aún padecen las secuelas psicológicas y emocionales.
@@ -545,14 +545,16 @@ import sep_fiscalias_dh from "@/assets/datos/sep_fiscalias_dh.json";
 import { ref } from "vue";
 import { timeParse } from "d3";
 const title = ref("Secreto escolar");
-const description =
-  ref("Las agresiones sexuales cometidas por el personal de las escuelas en contra de alumnos de educación básica aumentó en la última década. Ningún año está libre de quejas. Tras la pandemia se rompió récord: 574 casos sólo en 2022.");
+const description = ref(
+  "Las agresiones sexuales cometidas por el personal de las escuelas en contra de alumnos de educación básica aumentó en la última década. Ningún año está libre de quejas. Tras la pandemia se rompió récord: 574 casos sólo en 2022."
+);
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-secreto.png",
+  ogImage:
+    "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-secreto.png",
   twitterCard: "summary_large_image",
 });
 

@@ -79,14 +79,15 @@
       <div class="ancho-texto">
         <iframe
           width="560"
-          height="500"
+          height="315"
           style="width: 100%"
-          src="https://www.youtube.com/embed/SztZsvEVu4c"
+          src="https://www.youtube.com/embed/3B61wcXMq9Y"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+
       </div>
     </section>
     <section class="final">
@@ -116,14 +117,16 @@
 <script setup>
 import { ref } from "vue";
 const title = ref("Depredadores en las aulas");
-const description =
-  ref(`Diariamente, un niño o niña son agredidos sexualmente por el personal de las escuelas a las que asisten. Mientras que el gobierno mexicano ha fallado en garantizar la seguridad al interior de las aulas, el número de denuncias va en aumento`);
+const description = ref(
+  `Diariamente, un niño o niña son agredidos sexualmente por el personal de las escuelas a las que asisten. Mientras que el gobierno mexicano ha fallado en garantizar la seguridad al interior de las aulas, el número de denuncias va en aumento`
+);
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-depredadores.png",
+  ogImage:
+    "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-depredadores.png",
   twitterCard: "summary_large_image",
 });
 </script>
