@@ -118,7 +118,7 @@
 import { ref } from "vue";
 const title = ref("Depredadores en las aulas");
 const description = ref(
-  `Diariamente, un niño o niña son agredidos sexualmente por el personal de las escuelas a las que asisten. Mientras que el gobierno mexicano ha fallado en garantizar la seguridad al interior de las aulas, el número de denuncias va en aumento`
+  `Diariamente, un niño o niña es agredido sexualmente por el personal de la escuela a la que asiste. Mientras que el gobierno mexicano ha fallado en garantizar la seguridad al interior de las aulas, el número de denuncias aumenta`
 );
 useSeoMeta({
   title: title,

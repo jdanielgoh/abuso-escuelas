@@ -546,7 +546,7 @@ import { ref } from "vue";
 import { timeParse } from "d3";
 const title = ref("Secreto escolar");
 const description = ref(
-  "Las agresiones sexuales cometidas por el personal de las escuelas en contra de alumnos de educación básica aumentó en la última década. Ningún año está libre de quejas. Tras la pandemia se rompió récord: 574 casos sólo en 2022."
+  "Las agresiones sexuales cometidas por el personal de las escuelas en contra de alumnos de educación básica aumentó en la última década. Ningún año está libre de quejas. Tras la pandemia se rompió récord: 574 casos sólo en 2022. "
 );
 useSeoMeta({
   title: title,
