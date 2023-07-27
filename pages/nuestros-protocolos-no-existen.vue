@@ -436,6 +436,9 @@ useSeoMeta({
 });
 </script>
 <style lang="scss" >
+section.contenedor-flex {
+  flex-wrap: wrap;
+}
 #protocolos {
   section.final {
     padding: 0;
