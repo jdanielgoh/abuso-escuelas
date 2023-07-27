@@ -23,14 +23,14 @@ const esta_abierto = ref(false);
               Secreto escolar</NuxtLink
             >
           </li>
-          <!--<li>
+          <li>
             <NuxtLink
               @click.native="esta_abierto = false"
               to="nuestros-protocolos-no-existen"
             >
               "Nuestros protocolos no existen"</NuxtLink
             >
-          </li>-->
+          </li>
           <li>
             <a target="_blank" href="https://forms.gle/SFPFivLw3De317Pu8"
               >Cuenta tu historia</a

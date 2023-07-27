@@ -38,13 +38,14 @@
             generar indicadores y estadísticas. Pero todo quedó en sugerencia.
           </p>
           <p>
-            Por eso, cuando los padres del Jardín de Niños Montessori Matatena
-            —ubicado en la alcaldía Benito Juárez, una de las zonas con mayor
-            plusvalía de la Ciudad de México— acudieron a los medios de
-            comunicación a evidenciar las omisiones de las autoridades
-            educativas, que habían desoído sus pedidos de ayuda para atender las
-            violencias contra sus hijos, al Gobierno no le quedó más que pedir
-            perdón.
+            Por eso, cuando los padres del colegio Matatena acudieron a los
+            medios de comunicación a evidenciar que las autoridades educativas
+            habían desoído sus pedidos de ayuda para atender las violencias
+            contra sus hijos, al Gobierno no le quedó más que pedir perdón.
+            Aurelio Nuño, entonces titular de la Secretaría de Educación Pública
+            (SEP), admitió que el sistema no funcionaba. Fueron omisos, según
+            reconoció la dependencia en mayo de 2016 a través de un boletín de
+            prensa.
           </p>
           <p>
             No era la primera vez que una historia de abusos sexuales cometidos
@@ -57,33 +58,21 @@
             mantener el caso Matatena en medios de comunicación durante meses,
             obligando al Gobierno mexicano a pronunciarse públicamente.
           </p>
-          <p>
-            Aurelio Nuño, titular de la Secretaría de Educación Pública (SEP) en
-            ese entonces, admitió que el sistema no estaba funcionando. Tras una
-            investigación, el gobierno mexicano reconoció que existió una “clara
-            laxitud, falta de pericia, sensibilidad y oportunidad en el actuar
-            de los servidores competentes” en el caso.
-          </p>
+
           <h3>“Tu hijo está siendo abusado”</h3>
           <p>
             La cadena de omisiones era evidente. La Autoridad Educativa Federal
             de la Ciudad de México (AEFCM), órgano que depende de la SEP, no
             atendió la preocupación de un padre, en relación a la presencia
-            cotidiana del esposo de la directora. Fue omisa, , según reconoció
-            la misma dependencia en mayo de 2016 a través de un
-            <a
-              href="https://www.gob.mx/sep/en/articulos/en-el-caso-montessori-matatena-hubo-negligencia-falta-de-sensibilidad-e-ineficiencia-en-la-supervision-escolar-revela-investigacion-de-sep"
-              target="_blank"
-              >boletín de prensa</a
-            >.
+            cotidiana del esposo de la directora.
           </p>
           <p>
-            La preocupación estaba fundada. Un niño de tres años le dijo a su
+            La denuncia estaba fundada. Un niño de tres años le dijo a su
             cuidadora: “te voy a dar medicina” y, al tiempo, intentó poner su
             pene en la boca de la mujer. Ante esta señal de alerta, la madre
             llevó al pequeño con una psicóloga infantil. “Tu hijo está siendo
             abusado”, le confirmó. El agresor, detalló el pequeño, era Rafael
-            D., esposo de la directora, quien lo obligaba a “jugar al doctor”.
+            N., esposo de la directora, quien lo obligaba a “jugar al doctor”.
           </p>
         </div>
         <div class="ancho-imagen">
@@ -224,6 +213,15 @@
             Senado de la República.
           </p>
           <p>
+            El análisis realizado para esta investigación muestra que en una
+            escala del 0 al 10, la mayoría de los estados (23) están reprobados:
+            no cumplen con lo mínimo recomendado para atender esta problemática.
+            Los estados con las calificaciones más bajas en sus protocolos son
+            Durango, Coahuila, Puebla, San Luis Potosí, Sonora, Michoacán y
+            Morelos que no superan el 4 de calificación. El estado mejor puntado
+            es Yucatán: obtuvo 7.8 de calificación.
+          </p>
+          <p>
             La Comisión Interamericana de Derechos Humanos (CIDH) ha instado a
             los países a que cumplan con los principios de protección reforzada
             y debida diligencia. Se trata de establecer los procedimientos que
@@ -327,25 +325,19 @@
             Después del caso de Matatena, surgieron otras denuncias contra
             escuelas particulares. En 2017 se hizo público que en el Colegio
             Williams, uno de los más renombrados de la Ciudad de México, un
-            docente abusó sexualmente de una niña de 3 años. Y, aunque el
-            Colegio aseguró, mediante un cuestionario escrito, que desde que se
-            les informó de la sospecha de que una menor había sido vulnerada por
-            un profesor su postura fue "informar a la autoridad superior y
+            docente abusó sexualmente de una niña de 3 años. El Colegio aseguró,
+            mediante un cuestionario por escrito, que desde que tuvieron
+            conocimiento su postura fue "informar a la autoridad superior y
             realizar una investigación interna para llegar al fondo de las cosas
-            activando los protocolos correspondientes", la madre de la niña
-            recuerda aún las palabras del dueño: "Yo voy a decir que mi escuela
-            no ocurrió y voy a llevar las pruebas para comprobarlo". Dos años
-            después del abuso, el colegio Williams la demandó por la vía civil
-            por daño moral; el área legal de la escuela aseguró que estas
-            acciones fueron encaminadas a "proteger a las y los menores que
-            toman clase en la institución, y que eventualmente se vieron
-            afectados por las acciones de las partes involucradas".
-          </p>
-          <p>
-            El maestro agresor fue sentenciado en 2021. Luego de tres años de
-            investigación administrativa, la autoridad educativa concluyó que
-            "no existen situaciones de riesgo en el Colegio que puedan propiciar
-            situaciones de abuso".
+            activando los protocolos correspondientes". Sin embargo, la madre de
+            la niña recuerda que las palabras del dueño de la escuela fueron:
+            "Yo voy a decir que en mi escuela no ocurrió y voy a llevar las
+            pruebas para comprobarlo". Dos años después del abuso, el colegio
+            Williams demandó a la madre por daño moral; el área legal de la
+            escuela aseguró que estas acciones fueron encaminadas a "proteger a
+            las y los menores que toman clase en la institución, y que
+            eventualmente se vieron afectados por las acciones de las partes
+            involucradas". El agresor fue sentenciado a 9 años de prisión.
           </p>
           <p>
             Ese mismo año, en la alcaldía Coyoacán, se detuvo a un docente del
@@ -378,10 +370,7 @@
             escenario para los niños”,señala Vázquez Mota, quien fue secretaria
             de Educación (2006-2009) en el sexenio de Felipe Calderón.
           </p>
-          <p>
-            Los registros oficiales dan cuenta de que esta realidad sobrepasa el
-            interés y las capacidades de los gobiernos en turno.
-          </p>
+
           <p>
             En el caso Matatena, más de 100 familias fueron afectadas de manera
             indirecta, había 20 casos confirmados, pero sólo siete llegaron ante
@@ -390,14 +379,12 @@
           </p>
 
           <p>
-            En México, sólo el 1% de los casos que llegan ante autoridades
-            judiciales resultan en sentencia condenatoria. Pese a ello, el caso
-            ícono terminó reflejando las fallas en los procesos de justicia en
-            el país, en 2021 quedó sin efecto la primera sentencia dictada en
-            contra de Rafael N. y, después de una serie de amparos, fue
-            encontrado culpable nuevamente y sentenciado de nuevo a cinco años,
-            pero por el tiempo que llevaba en prisión fue puesto en libertad en
-            febrero de 2022, según confirmó su abogado en entrevista.
+            A las debilidades en el sistema educativo, se suman las fallas en
+            los procesos de justicia en el país. El agresor del caso Matatena
+            fue encontrado culpable por el delito de abuso sexual cometido sólo
+            contra tres de los niños. La pena fue de cinco años y cinco meses.
+            Fue puesto en libertad en febrero de 2022, según confirmó su
+            abogado.
           </p>
           <p>
             “El sistema está hecho para que ellos estén libres. Y quienes tienen
@@ -435,20 +422,21 @@
 <script setup>
 import { ref } from "vue";
 const title = ref("Nuestros protocolos no existen");
-const description =
-  ref(`El gobierno mexicano carece de una política efectiva de prevención y actuación ante la violencia sexual dentro de las aulas. El intento por homologar los protocolos de actuación para combatir esta problemática fracasó.`);
+const description = ref(
+  `El gobierno mexicano carece de una política efectiva de prevención y actuación ante la violencia sexual dentro de las aulas. El intento por homologar los protocolos de actuación para combatir esta problemática fracasó.`
+);
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: description,
   ogDescription: description,
-  ogImage: "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-protocolos.png",
+  ogImage:
+    "https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/media-protocolos.png",
   twitterCard: "summary_large_image",
 });
 </script>
 <style lang="scss" >
 #protocolos {
-
   section.final {
     padding: 0;
     .titulo-historias {

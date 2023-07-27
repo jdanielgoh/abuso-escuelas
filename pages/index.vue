@@ -79,7 +79,7 @@
       <div class="ancho-texto">
         <iframe
           width="560"
-          height="315"
+          height="480"
           style="width: 100%"
           src="https://www.youtube.com/embed/3B61wcXMq9Y"
           title="YouTube video player"
@@ -99,12 +99,12 @@
           :titulo="'Secreto escolar'"
           :descripcion="'En la última década se triplicó el abuso sexual infantil dentro de las escuelas'"
         ></NavegacionTarjetas>
-        <!--<NavegacionTarjetas
+        <NavegacionTarjetas
           class="t-50"
           :ruta="'nuestros-protocolos-no-existen'"
           :titulo="`&quot;Nuestros protocolos no existen&quot;`"
           :descripcion="'La historia de una política fallida'"
-        ></NavegacionTarjetas>-->
+        ></NavegacionTarjetas>
       </div>
     </section>
   </div>

@@ -513,12 +513,12 @@
       <section class="final">
         <div class="titulo-historias">Lee la investigación completa</div>
         <div class="contenedor-flex contenedor-tarjetas">
-          <!--<NavegacionTarjetas
+          <NavegacionTarjetas
             class="t-50"
             :ruta="'nuestros-protocolos-no-existen'"
             :titulo="`&quot;Nuestros protocolos no existen&quot;`"
             :descripcion="'La historia de una política fallida'"
-          ></NavegacionTarjetas>-->
+          ></NavegacionTarjetas>
           <NavegacionTarjetas
             class="t-50"
             :ruta="'/'"
