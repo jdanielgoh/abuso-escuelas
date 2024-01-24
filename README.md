@@ -1,10 +1,12 @@
-# Nuxt 3 Minimal Starter
+# Depredadores en las aulas
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+En este repositorio se encuentra el código con el que se desarrolló el proyecto [Depredadores en las aulas](https://interactivos.eluniversal.com.mx/2023/abuso-sexual-escuelas/).
 
-## Setup
+Está construida con Nuxt.js y emplea dependencias como three.js y D3.js.
 
-Make sure to install the dependencies:
+## Configuracion
+
+Para instalar las dependencias:
 
 ```bash
 # yarn
@@ -17,26 +19,22 @@ npm install
 pnpm install
 ```
 
-## Development Server
+## Seervidor de desarrollo
 
-Start the development server on `http://localhost:3000`
+Para levantar un servidor local en `http://localhost:3000`
 
 ```bash
 npm run dev
 ```
 
-## Production
+## Compilar para producción
 
-Build the application for production:
+Construir la aplicación para producción
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
 
-```bash
-npm run preview
-```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
